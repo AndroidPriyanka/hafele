@@ -123,6 +123,7 @@ public class HafeleWebservice {
             result = (SoapPrimitive) envelope.getResponse();
             Log.e("RegisterUser", result.toString());
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }
