@@ -1,0 +1,2622 @@
+[
+    {
+        "outputFile": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 19,
+                    "endOffset": 244
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 4331,
+                        "endLine": 115,
+                        "endColumn": 19,
+                        "endOffset": 4520
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 249,
+                    "endLine": 11,
+                    "endColumn": 20,
+                    "endOffset": 414
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 5,
+                        "startOffset": 2593,
+                        "endLine": 60,
+                        "endColumn": 20,
+                        "endOffset": 2758
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 419,
+                    "endLine": 20,
+                    "endColumn": 19,
+                    "endOffset": 665
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1912,
+                        "endLine": 37,
+                        "endColumn": 19,
+                        "endOffset": 2158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 670,
+                    "endLine": 33,
+                    "endColumn": 20,
+                    "endOffset": 1155
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 5,
+                        "startOffset": 2770,
+                        "endLine": 74,
+                        "endColumn": 20,
+                        "endOffset": 3255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1160,
+                    "endLine": 47,
+                    "endColumn": 20,
+                    "endOffset": 1681
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 5,
+                        "startOffset": 3267,
+                        "endLine": 89,
+                        "endColumn": 20,
+                        "endOffset": 3788
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 1686,
+                    "endLine": 54,
+                    "endColumn": 19,
+                    "endOffset": 1911
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 4100,
+                        "endLine": 108,
+                        "endColumn": 19,
+                        "endOffset": 4325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 1916,
+                    "endLine": 66,
+                    "endColumn": 19,
+                    "endOffset": 2204
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 5,
+                        "startOffset": 2169,
+                        "endLine": 50,
+                        "endColumn": 19,
+                        "endOffset": 2457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 2209,
+                    "endLine": 75,
+                    "endColumn": 19,
+                    "endOffset": 2558
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 4526,
+                        "endLine": 125,
+                        "endColumn": 19,
+                        "endOffset": 4875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2563,
+                    "endLine": 84,
+                    "endColumn": 19,
+                    "endOffset": 2862
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 3794,
+                        "endLine": 99,
+                        "endColumn": 19,
+                        "endOffset": 4093
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2867,
+                    "endLine": 88,
+                    "endColumn": 20,
+                    "endOffset": 2980
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 5,
+                        "startOffset": 2468,
+                        "endLine": 55,
+                        "endColumn": 20,
+                        "endOffset": 2581
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 2985,
+                    "endColumn": 57,
+                    "endOffset": 3038
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 3043,
+                    "endColumn": 55,
+                    "endOffset": 3094
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3099,
+                    "endColumn": 50,
+                    "endOffset": 3145
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 50,
+                        "endOffset": 353
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3150,
+                    "endColumn": 48,
+                    "endOffset": 3194
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 257,
+                        "endColumn": 48,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 3199,
+                    "endColumn": 47,
+                    "endOffset": 3242
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 47,
+                        "endOffset": 251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3247,
+                    "endColumn": 55,
+                    "endOffset": 3298
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3303,
+                    "endColumn": 52,
+                    "endOffset": 3351
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 152,
+                        "endColumn": 52,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3356,
+                    "endColumn": 42,
+                    "endOffset": 3394
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 42,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3399,
+                    "endColumn": 48,
+                    "endOffset": 3443
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1853,
+                        "endColumn": 48,
+                        "endOffset": 1897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 3448,
+                    "endColumn": 202,
+                    "endOffset": 3646
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 158,
+                        "endColumn": 202,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 3651,
+                    "endColumn": 133,
+                    "endOffset": 3780
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 361,
+                        "endColumn": 133,
+                        "endOffset": 490
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 3785,
+                    "endColumn": 52,
+                    "endOffset": 3833
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 495,
+                        "endColumn": 52,
+                        "endOffset": 543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3838,
+                    "endColumn": 52,
+                    "endOffset": 3886
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 52,
+                        "endOffset": 596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 3891,
+                    "endColumn": 52,
+                    "endOffset": 3939
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 52,
+                        "endOffset": 147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 3944,
+                    "endColumn": 47,
+                    "endOffset": 3987
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 601,
+                        "endColumn": 47,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 3992,
+                    "endColumn": 50,
+                    "endOffset": 4038
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 649,
+                        "endColumn": 50,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4043,
+                    "endColumn": 61,
+                    "endOffset": 4100
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endColumn": 61,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4105,
+                    "endColumn": 61,
+                    "endOffset": 4162
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 762,
+                        "endColumn": 61,
+                        "endOffset": 819
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 4167,
+                    "endColumn": 65,
+                    "endOffset": 4228
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 824,
+                        "endColumn": 65,
+                        "endOffset": 885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 4233,
+                    "endColumn": 67,
+                    "endOffset": 4296
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 890,
+                        "endColumn": 67,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4301,
+                    "endColumn": 73,
+                    "endOffset": 4370
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 73,
+                        "endOffset": 1027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4375,
+                    "endColumn": 67,
+                    "endOffset": 4438
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1032,
+                        "endColumn": 67,
+                        "endOffset": 1095
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4443,
+                    "endLine": 114,
+                    "endColumn": 9,
+                    "endOffset": 4653
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1100,
+                        "endLine": 19,
+                        "endColumn": 9,
+                        "endOffset": 1310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4658,
+                    "endColumn": 64,
+                    "endOffset": 4718
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1315,
+                        "endColumn": 64,
+                        "endOffset": 1375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4723,
+                    "endColumn": 67,
+                    "endOffset": 4786
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1380,
+                        "endColumn": 67,
+                        "endOffset": 1443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4791,
+                    "endColumn": 95,
+                    "endOffset": 4882
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1448,
+                        "endColumn": 95,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4887,
+                    "endColumn": 57,
+                    "endOffset": 4940
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1544,
+                        "endColumn": 57,
+                        "endOffset": 1597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 4945,
+                    "endColumn": 105,
+                    "endOffset": 5046
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1602,
+                        "endColumn": 105,
+                        "endOffset": 1703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 5051,
+                    "endColumn": 63,
+                    "endOffset": 5110
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1708,
+                        "endColumn": 63,
+                        "endOffset": 1767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 5115,
+                    "endColumn": 109,
+                    "endOffset": 5220
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 774,
+                        "endColumn": 109,
+                        "endOffset": 879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5225,
+                    "endColumn": 107,
+                    "endOffset": 5328
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1745,
+                        "endColumn": 107,
+                        "endOffset": 1848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5333,
+                    "endColumn": 105,
+                    "endOffset": 5434
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 884,
+                        "endColumn": 105,
+                        "endOffset": 985
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5439,
+                    "endColumn": 106,
+                    "endOffset": 5541
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 990,
+                        "endColumn": 106,
+                        "endOffset": 1092
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5546,
+                    "endColumn": 106,
+                    "endOffset": 5648
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1097,
+                        "endColumn": 106,
+                        "endOffset": 1199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5653,
+                    "endColumn": 106,
+                    "endOffset": 5755
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1204,
+                        "endColumn": 106,
+                        "endOffset": 1306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 5760,
+                    "endColumn": 106,
+                    "endOffset": 5862
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1311,
+                        "endColumn": 106,
+                        "endOffset": 1413
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 5867,
+                    "endColumn": 109,
+                    "endOffset": 5972
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1418,
+                        "endColumn": 109,
+                        "endOffset": 1523
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 5977,
+                    "endColumn": 109,
+                    "endOffset": 6082
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1528,
+                        "endColumn": 109,
+                        "endOffset": 1633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 6087,
+                    "endColumn": 106,
+                    "endOffset": 6189
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1638,
+                        "endColumn": 106,
+                        "endOffset": 1740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 6194,
+                    "endColumn": 103,
+                    "endOffset": 6293
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1772,
+                        "endColumn": 103,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 6298,
+                    "endColumn": 61,
+                    "endOffset": 6355
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 205,
+                        "endColumn": 61,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 6360,
+                    "endColumn": 71,
+                    "endOffset": 6427
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 702,
+                        "endColumn": 71,
+                        "endOffset": 769
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 6432,
+                    "endColumn": 54,
+                    "endOffset": 6482
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 267,
+                        "endColumn": 54,
+                        "endOffset": 317
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 6487,
+                    "endColumn": 37,
+                    "endOffset": 6520
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 322,
+                        "endColumn": 37,
+                        "endOffset": 355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 6525,
+                    "endColumn": 36,
+                    "endOffset": 6557
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 360,
+                        "endColumn": 36,
+                        "endOffset": 392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 6562,
+                    "endColumn": 83,
+                    "endOffset": 6641
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 397,
+                        "endColumn": 83,
+                        "endOffset": 476
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 6646,
+                    "endColumn": 51,
+                    "endOffset": 6693
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 481,
+                        "endColumn": 51,
+                        "endOffset": 528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 6698,
+                    "endColumn": 55,
+                    "endOffset": 6749
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 533,
+                        "endColumn": 55,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 6754,
+                    "endColumn": 54,
+                    "endOffset": 6804
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 589,
+                        "endColumn": 54,
+                        "endOffset": 639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 6809,
+                    "endColumn": 57,
+                    "endOffset": 6862
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 644,
+                        "endColumn": 57,
+                        "endOffset": 697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 6867,
+                    "endColumn": 36,
+                    "endOffset": 6899
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1876,
+                        "endColumn": 36,
+                        "endOffset": 1908
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 6904,
+                    "endColumn": 119,
+                    "endOffset": 7019
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1913,
+                        "endColumn": 119,
+                        "endOffset": 2028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 7024,
+                    "endLine": 150,
+                    "endColumn": 12,
+                    "endOffset": 7310
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 191,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 7315,
+                    "endLine": 153,
+                    "endColumn": 12,
+                    "endOffset": 7470
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 522,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 679
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 7475,
+                    "endLine": 158,
+                    "endColumn": 8,
+                    "endOffset": 7670
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2033,
+                        "endLine": 33,
+                        "endColumn": 8,
+                        "endOffset": 2228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 7675,
+                    "endLine": 163,
+                    "endColumn": 8,
+                    "endOffset": 7870
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2233,
+                        "endLine": 38,
+                        "endColumn": 8,
+                        "endOffset": 2428
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 7875,
+                    "endLine": 167,
+                    "endColumn": 8,
+                    "endOffset": 8018
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2433,
+                        "endLine": 42,
+                        "endColumn": 8,
+                        "endOffset": 2576
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 19,
+                    "endOffset": 244
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 4331,
+                        "endLine": 115,
+                        "endColumn": 19,
+                        "endOffset": 4520
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 249,
+                    "endLine": 11,
+                    "endColumn": 20,
+                    "endOffset": 414
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 5,
+                        "startOffset": 2593,
+                        "endLine": 60,
+                        "endColumn": 20,
+                        "endOffset": 2758
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 419,
+                    "endLine": 20,
+                    "endColumn": 19,
+                    "endOffset": 665
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1912,
+                        "endLine": 37,
+                        "endColumn": 19,
+                        "endOffset": 2158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 670,
+                    "endLine": 33,
+                    "endColumn": 20,
+                    "endOffset": 1155
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 5,
+                        "startOffset": 2770,
+                        "endLine": 74,
+                        "endColumn": 20,
+                        "endOffset": 3255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1160,
+                    "endLine": 47,
+                    "endColumn": 20,
+                    "endOffset": 1681
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 5,
+                        "startOffset": 3267,
+                        "endLine": 89,
+                        "endColumn": 20,
+                        "endOffset": 3788
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 1686,
+                    "endLine": 54,
+                    "endColumn": 19,
+                    "endOffset": 1911
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 4100,
+                        "endLine": 108,
+                        "endColumn": 19,
+                        "endOffset": 4325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 1916,
+                    "endLine": 66,
+                    "endColumn": 19,
+                    "endOffset": 2204
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 5,
+                        "startOffset": 2169,
+                        "endLine": 50,
+                        "endColumn": 19,
+                        "endOffset": 2457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 2209,
+                    "endLine": 75,
+                    "endColumn": 19,
+                    "endOffset": 2558
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 4526,
+                        "endLine": 125,
+                        "endColumn": 19,
+                        "endOffset": 4875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2563,
+                    "endLine": 84,
+                    "endColumn": 19,
+                    "endOffset": 2862
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 3794,
+                        "endLine": 99,
+                        "endColumn": 19,
+                        "endOffset": 4093
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2867,
+                    "endLine": 88,
+                    "endColumn": 20,
+                    "endOffset": 2980
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 5,
+                        "startOffset": 2468,
+                        "endLine": 55,
+                        "endColumn": 20,
+                        "endOffset": 2581
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 2985,
+                    "endColumn": 57,
+                    "endOffset": 3038
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 3043,
+                    "endColumn": 55,
+                    "endOffset": 3094
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3099,
+                    "endColumn": 50,
+                    "endOffset": 3145
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 50,
+                        "endOffset": 353
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3150,
+                    "endColumn": 48,
+                    "endOffset": 3194
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 257,
+                        "endColumn": 48,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 3199,
+                    "endColumn": 47,
+                    "endOffset": 3242
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 47,
+                        "endOffset": 251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3247,
+                    "endColumn": 55,
+                    "endOffset": 3298
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3303,
+                    "endColumn": 52,
+                    "endOffset": 3351
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 152,
+                        "endColumn": 52,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3356,
+                    "endColumn": 42,
+                    "endOffset": 3394
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 42,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3399,
+                    "endColumn": 48,
+                    "endOffset": 3443
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1853,
+                        "endColumn": 48,
+                        "endOffset": 1897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 3448,
+                    "endColumn": 202,
+                    "endOffset": 3646
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 158,
+                        "endColumn": 202,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 3651,
+                    "endColumn": 133,
+                    "endOffset": 3780
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 361,
+                        "endColumn": 133,
+                        "endOffset": 490
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 3785,
+                    "endColumn": 52,
+                    "endOffset": 3833
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 495,
+                        "endColumn": 52,
+                        "endOffset": 543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3838,
+                    "endColumn": 52,
+                    "endOffset": 3886
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 52,
+                        "endOffset": 596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 3891,
+                    "endColumn": 52,
+                    "endOffset": 3939
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 52,
+                        "endOffset": 147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 3944,
+                    "endColumn": 47,
+                    "endOffset": 3987
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 601,
+                        "endColumn": 47,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 3992,
+                    "endColumn": 50,
+                    "endOffset": 4038
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 649,
+                        "endColumn": 50,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4043,
+                    "endColumn": 61,
+                    "endOffset": 4100
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endColumn": 61,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4105,
+                    "endColumn": 61,
+                    "endOffset": 4162
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 762,
+                        "endColumn": 61,
+                        "endOffset": 819
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 4167,
+                    "endColumn": 65,
+                    "endOffset": 4228
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 824,
+                        "endColumn": 65,
+                        "endOffset": 885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 4233,
+                    "endColumn": 67,
+                    "endOffset": 4296
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 890,
+                        "endColumn": 67,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4301,
+                    "endColumn": 73,
+                    "endOffset": 4370
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 73,
+                        "endOffset": 1027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4375,
+                    "endColumn": 67,
+                    "endOffset": 4438
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1032,
+                        "endColumn": 67,
+                        "endOffset": 1095
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4443,
+                    "endLine": 114,
+                    "endColumn": 9,
+                    "endOffset": 4653
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1100,
+                        "endLine": 19,
+                        "endColumn": 9,
+                        "endOffset": 1310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4658,
+                    "endColumn": 64,
+                    "endOffset": 4718
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1315,
+                        "endColumn": 64,
+                        "endOffset": 1375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4723,
+                    "endColumn": 67,
+                    "endOffset": 4786
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1380,
+                        "endColumn": 67,
+                        "endOffset": 1443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4791,
+                    "endColumn": 95,
+                    "endOffset": 4882
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1448,
+                        "endColumn": 95,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4887,
+                    "endColumn": 57,
+                    "endOffset": 4940
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1544,
+                        "endColumn": 57,
+                        "endOffset": 1597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 4945,
+                    "endColumn": 105,
+                    "endOffset": 5046
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1602,
+                        "endColumn": 105,
+                        "endOffset": 1703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 5051,
+                    "endColumn": 63,
+                    "endOffset": 5110
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1708,
+                        "endColumn": 63,
+                        "endOffset": 1767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 5115,
+                    "endColumn": 109,
+                    "endOffset": 5220
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 774,
+                        "endColumn": 109,
+                        "endOffset": 879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5225,
+                    "endColumn": 107,
+                    "endOffset": 5328
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1745,
+                        "endColumn": 107,
+                        "endOffset": 1848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5333,
+                    "endColumn": 105,
+                    "endOffset": 5434
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 884,
+                        "endColumn": 105,
+                        "endOffset": 985
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5439,
+                    "endColumn": 106,
+                    "endOffset": 5541
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 990,
+                        "endColumn": 106,
+                        "endOffset": 1092
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5546,
+                    "endColumn": 106,
+                    "endOffset": 5648
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1097,
+                        "endColumn": 106,
+                        "endOffset": 1199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5653,
+                    "endColumn": 106,
+                    "endOffset": 5755
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1204,
+                        "endColumn": 106,
+                        "endOffset": 1306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 5760,
+                    "endColumn": 106,
+                    "endOffset": 5862
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1311,
+                        "endColumn": 106,
+                        "endOffset": 1413
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 5867,
+                    "endColumn": 109,
+                    "endOffset": 5972
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1418,
+                        "endColumn": 109,
+                        "endOffset": 1523
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 5977,
+                    "endColumn": 109,
+                    "endOffset": 6082
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1528,
+                        "endColumn": 109,
+                        "endOffset": 1633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 6087,
+                    "endColumn": 106,
+                    "endOffset": 6189
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1638,
+                        "endColumn": 106,
+                        "endOffset": 1740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 6194,
+                    "endColumn": 103,
+                    "endOffset": 6293
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1772,
+                        "endColumn": 103,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 6298,
+                    "endColumn": 61,
+                    "endOffset": 6355
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 205,
+                        "endColumn": 61,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 6360,
+                    "endColumn": 71,
+                    "endOffset": 6427
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 702,
+                        "endColumn": 71,
+                        "endOffset": 769
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 6432,
+                    "endColumn": 54,
+                    "endOffset": 6482
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 267,
+                        "endColumn": 54,
+                        "endOffset": 317
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 6487,
+                    "endColumn": 37,
+                    "endOffset": 6520
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 322,
+                        "endColumn": 37,
+                        "endOffset": 355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 6525,
+                    "endColumn": 36,
+                    "endOffset": 6557
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 360,
+                        "endColumn": 36,
+                        "endOffset": 392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 6562,
+                    "endColumn": 83,
+                    "endOffset": 6641
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 397,
+                        "endColumn": 83,
+                        "endOffset": 476
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 6646,
+                    "endColumn": 51,
+                    "endOffset": 6693
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 481,
+                        "endColumn": 51,
+                        "endOffset": 528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 6698,
+                    "endColumn": 55,
+                    "endOffset": 6749
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 533,
+                        "endColumn": 55,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 6754,
+                    "endColumn": 54,
+                    "endOffset": 6804
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 589,
+                        "endColumn": 54,
+                        "endOffset": 639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 6809,
+                    "endColumn": 57,
+                    "endOffset": 6862
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 644,
+                        "endColumn": 57,
+                        "endOffset": 697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 6867,
+                    "endColumn": 36,
+                    "endOffset": 6899
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1876,
+                        "endColumn": 36,
+                        "endOffset": 1908
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 6904,
+                    "endColumn": 119,
+                    "endOffset": 7019
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1913,
+                        "endColumn": 119,
+                        "endOffset": 2028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 7024,
+                    "endLine": 150,
+                    "endColumn": 12,
+                    "endOffset": 7310
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 191,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 7315,
+                    "endLine": 153,
+                    "endColumn": 12,
+                    "endOffset": 7470
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 522,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 679
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 7475,
+                    "endLine": 158,
+                    "endColumn": 8,
+                    "endOffset": 7670
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2033,
+                        "endLine": 33,
+                        "endColumn": 8,
+                        "endOffset": 2228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 7675,
+                    "endLine": 163,
+                    "endColumn": 8,
+                    "endOffset": 7870
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2233,
+                        "endLine": 38,
+                        "endColumn": 8,
+                        "endOffset": 2428
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 7875,
+                    "endLine": 167,
+                    "endColumn": 8,
+                    "endOffset": 8018
+                },
+                "from": {
+                    "file": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2433,
+                        "endLine": 42,
+                        "endColumn": 8,
+                        "endOffset": 2576
+                    }
+                }
+            }
+        ]
+    }
+]

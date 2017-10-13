@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMART</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_1">Check <b>weight of door</b></string>
+    <string name="txt_2">Correct Installation</string>
+    <string name="txt_3">Yes</string>
+    <string name="txt_4">No</string>
+    <string name="txt_5">Alignment of bottom and top pivot to be straight </string>
+    <string name="txt_6">Door Making Noise</string>
+    <string name="txt_7">Closing Speed Correct</string>
+    <string name="txt_8"><b>Type of Hinge</b></string>
+    <string name="txt_9"><b>Number of Hinges</b></string>
+    <string name="txt_10">Is <b>Power Adjustment</b> required?</string>
+    <string name="str_1">For weight 60-80kg, 3 hinges weight &lt;60, 2 \nhinges weight >80, 4 hinges</string>
+    <string name="str_2">For weight 60kg, 3 hinges weight &lt;60,2 \nhinges weight >60, 4 hinges</string>
+    <string name="str_3">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
+    <string name="str_4">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
+    <string name="str_5">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
+    <string name="str_6">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
+    <string name="str_7">For weight 60-80kg, 3 hinges weight &lt;60, 2 \nhinges weight >80, 4 hinges</string>
+    <string name="str_8">For weight 60-80kg, 3 hinges weight &lt;60, 2 \nhinges weight >80, 4 hinges</string>
+    <string name="str_9">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
+    <string name="str_10">For weight 60kg, 3 hinges weight &lt;60, 2 \nhinges weight >60, 4 hinges</string>
+    <string name="app_version_name">1.8</string>
+    
+    
+    <string-array name="rating">
+        <item>--- select from list ---</item>
+        <item>Excellent </item>
+        <item>Very good </item>
+        <item>Good</item>
+        <item>Average</item>
+        <item>Poor</item> 
+     
+    </string-array>
+    
+     <string-array name="score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>  
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>        
+    </string-array>
+    
+     <string-array name="status">
+         <item>Resolved</item>
+         <item>Unresolved</item>
+     </string-array>
+     
+     <string-array name="call_initiating">
+         <item>customer not available at home</item>
+         <item>customer has canceled the visit</item>
+     </string-array>
+     
+     <string-array name="reason_array">
+         <item>--Select--</item>
+         <item>Material not Received</item>
+         <item>Incomplete Material</item>
+         <item>Wrong Material</item>
+         <item>Carpenter not available</item>
+         <item>Customer not available</item>
+         <item>Site not ready</item>      
+         <item>No toolkit</item>
+         <item>Spares not available</item>
+         <item>Others</item>
+         <item>MTR Required</item>
+     </string-array>
+     
+     <string-array name="reason_array_2">
+         <item>--Select--</item>
+         <item>Material not Received</item>
+         <item>Incomplete Material</item>
+         <item>Wrong Material</item>
+         <item>Carpenter not available</item>
+         <item>Customer not available</item>
+         <item>Site not ready</item>
+         <item>It is a complaint</item>
+         <item>No toolkit</item>
+         <item>Spares not available</item>
+         <item>Others</item>
+         <item>MTR Required</item>
+     </string-array>
+
+    <string-array name="spinner_wrong_product">
+        <item>--Select--</item>
+        <item>Wrong Product</item>
+        <item>Channel Partner</item>
+        <item>Hafele (Sales, Design center)</item>
+        <item>End customer</item>
+        <item>No information available</item>
+
+    </string-array>
+
+
+    <string-array name="result_array">
+        <item>--Select--</item>
+        <item>Wrong Installation</item>
+        <item>Product Defect</item>
+        <item>Site Issues</item>
+        <item>Resolved</item>
+    </string-array>
+
+    <string-array name="action_array">
+        <item>--Select--</item>
+        <item>MTR required</item>
+        <item>Revisit the site</item>
+        <item>No Action</item>
+    </string-array>
+
+    <string-array name="site_issue">
+        <item>--Select--</item>
+        <item>customer carpenter was not available</item>
+        <item>Tool kit not available</item>
+        <item>Incomplete material</item>
+        <item>"Site not ready</item>
+        <item>Material not received"</item>
+        <item>Spare not available</item>
+    </string-array>
+
+       
+</resources>

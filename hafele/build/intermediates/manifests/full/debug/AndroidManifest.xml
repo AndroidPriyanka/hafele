@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sudesi.hafele.faultreport"
+    android:installLocation="auto"
+    android:versionCode="19"
+    android:versionName="@string/app_version_name" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sudesi.hafele.faultreport.MainLauncherActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.SiteVisitForm"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.FaultReportForm"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.ComplaintsList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.DashBoardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.HomeScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sudesi.hafele.faultreport.ReportsView"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!--
+        <service
+            android:name="com.adstringo.video4androidRemoteServiceBridge.RemoteServiceBridgeService"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.adstringo.video4androidRemoteServiceBridge" >
+                </action>
+            </intent-filter>
+        </service>
+        -->
+        <!-- Broadcast receiver -->
+        <receiver android:name="com.sudesi.hafele.faultreport.DeleteFileBroadcastReceiver" >
+        </receiver>
+
+        <!--
+   <service
+
+   android:name="com.adstringo.video4androidRemoteServiceBridge.RemoteServiceBridgeService"
+
+   android:exported="true"
+
+   android:process=":remote" >
+
+   <intent-filter>
+
+   <action android:name="com.adstringo.video4androidRemoteServiceBridge" >
+
+   </action>
+
+   </intent-filter>
+
+   </service>
+        -->
+
+        <service
+            android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name="com.sudesi.hafele.broadcastReceiver.BackgroundServiceUploadData" />
+
+        <receiver android:name="com.sudesi.hafele.broadcastReceiver.UploadDataBrodcastReceiver" />
+
+        <activity
+            android:name="com.netcompss.ffmpeg4android.MainAct"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.example.DemoClient"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.netcompss.ffmpeg4android_client.ShowFileAct" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/stp_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 1"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_correct_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Correct Product"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wrong_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Reason For Wrong Product"
+                    android:textSize="@dimen/content_text_size" />
+
+                <Spinner
+                    android:id="@+id/spin_wrong_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dropdown"
+                    android:entries="@array/spinner_wrong_product" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 2"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_check_installation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Check installation"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textView_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="a)"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_check_bedding_box_dimensions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Check Bedding Box dimensions"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_height_is_more_then"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:text="Height is more then 260mm"
+                    android:textSize="@dimen/content_text_size" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+
+                <EditText
+                    android:id="@+id/pratik_height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_slatted_frame"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:text="Length is more than Slatted frame/wooden panel length + 50mm"
+                    android:textSize="@dimen/content_text_size" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+
+                <EditText
+                    android:id="@+id/pratik_length_50mm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_wooden_panel_lengt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:text="Width is more than Slatted frame/wooden panel length + 30mm"
+                    android:textSize="@dimen/content_text_size" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+
+                <EditText
+                    android:id="@+id/pratik_width_30mm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/text_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="b)"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_slatted_frame_dimensions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Slatted Frame dimensions"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_1400mm_2000mm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:text="1400mm * 2000mm"
+                    android:textSize="@dimen/content_text_size" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_6"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+
+                <EditText
+                    android:id="@+id/pratik_sfd_dimen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_1800mm_2000mm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:text="1800mm * 2000mm"
+                    android:textSize="@dimen/content_text_size" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.5"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <EditText
+                    android:id="@+id/pratik_sfd_dimen1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/text_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="c)"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_check_fixing_of_side_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Check Fixing of side plate on the bedding box wall as per drawing"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 3"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_check_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Check Weight"
+                    android:textSize="@dimen/content_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="A] For 1400mm *2000mm(Article No.274.52.913)"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_wooden_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Wooden Panel/Slatted frame weight is between 23 -25kgs"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Total Weight (slatted frame + mattress) is between 50 - 60 kgs"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 4"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_Check_if_any_customisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Check if any Customisation of Stabilizing rod has been done"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pr_chk_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/pr_chk_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+
+<!--
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/attach_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="5dp"
+                    android:text="Attach Image"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/attach_vid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="5dp"
+                    android:text="Attach Video"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/img_grid"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.10"
+                    android:numColumns="3" />
+
+
+                &lt;!&ndash; <GridView &ndash;&gt;
+                &lt;!&ndash; android:id="@+id/video_grid" &ndash;&gt;
+                &lt;!&ndash; android:layout_width="wrap_content" &ndash;&gt;
+                &lt;!&ndash; android:layout_height="120dp" &ndash;&gt;
+                &lt;!&ndash; android:layout_weight="1" &ndash;&gt;
+                &lt;!&ndash; android:layout_marginTop="5dp" &ndash;&gt;
+                &lt;!&ndash; android:numColumns="3" /> &ndash;&gt;
+
+                <ImageView
+                    android:id="@+id/video_grid"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_deleteVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:text="Delete"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/content_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/new_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Status "
+                    android:textSize="@dimen/content_text_size" />
+
+                <Spinner
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/dropdown"
+                    android:entries="@array/status" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Comments "
+                    android:textSize="@dimen/content_text_size" />
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

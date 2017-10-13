@@ -1,0 +1,528 @@
+[
+    {
+        "outputFile": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 46,
+                    "endOffset": 153
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 46,
+                        "endOffset": 153
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 158,
+                    "endColumn": 202,
+                    "endOffset": 356
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 158,
+                        "endColumn": 202,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 361,
+                    "endColumn": 133,
+                    "endOffset": 490
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 361,
+                        "endColumn": 133,
+                        "endOffset": 490
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 495,
+                    "endColumn": 52,
+                    "endOffset": 543
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 495,
+                        "endColumn": 52,
+                        "endOffset": 543
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endColumn": 52,
+                    "endOffset": 596
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 52,
+                        "endOffset": 596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 601,
+                    "endColumn": 47,
+                    "endOffset": 644
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 601,
+                        "endColumn": 47,
+                        "endOffset": 644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 649,
+                    "endColumn": 50,
+                    "endOffset": 695
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 649,
+                        "endColumn": 50,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 700,
+                    "endColumn": 61,
+                    "endOffset": 757
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endColumn": 61,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 762,
+                    "endColumn": 61,
+                    "endOffset": 819
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 762,
+                        "endColumn": 61,
+                        "endOffset": 819
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 824,
+                    "endColumn": 65,
+                    "endOffset": 885
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 824,
+                        "endColumn": 65,
+                        "endOffset": 885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 890,
+                    "endColumn": 67,
+                    "endOffset": 953
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 890,
+                        "endColumn": 67,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 958,
+                    "endColumn": 73,
+                    "endOffset": 1027
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 73,
+                        "endOffset": 1027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1032,
+                    "endColumn": 67,
+                    "endOffset": 1095
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1032,
+                        "endColumn": 67,
+                        "endOffset": 1095
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1100,
+                    "endLine": 19,
+                    "endColumn": 9,
+                    "endOffset": 1310
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1100,
+                        "endLine": 19,
+                        "endColumn": 9,
+                        "endOffset": 1310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1315,
+                    "endColumn": 64,
+                    "endOffset": 1375
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1315,
+                        "endColumn": 64,
+                        "endOffset": 1375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1380,
+                    "endColumn": 67,
+                    "endOffset": 1443
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1380,
+                        "endColumn": 67,
+                        "endOffset": 1443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1448,
+                    "endColumn": 95,
+                    "endOffset": 1539
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1448,
+                        "endColumn": 95,
+                        "endOffset": 1539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1544,
+                    "endColumn": 57,
+                    "endOffset": 1597
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1544,
+                        "endColumn": 57,
+                        "endOffset": 1597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1602,
+                    "endColumn": 105,
+                    "endOffset": 1703
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1602,
+                        "endColumn": 105,
+                        "endOffset": 1703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1708,
+                    "endColumn": 63,
+                    "endOffset": 1767
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1708,
+                        "endColumn": 63,
+                        "endOffset": 1767
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1772,
+                    "endColumn": 103,
+                    "endOffset": 1871
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1772,
+                        "endColumn": 103,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1876,
+                    "endColumn": 36,
+                    "endOffset": 1908
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1876,
+                        "endColumn": 36,
+                        "endOffset": 1908
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1913,
+                    "endColumn": 119,
+                    "endOffset": 2028
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1913,
+                        "endColumn": 119,
+                        "endOffset": 2028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2033,
+                    "endLine": 33,
+                    "endColumn": 8,
+                    "endOffset": 2228
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2033,
+                        "endLine": 33,
+                        "endColumn": 8,
+                        "endOffset": 2228
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2233,
+                    "endLine": 38,
+                    "endColumn": 8,
+                    "endOffset": 2428
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2233,
+                        "endLine": 38,
+                        "endColumn": 8,
+                        "endOffset": 2428
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2433,
+                    "endLine": 42,
+                    "endColumn": 8,
+                    "endOffset": 2576
+                },
+                "from": {
+                    "file": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2433,
+                        "endLine": 42,
+                        "endColumn": 8,
+                        "endOffset": 2576
+                    }
+                }
+            }
+        ]
+    }
+]

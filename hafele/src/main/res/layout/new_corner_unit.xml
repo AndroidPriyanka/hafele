@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/customer_information_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 1"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Check if Part List is complete"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wrong_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Reason For Wrong Product"
+                    android:textSize="@dimen/content_text_size" />
+
+                <Spinner
+                    android:id="@+id/spin_wrong_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dropdown"
+                    android:entries="@array/spinner_wrong_product" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 2"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Check if the correct fitting is ordered (right/left)"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 3"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cabinet_hei"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Cabinet Height  "
+                    android:textSize="@dimen/content_text_size" />
+
+                <EditText
+                    android:id="@+id/cabinet_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cabinet_wid"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Cabinet Width "
+                    android:textSize="@dimen/content_text_size" />
+
+                <EditText
+                    android:id="@+id/cabinet_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cabinet_dep"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Cabinet Depth "
+                    android:textSize="@dimen/content_text_size" />
+
+                <EditText
+                    android:id="@+id/cabinet_depth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:hint="mm"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Check if the size of the cabinet is more than min. space for corner unit"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 4"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Check if the Door (Opening) dimensions are correct"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 5"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Check Installation as per template"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 6"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Check for Plinth legs"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stp_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Step 7"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text="Check Hinges"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cu_chk_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="Yes" />
+
+                <CheckBox
+                    android:id="@+id/cu_chk_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector"
+                    android:text="No" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/attach_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="5dp"
+                    android:text="Attach Image"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/attach_vid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="5dp"
+                    android:text="Attach Video"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/content_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/img_grid"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.10"
+                    android:numColumns="3" />
+
+
+                <!-- <GridView -->
+                <!-- android:id="@+id/video_grid" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="120dp" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:numColumns="3" /> -->
+
+                <ImageView
+                    android:id="@+id/video_grid"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_deleteVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:text="Delete"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/content_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/new_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Status "
+                    android:textSize="@dimen/content_text_size" />
+
+                <Spinner
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/dropdown"
+                    android:entries="@array/status" />
+            </LinearLayout>
+            <!--
+                        <LinearLayout
+                            android:id="@+id/unresolved"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Reason for Unresolved "
+                                android:textSize="@dimen/content_text_size" />
+
+                            <Spinner
+                                android:id="@+id/unresolve_reason"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:background="@drawable/dropdown"
+                                android:entries="@array/reason_array" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/others"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Other "
+                                android:textSize="@dimen/content_text_size" />
+
+                            <EditText
+                                android:id="@+id/other_reason"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_background"
+                                android:padding="5dp" />
+                        </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Comments "
+                    android:textSize="@dimen/content_text_size" />
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdStringo</string>
+    <string name="invokeButton">Invoke</string>
+    <string name="license">License Type: </string>
+<string name="startDemoAct">Run AdStringo Commands</string>
+<string name="welcome_demo">AdStringo Demo Activity shows how every application or service can use FFMpeg.</string>
+<string name="commandTextView">This command will rotate /sdcard/vid.mp4 90 degrees, and create /sdcard/videokit/out.mp4:</string>
+<string name="commandText">ffmpeg -y -i /sdcard/videokit/in.mp4 -strict experimental -vf transpose=1 -s 160x120 -r 30 -aspect 4:3 -ab 48000 -ac 2 -ar 22050 -b 2097k /sdcard/videokit/out.mp4</string>
+
+    <string name="ui_ok">OK</string>
+<string name="aboutButton">About AdStringo</string>
+<string name="contactButton">Contact us</string>
+<string name="purchase">Add FFmpeg support to your app</string>
+    <string name="dialog_error_title">Error</string>
+
+    <string name="notif_message_ok">Process Finished</string>
+<string name="notif_message_fail">Process failed</string>
+<string name="notif_message_stopping">Stopping Process</string>
+<string name="notif_message_stopped">Process stopped</string>
+<string name="notif_progress_title">Process is running</string>
+<string name="notif_progress_desc">Click to see progress log</string>
+
+
+    <string name="show_file_title1">Last Run Log</string>
+<string name="show_file_title2">Its recommended to send us a video sample in case of failure</string>
+<string name="show_file_text">Log is empty, Log is generated after a compress run.</string>
+    <string name="trascoding_running_background_message">Process is running in the background.</string>
+
+<string name="progress_dialog_title">Process Status</string>
+<string name="progress_dialog_message">Working...\n 
+Click on the home or back to push to the background,\n You will be notified when finished.\n 
+Force stop this transcoding by clicking on Cancel. \n
+</string>
+
+</resources>

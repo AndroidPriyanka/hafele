@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" 
+   android:background="#EBEBEB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+          <ImageView 
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/text_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complain No:" 
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/complain_number"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text" 
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complain Date:" 
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/complain_date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="datetime" 
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Complaint Details"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/header_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article No:" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature of Problem" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ListView
+            android:id="@+id/details_list"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional comments:" 
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/rectification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectifications Done:"
+                android:textSize="16sp" 
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/rectification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/visit_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site Visit No:" 
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/visit_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dt_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="site visit Date/Time:" 
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/visit_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/technician_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Tecnician Present:"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:id="@+id/tech_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tech_spec_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Technical Specifications"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tech_spec_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Length" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Width" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height" 
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks" 
+                    android:textSize="16sp"/>
+            </TableRow>
+        </TableLayout>
+
+        <ListView
+            android:id="@+id/remarks_list"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent" />
+        
+<!--         <Button android:id="@+id/next" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:text="Next"/> -->
+    </LinearLayout>
+
+</ScrollView>

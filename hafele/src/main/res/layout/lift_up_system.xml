@@ -1,0 +1,652 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:padding="5dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/customer_information_form" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#808080" />
+
+        <TextView
+            android:id="@+id/stp_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Step 1"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/txt_1"
+            android:textSize="@dimen/content_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/door_wdt_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Width  "
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/door_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="   mm"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="@dimen/content_text_size" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/door_hgt_txt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Height  "
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/door_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="   mm"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/door_thickness_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Thickness  "
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/door_thickness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="   mm"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/glass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Glass" />
+
+            <RadioButton
+                android:id="@+id/wood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Wood" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Weight of Door  "
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/door_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="5dp" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/wd_wgt_text" -->
+        <!-- android:layout_width="400dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="Wooden Door : Width X Height X Thickness X 700 = " -->
+        <!-- android:textSize="@dimen/content_text_size" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/w_door_wgt" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/edittext_background" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:textSize="@dimen/content_text_size" -->
+        <!-- android:inputType="number" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="5dp" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/g_wgt_text" -->
+        <!-- android:layout_width="400dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="Glass Door : Width X Height X Thickness X 2500 = " -->
+        <!-- android:textSize="@dimen/content_text_size" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/g_door_wgt" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/edittext_background" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:textSize="@dimen/content_text_size" -->
+        <!-- android:inputType="number" /> -->
+        <!-- </LinearLayout> -->
+        
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/handle_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Handle Weight(in Kgs)"
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/handle_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:hint="  Kgs"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pf_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Power Factor "
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/power_factor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="number"
+                android:padding="5dp" 
+                android:enabled="false"
+                android:textSize="@dimen/content_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Power Factor for product is in available range"
+            android:textSize="@dimen/content_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/ls_chk_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="Yes" />
+
+            <CheckBox
+                android:id="@+id/ls_chk_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="No" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stp_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Step 2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Is Lift Mechanism installed correctly?"
+                    android:textSize="@dimen/content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="Yes"
+                        android:textSize="@dimen/content_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="No"
+                        android:textSize="@dimen/content_text_size" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Arms installed correctly? "
+                    android:textSize="@dimen/content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="Yes"
+                        android:textSize="@dimen/content_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="No"
+                        android:textSize="@dimen/content_text_size" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Arms of the correct size?"
+                    android:textSize="@dimen/content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="Yes"
+                        android:textSize="@dimen/content_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/ls_chk_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_selector"
+                        android:text="No"
+                        android:textSize="@dimen/content_text_size" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/stp_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Step 3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/txt_10"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/ls_chk_9"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="Yes" />
+
+            <CheckBox
+                android:id="@+id/ls_chk_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="No" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/attach_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:padding="5dp"
+                android:text="Attach Image"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/attach_vid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:padding="5dp"
+                android:text="Attach Video"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/content_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/img_grid"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.10"
+                android:numColumns="3" />
+
+            <!-- <GridView -->
+            <!-- android:id="@+id/video_grid" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="120dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:numColumns="3" /> -->
+
+            <ImageView
+                android:id="@+id/video_grid"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btn_deleteVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/content_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/new_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Status :"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/dropdown"
+                android:entries="@array/status" />
+        </LinearLayout>
+
+     <!--   <LinearLayout
+            android:id="@+id/unresolved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Reason for Unresolved :"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/unresolve_reason"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/dropdown"
+                android:entries="@array/reason_array" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Other "
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/other_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Comments :"
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

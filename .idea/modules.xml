@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hafele.iml" filepath="$PROJECT_DIR$/Hafele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" filepath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hafele/hafele.iml" filepath="$PROJECT_DIR$/hafele/hafele.iml" />
+    </modules>
+  </component>
+</project>

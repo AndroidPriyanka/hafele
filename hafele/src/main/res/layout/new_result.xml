@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/unresolved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Result "
+            android:textSize="@dimen/content_text_size" />
+
+        <Spinner
+            android:id="@+id/unresolve_reason"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/dropdown"
+            android:entries="@array/result_array" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_site_issue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Site Issue Reason "
+            android:textSize="@dimen/content_text_size" />
+
+        <Spinner
+            android:id="@+id/spin_siteIssueReason_reason"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/dropdown"
+            android:entries="@array/site_issue" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_product_defect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/reason1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Spare defect (article no) "
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/edt_spare_defect_articleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/reason2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Complete set (article no) "
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@+id/edt_complete_set_articleNo"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Action "
+            android:textSize="@dimen/content_text_size" />
+
+        <Spinner
+            android:id="@+id/spin_action"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/dropdown"
+            android:entries="@array/action_array" />
+    </LinearLayout>
+
+</LinearLayout>
