@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Type of Kitchen sink"
+            android:textSize="@dimen/content_text_size" />
+
+        <Spinner
+            android:id="@+id/spin_type_of_kitchen_sink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dropdown"
+            android:entries="@array/spinner_type_of_kitchen_sink" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Step 1"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Product"
+                android:textSize="@dimen/content_text_size" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group_kitchen_sink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_kitchen_sink_wrong_product"
+                android:layout_marginLeft="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Wrong Product" />
+
+            <RadioButton
+                android:id="@+id/radio_kitchen_sink_wrong_installation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Wrong Installation" />
+
+            <RadioButton
+                android:id="@+id/radio_kitchen_sink_damage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Product damage" />
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Step 2"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Leakage"
+                android:textSize="@dimen/content_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/leakage_kitchen_sink_chk_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="Yes" />
+
+            <CheckBox
+                android:id="@+id/leakage_kitchen_sink_chk_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="No" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_type_of_kitchen_sink_leakage_if_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Type of Leakage"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/spin_kitchen_sink_leakage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dropdown"
+                android:entries="@array/spinner_kitchen_leakage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Step 3"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Drainage"
+                android:textSize="@dimen/content_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/drainage_chk_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="Yes" />
+
+            <CheckBox
+                android:id="@+id/drainage_chk_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="No" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_type_of_drainage_if_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Type of Drainage"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/spin_kitchen_sink_draonage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dropdown"
+                android:entries="@array/spinner_kitchen_drainage" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Step 4"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Asthetics"
+                android:textSize="@dimen/content_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/kitchen_sink_asthetics_chk_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="Yes" />
+
+            <CheckBox
+                android:id="@+id/kitchen_sink_asthetics_chk_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:text="No" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_kitchen_sink_asthetics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Type of Asthetics"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/spin_kitchen_sink_asthetics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dropdown"
+                android:entries="@array/spinner_kitchen_asthetics" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Warranty"
+                android:textSize="@dimen/content_text_size" />
+
+            <Spinner
+                android:id="@+id/spin_kitchen_sink_warranty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dropdown"
+                android:entries="@array/spinner_warranty" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>

@@ -74,6 +74,137 @@
         <item>Material not received"</item>
         <item>Spare not available</item>
     </string-array>
+    <string-array name="spinner_accessories_asthesis">
+        <item>--Select--</item>
+        <item>Asthetics</item>
+        <item>Damage</item>
+        <item>Spot</item>
+        <item>Scratches</item>
+        <item>Chp/Peel</item>
+        <item>Rusting</item>
+    </string-array>
+    <string-array name="spinner_ceramic_basin_asthetics">
+        <item>--Select--</item>
+        <item>Chip/Peel</item>
+        <item>Spider line crack</item>
+        <item>Waveness</item>
+        <item>Logo issue</item>
+    </string-array>
+    <string-array name="spinner_ceramic_basin_drainage">
+        <item>--Select--</item>
+        <item>Clog</item>
+        <item>Improper slope</item>
+    </string-array>
+    <string-array name="spinner_ceramic_basin_leakage">
+        <item>--Select--</item>
+        <item>Crack on Surface</item>
+        <item>Edges</item>
+        <item>Drainage</item>
+    </string-array>
+    <string-array name="spinner_kitchen_asthetics">
+        <item>--Select--</item>
+        <item>No chip/Peel</item>
+        <item>Rusting</item>
+        <item>Black spots</item>
+        <item>Stains</item>
+        <item>Scratches</item>
+    </string-array>
+    <string-array name="spinner_kitchen_drainage">
+        <item>--Select--</item>
+        <item>Clog</item>
+        <item>Improper slope</item>
+    </string-array>
+    <string-array name="spinner_kitchen_leakage">
+        <item>--Select--</item>
+        <item>Crack on Surface</item>
+        <item>Edges</item>
+        <item>Drainage</item>
+    </string-array>
+    <string-array name="spinner_shower_asthetics">
+        <item>--Select--</item>
+        <item>Chip/Peel</item>
+        <item>Finish</item>
+        <item>Colour</item>
+        <item>Edge bend</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="spinner_shower_does_not_operate">
+        <item>--Select--</item>
+        <item>Low Pressure</item>
+        <item>Blockage</item>
+        <item>Hard water</item>
+        <item>Electrical failure</item>
+        <item>SMPS Failure</item>
+        <item>High Voltage</item>
+        <item>Low Voltage</item>
+    </string-array>
+    <string-array name="spinner_shower_leakage">
+        <item>--Select--</item>
+        <item>From Joints</item>
+        <item>Nozzle</item>
+    </string-array>
+    <string-array name="spinner_type_of_cistern">
+        <item>--Select--</item>
+        <item>Concealed</item>
+        <item>Exposed</item>
+    </string-array>
+    <string-array name="spinner_type_of_cistern_asthetics">
+        <item>--Select--</item>
+        <item>Chip/Peel</item>
+        <item>Finesh</item>
+        <item>Crack</item>
+        <item>Scaling</item>
+        <item>Rusting</item>
+
+    </string-array>
+    <string-array name="spinner_type_of_cistern_flush_not_working">
+        <item>--Select--</item>
+        <item>Flush valve Jam</item>
+        <item>No fill</item>
+        <item>Improper installation</item>
+    </string-array>
+    <string-array name="spinner_type_of_cistern_leakage">
+        <item>--Select--</item>
+        <item>Running Toilet</item>
+        <item>Flush Valve</item>
+        <item>Fill Valve</item>
+        <item>Gasket</item>
+        <item>Scaling dust particle</item>
+    </string-array>
+    <string-array name="spinner_type_of_cistern_work_flow">
+        <item>--Select--</item>
+        <item>Improper water level</item>
+        <item>Issue with toilet</item>
+    </string-array>
+    <string-array name="spinner_type_of_faucet">
+        <item>--Select--</item>
+        <item>Kitchen Mixture</item>
+        <item>Shower Mixture</item>
+        <item>Basin Mixture</item>
+        <item>Cold Only</item>
+    </string-array>
+    <string-array name="spinner_type_of_kitchen_sink">
+        <item>--Select--</item>
+        <item>Stainless Steel</item>
+        <item>Blanco</item>
+    </string-array>
+    <string-array name="spinner_type_of_leakage_faucet">
+        <item>--Select--</item>
+        <item>Inlet hose</item>
+        <item>Cartridge</item>
+        <item>Lever handle</item>
+        <item>Body</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="spinner_type_of_shower">
+        <item>--Select--</item>
+        <item>Electrical</item>
+        <item>Non-electrical</item>
+    </string-array>
+    <string-array name="spinner_warranty">
+        <item>--Select--</item>
+        <item>Out Warranty</item>
+    </string-array>
     <string-array name="spinner_wrong_product">
         <item>--Select--</item>
         <item>Wrong Product</item>

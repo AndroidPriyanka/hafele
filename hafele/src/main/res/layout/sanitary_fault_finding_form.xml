@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                layout="@layout/customer_information_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_sanitary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radio_faucet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Faucet" />
+
+                <RadioButton
+                    android:id="@+id/radio_cistern"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Cistern" />
+
+                <RadioButton
+                    android:id="@+id/radio_kitchensink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Kitchen Sink" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+                <RadioButton
+                    android:id="@+id/radio_ceramic_basin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Ceramic Basin" />
+
+                <RadioButton
+                    android:id="@+id/radio_showers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Showers" />
+
+                <RadioButton
+                    android:id="@+id/radio_accessories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/chekcbox_selector"
+                    android:text="Accessories" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_faucet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/faucet_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_cistern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/cistern_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_kitchensinc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/kitchen_sink_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_ceramic_basin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/creamic_basin_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_showers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/showers_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/accessories_layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/bottom_linearl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attach_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:padding="5dp"
+                        android:text="Attach Image"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/content_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/attach_vid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:padding="5dp"
+                        android:text="Attach Video"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/content_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/img_grid"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.10"
+                        android:numColumns="3" />
+
+
+                    <!-- <GridView -->
+                    <!-- android:id="@+id/video_grid" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="120dp" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:layout_marginTop="5dp" -->
+                    <!-- android:numColumns="3" /> -->
+
+                    <ImageView
+                        android:id="@+id/video_grid"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_deleteVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background"
+                            android:text="Delete"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/content_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/new_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Status "
+                        android:textSize="@dimen/content_text_size" />
+
+                    <Spinner
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:background="@drawable/dropdown"
+                        android:entries="@array/status" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Comments "
+                        android:textSize="@dimen/content_text_size" />
+
+                    <EditText
+                        android:id="@+id/comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

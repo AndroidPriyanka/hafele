@@ -1,4 +1,4 @@
-#Thu Oct 12 14:56:48 IST 2017
-base.0=D\:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Thu Nov 02 16:58:24 IST 2017
+base.0=D\:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=D\:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=D\:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

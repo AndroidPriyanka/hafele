@@ -1,82 +1,42 @@
 [
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_off.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_off.png"
     },
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_off.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_off.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\checked.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\checked.png"
     },
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\uncheck.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\uncheck.png"
     },
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon.png"
     },
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\checked.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\checked.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon1.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon1.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_off.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_off.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_checked.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_checked.png"
     },
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_off.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_off.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_off.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_off.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_checked.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_checked.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_on.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_on.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_checked.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_checked.png"
-    },
-    {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_on.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_on.png"
-    },
-    {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon1.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon1.png"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon1.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\icon1.png"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\checked.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\checked.png"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\uncheck.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\uncheck.png"
-    },
-    {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\uncheck.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\uncheck.png"
-    },
-    {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_checked.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_checked.png"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_off.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_off.png"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_on.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\radio_on.png"
-    },
-    {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_checked.png",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_checked.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\check_checked.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-xxhdpi\\check_checked.png"
     }
 ]

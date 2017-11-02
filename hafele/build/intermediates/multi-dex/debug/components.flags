@@ -1,7 +1,7 @@
--injars 'D:\Hafale Final Production Release 1.8\Source Code\Hafele\hafele\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'D:\Hafale Final Production Release 1.8\Source Code\Hafele\hafele\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'D:\Aniket_workspace\hafele\hafele\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\Aniket_workspace\hafele\hafele\build\intermediates\multi-dex\debug\componentClasses.jar'
 
--libraryjars 'C:\Users\USER\AppData\Local\Android\Sdk\build-tools\25.0.2\lib\shrinkedAndroid.jar'
+-libraryjars 'C:\Users\komal\AppData\Local\Android\Sdk\build-tools\25.0.2\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration 'D:\Hafale Final Production Release 1.8\Source Code\Hafele\hafele\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'D:\Aniket_workspace\hafele\hafele\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep public class * extends android.app.Instrumentation {

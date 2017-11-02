@@ -2,8 +2,6 @@ package com.sudesi.hafele.webservice;
 
 import java.io.IOException;
 import java.io.StringReader;
-import java.net.URLEncoder;
-import java.util.HashMap;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -30,18 +28,22 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import android.R.integer;
 import android.content.Context;
 import android.util.Log;
 
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.Feedback;
+import com.sudesi.hafele.classes.Sanitary_Details;
 
 public class HafeleWebservice {
     Context con;
 
-     String url = "http://tab.hinccms.in/Service1.svc"; // Final Production Link India
+   //  String url = "http://tab.hinccms.in/Service1.svc"; // Final Production Link India
   //  String url = "http://tabsrilanka.hinccms.in/Service1.svc"; //Shrilanka production apk link
+
+  String url ="http://192.168.0.130/ccms/Service1.svc";  // ...._local uat
+    //151
+    //121
 
 
     // String url = "http://hafelereportws.smartforcecrm.com/Service1.svc";
@@ -57,6 +59,8 @@ public class HafeleWebservice {
 //	String compressionUrl = "http://23.229.229.20/activation/service.svc";//old Pro
 
     String smsUrl = "http://180.179.146.71/api/v3/sendsms/plain?user=Hafele1&password=HaFeLe12&sender=Hafele";
+
+  // "http://203.153.222.25:5000/sms/send_sms.php?username=hafele&password=Test123&src=Hafele&dst=" + mobile + "&msg=" + message + "&dr=1";
 
     //	string url = "http://180.179.146.71/api/v3/sendsms/plain?user=Hafele1&password=HaFeLe12&sender=Hafele&SMSText=" + message + "&GSM=" + mobile;
 
@@ -401,6 +405,78 @@ public class HafeleWebservice {
         return result;
     }
 
+    //.........................Sanitary Details page .........................
+
+    public SoapPrimitive insert_Sanitary_Details(Sanitary_Details sanitary_details) {
+        SoapPrimitive result = null;
+        try {
+            int delayed_days = 0;
+
+
+            SoapObject request = new SoapObject("http://tempuri.org/", "Insert_Sanitary_Details");
+            // request.addProperty("Status", status);
+          //  request.addProperty("fault_ref_id", responceId);
+            request.addProperty("Complaint_No", sanitary_details.Complant_No);
+            request.addProperty("radio_sanitary", sanitary_details.radio_sanitary);
+            request.addProperty("type_of_sanitary", sanitary_details.type_of_sanitary);
+            request.addProperty("sanitary_product", sanitary_details.sanitary_product);
+            request.addProperty("sanitary_leakage", sanitary_details.sanitary_leakage);
+            request.addProperty("sanitary_type_of_leakage", sanitary_details.sanitary_type_of_leakage);
+            request.addProperty("does_not_operate", sanitary_details.does_not_operate);
+            request.addProperty("type_does_not_operate", sanitary_details.type_does_not_operate);
+            request.addProperty("weak_flow", sanitary_details.weak_flow);
+            request.addProperty("type_of_weak_flow", sanitary_details.type_of_weak_flow);
+            request.addProperty("asthetics", sanitary_details.asthetics);
+            request.addProperty("type_of_asthetics", sanitary_details.type_of_asthetics);
+            request.addProperty("warranty", sanitary_details.warranty);
+            request.addProperty("noise", sanitary_details.noise);
+            request.addProperty("flush_not_working", sanitary_details.flush_not_working);
+            request.addProperty("type_of_flush_not_working", sanitary_details.type_of_flush_not_working);
+            request.addProperty("drainage", sanitary_details.drainage);
+            request.addProperty("type_of_drainage", sanitary_details.type_of_drainage);
+            request.addProperty("Closure_Status", sanitary_details.Closure_Status);
+            request.addProperty("LMD", sanitary_details.LMD);
+            request.addProperty("Accepted_Date",sanitary_details.date);
+            request.addProperty("Called_Date",sanitary_details.date);
+            request.addProperty("Updated_Date",sanitary_details.Updated_Date);
+            request.addProperty("Closed_Date",sanitary_details.Closed_Date);
+            request.addProperty("delayed_days",delayed_days);
+
+
+            Log.e("REQUEST", request.toString());
+            // ArrayList<HeaderProperty> headerPropertyArrayList = new
+            // ArrayList<HeaderProperty>();
+            // headerPropertyArrayList.add(new HeaderProperty("Connection",
+            // "close"));
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+                    SoapEnvelope.VER11);// soap envelop with version
+            envelope.setOutputSoapObject(request); // set request object
+            envelope.dotNet = true;
+            HttpTransportSE androidHttpTransport = new HttpTransportSE(url);// http
+            // transport
+            // call
+            androidHttpTransport.call("http://tempuri.org/IService1/Insert_Sanitary_Details", envelope);
+            // response soap object
+            result = (SoapPrimitive) envelope.getResponse();
+            Log.e("Insert_Sanitary_Details", result.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public SoapPrimitive SaveFeedback(Feedback feedback) {
         SoapPrimitive result = null;
         try {
@@ -679,28 +755,7 @@ public class HafeleWebservice {
                 res = false;
             }
 
-//			    StatusLine statusLine = response.getStatusLine();
-//			    if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
-//			    	
-//			    	ByteArrayOutputStream out = new ByteArrayOutputStream();
-//                    response.getEntity().writeTo(out);
-//                    responseString = out.toString();
-//                    out.close();
-//                    
-//                    Log.e("responseString", responseString);
-//                    
-//                    XmlPullParserFactory pullParserFactory  = XmlPullParserFactory.newInstance();
-//                    XmlPullParser parser = pullParserFactory.newPullParser();
-//                    InputStream is = new ByteArrayInputStream(responseString.getBytes("UTF-8"));
-//                    parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-//                    parser.setInput(is, null);
-//                    parseXML(parser);
-//                    
-//                } else {
-//                    //Closes the connection.
-//                    response.getEntity().getContent().close();
-//                    throw new IOException(statusLine.getReasonPhrase());
-//                }
+
 
 
         } catch (Exception e) {
@@ -816,118 +871,7 @@ public class HafeleWebservice {
     }
 
 	
-	  /* public SoapObject getComplainOrServiceRequests1(String status, int user_id) {
-        SoapObject result = null;
-        try {
-            SoapObject request = new SoapObject("http://tempuri.org/",
-                    "getComplainOrServiceRequests1");
-            request.addProperty("Status", status);
-            request.addProperty("FkTechId", user_id);
 
-            Log.e("REQUEST", request.toString());
-            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
-                    SoapEnvelope.VER11);// soap envelop with version
-            envelope.setOutputSoapObject(request); // set request object
-            envelope.dotNet = true;
-            HttpTransportSE androidHttpTransport = new HttpTransportSE(url);// http
-            // transport
-            // call
-            androidHttpTransport
-                    .call("http://tempuri.org/IService1/getComplainOrServiceRequests1",
-                            envelope);
-            // response soap object
-            result = (SoapObject) envelope.getResponse();
-            Log.e("getComplainOrServiceRequests1", result.toString());
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return result;
-    }*/
-
-//	private void parseXML(XmlPullParser parser) throws XmlPullParserException,IOException
-//	{
-//		ArrayList<SMSResponse> products = null;
-//        int eventType = parser.getEventType();
-//        SMSResponse currentProduct = null;
-//
-//        while (eventType != XmlPullParser.END_DOCUMENT){
-//        	Log.e("ENTER-", "while loop");
-//            String name = null;
-//            switch (eventType){
-//                case XmlPullParser.START_DOCUMENT:
-//                	products = new ArrayList<SMSResponse>();
-//                	Log.e("ENTER-", "swicth case -1");
-//                    break;
-//                case XmlPullParser.START_TAG:
-//                	
-//                    name = parser.getName();
-//                    Log.e("start name", name);
-//                    if(name.equals("results"))
-//                    {
-//                    	 Log.e("start name", name);
-//                    }
-//                    else if(name.equals("result"))
-//                    {
-//                    	 Log.e("start name", name);
-//                    	currentProduct = new SMSResponse();
-//                    }
-//                    else if(name.equals("status"))
-//                    {
-//                    	 Log.e("start name", name);
-//                    	 System.out.println("status value==");
-//                    	currentProduct.status = parser.getProperty(name).toString();
-//                    	
-//                    }
-//                    else if(name.equals("messageid"))
-//                    {
-//                    	 Log.e("start name", name);
-//                    	 System.out.println("messageid value=="+ parser.getProperty(name));
-//                    	currentProduct.messageid = parser.getProperty(name).toString();
-//                    }
-//                    else if(name.equals("destination"))
-//                    {
-//                    	 Log.e("start name", name);
-//                    	 System.out.println("destination value=="+ parser.getProperty(name));
-//                    	currentProduct.destination = parser.getProperty(name).toString();
-//                    }
-//                   
-//                    break;
-//                case XmlPullParser.END_TAG:
-//                    name = parser.getName();
-//                    Log.e("end name", name);
-////                    Log.e("ENTER-", "switch case-3");
-//                    if (name.equalsIgnoreCase("results") ){
-//                    	 Log.e("end name", name);
-//                    	products.add(currentProduct);
-//                    } 
-//            }
-//            eventType = parser.next();
-//        }
-//        
-//        
-//        Log.e("Array", products.toString());
-//
-////        printProducts(products);
-//	}
-//	
-//	private void printProducts(ArrayList<SMSResponse> products)
-//	{
-//		String content = "";
-//		Iterator<SMSResponse> it = products.iterator();
-//		while(it.hasNext())
-//		{
-//			SMSResponse currResponse  = it.next();
-//			content = content + "nnnProduct :" +  currResponse.status + "n";
-//			content = content + "Quantity :" +  currResponse.messageid + "n";
-//			content = content + "Color :" +  currResponse.destination + "n";
-//
-//		}
-//		
-//		System.out.println("CONTENT == " + content);
-//
-//	
-//	}
 
 
 }

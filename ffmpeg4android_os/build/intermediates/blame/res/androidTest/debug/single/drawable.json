@@ -1,14 +1,14 @@
 [
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg.png",
+        "source": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\notification_icon.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_icon.png",
+        "source": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\notification_icon.png"
     },
     {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon.png",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon.png"
+        "merged": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon.png",
+        "source": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon.png"
     }
 ]

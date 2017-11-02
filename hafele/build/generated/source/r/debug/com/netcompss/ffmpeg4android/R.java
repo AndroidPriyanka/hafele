@@ -13,31 +13,31 @@ public final class R {
         public static final int notification_icon = 0x7f020020;
     }
     public static final class id {
-        public static final int CommandText = 0x7f0900af;
-        public static final int CommandTextView = 0x7f0900ae;
-        public static final int ScrollView01 = 0x7f0900ad;
-        public static final int aboutButton = 0x7f0901b3;
+        public static final int CommandText = 0x7f0900f2;
+        public static final int CommandTextView = 0x7f0900f1;
+        public static final int ScrollView01 = 0x7f0900f0;
+        public static final int aboutButton = 0x7f090208;
         public static final int about_content = 0x7f090000;
-        public static final int contactButton = 0x7f0901b2;
-        public static final int contact_us_content = 0x7f090031;
-        public static final int del1 = 0x7f0900b1;
-        public static final int invokeButton = 0x7f0900b0;
-        public static final int license = 0x7f0901af;
-        public static final int purchase = 0x7f0901b1;
-        public static final int showFileDone = 0x7f0901c3;
-        public static final int showFileSend = 0x7f0901c4;
-        public static final int showFileTitle1 = 0x7f0901c1;
-        public static final int showFileTitle2 = 0x7f0901c2;
-        public static final int showFiletextView1 = 0x7f0901c5;
-        public static final int showLastRunLogButton = 0x7f0900b2;
-        public static final int startDemoAct = 0x7f0901b0;
+        public static final int contactButton = 0x7f090207;
+        public static final int contact_us_content = 0x7f090050;
+        public static final int del1 = 0x7f0900f4;
+        public static final int invokeButton = 0x7f0900f3;
+        public static final int license = 0x7f090204;
+        public static final int purchase = 0x7f090206;
+        public static final int showFileDone = 0x7f090226;
+        public static final int showFileSend = 0x7f090227;
+        public static final int showFileTitle1 = 0x7f090224;
+        public static final int showFileTitle2 = 0x7f090225;
+        public static final int showFiletextView1 = 0x7f090228;
+        public static final int showLastRunLogButton = 0x7f0900f5;
+        public static final int startDemoAct = 0x7f090205;
     }
     public static final class layout {
         public static final int about_dialog = 0x7f030000;
-        public static final int contact_us_dialog = 0x7f030006;
-        public static final int ffmpeg_demo_client2 = 0x7f03000f;
-        public static final int remoteserviceclient = 0x7f030026;
-        public static final int show_file = 0x7f03002a;
+        public static final int contact_us_dialog = 0x7f030008;
+        public static final int ffmpeg_demo_client2 = 0x7f030013;
+        public static final int remoteserviceclient = 0x7f03002b;
+        public static final int show_file = 0x7f030030;
     }
     public static final class string {
         public static final int aboutButton = 0x7f070000;

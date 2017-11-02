@@ -67,4 +67,6 @@ public class FaultReport {
     //BLUM corner unit
     public String fitting_templete,front_adjustments,correct_no_of_screws,correct_spacing,Empty_the_drawer,dust_gathers,third_hinge_is_used,synchro_motion_working_properly;
 
+
+
 }

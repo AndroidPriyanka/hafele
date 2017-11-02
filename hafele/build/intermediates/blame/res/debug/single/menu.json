@@ -1,10 +1,6 @@
 [
     {
-        "merged": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\menu\\main_launcher.xml",
-        "source": "D:\\Komal\\New Hafale\\workspace1\\Hafele\\hafele\\src\\main\\res\\menu\\main_launcher.xml"
-    },
-    {
-        "merged": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\menu\\main_launcher.xml",
-        "source": "D:\\Hafale Final Production Release 1.8\\Source Code\\Hafele\\hafele\\src\\main\\res\\menu\\main_launcher.xml"
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\menu\\main_launcher.xml",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\menu\\main_launcher.xml"
     }
 ]

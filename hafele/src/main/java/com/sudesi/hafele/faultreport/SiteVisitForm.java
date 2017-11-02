@@ -55,6 +55,8 @@ import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -63,6 +65,7 @@ import com.netcompss.ffmpeg4android_client.BaseWizard;
 import com.sudesi.hafele.adapter.ImageGridAdapter;
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.ImageData;
+import com.sudesi.hafele.classes.Sanitary_Details;
 import com.sudesi.hafele.classes.SignatureView;
 import com.sudesi.hafele.classes.VideoData;
 import com.sudesi.hafele.database.HafeleFaultReportDBAdapter;
@@ -138,7 +141,13 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 
     SendSMSAsync sendSMSAsync;
     String product_group;
-
+    ContentValues contentValues = new ContentValues();
+    //............sanitary service
+    Sanitary_Details report1 = null;
+    LinearLayout sanitaty_service;
+    RadioGroup radio_group_sanitary_service;
+    RadioButton radio_sanitary_service_wrong_product, radio_sanitary_service_wrong_installation, radio_sanitary_service_product_damage, radio_sanitary_service_guidance_given;
+    Spinner spin_sanitary_service_warranty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -226,6 +235,15 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         message = "Dear+Customer+,+Your+case+" + complaint_number + "+is+closed.+If+the+problem+still+persist,+do+call+us+on+toll+free+no.+18002666667+within+2+working+days.+-+Customer+Care";
 
         //		message = "DearCustomer,Yourcase"+complaint_number+"isclosed.Iftheproblemstillpersist,docallusontollfreeno.18002666667within2workingdays-CustomerCare";
+        sanitaty_service = (LinearLayout) findViewById(R.id.sanitaty_service);
+        radio_group_sanitary_service = (RadioGroup) findViewById(R.id.radio_group_sanitary_service);
+
+        radio_sanitary_service_wrong_product = (RadioButton) findViewById(R.id.radio_sanitary_service_wrong_product);
+        radio_sanitary_service_wrong_installation = (RadioButton) findViewById(R.id.radio_sanitary_service_wrong_installation);
+        radio_sanitary_service_product_damage = (RadioButton) findViewById(R.id.radio_sanitary_service_product_damage);
+        radio_sanitary_service_guidance_given = (RadioButton) findViewById(R.id.radio_sanitary_service_guidance_given);
+        spin_sanitary_service_warranty = (Spinner) findViewById(R.id.spin_sanitary_service_warranty);
+
 
         Log.v("message", message);
 
@@ -241,7 +259,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
             }
         }
 
-       // product_group="Lighting Technology";
+        // product_group="Lighting Technology";
       /*  if (product_group.contains("Lighting Technology")) {
             setContentView(R.layout.new_lighting_service);
             chk_1 = (CheckBox) findViewById(R.id.chk_1);
@@ -257,10 +275,102 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         if (is_visited > 0) {
             report = dbAdapter.getFaultReportDetails(pref.getUserName(),
                     complaint_number);
+            report1 = dbAdapter.getSanitaryReportDetails(pref.getUserName(),
+                    complaint_number);
             imgData = dbAdapter.getImageData(complaint_number, "ALL");
             vidData = dbAdapter.getVideoData(complaint_number);
 
         }
+        //.................................sanitary servie......................
+        if (product_sub_category != null && product_sub_category.contains("Sanitary_abc")) {
+            sanitaty_service.setVisibility(View.VISIBLE);
+
+            if (report1 != null) {
+                if (report1.sanitary_product != null) {
+                    if (report1.sanitary_product.equals("Wrong Product")) {
+                        radio_sanitary_service_wrong_product.setChecked(true);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(true);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                    if (report1.sanitary_product.equals("Product damage")) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(true);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                    if (report1.sanitary_product.equals("Guidance given")) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(true);
+                    }
+                }
+                if (report1.warranty != null) {
+                    int pos = Integer.parseInt(report1.warranty);
+                    spin_sanitary_service_warranty.setSelection(pos);
+                }
+
+            }
+
+
+            radio_sanitary_service_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        radio_sanitary_service_wrong_product.setChecked(true);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                }
+            });
+            radio_sanitary_service_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(true);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                }
+            });
+            radio_sanitary_service_product_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(true);
+                        radio_sanitary_service_guidance_given.setChecked(false);
+                    }
+                }
+            });
+
+            radio_sanitary_service_guidance_given.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        radio_sanitary_service_wrong_product.setChecked(false);
+                        radio_sanitary_service_wrong_installation.setChecked(false);
+                        radio_sanitary_service_product_damage.setChecked(false);
+                        radio_sanitary_service_guidance_given.setChecked(true);
+                    }
+                }
+            });
+
+
+        }
+
+        //.....................................................................................
+
 
         TextView customer_info = (TextView) findViewById(R.id.customer_info);
         // customer_info.setVisibility(View.GONE);
@@ -300,6 +410,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         submit.setOnClickListener(this);
         status = (Spinner) findViewById(R.id.status);
         comments = (EditText) findViewById(R.id.comments);
+
         // final LinearLayout unresolved = (LinearLayout) findViewById(R.id.unresolved);
 
 		/*unresolved.setVisibility(View.GONE);
@@ -439,35 +550,15 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                     edt_spare_defect_articleNo.setText("");
                     edt_complete_set_articleNo.setText("");
 
-                    //    other_reason.setText("null");
-                               /* contentValues.put("Reason_For_Unresolved",
-                                        unresolve_reason.getSelectedItem()
-                                                .toString());*/
+
                 } else {
                     ll_product_defect.setVisibility(View.GONE);
                     ll_site_issue.setVisibility(View.GONE);
                     spin_siteIssueReason_reason.setSelection(0);
                     edt_spare_defect_articleNo.setText("");
                     edt_complete_set_articleNo.setText("");
-                              /*  contentValues.put("Reason_For_Unresolved",
-                                        unresolve_reason.getSelectedItem()
-                                               .toString());*/
                 }
 
-
-/*
-                if (unresolve_reason.getSelectedItem().toString()
-						.equals("Others")) {
-					other.setVisibility(View.VISIBLE);
-					contentvalues.put("Reason_For_Unresolved",
-							other_reason.getText().toString());
-				} else {
-					other.setVisibility(View.GONE);
-					other_reason.setText("null");
-					contentvalues.put("Reason_For_Unresolved",
-							unresolve_reason.getSelectedItem()
-							.toString());
-				}*/
             }
 
             @Override
@@ -484,9 +575,8 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 contentvalues.put("Closure_Status", status.getSelectedItem()
                         .toString());
                 if (position == 1) {
-                    //	unresolved.setVisibility(View.VISIBLE);
+
                 } else {
-                    //	unresolved.setVisibility(View.GONE);
                     contentvalues.put("Reason_For_Unresolved", "");
                 }
             }
@@ -607,7 +697,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         }
                     } else if (index == 1) {
                         unresolve_reason.setSelection(1);
-                    }else if (index == 4) {
+                    } else if (index == 4) {
                         unresolve_reason.setSelection(4);
                     }
                 } else {
@@ -652,12 +742,10 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 if (article_number.getText().toString().trim().equals(""))
                     is_article_no = false;
 
-                if (is_article_no)
-                {
-                   // Boolean result = true;
+                if (is_article_no) {
+                    // Boolean result = true;
 
-                    if (validation() == true)
-                    {
+                    if (validation() == true) {
                         submitData();
                     }
                     /*if (product_group.contains("Lighting Technology") || product_group.equalsIgnoreCase("Lighting Technology")) {
@@ -686,45 +774,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         UtilityClass.showToast(context, "Enter article number");
                 }
 
-                //boolean otherReason = false;
-            /*if (unresolve_reason.getSelectedItem().toString().equals("Others")) {
-				otherReason = Validation.hasText(other_reason);
-				if (other_reason.getText().toString().trim().equals(""))
-					otherReason = false;
-			} else if (status.getSelectedItem().toString()
-					.equalsIgnoreCase("Unresolved")
-					&& unresolve_reason.getSelectedItem().toString()
-					.equalsIgnoreCase("--Select--")) {
-				otherReason = false;
-			}
-		//	if (unresolve_reason.getSelectedItem().toString().equals("Others")) {
-				if (is_article_no && otherReason) {
-					submitData();
-				} else {
-					if (!is_article_no)
-						UtilityClass.showToast(context, "Enter article number");
-					if (!otherReason)
-						UtilityClass.showToast(context,
-								"Other reason cannot be empty");
-				}
-		/*	} else {
-				if (status.getSelectedItem().toString()
-						.equalsIgnoreCase("Unresolved")
-						&& unresolve_reason.getSelectedItem().toString()
-						.equals("--Select--")) {
-					if (!otherReason)
-						UtilityClass.showToast(context,
-								"Reason cannot be empty");
-				} else {
-					if (is_article_no) {
-						submitData();
-					} else {
-						if (!is_article_no)
-							UtilityClass.showToast(context,
-									"Enter article number");
-					}
-				}
-			}*/
 
                 break;
 
@@ -753,8 +802,8 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                                 }
                             }
                         } else if (options[item].equals("Choose Image from Gallery")) {
-						/*Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-						 startActivityForResult(intent, 103);*/
+                        /*Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                         startActivityForResult(intent, 103);*/
 
                             if (fileNameArray != null) {
                                 if (fileNameArray.size() < 10) {
@@ -775,31 +824,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 builder.show();
 
 
-			/*	
-
-			if (fileNameArray != null) {
-				if (fileNameArray.size() < 10) {
-
-					ContentValues values = new ContentValues();
-					values.put(MediaStore.Images.Media.TITLE,
-							System.currentTimeMillis() + ".jpeg");
-					// if directory is not found on device . application fails
-					// to save images on specified path hence crashes
-					mCapturedImageURI = getContentResolver().insert(
-							MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-							values);
-					Intent intentPicture = new Intent(
-							MediaStore.ACTION_IMAGE_CAPTURE);
-					intentPicture.putExtra(MediaStore.EXTRA_OUTPUT,
-							mCapturedImageURI);
-					startActivityForResult(intentPicture, 101);
-
-				} else {
-					UtilityClass.showToast(SiteVisitForm.this,
-							"Only 10 images are allowed");
-				}
-
-			}*/
                 break;
 
             case R.id.attach_vid:
@@ -859,37 +883,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                     }
                 });
                 builder_video.show();
-
-
-			/*if (inputpath != null) {
-				UtilityClass.showToast(SiteVisitForm.this,
-						"Kindly Delete the previous Video to record a new One");
-			} else {
-
-
-
-				Intent vidintent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
-				// vidintent.putExtra(MediaStore.EXTRA_DURATION_LIMIT,
-				// Constants.InputFileSizeParams.FILE_DURATION_SEC);
-				// create a file to save the video
-				try {
-					fileUri = getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
-				} catch (NullPointerException e) {
-					e.printStackTrace();
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-				// set the image file name
-				vidintent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
-				// set the video image quality to high
-
-				vidintent.putExtra("android.intent.extra.durationLimit", 60);
-
-				vidintent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
-				// start the Video Capture Intent
-				startActivityForResult(vidintent,
-						CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE);
-			}*/
 
 
                 break;
@@ -964,7 +957,15 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
     private boolean validation() {
 
         Boolean res = true;
+      /*  if (product_sub_category.contains("Sanitary_abc") || product_sub_category.equalsIgnoreCase("Sanitary_abc")) {
+            if (radio_group_sanitary_service.getCheckedRadioButtonId() == -1) {
+                res = false;
+                UtilityClass.showToast(context,
+                        "Please complete Step 1");
 
+            }
+
+        }*/
         if (unresolve_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
             UtilityClass.showToast(context,
                     "Select Result");
@@ -990,24 +991,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
             for (int i = 0; i < bmpArray.size(); i++) {
                 if (dbAdapter.checkID(fileNameArray.get(i).getName(),
                         "image_details", "image_name")) {
-                    // ContentValues cv = new ContentValues();
-                    // cv.put("image_name", fileNameArray.get(i).getName());
-                    // cv.put("image_path",
-                    // fileNameArray.get(i).getAbsolutePath());
-                    // cv.put("complaint_number", complaint_number);
-                    // cv.put("original_size",
-                    // String.valueOf(orgFileArray.get(i).length()));
-                    // Log.e("original_size",
-                    // String.valueOf(orgFileArray.get(i).length()));
-                    //
-                    // cv.put("compressed_size",
-                    // String.valueOf(fileNameArray.get(i).length()));
-                    // Log.e("compressed_size",
-                    // String.valueOf(fileNameArray.get(i).length()));
-                    // cv.put("upload_status", "NU");
-                    // uploadReponse = dbAdapter.update("image_details", cv,
-                    // "image_name = '" + fileNameArray.get(i).getName()
-                    // + "'", null);
+
                 } else {
                     Log.v("original_size",
                             String.valueOf(orgFileArray.get(i).length()));
@@ -1041,21 +1025,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         + "/AdStringOVideos/Output/" + "OUT_VID" + timeStamp
                         + ".mp4";
                 File file = new File(outvidpath);
-                // save video details to local db
-                // if (dbAdapter.checkID(complaint_number, "video_details",
-                // "complaint_number")) {
-                // ContentValues cv = new ContentValues();
-                // cv.put("VideoFileName", file.getName());
-                // cv.put("FilePath", file.getAbsolutePath());
-                // cv.put("complaint_number", complaint_number);
-                // cv.put("OriginalSize", OriginalSize);
-                // cv.put("CompressedSize", String.valueOf(file.length()));
-                // cv.put("upload_status", "NU");
-                // cv.put("username", pref.getUserName());
-                // uploadReponse = dbAdapter.update("video_details", cv,
-                // "complaint_number = '" + complaint_number + "'",
-                // null);
-                // } else {
+
 
                 Log.v("Page", "SiteVisit");
                 AssetManager assetManager = getAssets();
@@ -1082,13 +1052,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 
                 String logo = u.getPath();
 
-                // String[] complexCommand = { "ffmpeg", "-y", "-i",
-                // inputpath, "-i", logo, "-strict", "experimental",
-                // "-s", "320x240", "-ac", "2", "-ar", "44100", "-b",
-                // "256k", "-filter_complex", "overlay", "-vb", "20M",
-                // outvidpath };
-
-                // 14th Oct 2015 //320x240 //256k
                 String[] complexCommand = {"ffmpeg", "-y", "-i", inputpath,
                         "-i", logo, "-strict", "experimental", "-s", "320x240",
                         "-b", "128k", "-filter_complex", "overlay",
@@ -1107,26 +1070,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 setNotificationStoppedMessage("Process Failed");
                 runTranscoing();
                 OriginalSize = String.valueOf(inputpath.length());// calculated
-                // OG video
-                // size
 
-                // inIt();
-                //
-                // copyLicenseAndDemoFilesFromAssetsToSDIfNeeded();
-                //
-                // setInputFilePath(inputpath);
-                //
-                // setOutputFilePath(outvidpath);
-                //
-                // setCommandComplex();
-                //
-                // runTranscoing();
-
-                // uploadReponse = dbAdapter.saveVideoDetails(file.getName(),
-                // file.getAbsolutePath(), OriginalSize,
-                // String.valueOf(file.length()), complaint_number,
-                // "NU", pref.getUserName(), 1, pref.getDeviceId());
-                // }
 
             } else {
                 if (is_video_attached == true) {
@@ -1147,8 +1091,38 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 
             }
 
+
         }
 
+        Long response1 = (long) 0;
+        if (complaint_number!=null){
+            contentValues.put("Complant_No",complaint_number);
+        }
+        contentValues.put("sync_status", "NU");
+        if (product_sub_category.contains("Sanitary_abc")) {
+            if (radio_sanitary_service_wrong_product.isChecked()) {
+                String str_sanitary_service_wrong_product = radio_sanitary_service_wrong_product.getText().toString();
+                contentValues.put("sanitary_product", str_sanitary_service_wrong_product);
+            } else if (radio_sanitary_service_wrong_installation.isChecked()) {
+                String str_sanitary_service_wrong_installation = radio_sanitary_service_wrong_installation.getText().toString();
+                contentValues.put("sanitary_product", str_sanitary_service_wrong_installation);
+            } else if (radio_sanitary_service_product_damage.isChecked()) {
+                String str_sanitary_service_product_damage = radio_sanitary_service_product_damage.getText().toString();
+                contentValues.put("sanitary_product", str_sanitary_service_product_damage);
+            } else if (radio_sanitary_service_guidance_given.isChecked()) {
+                String str_sanitary_service_guidance_given = radio_sanitary_service_guidance_given.getText().toString();
+                contentValues.put("sanitary_product", str_sanitary_service_guidance_given);
+            }
+            contentValues.put("warranty",spin_sanitary_service_warranty.getSelectedItemPosition());
+            if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                    "Complant_No")) {
+                response1 = (long) dbAdapter.update("sanitary_details",
+                        contentValues, "Complant_No = '" + complaint_number
+                                + "'", null);
+            } else {
+                response1 = dbAdapter.submitQuery1(contentValues);
+            }
+        }
         contentvalues.put("Complant_No", complaint_number);
         contentvalues.put("sync_status", "NU");
         contentvalues.put("Comment", comments.getText().toString());
@@ -1169,14 +1143,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         contentvalues.put("Action", spin_action.getSelectedItem().toString());
         contentvalues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 
-        /*if (other_reason.getText().toString() != null) {
-            if (other_reason.getText().toString().equals("null")) {
-
-            } else {
-                contentvalues.put("Reason_For_Unresolved", other_reason
-                        .getText().toString());
-            }
-        }*/
 
         Calendar calendar = Calendar.getInstance();
         Date updatedDate = calendar.getTime();
@@ -1188,7 +1154,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         String str_closedDate = sdf1.format(closedDate);
 
-        if (contentvalues.get("Closure_Status").equals("Resolved")) {
+        if (!contentvalues.get("Closure_Status").equals("") && contentvalues.get("Closure_Status").equals("Resolved")) {
             contentvalues.put("Updated_Date", str_updatedDate);
             contentvalues.put("Closed_Date", str_closedDate);
         } else {
@@ -1222,39 +1188,6 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 if (contentvalues.get("Closure_Status") != null) {
                     if (contentvalues.get("Closure_Status").equals("Resolved")) {
 
-                        //						if (outvidpath != null) {
-                        //							File file = new File(outvidpath);
-                        //
-                        //							if (dbAdapter.checkID(complaint_number,
-                        //									"video_details", "complaint_number")) {
-                        //
-                        //								ContentValues cv1 = new ContentValues();
-                        //								cv1.put("VideoFileName", file.getName());
-                        //								cv1.put("FilePath", file.getAbsolutePath());
-                        //								cv1.put("complaint_number", complaint_number);
-                        //
-                        //								cv1.put("OriginalSize", OriginalSize);
-                        //								cv1.put("CompressedSize",
-                        //										String.valueOf(file.length()));
-                        //								cv1.put("upload_status", "NU");
-                        //								cv1.put("video_count", 1);
-                        //								cv1.put("Device_id", pref.getDeviceId());
-                        //								cv1.put("username", pref.getUserName());
-                        //								dbAdapter.update("video_details", cv,
-                        //										"complaint_number = '"
-                        //												+ complaint_number + "'", null);
-                        //								Log.e("ContentValues--FaultUpdate",
-                        //										cv1.toString());
-                        //
-                        //							} else {
-                        //								dbAdapter.saveVideoDetails(file.getName(),
-                        //										file.getAbsolutePath(), OriginalSize,
-                        //										String.valueOf(file.length()),
-                        //										complaint_number, "NU",
-                        //										pref.getUserName(), 1,
-                        //										pref.getDeviceId());
-                        //							}
-                        //						}
 
                         showFeedbackForm(complaint_number);
                         contentvalues.clear();
@@ -1607,7 +1540,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         }
 
                         sendSMSAsync = new SendSMSAsync();
-                        sendSMSAsync.execute();
+                        //   sendSMSAsync.execute();
 
                         // }else{
                         // UtilityClass.showToast(context,
@@ -1747,8 +1680,8 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                                                     .getPath());
 
                                 }
-						/*if (fileNameArray.get(position).exists()) {
-							fileNameArray.get(position).delete();
+                        /*if (fileNameArray.get(position).exists()) {
+                            fileNameArray.get(position).delete();
 						}*/
 
 
@@ -2360,9 +2293,9 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 				// *   (non-Javadoc)
 				// * @see android.media.MediaScannerConnection.OnScanCompletedListener#onScanCompleted(java.lang.String, android.net.Uri)
 
-				public void onScanCompleted(String path, Uri uri) 
+				public void onScanCompleted(String path, Uri uri)
 				{
-								
+
 					Log.i("ExternalStorage", "Scanned " + path + ":");
 					Log.i("ExternalStorage", "-> uri=" + uri);
 				}
@@ -2689,7 +2622,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 
 							renamedFile = new File(imagePath.replace(fname,
 									System.currentTimeMillis() + "-"
-											+ complaint_number + "(" 
+											+ complaint_number + "("
 											+ orgFileArray.size() + ").jpg"));
 
 							FileOutputStream fos1 = new FileOutputStream(
@@ -2771,10 +2704,10 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                                 int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap.getWidth()));
                                 Bitmap scaledBM = Bitmap.createScaledBitmap(compressedBitmap, 100, nh, true);
                                 bmpArray.add(scaledBM);
-								
-								
-								
-								
+
+
+
+
 							  /*  imgAdapter.notifyDataSetChanged();
 								fileNameArray.add(renamedFile);*/
 
@@ -2836,17 +2769,17 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 				/*
 				 * if (inputpath != null) { if (!inputpath.equalsIgnoreCase("")
 				 * && is_video_attached == true) {
-				 * 
+				 *
 				 * //java.util.Date date = new java.util.Date(); //String
 				 * timeStamp = new
 				 * SimpleDateFormat("yyyyMMdd_HHmmss").format(date.getTime());
-				 * 
+				 *
 				 * File root = new
 				 * File(Environment.getExternalStorageDirectory() +
 				 * "/AdStringOVideos/Output/");
-				 * 
+				 *
 				 * root.mkdirs();
-				 * 
+				 *
 				 * outvidpath = Environment.getExternalStorageDirectory() +
 				 * "/AdStringOVideos/Output/" + "OUT_VID" + timeStamp + ".mp4";
 				 * File file = new File(outvidpath); Log.e("Page", "SiteVisit");
@@ -2855,30 +2788,30 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 				 * File(getFilesDir(), "logo.png"); try { in =
 				 * assetManager.open("logo.png"); out =
 				 * openFileOutput(f.getName(), Context.MODE_WORLD_READABLE);
-				 * 
+				 *
 				 * copyFile(in, out); in.close(); in = null; out.flush();
 				 * out.close(); out = null; } catch (Exception e) { Log.e("tag",
 				 * e.getMessage());
-				 * 
+				 *
 				 * }
-				 * 
+				 *
 				 * Uri u = Uri.parse("file://" + getFilesDir() + "/logo.png");
-				 * 
+				 *
 				 * String logo = u.getPath();
-				 * 
+				 *
 				 * String[] complexCommand = { "ffmpeg", "-y", "-i", inputpath,
 				 * "-i", logo, "-strict", "experimental", "-s", "320x240", "-b",
 				 * "128k", "-filter_complex", "overlay",
-				 * 
+				 *
 				 * outvidpath };
-				 * 
+				 *
 				 * setCommandComplex(complexCommand);
 				 * setOutputFilePath(outvidpath);
 				 * setProgressDialogTitle("AdStringO Compression");
 				 * setProgressDialogMessage(
 				 * "Depending on your video size, it can take a few minutes..Please Wait.."
 				 * );
-				 * 
+				 *
 				 * setNotificationIcon(R.drawable.icon);
 				 * setNotificationMessage("Process is running...");
 				 * setNotificationTitle("AdStringO Compression");
@@ -2887,7 +2820,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 				 * setNotificationStoppedMessage("Process Failed");
 				 * runTranscoing(); OriginalSize =
 				 * String.valueOf(inputpath.length());//calculated OG video size
-				 * 
+				 *
 				 * } else { AlertDialog.Builder builder1 = new
 				 * AlertDialog.Builder( SiteVisitForm.this);
 				 * builder1.setTitle("Empty file."); builder1.setMessage(
@@ -2898,7 +2831,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 				 * onClick(DialogInterface dialog, int id) { dialog.cancel(); }
 				 * }); AlertDialog alert11 = builder1.create(); alert11.show();
 				 * }
-				 * 
+				 *
 				 * }
 				 */
 
