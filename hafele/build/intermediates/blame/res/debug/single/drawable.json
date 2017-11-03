@@ -40,12 +40,12 @@
         "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable\\img_one.png"
     },
     {
-        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable\\button_focused.xml",
-        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable\\button_focused.xml"
-    },
-    {
         "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
         "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable\\button_focused.xml",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable\\button_focused.xml"
     },
     {
         "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_five.jpg",

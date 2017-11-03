@@ -20,12 +20,12 @@
         "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\logout.png",
-        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-mdpi\\logout.png"
-    },
-    {
         "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\reports.png",
         "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-mdpi\\reports.png"
+    },
+    {
+        "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\logout.png",
+        "source": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\drawable-mdpi\\logout.png"
     },
     {
         "merged": "D:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon1.png",

@@ -183,7 +183,7 @@
 
 
             <LinearLayout
-                android:id="@+id/bottom_linearl2"
+                android:id="@+id/bottom_linearll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone"

@@ -55,6 +55,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
     ProgressDialog progress;
     HafeleWebservice ws;
     HafelePreference pref;
+   public static int delayed_days;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -778,7 +779,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                             if (responseId > 0) {
                                 if (list1.get(i).Closure_Status != null) {
                                     if (list1.get(i).Closure_Status
-                                            .equals("Resolved"))
+                                            .equals("0"))
                                     {
                                         dbAdapter.delete(
                                                 "complaint_service_details",
@@ -800,7 +801,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                 }
                             }
 
-                            int delayed_days = 0;
+
                             int diffInDays = 0;
 
                             String registration_date = list1.get(i).date;

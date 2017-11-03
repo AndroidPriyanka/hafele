@@ -34,6 +34,7 @@ import android.util.Log;
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.Feedback;
 import com.sudesi.hafele.classes.Sanitary_Details;
+import com.sudesi.hafele.faultreport.HomeScreenActivity;
 
 public class HafeleWebservice {
     Context con;
@@ -410,7 +411,6 @@ public class HafeleWebservice {
     public SoapPrimitive insert_Sanitary_Details(Sanitary_Details sanitary_details) {
         SoapPrimitive result = null;
         try {
-            int delayed_days = 0;
 
 
             SoapObject request = new SoapObject("http://tempuri.org/", "Insert_Sanitary_Details");
@@ -440,7 +440,7 @@ public class HafeleWebservice {
             request.addProperty("Called_Date",sanitary_details.date);
             request.addProperty("Updated_Date",sanitary_details.Updated_Date);
             request.addProperty("Closed_Date",sanitary_details.Closed_Date);
-            request.addProperty("delayed_days",delayed_days);
+            request.addProperty("delayed_days", HomeScreenActivity.delayed_days);
 
 
             Log.e("REQUEST", request.toString());

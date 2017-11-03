@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -8365,7 +8366,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             ll_ceramic_basin = (LinearLayout) view.findViewById(R.id.ll_ceramic_basin);
             ll_showers = (LinearLayout) view.findViewById(R.id.ll_showers);
             ll_accessories = (LinearLayout) view.findViewById(R.id.ll_accessories);
-            bottom_linearl2 = (LinearLayout) view.findViewById(R.id.bottom_linearl2);
+            bottom_linearl2 = (LinearLayout) view.findViewById(R.id.bottom_linearll);
             radio_sanitary = (RadioGroup) view.findViewById(R.id.radio_sanitary);
             radio_faucet = (RadioButton) view.findViewById(R.id.radio_faucet);
             radio_cistern = (RadioButton) view.findViewById(R.id.radio_cistern);
@@ -8398,6 +8399,11 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             submit = (Button) view.findViewById(R.id.submit);
             attach_img = (Button) view.findViewById(R.id.attach_img);
             attach_vid = (Button) view.findViewById(R.id.attach_vid);
+            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+            bottom_linearll=(LinearLayout)view.findViewById(R.id.bottom_linearll);
+            article_no = (EditText) view.findViewById(R.id.article_no);
+
+
 
             radio_faucet.setOnCheckedChangeListener(this);
             radio_cistern.setOnCheckedChangeListener(this);
@@ -9133,8 +9139,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         radio_showers.setChecked(false);
                         radio_accessories.setEnabled(false);
                         radio_accessories.setChecked(false);
-                        if (report.article_no != null) {
-                            article_no.setText(report.article_no);
+                        if (report1.article_no != null) {
+                            article_no.setText(report1.article_no);
                         }
                         if (report1.type_of_sanitary != null) {
                             int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9223,8 +9229,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         radio_accessories.setEnabled(false);
                         radio_accessories.setChecked(false);
 
-                        if (report.article_no != null) {
-                            article_no.setText(report.article_no);
+                        if (report1.article_no != null) {
+                            article_no.setText(report1.article_no);
                         }
                         if (report1.type_of_sanitary != null) {
                             int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9329,8 +9335,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         radio_accessories.setChecked(false);
 
 
-                        if (report.article_no != null) {
-                            article_no.setText(report.article_no);
+                        if (report1.article_no != null) {
+                            article_no.setText(report1.article_no);
                         }
                         if (report1.type_of_sanitary != null) {
                             int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9421,13 +9427,10 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         radio_accessories.setEnabled(false);
                         radio_accessories.setChecked(false);
 
-                        if (report.article_no != null) {
-                            article_no.setText(report.article_no);
+                        if (report1.article_no != null) {
+                            article_no.setText(report1.article_no);
                         }
-                      /*  if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_kitchen_sink.setSelection(pos);
-                        }*/
+
                         if (report1.sanitary_product != null) {
                             if (report1.sanitary_product.equals("Wrong Product")) {
                                 radio_ceramic_basin_wrong_product.setChecked(true);
@@ -9609,8 +9612,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
 
 
-                        if (report.article_no != null) {
-                            article_no.setText(report.article_no);
+                        if (report1.article_no != null) {
+                            article_no.setText(report1.article_no);
                         }
                         if (report1.type_of_sanitary != null) {
                             int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9705,15 +9708,27 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                       int pos = Integer.parseInt(report1.Action);
                       spin_action.setSelection(pos);
                   }
-                    if (report1.site_Issue_Reason!=null){
-                        int pos = Integer.parseInt(report1.site_Issue_Reason);
-                        spin_siteIssueReason_reason.setSelection(pos);
+                    try {
+                        if (report1.site_Issue_Reason!=null && report1.equals(" ")){
+                            int pos = Integer.parseInt(report1.site_Issue_Reason);
+                            spin_siteIssueReason_reason.setSelection(pos);
+                        }
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
                     }
 
-                  /*  if (report1.Closure_Status!=null){
+                    if (report1.Closure_Status!=null){
                         int pos = Integer.parseInt(report1.Closure_Status);
                         status.setSelection(pos);
-                    }*/
+                        if (pos==0){
+                            submit.setVisibility(View.GONE);
+                            attach_img.setVisibility(View.GONE);
+                            status.setEnabled(false);
+                            attach_vid.setVisibility(View.GONE);
+                            btn_deleteVideo.setVisibility(View.GONE);
+                            bottom_linearll.setVisibility(View.VISIBLE);
+                        }
+                    }
                    if (report1.sparce_defect!=null){
                        edt_spare_defect_articleNo.setText(report1.sparce_defect);
                    }
@@ -20405,6 +20420,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+
 
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
@@ -20542,7 +20559,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20670,7 +20687,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20798,7 +20815,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20928,7 +20945,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -21012,9 +21029,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentValues.put("site_Issue_Reason",spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
+            contentValues.put("Action",spin_action.getSelectedItemPosition());
           /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
@@ -21039,7 +21056,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-
+            contentValues.put("Closure_Status",status.getSelectedItemPosition());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
