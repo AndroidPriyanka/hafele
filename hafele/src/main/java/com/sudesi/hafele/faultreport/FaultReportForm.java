@@ -141,7 +141,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
     TextView door_weight, comments1;
     TextView hafele_rate;
     int is_visited;
-    ArrayList<String> reasonList, reasonList1, resultList, actionList, wrongProdList;
+    ArrayList<String> reasonList, reasonList1, resultList, actionList, wrongProdList,statusList;
     boolean is_checked = false;
     CheckBox floor_chk_1, floor_chk_2, floor_chk_3, floor_chk_4, floor_chk_5,
             floor_chk_6, floor_chk_7, floor_chk_8, val_one, val_two, val_three,
@@ -306,6 +306,11 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
         wrongProdList = new ArrayList<String>();
         for (int i = 0; i < array4.length; i++) {
             wrongProdList.add(array4[i]);
+        }
+        String[] array5 = getResources().getStringArray(R.array.status);
+        statusList = new ArrayList<String>();
+        for (int i = 0; i < array5.length; i++) {
+            statusList.add(array5[i]);
         }
 
         // DecimalFormat formatter = new DecimalFormat("00");
@@ -8618,8 +8623,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        // operate_chk_1.setEnabled(false);
+
                         operate_chk_1.setChecked(false);
                     }
                     if (!isChecked) {
@@ -9124,923 +9128,618 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             });
 
 
-            if (report1 != null) {
-                if (report1.radio_sanitary != null) {
-                    if (report1.radio_sanitary.equals("Faucet")) {
-                        ll_faucet.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(true);
-                        radio_cistern.setEnabled(false);
-                        radio_cistern.setChecked(false);
-                        radio_kitchensink.setEnabled(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setEnabled(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setEnabled(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setEnabled(false);
-                        radio_accessories.setChecked(false);
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-                        if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_faucet.setSelection(pos);
-                        }
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_product_wrong_product.setChecked(true);
-                                radio_product_wrong_installation.setChecked(false);
-                                radio_product_damage.setChecked(false);
+            try {
+                if (report1 != null) {
+                    if (report1.radio_sanitary != null) {
+                        if (report1.radio_sanitary.equals("Faucet")) {
+                            ll_faucet.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(true);
+                            radio_cistern.setEnabled(false);
+                            radio_cistern.setChecked(false);
+                            radio_kitchensink.setEnabled(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setEnabled(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setEnabled(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setEnabled(false);
+                            radio_accessories.setChecked(false);
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
                             }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_product_wrong_product.setChecked(false);
-                                radio_product_wrong_installation.setChecked(true);
-                                radio_product_damage.setChecked(false);
+                            if (report1.type_of_sanitary != null) {
+                                int pos = Integer.parseInt(report1.type_of_sanitary);
+                                spin_type_of_faucet.setSelection(pos);
                             }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_product_wrong_product.setChecked(false);
-                                radio_product_wrong_installation.setChecked(false);
-                                radio_product_damage.setChecked(true);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("Yes")) {
-                            leakage_chk_1.setChecked(true);
-                            leakage_chk_2.setChecked(false);
-                            spin_type_of_faucet_leakage.setEnabled(true);
-                            if (report1.sanitary_type_of_leakage != null) {
-                                int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                spin_type_of_faucet_leakage.setSelection(pos);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("No")) {
-                            leakage_chk_1.setChecked(false);
-                            leakage_chk_2.setChecked(true);
-                            spin_type_of_faucet_leakage.setEnabled(false);
-                        }
-                        if (report1.does_not_operate.equals("Yes")) {
-                            operate_chk_1.setChecked(true);
-                            operate_chk_2.setChecked(false);
-                        }
-                        if (report1.does_not_operate.equals("No")) {
-                            operate_chk_1.setChecked(false);
-                            operate_chk_2.setChecked(true);
-                        }
-                        if (report1.weak_flow.equals("Yes")) {
-                            weak_flow_chk_1.setChecked(true);
-                            weak_flow_chk_2.setChecked(false);
-                            spin_type_of__work_flow.setEnabled(true);
-                            if (report1.type_of_weak_flow != null) {
-                                int pos = Integer.parseInt(report1.type_of_weak_flow);
-                                spin_type_of__work_flow.setSelection(pos);
-                            }
-                        }
-                        if (report1.weak_flow.equals("No")) {
-                            weak_flow_chk_1.setChecked(false);
-                            weak_flow_chk_2.setChecked(true);
-                            spin_type_of__work_flow.setEnabled(false);
-                        }
-
-                        if (report1.noise.equals("Yes")) {
-                            noise_chk_1.setChecked(true);
-                            noise_chk_2.setChecked(false);
-                        }
-                        if (report1.noise.equals("No")) {
-                            noise_chk_1.setChecked(false);
-                            noise_chk_2.setChecked(true);
-                        }
-
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_faucet_warranty.setSelection(pos);
-                        }
-
-
-                    } else if (report1.radio_sanitary.equals("Cistern")) {
-                        ll_cistern.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_faucet.setEnabled(false);
-                        radio_cistern.setChecked(true);
-                        radio_kitchensink.setEnabled(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setEnabled(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setEnabled(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setEnabled(false);
-                        radio_accessories.setChecked(false);
-
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-                        if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_cistern.setSelection(pos);
-                        }
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_cistern_wrong_product.setChecked(true);
-                                radio_cistern_wrong_installation.setChecked(false);
-                                radio_cistern_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_cistern_wrong_product.setChecked(false);
-                                radio_cistern_wrong_installation.setChecked(true);
-                                radio_cistern_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_cistern_wrong_product.setChecked(false);
-                                radio_cistern_wrong_installation.setChecked(false);
-                                radio_cistern_damage.setChecked(true);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("Yes")) {
-                            leakage_cistern_chk_1.setChecked(true);
-                            leakage_cistern_chk_2.setChecked(false);
-                            spin_type_of_cistern_leakage.setEnabled(true);
-                            if (report1.sanitary_type_of_leakage != null) {
-                                int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                spin_type_of_cistern_leakage.setSelection(pos);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("No")) {
-                            leakage_cistern_chk_1.setChecked(false);
-                            leakage_cistern_chk_2.setChecked(true);
-                            spin_type_of_cistern_leakage.setEnabled(false);
-                        }
-                        if (report1.flush_not_working.equals("Yes")) {
-                            flush_chk_1.setChecked(true);
-                            flush_chk_2.setChecked(false);
-                            spin_type_of_cistern_fulsh_not_working.setEnabled(true);
-                            if (report1.type_of_flush_not_working != null) {
-                                int pos = Integer.parseInt(report1.type_of_flush_not_working);
-                                spin_type_of_cistern_fulsh_not_working.setSelection(pos);
-                            }
-                        }
-                        if (report1.flush_not_working.equals("No")) {
-                            flush_chk_1.setChecked(false);
-                            flush_chk_2.setChecked(true);
-                        }
-
-                        if (report1.weak_flow.equals("Yes")) {
-                            cistern_weak_flow_chk_1.setChecked(true);
-                            cistern_weak_flow_chk_2.setChecked(false);
-                            spin_type_of_cistern_work_flow.setEnabled(true);
-                            if (report1.type_of_weak_flow != null) {
-                                int pos = Integer.parseInt(report1.type_of_weak_flow);
-                                spin_type_of_cistern_work_flow.setSelection(pos);
-                            }
-                        }
-                        if (report1.weak_flow.equals("No")) {
-                            cistern_weak_flow_chk_1.setChecked(false);
-                            cistern_weak_flow_chk_2.setChecked(true);
-                            spin_type_of_cistern_work_flow.setEnabled(false);
-                        }
-
-                        if (report1.asthetics.equals("Yes")) {
-                            asthetics_chk_1.setChecked(true);
-                            asthetics_chk_2.setChecked(false);
-                            spin_type_of_cistern_asthetics.setEnabled(true);
-                            if (report1.type_of_asthetics != null) {
-                                int pos = Integer.parseInt(report1.type_of_asthetics);
-                                spin_type_of_cistern_asthetics.setSelection(pos);
-                            }
-                        }
-                        if (report1.asthetics.equals("No")) {
-                            asthetics_chk_1.setChecked(false);
-                            asthetics_chk_2.setChecked(true);
-                            spin_type_of_cistern_asthetics.setEnabled(false);
-                        }
-
-
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_cistern_warranty.setSelection(pos);
-                        }
-
-
-
-
-                    } else if (report1.radio_sanitary.equals("Kitchen Sink")) {
-                        ll_cistern.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_faucet.setEnabled(false);
-                        radio_cistern.setChecked(false);
-                        radio_cistern.setEnabled(false);
-                        radio_kitchensink.setChecked(true);
-                        radio_ceramic_basin.setEnabled(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setEnabled(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setEnabled(false);
-                        radio_accessories.setChecked(false);
-
-
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-                        if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_kitchen_sink.setSelection(pos);
-                        }
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_kitchen_sink_wrong_product.setChecked(true);
-                                radio_kitchen_sink_wrong_installation.setChecked(false);
-                                radio_kitchen_sink_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_kitchen_sink_wrong_product.setChecked(false);
-                                radio_kitchen_sink_wrong_installation.setChecked(true);
-                                radio_kitchen_sink_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_kitchen_sink_wrong_product.setChecked(false);
-                                radio_kitchen_sink_wrong_installation.setChecked(false);
-                                radio_kitchen_sink_damage.setChecked(true);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("Yes")) {
-                            leakage_kitchen_sink_chk_1.setChecked(true);
-                            leakage_kitchen_sink_chk_2.setChecked(false);
-                            spin_kitchen_sink_leakage.setEnabled(true);
-                            if (report1.sanitary_type_of_leakage != null) {
-                                int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                spin_kitchen_sink_leakage.setSelection(pos);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("No")) {
-                            leakage_kitchen_sink_chk_1.setChecked(false);
-                            leakage_kitchen_sink_chk_2.setChecked(true);
-                            spin_kitchen_sink_leakage.setEnabled(false);
-                        }
-
-                        if (report1.drainage.equals("Yes")) {
-                            drainage_chk_1.setChecked(true);
-                            drainage_chk_2.setChecked(false);
-                            spin_kitchen_sink_draonage.setEnabled(true);
-                            if (report1.type_of_drainage != null) {
-                                int pos = Integer.parseInt(report1.type_of_drainage);
-                                spin_kitchen_sink_draonage.setSelection(pos);
-                            }
-                        }
-                        if (report1.drainage.equals("No")) {
-                            drainage_chk_1.setChecked(false);
-                            drainage_chk_2.setChecked(true);
-                            spin_kitchen_sink_draonage.setEnabled(false);
-                        }
-
-
-
-                        if (report1.asthetics.equals("Yes")) {
-                            kitchen_sink_asthetics_chk_1.setChecked(true);
-                            kitchen_sink_asthetics_chk_2.setChecked(false);
-                            spin_kitchen_sink_asthetics.setEnabled(true);
-                            if (report1.type_of_asthetics != null) {
-                                int pos = Integer.parseInt(report1.type_of_asthetics);
-                                spin_kitchen_sink_asthetics.setSelection(pos);
-                            }
-                        }
-                        if (report1.asthetics.equals("No")) {
-                            kitchen_sink_asthetics_chk_1.setChecked(false);
-                            kitchen_sink_asthetics_chk_2.setChecked(true);
-                            spin_kitchen_sink_asthetics.setEnabled(false);
-                        }
-
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_kitchen_sink_warranty.setSelection(pos);
-                        }
-
-
-                    }
-                    if (report1.radio_sanitary.equals("Ceramic Basin")) {
-                        ll_ceramic_basin.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_faucet.setEnabled(false);
-                        radio_cistern.setChecked(false);
-                        radio_cistern.setEnabled(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_kitchensink.setEnabled(false);
-                        radio_ceramic_basin.setChecked(true);
-                        radio_showers.setEnabled(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setEnabled(false);
-                        radio_accessories.setChecked(false);
-
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_ceramic_basin_wrong_product.setChecked(true);
-                                radio_ceramic_basin_wrong_installation.setChecked(false);
-                                radio_ceramic_basin_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_ceramic_basin_wrong_product.setChecked(false);
-                                radio_ceramic_basin_wrong_installation.setChecked(true);
-                                radio_ceramic_basin_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_ceramic_basin_wrong_product.setChecked(false);
-                                radio_ceramic_basin_wrong_installation.setChecked(false);
-                                radio_ceramic_basin_damage.setChecked(true);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("Yes")) {
-                            leakage_ceramic_basin_chk_1.setChecked(true);
-                            leakage_ceramic_basin_chk_2.setChecked(false);
-                            spin_kitchen_sink_leakage.setEnabled(true);
-                            if (report1.sanitary_type_of_leakage != null) {
-                                int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                spin_ceramic_basin_leakage.setSelection(pos);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("No")) {
-                            leakage_ceramic_basin_chk_1.setChecked(false);
-                            leakage_ceramic_basin_chk_2.setChecked(true);
-                            spin_ceramic_basin_leakage.setEnabled(false);
-                        }
-
-                        if (report1.drainage.equals("Yes")) {
-                            ceramic_basin_drainage_chk_1.setChecked(true);
-                            ceramic_basin_drainage_chk_2.setChecked(false);
-                            spin_ceramic_basin_drainage.setEnabled(true);
-                            if (report1.type_of_drainage != null) {
-                                int pos = Integer.parseInt(report1.type_of_drainage);
-                                spin_ceramic_basin_drainage.setSelection(pos);
-                            }
-                        }
-                        if (report1.drainage.equals("No")) {
-                            ceramic_basin_drainage_chk_1.setChecked(false);
-                            ceramic_basin_drainage_chk_2.setChecked(true);
-                            spin_ceramic_basin_drainage.setEnabled(false);
-                        }
-
-
-
-                        if (report1.asthetics.equals("Yes")) {
-                            ceramic_basin_asthetics_chk_1.setChecked(true);
-                            ceramic_basin_asthetics_chk_2.setChecked(false);
-                            spin_ceramic_basin_asthetics.setEnabled(true);
-                            if (report1.type_of_asthetics != null) {
-                                int pos = Integer.parseInt(report1.type_of_asthetics);
-                                spin_ceramic_basin_asthetics.setSelection(pos);
-                            }
-                        }
-                        if (report1.asthetics.equals("No")) {
-                            ceramic_basin_asthetics_chk_1.setChecked(false);
-                            ceramic_basin_asthetics_chk_2.setChecked(true);
-                            spin_ceramic_basin_asthetics.setEnabled(false);
-                        }
-
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_ceramic_basin_warranty.setSelection(pos);
-                        }
-
-                    }
-
-
-
-                    if (report1.radio_sanitary.equals("Showers")) {
-                        ll_showers.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_faucet.setEnabled(false);
-                        radio_cistern.setChecked(false);
-                        radio_cistern.setEnabled(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_kitchensink.setEnabled(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_ceramic_basin.setEnabled(false);
-                        radio_showers.setChecked(true);
-                        radio_accessories.setEnabled(false);
-                        radio_accessories.setChecked(false);
-
-
-
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-                        if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_shower.setSelection(pos);
-                        }
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_shower_wrong_product.setChecked(true);
-                                radio_shower_wrong_installation.setChecked(false);
-                                radio_shower_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_shower_wrong_product.setChecked(false);
-                                radio_shower_wrong_installation.setChecked(true);
-                                radio_shower_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_shower_wrong_product.setChecked(false);
-                                radio_shower_wrong_installation.setChecked(false);
-                                radio_shower_damage.setChecked(true);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("Yes")) {
-                            leakage_shower_chk_1.setChecked(true);
-                            leakage_shower_chk_2.setChecked(false);
-                            spin_shower_leakage.setEnabled(true);
-                            if (report1.sanitary_type_of_leakage != null) {
-                                int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                spin_shower_leakage.setSelection(pos);
-                            }
-                        }
-                        if (report1.sanitary_leakage.equals("No")) {
-                            leakage_shower_chk_1.setChecked(false);
-                            leakage_shower_chk_2.setChecked(true);
-                            spin_shower_leakage.setEnabled(false);
-                        }
-
-                        if (report1.does_not_operate.equals("Yes")) {
-                            does_not_operate_chk_1.setChecked(true);
-                            does_not_operate_chk_2.setChecked(false);
-                            spin_shower_does_not_operate.setEnabled(true);
-                            if (report1.type_of_drainage != null) {
-                                int pos = Integer.parseInt(report1.type_does_not_operate);
-                                spin_shower_does_not_operate.setSelection(pos);
-                            }
-                        }
-                        if (report1.does_not_operate.equals("No")) {
-                            does_not_operate_chk_1.setChecked(false);
-                            does_not_operate_chk_2.setChecked(true);
-                            spin_shower_does_not_operate.setEnabled(false);
-                        }
-
-
-
-                        if (report1.asthetics.equals("Yes")) {
-                            shower_asthetics_chk_1.setChecked(true);
-                            shower_asthetics_chk_2.setChecked(false);
-                            spin_shower_asthetics.setEnabled(true);
-                            if (report1.type_of_asthetics != null) {
-                                int pos = Integer.parseInt(report1.type_of_asthetics);
-                                spin_shower_asthetics.setSelection(pos);
-                            }
-                        }
-                        if (report1.asthetics.equals("No")) {
-                            shower_asthetics_chk_1.setChecked(false);
-                            shower_asthetics_chk_2.setChecked(true);
-                            spin_shower_asthetics.setEnabled(false);
-                        }
-
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_shower_warranty.setSelection(pos);
-                        }
-                    }
-                    if (report1.radio_sanitary.equals("Accessories")) {
-                        ll_accessories.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_faucet.setEnabled(false);
-                        radio_cistern.setChecked(false);
-                        radio_cistern.setEnabled(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_kitchensink.setEnabled(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_ceramic_basin.setEnabled(false);
-                        radio_showers.setChecked(false);
-                        radio_showers.setEnabled(false);
-                        radio_accessories.setChecked(true);
-
-
-
-                        if (report1.article_no != null) {
-                            article_no.setText(report1.article_no);
-                        }
-                        if (report1.type_of_sanitary != null) {
-                            int pos = Integer.parseInt(report1.type_of_sanitary);
-                            spin_type_of_shower.setSelection(pos);
-                        }
-                        if (report1.sanitary_product != null) {
-                            if (report1.sanitary_product.equals("Wrong Product")) {
-                                radio_accessories_wrong_product.setChecked(true);
-                                radio_accessories_wrong_installation.setChecked(false);
-                                radio_accessories_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Wrong Installation")) {
-                                radio_accessories_wrong_product.setChecked(false);
-                                radio_accessories_wrong_installation.setChecked(true);
-                                radio_accessories_damage.setChecked(false);
-                            }
-                            if (report1.sanitary_product.equals("Product damage")) {
-                                radio_accessories_wrong_product.setChecked(false);
-                                radio_accessories_wrong_installation.setChecked(false);
-                                radio_accessories_damage.setChecked(true);
-                            }
-                        }
-
-                        if (report1.asthetics.equals("Yes")) {
-                            accessories_asthetics_chk_1.setChecked(true);
-                            accessories_asthetics_chk_2.setChecked(false);
-                            spin_accessories_asthesis.setEnabled(true);
-                            if (report1.type_of_asthetics != null) {
-                                int pos = Integer.parseInt(report1.type_of_asthetics);
-                                spin_accessories_asthesis.setSelection(pos);
-                            }
-                        }
-                        if (report1.asthetics.equals("No")) {
-                            accessories_asthetics_chk_1.setChecked(false);
-                            accessories_asthetics_chk_2.setChecked(true);
-                            spin_accessories_asthesis.setEnabled(false);
-                        }
-                        if (report1.warranty != null) {
-                            int pos = Integer.parseInt(report1.warranty);
-                            spin_accessories_warranty.setSelection(pos);
-                        }
-
-
-                    }
-                    GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-                    video_grid = (ImageView) view.findViewById(R.id.video_grid);
-
-                    attach_img.setOnClickListener(this);
-                    attach_vid.setOnClickListener(this);
-                    video_grid.setOnClickListener(this);
-
-                    img_grid.setOnItemClickListener(new OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view,
-                                                int position, long id) {
-                            Bitmap sBM = bmpArray.get(position);
-                            Bitmap cBm = capturedBM.get(position);
-                            int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                            Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                                    true);
-                            showImage(scaledBM, cBm, sBM, position);
-                        }
-                    });
-                  /*  status.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-                        @Override
-                        public void onItemSelected(AdapterView<?> parent, View view,
-                                                   int position, long id) {
-                            contentValues.put("Closure_Status", status
-                                    .getSelectedItem().toString());
-                            if (position == 1) {
-                                //  unresolved.setVisibility(View.VISIBLE);
-                            } else {
-                                //  unresolved.setVisibility(View.GONE);
-                                contentValues.put("Reason_For_Unresolved", "");
-                            }
-                        }
-
-                        @Override
-                        public void onNothingSelected(AdapterView<?> arg0) {
-
-                        }
-                    });
-
-                    */
-                  //  unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
-                  if (report1.Result!=null){
-                      int pos = Integer.parseInt(report1.Result);
-                      unresolve_reason.setSelection(pos);
-                  }
-                  if (report1.Action!=null){
-                      int pos = Integer.parseInt(report1.Action);
-                      spin_action.setSelection(pos);
-                  }
-                    try {
-                        if (report1.site_Issue_Reason!=null && report1.equals(" ")){
-                            int pos = Integer.parseInt(report1.site_Issue_Reason);
-                            spin_siteIssueReason_reason.setSelection(pos);
-                        }
-                    } catch (NumberFormatException e) {
-                        e.printStackTrace();
-                    }
-
-                    if (report1.Closure_Status!=null){
-                        int pos = Integer.parseInt(report1.Closure_Status);
-                        status.setSelection(pos);
-                        if (pos==0){
-                            submit.setVisibility(View.GONE);
-                            attach_img.setVisibility(View.GONE);
-                            status.setEnabled(false);
-                            attach_vid.setVisibility(View.GONE);
-                            btn_deleteVideo.setVisibility(View.GONE);
-                            bottom_linearll.setVisibility(View.VISIBLE);
-                        }
-                    }
-                   if (report1.sparce_defect!=null){
-                       edt_spare_defect_articleNo.setText(report1.sparce_defect);
-                   }
-                    if (report1.complete_set!=null){
-                        edt_complete_set_articleNo.setText(report1.complete_set);
-                    }
-                    if (report1.Comment!=null){
-                        comments.setText(report1.Comment);
-                    }
-
-                  /*  if (report.Result != null) {
-
-                        int index = resultList.indexOf(report.Result);
-                        if (index > 0) {
-
-                            if (index == 2) {
-                                unresolve_reason.setSelection(2);
-                                ll_product_defect.setVisibility(View.VISIBLE);
-                                ll_site_issue.setVisibility(View.GONE);
-                                edt_spare_defect_articleNo.setText(report.sparce_defect);
-                                edt_complete_set_articleNo.setText(report.complete_set);
-                            } else if (index == 3) {
-                                unresolve_reason.setSelection(3);
-                                ll_product_defect.setVisibility(View.GONE);
-                                ll_site_issue.setVisibility(View.VISIBLE);
-
-                                if (report.site_Issue_Reason != null) {
-                                    int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                    if (index1 > 0) {
-                                        spin_siteIssueReason_reason.setSelection(index1);
-                                    }
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_product_wrong_product.setChecked(true);
+                                    radio_product_wrong_installation.setChecked(false);
+                                    radio_product_damage.setChecked(false);
                                 }
-                            } else if (index == 1) {
-                                unresolve_reason.setSelection(1);
-                            } else if (index == 4) {
-                                unresolve_reason.setSelection(4);
-                            }
-                        } else {
-                            unresolve_reason.setSelection(0);
-                        }
-                    }
-                    if (report.Action != null) {
-                        int index = actionList.indexOf(report.Action);
-                        spin_action.setSelection(index);
-                    }*/
-             /*       if (report.wrong_product_reason != null) {
-                        int index = wrongProdList.indexOf(report.wrong_product_reason);
-                        spin_wrong_product.setSelection(index);
-                        if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-                            pr_chk_5.setEnabled(false);
-                            pr_chk_6.setEnabled(false);
-                            pr_chk_7.setEnabled(false);
-                            pr_chk_8.setEnabled(false);
-                            pr_chk_9.setEnabled(false);
-                            pr_chk_10.setEnabled(false);
-                            pr_chk_11.setEnabled(false);
-                            pr_chk_12.setEnabled(false);
-                            pr_chk_13.setEnabled(false);
-                            pr_chk_14.setEnabled(false);
-                            pr_chk_15.setEnabled(false);
-
-
-                              *//*  pr_chk_16.setEnabled(false);
-                                pr_chk_17.setEnabled(false);
-                                pr_chk_18.setEnabled(false);
-                                pr_chk_19.setEnabled(false);
-                                pr_chk_20.setEnabled(false);
-                                pr_chk_21.setEnabled(false);
-                                pr_chk_22.setEnabled(false);*//*
-
-
-
-                        } else {
-
-                        }
-                    }*/
-                 /*   if (report.Closure_Status != null) {
-                        if (report.Closure_Status.equals("Resolved")) {
-                            submit.setVisibility(View.GONE);
-                            attach_img.setVisibility(View.GONE);
-                            // img_grid.setVisibility(View.GONE);
-                            // video_grid.setVisibility(View.GONE);
-                            status.setEnabled(false);
-                            attach_vid.setVisibility(View.GONE);
-                            btn_deleteVideo.setVisibility(View.GONE);
-                            bottom_linearll.setVisibility(View.VISIBLE);
-
-                        } else if (report.Closure_Status.equals("Unresolved")) {
-                            status.setSelection(1);
-
-                            submit.setVisibility(View.VISIBLE);
-                            attach_img.setVisibility(View.VISIBLE);
-                            attach_vid.setVisibility(View.VISIBLE);
-                            status.setEnabled(true);
-                            bottom_linearll.setVisibility(View.VISIBLE);
-                            // img_grid.setVisibility(View.VISIBLE);
-                            // video_grid.setVisibility(View.VISIBLE);
-                        }
-
-                        comments.setText(report.Comment);
-                    }*/
-
-                /*    if (report.prod_type.equals("Pratik")) {
-                        article_no.setText(report.article_no);
-
-                        cabinet_width.setText(report.Width);
-                        cabinet_height.setText(report.Height);
-                        cabinet_depth.setText(report.Thickness);
-
-                        if (report.correct_product_order != null) {
-                            if (report.correct_product_order.equals("Y")) {
-                                pr_chk_1.setChecked(true);
-                                pr_chk_2.setChecked(false);
-                            } else if (report.correct_product_order.equals("N")) {
-                                pr_chk_1.setChecked(false);
-                                pr_chk_2.setChecked(true);
-                            } else {
-                                pr_chk_1.setChecked(false);
-                                pr_chk_2.setChecked(false);
-                            }
-                        }
-                        if (report.height_more_than_260mm != null) {
-                            if (report.height_more_than_260mm.equals("Y")) {
-                                pr_chk_3.setChecked(true);
-                            } else {
-                                pratik_height.setText(report.height_more_than_260mm);
-                            }
-                        }
-                        if (report.length_slatted_or_wooden_50mm != null) {
-                            if (report.length_slatted_or_wooden_50mm.equals("Y")) {
-                                pr_chk_4.setChecked(true);
-                            } else {
-                                pratik_length_50mm.setText(report.length_slatted_or_wooden_50mm);
-                            }
-                        }
-                        if (report.widht_slatted_or_wooden_30mm != null) {
-                            if (report.widht_slatted_or_wooden_30mm.equals("Y")) {
-                                pr_chk_5.setChecked(true);
-                            } else {
-                                pratik_width_30mm.setText(report.widht_slatted_or_wooden_30mm);
-                            }
-                        }
-                        if (report.slatted_dimen_1400mm_2000mm != null) {
-                            if (report.slatted_dimen_1400mm_2000mm.equals("Y")) {
-                                pr_chk_6.setChecked(true);
-                            } else {
-                                pratik_sfd_dimen.setText(report.slatted_dimen_1400mm_2000mm);
-                            }
-                        }
-                        if (report.slatted_dimen_1800mm_2000mm != null) {
-                            if (report.slatted_dimen_1800mm_2000mm.equals("Y")) {
-                                pr_chk_7.setChecked(true);
-                            } else {
-                                pratik_sfd_dimen1.setText(report.slatted_dimen_1800mm_2000mm);
-                            }
-                        }
-                        if (report.bedding_box_fixing != null) {
-                            if (report.bedding_box_fixing.equals("Y")) {
-                                pr_chk_8.setChecked(true);
-                                pr_chk_9.setChecked(false);
-                            } else if (report.bedding_box_fixing.equals("N")) {
-                                pr_chk_8.setChecked(false);
-                                pr_chk_9.setChecked(true);
-                            } else {
-                                pr_chk_8.setChecked(false);
-                                pr_chk_9.setChecked(false);
-                            }
-                        }
-                        if (report.weight_between_23_25kgs != null) {
-                            if (report.weight_between_23_25kgs.equals("Y")) {
-                                pr_chk_10.setChecked(true);
-                                pr_chk_11.setChecked(false);
-                            } else if (report.weight_between_23_25kgs.equals("N")) {
-                                pr_chk_10.setChecked(false);
-                                pr_chk_11.setChecked(true);
-                            } else {
-                                pr_chk_10.setChecked(false);
-                                pr_chk_11.setChecked(false);
-                            }
-                        }
-                        if (report.weight_between_50_60kgs != null) {
-                            if (report.weight_between_50_60kgs.equals("Y")) {
-                                pr_chk_12.setChecked(true);
-                                pr_chk_13.setChecked(false);
-                            } else if (report.weight_between_50_60kgs.equals("N")) {
-                                pr_chk_12.setChecked(false);
-                                pr_chk_13.setChecked(true);
-                            } else {
-                                pr_chk_12.setChecked(false);
-                                pr_chk_13.setChecked(false);
-                            }
-                        }
-                        if (report.check_Stabilizing_rod != null) {
-                            if (report.check_Stabilizing_rod.equals("Y")) {
-                                pr_chk_14.setChecked(true);
-                                pr_chk_15.setChecked(false);
-                            } else if (report.check_Stabilizing_rod.equals("N")) {
-                                pr_chk_14.setChecked(false);
-                                pr_chk_15.setChecked(true);
-                            } else {
-                                pr_chk_14.setChecked(false);
-                                pr_chk_15.setChecked(false);
-                            }
-                        }
-
-                        if (report.Result != null) {
-
-                            int index = resultList.indexOf(report.Result);
-                            if (index > 0) {
-
-                                if (index == 2) {
-                                    unresolve_reason.setSelection(2);
-                                    ll_product_defect.setVisibility(View.VISIBLE);
-                                    ll_site_issue.setVisibility(View.GONE);
-                                    edt_spare_defect_articleNo.setText(report.sparce_defect);
-                                    edt_complete_set_articleNo.setText(report.complete_set);
-                                } else if (index == 3) {
-                                    unresolve_reason.setSelection(3);
-                                    ll_product_defect.setVisibility(View.GONE);
-                                    ll_site_issue.setVisibility(View.VISIBLE);
-
-                                    if (report.site_Issue_Reason != null) {
-                                        int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                        if (index1 > 0) {
-                                            spin_siteIssueReason_reason.setSelection(index1);
-                                        }
-                                    }
-                                } else if (index == 1) {
-                                    unresolve_reason.setSelection(1);
-                                } else if (index == 4) {
-                                    unresolve_reason.setSelection(4);
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_product_wrong_product.setChecked(false);
+                                    radio_product_wrong_installation.setChecked(true);
+                                    radio_product_damage.setChecked(false);
                                 }
-                            } else {
-                                unresolve_reason.setSelection(0);
-                            }
-                        }
-                        if (report.Action != null) {
-                            int index = actionList.indexOf(report.Action);
-                            spin_action.setSelection(index);
-                        }
-                        if (report.wrong_product_reason != null) {
-                            int index = wrongProdList.indexOf(report.wrong_product_reason);
-                            spin_wrong_product.setSelection(index);
-                            if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-                                pr_chk_5.setEnabled(false);
-                                pr_chk_6.setEnabled(false);
-                                pr_chk_7.setEnabled(false);
-                                pr_chk_8.setEnabled(false);
-                                pr_chk_9.setEnabled(false);
-                                pr_chk_10.setEnabled(false);
-                                pr_chk_11.setEnabled(false);
-                                pr_chk_12.setEnabled(false);
-                                pr_chk_13.setEnabled(false);
-                                pr_chk_14.setEnabled(false);
-                                pr_chk_15.setEnabled(false);
-
-
-                                pr_chk_16.setEnabled(false);
-                                pr_chk_17.setEnabled(false);
-                                pr_chk_18.setEnabled(false);
-                                pr_chk_19.setEnabled(false);
-                                pr_chk_20.setEnabled(false);
-                                pr_chk_21.setEnabled(false);
-                                pr_chk_22.setEnabled(false);
-
-
-                                cabinet_height.setEnabled(false);
-                                cabinet_width.setEnabled(false);
-                                cabinet_depth.setEnabled(false);
-                                spin_wrong_product.setEnabled(true);
-                                if (pr_chk_1.isChecked()) {
-                                    spin_wrong_product.setEnabled(false);
-                                } else {
-                                    spin_wrong_product.setEnabled(true);
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_product_wrong_product.setChecked(false);
+                                    radio_product_wrong_installation.setChecked(false);
+                                    radio_product_damage.setChecked(true);
                                 }
-                            } else {
+                            }
+                            if (report1.sanitary_leakage.equals("Yes")) {
+                                leakage_chk_1.setChecked(true);
+                                leakage_chk_2.setChecked(false);
+                                spin_type_of_faucet_leakage.setEnabled(true);
+                                if (report1.sanitary_type_of_leakage != null) {
+                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                    spin_type_of_faucet_leakage.setSelection(pos);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("No")) {
+                                leakage_chk_1.setChecked(false);
+                                leakage_chk_2.setChecked(true);
+                                spin_type_of_faucet_leakage.setEnabled(false);
+                            }
+                            if (report1.does_not_operate.equals("Yes")) {
+                                operate_chk_1.setChecked(true);
+                                operate_chk_2.setChecked(false);
+                            }
+                            if (report1.does_not_operate.equals("No")) {
+                                operate_chk_1.setChecked(false);
+                                operate_chk_2.setChecked(true);
+                            }
+                            if (report1.weak_flow.equals("Yes")) {
+                                weak_flow_chk_1.setChecked(true);
+                                weak_flow_chk_2.setChecked(false);
+                                spin_type_of__work_flow.setEnabled(true);
+                                if (report1.type_of_weak_flow != null) {
+                                    int pos = Integer.parseInt(report1.type_of_weak_flow);
+                                    spin_type_of__work_flow.setSelection(pos);
+                                }
+                            }
+                            if (report1.weak_flow.equals("No")) {
+                                weak_flow_chk_1.setChecked(false);
+                                weak_flow_chk_2.setChecked(true);
+                                spin_type_of__work_flow.setEnabled(false);
+                            }
 
+                            if (report1.noise.equals("Yes")) {
+                                noise_chk_1.setChecked(true);
+                                noise_chk_2.setChecked(false);
+                            }
+                            if (report1.noise.equals("No")) {
+                                noise_chk_1.setChecked(false);
+                                noise_chk_2.setChecked(true);
+                            }
+
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_faucet_warranty.setSelection(pos);
+                            }
+
+
+                        } else if (report1.radio_sanitary.equals("Cistern")) {
+                            ll_cistern.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(false);
+                            radio_faucet.setEnabled(false);
+                            radio_cistern.setChecked(true);
+                            radio_kitchensink.setEnabled(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setEnabled(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setEnabled(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setEnabled(false);
+                            radio_accessories.setChecked(false);
+
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
+                            }
+                            if (report1.type_of_sanitary != null) {
+                                int pos = Integer.parseInt(report1.type_of_sanitary);
+                                spin_type_of_cistern.setSelection(pos);
+                            }
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_cistern_wrong_product.setChecked(true);
+                                    radio_cistern_wrong_installation.setChecked(false);
+                                    radio_cistern_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_cistern_wrong_product.setChecked(false);
+                                    radio_cistern_wrong_installation.setChecked(true);
+                                    radio_cistern_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_cistern_wrong_product.setChecked(false);
+                                    radio_cistern_wrong_installation.setChecked(false);
+                                    radio_cistern_damage.setChecked(true);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("Yes")) {
+                                leakage_cistern_chk_1.setChecked(true);
+                                leakage_cistern_chk_2.setChecked(false);
+                                spin_type_of_cistern_leakage.setEnabled(true);
+                                if (report1.sanitary_type_of_leakage != null) {
+                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                    spin_type_of_cistern_leakage.setSelection(pos);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("No")) {
+                                leakage_cistern_chk_1.setChecked(false);
+                                leakage_cistern_chk_2.setChecked(true);
+                                spin_type_of_cistern_leakage.setEnabled(false);
+                            }
+                            if (report1.flush_not_working.equals("Yes")) {
+                                flush_chk_1.setChecked(true);
+                                flush_chk_2.setChecked(false);
+                                spin_type_of_cistern_fulsh_not_working.setEnabled(true);
+                                if (report1.type_of_flush_not_working != null) {
+                                    int pos = Integer.parseInt(report1.type_of_flush_not_working);
+                                    spin_type_of_cistern_fulsh_not_working.setSelection(pos);
+                                }
+                            }
+                            if (report1.flush_not_working.equals("No")) {
+                                flush_chk_1.setChecked(false);
+                                flush_chk_2.setChecked(true);
+                            }
+
+                            if (report1.weak_flow.equals("Yes")) {
+                                cistern_weak_flow_chk_1.setChecked(true);
+                                cistern_weak_flow_chk_2.setChecked(false);
+                                spin_type_of_cistern_work_flow.setEnabled(true);
+                                if (report1.type_of_weak_flow != null) {
+                                    int pos = Integer.parseInt(report1.type_of_weak_flow);
+                                    spin_type_of_cistern_work_flow.setSelection(pos);
+                                }
+                            }
+                            if (report1.weak_flow.equals("No")) {
+                                cistern_weak_flow_chk_1.setChecked(false);
+                                cistern_weak_flow_chk_2.setChecked(true);
+                                spin_type_of_cistern_work_flow.setEnabled(false);
+                            }
+
+                            if (report1.asthetics.equals("Yes")) {
+                                asthetics_chk_1.setChecked(true);
+                                asthetics_chk_2.setChecked(false);
+                                spin_type_of_cistern_asthetics.setEnabled(true);
+                                if (report1.type_of_asthetics != null) {
+                                    int pos = Integer.parseInt(report1.type_of_asthetics);
+                                    spin_type_of_cistern_asthetics.setSelection(pos);
+                                }
+                            }
+                            if (report1.asthetics.equals("No")) {
+                                asthetics_chk_1.setChecked(false);
+                                asthetics_chk_2.setChecked(true);
+                                spin_type_of_cistern_asthetics.setEnabled(false);
+                            }
+
+
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_cistern_warranty.setSelection(pos);
+                            }
+
+
+
+
+                        } else if (report1.radio_sanitary.equals("Kitchen Sink")) {
+                            ll_cistern.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(false);
+                            radio_faucet.setEnabled(false);
+                            radio_cistern.setChecked(false);
+                            radio_cistern.setEnabled(false);
+                            radio_kitchensink.setChecked(true);
+                            radio_ceramic_basin.setEnabled(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setEnabled(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setEnabled(false);
+                            radio_accessories.setChecked(false);
+
+
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
+                            }
+                            if (report1.type_of_sanitary != null) {
+                                int pos = Integer.parseInt(report1.type_of_sanitary);
+                                spin_type_of_kitchen_sink.setSelection(pos);
+                            }
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_kitchen_sink_wrong_product.setChecked(true);
+                                    radio_kitchen_sink_wrong_installation.setChecked(false);
+                                    radio_kitchen_sink_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_kitchen_sink_wrong_product.setChecked(false);
+                                    radio_kitchen_sink_wrong_installation.setChecked(true);
+                                    radio_kitchen_sink_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_kitchen_sink_wrong_product.setChecked(false);
+                                    radio_kitchen_sink_wrong_installation.setChecked(false);
+                                    radio_kitchen_sink_damage.setChecked(true);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("Yes")) {
+                                leakage_kitchen_sink_chk_1.setChecked(true);
+                                leakage_kitchen_sink_chk_2.setChecked(false);
+                                spin_kitchen_sink_leakage.setEnabled(true);
+                                if (report1.sanitary_type_of_leakage != null) {
+                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                    spin_kitchen_sink_leakage.setSelection(pos);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("No")) {
+                                leakage_kitchen_sink_chk_1.setChecked(false);
+                                leakage_kitchen_sink_chk_2.setChecked(true);
+                                spin_kitchen_sink_leakage.setEnabled(false);
+                            }
+
+                            if (report1.drainage.equals("Yes")) {
+                                drainage_chk_1.setChecked(true);
+                                drainage_chk_2.setChecked(false);
+                                spin_kitchen_sink_draonage.setEnabled(true);
+                                if (report1.type_of_drainage != null) {
+                                    int pos = Integer.parseInt(report1.type_of_drainage);
+                                    spin_kitchen_sink_draonage.setSelection(pos);
+                                }
+                            }
+                            if (report1.drainage.equals("No")) {
+                                drainage_chk_1.setChecked(false);
+                                drainage_chk_2.setChecked(true);
+                                spin_kitchen_sink_draonage.setEnabled(false);
+                            }
+
+
+
+                            if (report1.asthetics.equals("Yes")) {
+                                kitchen_sink_asthetics_chk_1.setChecked(true);
+                                kitchen_sink_asthetics_chk_2.setChecked(false);
+                                spin_kitchen_sink_asthetics.setEnabled(true);
+                                if (report1.type_of_asthetics != null) {
+                                    int pos = Integer.parseInt(report1.type_of_asthetics);
+                                    spin_kitchen_sink_asthetics.setSelection(pos);
+                                }
+                            }
+                            if (report1.asthetics.equals("No")) {
+                                kitchen_sink_asthetics_chk_1.setChecked(false);
+                                kitchen_sink_asthetics_chk_2.setChecked(true);
+                                spin_kitchen_sink_asthetics.setEnabled(false);
+                            }
+
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_kitchen_sink_warranty.setSelection(pos);
+                            }
+
+
+                        }
+                        if (report1.radio_sanitary.equals("Ceramic Basin")) {
+                            ll_ceramic_basin.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(false);
+                            radio_faucet.setEnabled(false);
+                            radio_cistern.setChecked(false);
+                            radio_cistern.setEnabled(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_kitchensink.setEnabled(false);
+                            radio_ceramic_basin.setChecked(true);
+                            radio_showers.setEnabled(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setEnabled(false);
+                            radio_accessories.setChecked(false);
+
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
+                            }
+
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_ceramic_basin_wrong_product.setChecked(true);
+                                    radio_ceramic_basin_wrong_installation.setChecked(false);
+                                    radio_ceramic_basin_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_ceramic_basin_wrong_product.setChecked(false);
+                                    radio_ceramic_basin_wrong_installation.setChecked(true);
+                                    radio_ceramic_basin_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_ceramic_basin_wrong_product.setChecked(false);
+                                    radio_ceramic_basin_wrong_installation.setChecked(false);
+                                    radio_ceramic_basin_damage.setChecked(true);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("Yes")) {
+                                leakage_ceramic_basin_chk_1.setChecked(true);
+                                leakage_ceramic_basin_chk_2.setChecked(false);
+                                spin_kitchen_sink_leakage.setEnabled(true);
+                                if (report1.sanitary_type_of_leakage != null) {
+                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                    spin_ceramic_basin_leakage.setSelection(pos);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("No")) {
+                                leakage_ceramic_basin_chk_1.setChecked(false);
+                                leakage_ceramic_basin_chk_2.setChecked(true);
+                                spin_ceramic_basin_leakage.setEnabled(false);
+                            }
+
+                            if (report1.drainage.equals("Yes")) {
+                                ceramic_basin_drainage_chk_1.setChecked(true);
+                                ceramic_basin_drainage_chk_2.setChecked(false);
+                                spin_ceramic_basin_drainage.setEnabled(true);
+                                if (report1.type_of_drainage != null) {
+                                    int pos = Integer.parseInt(report1.type_of_drainage);
+                                    spin_ceramic_basin_drainage.setSelection(pos);
+                                }
+                            }
+                            if (report1.drainage.equals("No")) {
+                                ceramic_basin_drainage_chk_1.setChecked(false);
+                                ceramic_basin_drainage_chk_2.setChecked(true);
+                                spin_ceramic_basin_drainage.setEnabled(false);
+                            }
+
+
+
+                            if (report1.asthetics.equals("Yes")) {
+                                ceramic_basin_asthetics_chk_1.setChecked(true);
+                                ceramic_basin_asthetics_chk_2.setChecked(false);
+                                spin_ceramic_basin_asthetics.setEnabled(true);
+                                if (report1.type_of_asthetics != null) {
+                                    int pos = Integer.parseInt(report1.type_of_asthetics);
+                                    spin_ceramic_basin_asthetics.setSelection(pos);
+                                }
+                            }
+                            if (report1.asthetics.equals("No")) {
+                                ceramic_basin_asthetics_chk_1.setChecked(false);
+                                ceramic_basin_asthetics_chk_2.setChecked(true);
+                                spin_ceramic_basin_asthetics.setEnabled(false);
+                            }
+
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_ceramic_basin_warranty.setSelection(pos);
+                            }
+
+                        }
+
+
+
+                        if (report1.radio_sanitary.equals("Showers")) {
+                            ll_showers.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(false);
+                            radio_faucet.setEnabled(false);
+                            radio_cistern.setChecked(false);
+                            radio_cistern.setEnabled(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_kitchensink.setEnabled(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_ceramic_basin.setEnabled(false);
+                            radio_showers.setChecked(true);
+                            radio_accessories.setEnabled(false);
+                            radio_accessories.setChecked(false);
+
+
+
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
+                            }
+                            if (report1.type_of_sanitary != null) {
+                                int pos = Integer.parseInt(report1.type_of_sanitary);
+                                spin_type_of_shower.setSelection(pos);
+                            }
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_shower_wrong_product.setChecked(true);
+                                    radio_shower_wrong_installation.setChecked(false);
+                                    radio_shower_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_shower_wrong_product.setChecked(false);
+                                    radio_shower_wrong_installation.setChecked(true);
+                                    radio_shower_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_shower_wrong_product.setChecked(false);
+                                    radio_shower_wrong_installation.setChecked(false);
+                                    radio_shower_damage.setChecked(true);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("Yes")) {
+                                leakage_shower_chk_1.setChecked(true);
+                                leakage_shower_chk_2.setChecked(false);
+                                spin_shower_leakage.setEnabled(true);
+                                if (report1.sanitary_type_of_leakage != null) {
+                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                    spin_shower_leakage.setSelection(pos);
+                                }
+                            }
+                            if (report1.sanitary_leakage.equals("No")) {
+                                leakage_shower_chk_1.setChecked(false);
+                                leakage_shower_chk_2.setChecked(true);
+                                spin_shower_leakage.setEnabled(false);
+                            }
+
+                            if (report1.does_not_operate.equals("Yes")) {
+                                does_not_operate_chk_1.setChecked(true);
+                                does_not_operate_chk_2.setChecked(false);
+                                spin_shower_does_not_operate.setEnabled(true);
+                                if (report1.type_of_drainage != null) {
+                                    int pos = Integer.parseInt(report1.type_does_not_operate);
+                                    spin_shower_does_not_operate.setSelection(pos);
+                                }
+                            }
+                            if (report1.does_not_operate.equals("No")) {
+                                does_not_operate_chk_1.setChecked(false);
+                                does_not_operate_chk_2.setChecked(true);
+                                spin_shower_does_not_operate.setEnabled(false);
+                            }
+
+
+
+                            if (report1.asthetics.equals("Yes")) {
+                                shower_asthetics_chk_1.setChecked(true);
+                                shower_asthetics_chk_2.setChecked(false);
+                                spin_shower_asthetics.setEnabled(true);
+                                if (report1.type_of_asthetics != null) {
+                                    int pos = Integer.parseInt(report1.type_of_asthetics);
+                                    spin_shower_asthetics.setSelection(pos);
+                                }
+                            }
+                            if (report1.asthetics.equals("No")) {
+                                shower_asthetics_chk_1.setChecked(false);
+                                shower_asthetics_chk_2.setChecked(true);
+                                spin_shower_asthetics.setEnabled(false);
+                            }
+
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_shower_warranty.setSelection(pos);
                             }
                         }
-                        if (report.Closure_Status != null) {
-                            if (report.Closure_Status.equals("Resolved")) {
+                        if (report1.radio_sanitary.equals("Accessories")) {
+                            ll_accessories.setVisibility(View.VISIBLE);
+                            radio_faucet.setChecked(false);
+                            radio_faucet.setEnabled(false);
+                            radio_cistern.setChecked(false);
+                            radio_cistern.setEnabled(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_kitchensink.setEnabled(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_ceramic_basin.setEnabled(false);
+                            radio_showers.setChecked(false);
+                            radio_showers.setEnabled(false);
+                            radio_accessories.setChecked(true);
+
+
+
+                            if (report1.article_no != null) {
+                                article_no.setText(report1.article_no);
+                            }
+                            if (report1.type_of_sanitary != null) {
+                                int pos = Integer.parseInt(report1.type_of_sanitary);
+                                spin_type_of_shower.setSelection(pos);
+                            }
+                            if (report1.sanitary_product != null) {
+                                if (report1.sanitary_product.equals("Wrong Product")) {
+                                    radio_accessories_wrong_product.setChecked(true);
+                                    radio_accessories_wrong_installation.setChecked(false);
+                                    radio_accessories_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Wrong Installation")) {
+                                    radio_accessories_wrong_product.setChecked(false);
+                                    radio_accessories_wrong_installation.setChecked(true);
+                                    radio_accessories_damage.setChecked(false);
+                                }
+                                if (report1.sanitary_product.equals("Product damage")) {
+                                    radio_accessories_wrong_product.setChecked(false);
+                                    radio_accessories_wrong_installation.setChecked(false);
+                                    radio_accessories_damage.setChecked(true);
+                                }
+                            }
+
+                            if (report1.asthetics.equals("Yes")) {
+                                accessories_asthetics_chk_1.setChecked(true);
+                                accessories_asthetics_chk_2.setChecked(false);
+                                spin_accessories_asthesis.setEnabled(true);
+                                if (report1.type_of_asthetics != null) {
+                                    int pos = Integer.parseInt(report1.type_of_asthetics);
+                                    spin_accessories_asthesis.setSelection(pos);
+                                }
+                            }
+                            if (report1.asthetics.equals("No")) {
+                                accessories_asthetics_chk_1.setChecked(false);
+                                accessories_asthetics_chk_2.setChecked(true);
+                                spin_accessories_asthesis.setEnabled(false);
+                            }
+                            if (report1.warranty != null) {
+                                int pos = Integer.parseInt(report1.warranty);
+                                spin_accessories_warranty.setSelection(pos);
+                            }
+
+
+                        }
+                        GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                        video_grid = (ImageView) view.findViewById(R.id.video_grid);
+
+                        attach_img.setOnClickListener(this);
+                        attach_vid.setOnClickListener(this);
+                        video_grid.setOnClickListener(this);
+
+                        img_grid.setOnItemClickListener(new OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view,
+                                                    int position, long id) {
+                                Bitmap sBM = bmpArray.get(position);
+                                Bitmap cBm = capturedBM.get(position);
+                                int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                                Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                        true);
+                                showImage(scaledBM, cBm, sBM, position);
+                            }
+                        });
+
+                        if (report1.Result!=null){
+                            int index1 = resultList.indexOf(report1.Result);
+                            if (index1 > 0) {
+                                unresolve_reason.setSelection(index1);
+                            }
+                        }
+
+                        if (report1.Action!=null){
+                            int index1 = actionList.indexOf(report1.Action);
+                            if (index1 > 0) {
+                                spin_action.setSelection(index1);
+                            }
+                        }
+                    /*  if (report1.Action!=null){
+                          int pos = Integer.parseInt(report1.Action);
+                          spin_action.setSelection(pos);
+                      }*/
+                        if (report1.site_Issue_Reason!=null){
+                            int index1 = reasonList1.indexOf(report1.site_Issue_Reason);
+                            if (index1 > 0) {
+                                spin_siteIssueReason_reason.setSelection(index1);
+                            }
+                        }
+
+
+                        if (report1.Closure_Status!=null){
+                            int index1 = statusList.indexOf(report1.Closure_Status);
+                            if (index1==0) {
+                                status.setSelection(index1);
                                 submit.setVisibility(View.GONE);
                                 attach_img.setVisibility(View.GONE);
-                                // img_grid.setVisibility(View.GONE);
-                                // video_grid.setVisibility(View.GONE);
                                 status.setEnabled(false);
                                 attach_vid.setVisibility(View.GONE);
                                 btn_deleteVideo.setVisibility(View.GONE);
                                 bottom_linearll.setVisibility(View.VISIBLE);
-
-                            } else if (report.Closure_Status.equals("Unresolved")) {
-                                status.setSelection(1);
-
-                                submit.setVisibility(View.VISIBLE);
-                                attach_img.setVisibility(View.VISIBLE);
-                                attach_vid.setVisibility(View.VISIBLE);
-                                status.setEnabled(true);
-                                bottom_linearll.setVisibility(View.VISIBLE);
-                                // img_grid.setVisibility(View.VISIBLE);
-                                // video_grid.setVisibility(View.VISIBLE);
+                            }else if (index1==1){
+                                status.setSelection(index1);
                             }
-
-                            comments.setText(report.Comment);
-
                         }
 
+
+                       if (report1.sparce_defect!=null){
+                           edt_spare_defect_articleNo.setText(report1.sparce_defect);
+                       }
+                        if (report1.complete_set!=null){
+                            edt_complete_set_articleNo.setText(report1.complete_set);
+                        }
+                        if (report1.Comment!=null){
+                            comments.setText(report1.Comment);
+                        }
+
+
+
                     }
-
-*/
-
-
                 }
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
 
 
@@ -10150,7 +9849,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             mobile_no.setText(end_user_mobile);
             mobile_no.setOnClickListener(this);
             dealer.setText(service_franchise);
-            article_no.setText(article);
+          //  article_no.setText(article);
             complaint_deatils.setText(service_details);
             prod_cat.setText(product_category);
             prod_sub_cat.setText(product_sub_category);
@@ -20420,7 +20119,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
 
 
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
@@ -20525,7 +20224,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
             contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
             contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
@@ -20559,7 +20258,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20687,7 +20386,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20815,7 +20514,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -20945,7 +20644,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -21056,7 +20755,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             } else {
                 contentValues.put("Updated_Date", str_updatedDate);
             }
-            contentValues.put("Closure_Status",status.getSelectedItemPosition());
+            contentValues.put("Closure_Status",status.getSelectedItem().toString());
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response = (long) dbAdapter.update("sanitary_details",
@@ -21081,7 +20780,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("Insert_Date", dateTime);
             contentValues.put("article_no", article_no.getText().toString());
             //  contentValues.put("result1", unresolve_reason.getSelectedItem().toString());
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
             contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
             contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             //contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
@@ -21089,10 +20788,10 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
-            contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItemPosition());
+            contentValues.put("Action", spin_action.getSelectedItem().toString());
+            contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 
             Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();

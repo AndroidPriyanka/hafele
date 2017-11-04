@@ -770,7 +770,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
 
                         if (isInteger(Soapresponse.toString())) {
                             listCount = listCount + 1;
-                            cv.put("sync_status", "U");
+                            cv.put("sync_status", "NU");
                             int responseId = dbAdapter.update(
                                     "sanitary_details", cv,
                                     "Complant_No = '" + list1.get(i).Complant_No
@@ -779,14 +779,13 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                             if (responseId > 0) {
                                 if (list1.get(i).Closure_Status != null) {
                                     if (list1.get(i).Closure_Status
-                                            .equals("0"))
+                                            .equals("Resolved"))
                                     {
                                         dbAdapter.delete(
                                                 "complaint_service_details",
                                                 "complaint_number",
                                                 "'" + list1.get(i).Complant_No
                                                         + "'");
-
                                         dbAdapter.delete("sanitary_details", "Complant_No", "'" + list1.get(i).Complant_No + "'");
 
                                     } else if ((list1.get(i).Closure_Status.equals("Unresolved")) && (list1.get(i).Action.equalsIgnoreCase("MTR required")))
