@@ -55,7 +55,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
     ProgressDialog progress;
     HafeleWebservice ws;
     HafelePreference pref;
-   public static int delayed_days;
+  // public static int delayed_days;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -638,6 +638,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
             int responseID = 0;
             List<FaultReport> list = dbAdapter.getFaultReports(pref.getUserName());
             ContentValues cv = new ContentValues();
+            ContentValues cv2=new ContentValues();
             if (list.size() == 0) {
                 responseID = 2;
             } else {
@@ -648,6 +649,10 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                     SoapPrimitive Soapresponse = ws.saveFaultReport(list.get(i)); // response is id
                     // retvalue
                     if (Soapresponse != null) {
+                        cv2.put("Fault_Finding_Id",String.valueOf(Soapresponse));
+                        int response = dbAdapter.update("sanitary_details",
+                                cv2, "Complant_No = '"+ list.get(i).Complant_No
+                                        + "'", null);
 
                         if (isInteger(Soapresponse.toString())) {
                             listCount = listCount + 1;
@@ -657,33 +662,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                     "Complant_No = '" + list.get(i).Complant_No
                                             + "'", null);
 
-                            if (responseId > 0) {
-                                if (list.get(i).Closure_Status != null) {
-                                    if (list.get(i).Closure_Status
-                                            .equals("Resolved"))
-                                    {
-                                        dbAdapter.delete(
-                                                "complaint_service_details",
-                                                "complaint_number",
-                                                "'" + list.get(i).Complant_No
-                                                        + "'");
-
-                                        dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
-
-                                    } else if ((list.get(i).Closure_Status.equals("Unresolved")) && (list.get(i).Action.equalsIgnoreCase("MTR required")))
-                                    {
-
-                                        dbAdapter.delete(
-                                                "complaint_service_details",
-                                                "complaint_number",
-                                                "'" + list.get(i).Complant_No
-                                                        + "'");
-
-                                        dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
-                                    }
-                                }
-                            }
-
+                            //...................................
 
                             int delayed_days = 0;
                             int diffInDays = 0;
@@ -722,7 +701,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                             }
 
 
-                        //    SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list.get(i), Soapresponse.toString());
+                            //    SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list.get(i), Soapresponse.toString());
 
 
                             SoapPrimitive soap_updateFault = ws.Update_FaulFinding(
@@ -734,6 +713,35 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                     list.get(i).Closed_Date,
                                     delayed_days);
                             isSaved = true;
+
+
+                            if (responseId > 0) {
+                                if (list.get(i).Closure_Status != null) {
+                                    if (list.get(i).Closure_Status
+                                            .equals("Resolved"))
+                                    {
+                                        dbAdapter.delete(
+                                                "complaint_service_details",
+                                                "complaint_number",
+                                                "'" + list.get(i).Complant_No
+                                                        + "'");
+
+                                        dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
+
+                                    } else if ((list.get(i).Closure_Status.equals("Unresolved")) && (list.get(i).Action.equalsIgnoreCase("MTR required")))
+                                    {
+
+                                        dbAdapter.delete(
+                                                "complaint_service_details",
+                                                "complaint_number",
+                                                "'" + list.get(i).Complant_No
+                                                        + "'");
+
+                                        dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
+                                    }
+                                }
+                            }
+
 
 
                          //   SoapPrimitive Soapresponse2 = ws.insert_Sanitary_Details(list.get(i));
@@ -788,7 +796,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                                         + "'");
                                         dbAdapter.delete("sanitary_details", "Complant_No", "'" + list1.get(i).Complant_No + "'");
 
-                                    } else if ((list1.get(i).Closure_Status.equals("Unresolved")) && (list1.get(i).Action.equalsIgnoreCase("MTR required")))
+                                    } /*else if ((list1.get(i).Closure_Status.equals("Unresolved")) && (list1.get(i).Action.equalsIgnoreCase("MTR required")))
                                     {
                                         dbAdapter.delete(
                                                 "complaint_service_details",
@@ -796,7 +804,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                                 "'" + list1.get(i).Complant_No
                                                         + "'");
                                         dbAdapter.delete("sanitary_details", "Complant_No", "'" + list1.get(i).Complant_No + "'");
-                                    }
+                                    }*/
                                 }
                             }
 
@@ -810,7 +818,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
 
                             //Closed_Date=2016/11/25 12:28:42  2016/11/25 12:28:42
 
-                            if (closed_date != null) {
+                /*            if (closed_date != null) {
 
                                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
                                 Date myDate = null;
@@ -834,7 +842,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                                 } catch (ParseException e) {
                                     e.printStackTrace();
                                 }
-                            }
+                            }*/
 
 
                             //      SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list1.get(i), Soapresponse.toString());

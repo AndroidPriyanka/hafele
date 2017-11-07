@@ -115,6 +115,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
     EditText other_reason;
     // FaultReport faultReport;
     ContentValues contentValues = new ContentValues();
+    ContentValues contentvalues = new ContentValues();
     EditText power_factor;
     String dateTime;
     public static final int MEDIA_TYPE_VIDEO = 2;
@@ -8345,8 +8346,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
         // TODO: new forms
 
-        else if (product_sub_category.contains("Sanitary") || product_sub_category.equalsIgnoreCase("Sanitary")) {
+        else /*if (product_sub_category.contains("Sanitary") || product_sub_category.equalsIgnoreCase("Sanitary")) {*/
             //Pratik
+        if (product_group.contains("Sanitary") || product_group.equalsIgnoreCase("Sanitary")) {
             view = inflater.inflate(R.layout.sanitary_fault_finding_form, null);
             baseFrame.removeAllViews();
             baseFrame.addView(view);
@@ -9144,8 +9146,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             radio_showers.setChecked(false);
                             radio_accessories.setEnabled(false);
                             radio_accessories.setChecked(false);
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
                             if (report1.type_of_sanitary != null) {
                                 int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9234,8 +9236,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             radio_accessories.setEnabled(false);
                             radio_accessories.setChecked(false);
 
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
                             if (report1.type_of_sanitary != null) {
                                 int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9340,8 +9342,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             radio_accessories.setChecked(false);
 
 
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
                             if (report1.type_of_sanitary != null) {
                                 int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9432,8 +9434,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             radio_accessories.setEnabled(false);
                             radio_accessories.setChecked(false);
 
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
 
                             if (report1.sanitary_product != null) {
@@ -9525,8 +9527,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
 
 
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
                             if (report1.type_of_sanitary != null) {
                                 int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9617,8 +9619,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
 
 
-                            if (report1.article_no != null) {
-                                article_no.setText(report1.article_no);
+                            if (report.article_no != null) {
+                                article_no.setText(report.article_no);
                             }
                             if (report1.type_of_sanitary != null) {
                                 int pos = Integer.parseInt(report1.type_of_sanitary);
@@ -9683,15 +9685,16 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             }
                         });
 
-                        if (report1.Result!=null){
-                            int index1 = resultList.indexOf(report1.Result);
+                        //................below part
+                        if (report.Result!=null){
+                            int index1 = resultList.indexOf(report.Result);
                             if (index1 > 0) {
                                 unresolve_reason.setSelection(index1);
                             }
                         }
 
-                        if (report1.Action!=null){
-                            int index1 = actionList.indexOf(report1.Action);
+                        if (report.Action!=null){
+                            int index1 = actionList.indexOf(report.Action);
                             if (index1 > 0) {
                                 spin_action.setSelection(index1);
                             }
@@ -9700,16 +9703,16 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                           int pos = Integer.parseInt(report1.Action);
                           spin_action.setSelection(pos);
                       }*/
-                        if (report1.site_Issue_Reason!=null){
-                            int index1 = reasonList1.indexOf(report1.site_Issue_Reason);
+                        if (report.site_Issue_Reason!=null){
+                            int index1 = reasonList1.indexOf(report.site_Issue_Reason);
                             if (index1 > 0) {
                                 spin_siteIssueReason_reason.setSelection(index1);
                             }
                         }
 
 
-                        if (report1.Closure_Status!=null){
-                            int index1 = statusList.indexOf(report1.Closure_Status);
+                        if (report.Closure_Status!=null){
+                            int index1 = statusList.indexOf(report.Closure_Status);
                             if (index1==0) {
                                 status.setSelection(index1);
                                 submit.setVisibility(View.GONE);
@@ -9724,14 +9727,14 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         }
 
 
-                       if (report1.sparce_defect!=null){
-                           edt_spare_defect_articleNo.setText(report1.sparce_defect);
+                       if (report.sparce_defect!=null){
+                           edt_spare_defect_articleNo.setText(report.sparce_defect);
                        }
-                        if (report1.complete_set!=null){
-                            edt_complete_set_articleNo.setText(report1.complete_set);
+                        if (report.complete_set!=null){
+                            edt_complete_set_articleNo.setText(report.complete_set);
                         }
-                        if (report1.Comment!=null){
-                            comments.setText(report1.Comment);
+                        if (report.Comment!=null){
+                            comments.setText(report.Comment);
                         }
 
 
@@ -12336,7 +12339,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         // }
 
                         sendSMSAsync = new SendSMSAsync();
-                      //  sendSMSAsync.execute();
+                        sendSMSAsync.execute();
 
 
                     }
@@ -19995,82 +19998,83 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 response = dbAdapter.submitQuery(contentValues);
             }
         } else if (product_sub_category.contains("Faucet")) {
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            contentValues.put("type_of_sanitary", spin_type_of_faucet.getSelectedItemPosition());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_product_wrong_product.isChecked()) {
-                String str_product_wrong_product = radio_product_wrong_product.getText().toString();
-                contentValues.put("sanitary_product", str_product_wrong_product);
-            } else if (radio_product_wrong_installation.isChecked()) {
-                String str_product_wrong_installation = radio_product_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_product_wrong_installation);
-            } else if (radio_product_damage.isChecked()) {
-                String str_product_damage = radio_product_damage.getText().toString();
-                contentValues.put("sanitary_product", str_product_damage);
-            }
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                contentvalues.put("type_of_sanitary", spin_type_of_faucet.getSelectedItemPosition());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_product_wrong_product.isChecked()) {
+                    String str_product_wrong_product = radio_product_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_wrong_product);
+                } else if (radio_product_wrong_installation.isChecked()) {
+                    String str_product_wrong_installation = radio_product_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_wrong_installation);
+                } else if (radio_product_damage.isChecked()) {
+                    String str_product_damage = radio_product_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_damage);
+                }
 
-            //  contentValues.put("sanitary_product", sanitary_product_id);
+                //  contentValues.put("sanitary_product", sanitary_product_id);
 
-            if (leakage_chk_1.isChecked()) {
-                String str_leakage_chk_1 = leakage_chk_1.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_chk_1);
-                contentValues.put("sanitary_type_of_leakage", spin_type_of_faucet_leakage.getSelectedItemPosition());
-            } else if (leakage_chk_2.isChecked()) {
-                String str_leakage_chk_2 = leakage_chk_2.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_chk_2);
-            }
+                if (leakage_chk_1.isChecked()) {
+                    String str_leakage_chk_1 = leakage_chk_1.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_chk_1);
+                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_faucet_leakage.getSelectedItemPosition());
+                } else if (leakage_chk_2.isChecked()) {
+                    String str_leakage_chk_2 = leakage_chk_2.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_chk_2);
+                }
 
-            if (operate_chk_1.isChecked()) {
-                String str_operate_chk_1 = operate_chk_1.getText().toString();
-                contentValues.put("does_not_operate", str_operate_chk_1);
-            } else if (operate_chk_2.isChecked()) {
-                String str_operate_chk_2 = operate_chk_2.getText().toString();
-                contentValues.put("does_not_operate", str_operate_chk_2);
-            }
+                if (operate_chk_1.isChecked()) {
+                    String str_operate_chk_1 = operate_chk_1.getText().toString();
+                    contentvalues.put("does_not_operate", str_operate_chk_1);
+                } else if (operate_chk_2.isChecked()) {
+                    String str_operate_chk_2 = operate_chk_2.getText().toString();
+                    contentvalues.put("does_not_operate", str_operate_chk_2);
+                }
 
-            if (weak_flow_chk_1.isChecked()) {
-                String str_weak_flow_chk_1 = weak_flow_chk_1.getText().toString();
-                contentValues.put("weak_flow", str_weak_flow_chk_1);
-                contentValues.put("type_of_weak_flow", spin_type_of__work_flow.getSelectedItemPosition());
-            } else if (weak_flow_chk_2.isChecked()) {
-                String str_weak_flow_chk_2 = weak_flow_chk_2.getText().toString();
-                contentValues.put("weak_flow", str_weak_flow_chk_2);
-            }
-            if (noise_chk_1.isChecked()) {
-                String str_noise_chk_1 = noise_chk_1.getText().toString();
-                contentValues.put("noise", str_noise_chk_1);
+                if (weak_flow_chk_1.isChecked()) {
+                    String str_weak_flow_chk_1 = weak_flow_chk_1.getText().toString();
+                    contentvalues.put("weak_flow", str_weak_flow_chk_1);
+                    contentvalues.put("type_of_weak_flow", spin_type_of__work_flow.getSelectedItemPosition());
+                } else if (weak_flow_chk_2.isChecked()) {
+                    String str_weak_flow_chk_2 = weak_flow_chk_2.getText().toString();
+                    contentvalues.put("weak_flow", str_weak_flow_chk_2);
+                }
+                if (noise_chk_1.isChecked()) {
+                    String str_noise_chk_1 = noise_chk_1.getText().toString();
+                    contentvalues.put("noise", str_noise_chk_1);
 
-            } else if (noise_chk_2.isChecked()) {
-                String str_noise_chk_2 = noise_chk_2.getText().toString();
-                contentValues.put("noise", str_noise_chk_2);
-            }
-            contentValues.put("warranty", spin_faucet_warranty.getSelectedItemPosition());
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
+                } else if (noise_chk_2.isChecked()) {
+                    String str_noise_chk_2 = noise_chk_2.getText().toString();
+                    contentvalues.put("noise", str_noise_chk_2);
+                }
+                contentvalues.put("warranty", spin_faucet_warranty.getSelectedItemPosition());
+                contentvalues.put("Complant_No", complaint_number);
+    /*        contentvalues.put("Product_Category", product_category);
+            contentvalues.put("product_Sub_Category", product_sub_category);
+            contentvalues.put("article_no", article_no.getText().toString());
+            contentvalues.put("Comment", comments.getText().toString());*/
+                contentvalues.put("sync_status", "NU");
+                //  contentvalues.put("Insert_Date", dateTime);
 
 
 
@@ -20081,20 +20085,20 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("noise",noise);*/
 
 
-            //    contentValues.put("Insert_Date", dateTime);
+                //    contentValues.put("Insert_Date", dateTime);
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            //  contentValues.put("result1", unresolve_reason.getSelectedItem().toString());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+                //  contentValues.put("result1", unresolve_reason.getSelectedItem().toString());
+         /*   contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentvalues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
+            contentvalues.put("Action", spin_action.getSelectedItemPosition());*/
           /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
@@ -20103,7 +20107,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
             contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 */
-            Calendar calendar = Calendar.getInstance();
+   /*         Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_updatedDate = sdf.format(updatedDate);
@@ -20113,103 +20117,109 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+          *//*  if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
-            }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
 
 
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+
+
         }
         if (product_sub_category.contains("Cistern")) {
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            contentValues.put("type_of_sanitary", spin_type_of_cistern.getSelectedItemPosition());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_cistern_wrong_product.isChecked()) {
-                String str_product_wrong_product = radio_cistern_wrong_product.getText().toString();
-                contentValues.put("sanitary_product",str_product_wrong_product);
-            } else if (radio_cistern_wrong_installation.isChecked()) {
-                String str_product_wrong_installation = radio_cistern_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_product_wrong_installation);
-            } else if (radio_cistern_damage.isChecked()) {
-                String str_product_damage = radio_cistern_damage.getText().toString();
-                contentValues.put("sanitary_product", str_product_damage);
-            }
-            //  contentValues.put("sanitary_product", sanitary_product_id);
-            if (leakage_cistern_chk_1.isChecked()) {
-                String str_leakage_cistern_chk_1 = leakage_cistern_chk_1.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_cistern_chk_1);
-                contentValues.put("sanitary_type_of_leakage", spin_type_of_cistern_leakage.getSelectedItemPosition());
-            } else if (leakage_cistern_chk_2.isChecked()) {
-                String str_leakage_cistern_chk_2 = leakage_cistern_chk_2.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_cistern_chk_2);
-            }
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                contentvalues.put("type_of_sanitary", spin_type_of_cistern.getSelectedItemPosition());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_cistern_wrong_product.isChecked()) {
+                    String str_product_wrong_product = radio_cistern_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_wrong_product);
+                } else if (radio_cistern_wrong_installation.isChecked()) {
+                    String str_product_wrong_installation = radio_cistern_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_wrong_installation);
+                } else if (radio_cistern_damage.isChecked()) {
+                    String str_product_damage = radio_cistern_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_damage);
+                }
+                //  contentValues.put("sanitary_product", sanitary_product_id);
+                if (leakage_cistern_chk_1.isChecked()) {
+                    String str_leakage_cistern_chk_1 = leakage_cistern_chk_1.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_cistern_chk_1);
+                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_cistern_leakage.getSelectedItemPosition());
+                } else if (leakage_cistern_chk_2.isChecked()) {
+                    String str_leakage_cistern_chk_2 = leakage_cistern_chk_2.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_cistern_chk_2);
+                }
 
 
-            if (flush_chk_1.isChecked()) {
-                String str_flush_chk_1 = flush_chk_1.getText().toString();
-                contentValues.put("flush_not_working", str_flush_chk_1);
-                contentValues.put("type_of_flush_not_working", spin_type_of_cistern_fulsh_not_working.getSelectedItemPosition());
-            } else if (flush_chk_2.isChecked()) {
-                String str_flush_chk_2 = flush_chk_2.getText().toString();
-                contentValues.put("flush_not_working", str_flush_chk_2);
-            }
+                if (flush_chk_1.isChecked()) {
+                    String str_flush_chk_1 = flush_chk_1.getText().toString();
+                    contentvalues.put("flush_not_working", str_flush_chk_1);
+                    contentvalues.put("type_of_flush_not_working", spin_type_of_cistern_fulsh_not_working.getSelectedItemPosition());
+                } else if (flush_chk_2.isChecked()) {
+                    String str_flush_chk_2 = flush_chk_2.getText().toString();
+                    contentvalues.put("flush_not_working", str_flush_chk_2);
+                }
 
-            if (cistern_weak_flow_chk_1.isChecked()) {
-                String str_cistern_weak_flow_chk_1 = cistern_weak_flow_chk_1.getText().toString();
-                contentValues.put("weak_flow", str_cistern_weak_flow_chk_1);
-                contentValues.put("type_of_weak_flow", spin_type_of_cistern_work_flow.getSelectedItemPosition());
-            } else if (cistern_weak_flow_chk_2.isChecked()) {
-                String str_cistern_weak_flow_chk_2 = cistern_weak_flow_chk_2.getText().toString();
-                contentValues.put("weak_flow", str_cistern_weak_flow_chk_2);
-            }
+                if (cistern_weak_flow_chk_1.isChecked()) {
+                    String str_cistern_weak_flow_chk_1 = cistern_weak_flow_chk_1.getText().toString();
+                    contentvalues.put("weak_flow", str_cistern_weak_flow_chk_1);
+                    contentvalues.put("type_of_weak_flow", spin_type_of_cistern_work_flow.getSelectedItemPosition());
+                } else if (cistern_weak_flow_chk_2.isChecked()) {
+                    String str_cistern_weak_flow_chk_2 = cistern_weak_flow_chk_2.getText().toString();
+                    contentvalues.put("weak_flow", str_cistern_weak_flow_chk_2);
+                }
 
-            if (asthetics_chk_1.isChecked()) {
-                String str_asthetics_chk_1 = asthetics_chk_1.getText().toString();
-                contentValues.put("asthetics", str_asthetics_chk_1);
-                contentValues.put("type_of_asthetics", spin_type_of_cistern_asthetics.getSelectedItemPosition());
-            } else if (asthetics_chk_2.isChecked()) {
-                String str_asthetics_chk_2 = asthetics_chk_2.getText().toString();
-                contentValues.put("asthetics", str_asthetics_chk_2);
-            }
-            contentValues.put("warranty", spin_cistern_warranty.getSelectedItemPosition());
+                if (asthetics_chk_1.isChecked()) {
+                    String str_asthetics_chk_1 = asthetics_chk_1.getText().toString();
+                    contentvalues.put("asthetics", str_asthetics_chk_1);
+                    contentvalues.put("type_of_asthetics", spin_type_of_cistern_asthetics.getSelectedItemPosition());
+                } else if (asthetics_chk_2.isChecked()) {
+                    String str_asthetics_chk_2 = asthetics_chk_2.getText().toString();
+                    contentvalues.put("asthetics", str_asthetics_chk_2);
+                }
+                contentvalues.put("warranty", spin_cistern_warranty.getSelectedItemPosition());
 
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
+                contentvalues.put("Complant_No", complaint_number);
+     /*       contentvalues.put("Product_Category", product_category);
+            contentvalues.put("product_Sub_Category", product_sub_category);
+            contentvalues.put("article_no", article_no.getText().toString());
+            contentvalues.put("Comment", comments.getText().toString());*/
+                contentvalues.put("sync_status", "NU");
+                //   contentvalues.put("Insert_Date", dateTime);
 
 
 
@@ -20220,28 +20230,28 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("noise",noise);*/
 
 
-            //    contentValues.put("Insert_Date", dateTime);
+                //    contentValues.put("Insert_Date", dateTime);
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+/*            contentvalues.put("Result", unresolve_reason.getSelectedItem().toString());
+            contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentvalues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
-          /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
+            contentvalues.put("Action", spin_action.getSelectedItemPosition());
+          *//*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
                 contentValues.put("wrong_product_reason", spin_wrong_product1.getSelectedItem().toString());
             }
 
             contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
-*/
+*//*
             Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -20252,92 +20262,98 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+            if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
-            }
+
+
         }
         //....................Kithchen sink
         if (product_sub_category.contains("Kitchen Sink")) {
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            contentValues.put("type_of_sanitary", spin_type_of_kitchen_sink.getSelectedItemPosition());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_kitchen_sink_wrong_product.isChecked()) {
-                String str_radio_kitchen_sink_wrong_product = radio_kitchen_sink_wrong_product.getText().toString();
-                contentValues.put("sanitary_product", str_radio_kitchen_sink_wrong_product);
-            } else if (radio_kitchen_sink_wrong_installation.isChecked()) {
-                String str_radio_kitchen_sink_wrong_installation = radio_kitchen_sink_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_radio_kitchen_sink_wrong_installation);
-            } else if (radio_kitchen_sink_damage.isChecked()) {
-                String str_radio_kitchen_sink_damage = radio_kitchen_sink_damage.getText().toString();
-                contentValues.put("sanitary_product", str_radio_kitchen_sink_damage);
-            }
-            //  contentValues.put("sanitary_product", sanitary_product_id);
-            if (leakage_kitchen_sink_chk_1.isChecked()) {
-                String str_leakage_kitchen_sink_chk_1 = leakage_kitchen_sink_chk_1.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_1);
-                contentValues.put("sanitary_type_of_leakage", spin_kitchen_sink_leakage.getSelectedItemPosition());
-            } else if (leakage_kitchen_sink_chk_2.isChecked()) {
-                String str_leakage_kitchen_sink_chk_2 = leakage_kitchen_sink_chk_2.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_2);
-            }
-            if (drainage_chk_1.isChecked()) {
-                String str_drainage_chk_1 = drainage_chk_1.getText().toString();
-                contentValues.put("drainage", str_drainage_chk_1);
-                contentValues.put("type_of_drainage", spin_kitchen_sink_draonage.getSelectedItemPosition());
-            } else if (drainage_chk_2.isChecked()) {
-                String str_drainage_chk_2 = drainage_chk_2.getText().toString();
-                contentValues.put("drainage", str_drainage_chk_2);
-            }
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                contentvalues.put("type_of_sanitary", spin_type_of_kitchen_sink.getSelectedItemPosition());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_kitchen_sink_wrong_product.isChecked()) {
+                    String str_radio_kitchen_sink_wrong_product = radio_kitchen_sink_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_kitchen_sink_wrong_product);
+                } else if (radio_kitchen_sink_wrong_installation.isChecked()) {
+                    String str_radio_kitchen_sink_wrong_installation = radio_kitchen_sink_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_kitchen_sink_wrong_installation);
+                } else if (radio_kitchen_sink_damage.isChecked()) {
+                    String str_radio_kitchen_sink_damage = radio_kitchen_sink_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_kitchen_sink_damage);
+                }
+                //  contentValues.put("sanitary_product", sanitary_product_id);
+                if (leakage_kitchen_sink_chk_1.isChecked()) {
+                    String str_leakage_kitchen_sink_chk_1 = leakage_kitchen_sink_chk_1.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_1);
+                    contentvalues.put("sanitary_type_of_leakage", spin_kitchen_sink_leakage.getSelectedItemPosition());
+                } else if (leakage_kitchen_sink_chk_2.isChecked()) {
+                    String str_leakage_kitchen_sink_chk_2 = leakage_kitchen_sink_chk_2.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_2);
+                }
+                if (drainage_chk_1.isChecked()) {
+                    String str_drainage_chk_1 = drainage_chk_1.getText().toString();
+                    contentvalues.put("drainage", str_drainage_chk_1);
+                    contentvalues.put("type_of_drainage", spin_kitchen_sink_draonage.getSelectedItemPosition());
+                } else if (drainage_chk_2.isChecked()) {
+                    String str_drainage_chk_2 = drainage_chk_2.getText().toString();
+                    contentvalues.put("drainage", str_drainage_chk_2);
+                }
 
 
-            if (kitchen_sink_asthetics_chk_1.isChecked()) {
-                String str_kitchen_sink_asthetics_chk_1 = kitchen_sink_asthetics_chk_1.getText().toString();
-                contentValues.put("asthetics", str_kitchen_sink_asthetics_chk_1);
-                contentValues.put("type_of_asthetics", spin_kitchen_sink_asthetics.getSelectedItemPosition());
-            } else if (kitchen_sink_asthetics_chk_2.isChecked()) {
-                String str_kitchen_sink_asthetics_chk_2 = kitchen_sink_asthetics_chk_2.getText().toString();
-                contentValues.put("asthetics", str_kitchen_sink_asthetics_chk_2);
-            }
-            contentValues.put("warranty", spin_kitchen_sink_warranty.getSelectedItemPosition());
+                if (kitchen_sink_asthetics_chk_1.isChecked()) {
+                    String str_kitchen_sink_asthetics_chk_1 = kitchen_sink_asthetics_chk_1.getText().toString();
+                    contentvalues.put("asthetics", str_kitchen_sink_asthetics_chk_1);
+                    contentvalues.put("type_of_asthetics", spin_kitchen_sink_asthetics.getSelectedItemPosition());
+                } else if (kitchen_sink_asthetics_chk_2.isChecked()) {
+                    String str_kitchen_sink_asthetics_chk_2 = kitchen_sink_asthetics_chk_2.getText().toString();
+                    contentvalues.put("asthetics", str_kitchen_sink_asthetics_chk_2);
+                }
+                contentvalues.put("warranty", spin_kitchen_sink_warranty.getSelectedItemPosition());
 
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
+                contentvalues.put("Complant_No", complaint_number);
+       /*     contentvalues.put("Product_Category", product_category);
+            contentvalues.put("product_Sub_Category", product_sub_category);
+            contentvalues.put("article_no", article_no.getText().toString());
+            contentvalues.put("Comment", comments.getText().toString());*/
+                contentvalues.put("sync_status", "NU");
+                // contentvalues.put("Insert_Date", dateTime);
 
 
 
@@ -20348,28 +20364,28 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("noise",noise);*/
 
 
-            //    contentValues.put("Insert_Date", dateTime);
+                //    contentValues.put("Insert_Date", dateTime);
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+           /* contentvalues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentvalues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
-          /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
+            contentvalues.put("Action", spin_action.getSelectedItemPosition());
+          *//*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
                 contentValues.put("wrong_product_reason", spin_wrong_product1.getSelectedItem().toString());
             }
 
             contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
-*/
+*//*
             Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -20380,93 +20396,99 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+            if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
-            }
+
+
         }
         //....................ceranmic basin
         if (product_sub_category.contains("Ceramic Basin")) {
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_ceramic_basin_wrong_product.isChecked()) {
-                String str_radio_ceramic_basin_wrong_product = radio_ceramic_basin_wrong_product.getText().toString();
-                contentValues.put("sanitary_product", str_radio_ceramic_basin_wrong_product);
-            } else if (radio_ceramic_basin_wrong_installation.isChecked()) {
-                String str_radio_ceramic_basin_wrong_installation = radio_ceramic_basin_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_radio_ceramic_basin_wrong_installation);
-            } else if (radio_ceramic_basin_damage.isChecked()) {
-                String str_radio_ceramic_basin_damage = radio_ceramic_basin_damage.getText().toString();
-                contentValues.put("sanitary_product", str_radio_ceramic_basin_damage);
-            }
-            //  contentValues.put("sanitary_product", sanitary_product_id);
-            if (leakage_ceramic_basin_chk_1.isChecked()) {
-                String str_leakage_ceramic_basin_chk_1 = leakage_ceramic_basin_chk_1.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_1);
-                contentValues.put("sanitary_type_of_leakage", spin_ceramic_basin_leakage.getSelectedItemPosition());
-            } else if (leakage_ceramic_basin_chk_2.isChecked()) {
-                String str_leakage_ceramic_basin_chk_2 = leakage_ceramic_basin_chk_2.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_2);
-            }
-            if (ceramic_basin_drainage_chk_1.isChecked()) {
-                String str_ceramic_basin_drainage_chk_1 = ceramic_basin_drainage_chk_1.getText().toString();
-                contentValues.put("drainage", str_ceramic_basin_drainage_chk_1);
-                contentValues.put("type_of_drainage", spin_ceramic_basin_drainage.getSelectedItemPosition());
-            } else if (ceramic_basin_drainage_chk_2.isChecked()) {
-                String str_ceramic_basin_drainage_chk_2 = ceramic_basin_drainage_chk_2.getText().toString();
-                contentValues.put("drainage", str_ceramic_basin_drainage_chk_2);
-            }
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_ceramic_basin_wrong_product.isChecked()) {
+                    String str_radio_ceramic_basin_wrong_product = radio_ceramic_basin_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_ceramic_basin_wrong_product);
+                } else if (radio_ceramic_basin_wrong_installation.isChecked()) {
+                    String str_radio_ceramic_basin_wrong_installation = radio_ceramic_basin_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_ceramic_basin_wrong_installation);
+                } else if (radio_ceramic_basin_damage.isChecked()) {
+                    String str_radio_ceramic_basin_damage = radio_ceramic_basin_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_ceramic_basin_damage);
+                }
+                //  contentValues.put("sanitary_product", sanitary_product_id);
+                if (leakage_ceramic_basin_chk_1.isChecked()) {
+                    String str_leakage_ceramic_basin_chk_1 = leakage_ceramic_basin_chk_1.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_1);
+                    contentvalues.put("sanitary_type_of_leakage", spin_ceramic_basin_leakage.getSelectedItemPosition());
+                } else if (leakage_ceramic_basin_chk_2.isChecked()) {
+                    String str_leakage_ceramic_basin_chk_2 = leakage_ceramic_basin_chk_2.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_2);
+                }
+                if (ceramic_basin_drainage_chk_1.isChecked()) {
+                    String str_ceramic_basin_drainage_chk_1 = ceramic_basin_drainage_chk_1.getText().toString();
+                    contentvalues.put("drainage", str_ceramic_basin_drainage_chk_1);
+                    contentvalues.put("type_of_drainage", spin_ceramic_basin_drainage.getSelectedItemPosition());
+                } else if (ceramic_basin_drainage_chk_2.isChecked()) {
+                    String str_ceramic_basin_drainage_chk_2 = ceramic_basin_drainage_chk_2.getText().toString();
+                    contentvalues.put("drainage", str_ceramic_basin_drainage_chk_2);
+                }
 
 
-            if (ceramic_basin_asthetics_chk_1.isChecked()) {
-                String str_ceramic_basin_asthetics_chk_1 = ceramic_basin_asthetics_chk_1.getText().toString();
-                contentValues.put("asthetics", str_ceramic_basin_asthetics_chk_1);
-                contentValues.put("type_of_asthetics", spin_ceramic_basin_asthetics.getSelectedItemPosition());
-            } else if (ceramic_basin_asthetics_chk_2.isChecked()) {
-                String str_ceramic_basin_asthetics_chk_2 = ceramic_basin_asthetics_chk_2.getText().toString();
-                contentValues.put("asthetics", str_ceramic_basin_asthetics_chk_2);
-            }
-            contentValues.put("warranty", spin_ceramic_basin_warranty.getSelectedItemPosition());
+                if (ceramic_basin_asthetics_chk_1.isChecked()) {
+                    String str_ceramic_basin_asthetics_chk_1 = ceramic_basin_asthetics_chk_1.getText().toString();
+                    contentvalues.put("asthetics", str_ceramic_basin_asthetics_chk_1);
+                    contentvalues.put("type_of_asthetics", spin_ceramic_basin_asthetics.getSelectedItemPosition());
+                } else if (ceramic_basin_asthetics_chk_2.isChecked()) {
+                    String str_ceramic_basin_asthetics_chk_2 = ceramic_basin_asthetics_chk_2.getText().toString();
+                    contentvalues.put("asthetics", str_ceramic_basin_asthetics_chk_2);
+                }
+                contentvalues.put("warranty", spin_ceramic_basin_warranty.getSelectedItemPosition());
 
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
-
+                contentvalues.put("Complant_No", complaint_number);
+      /*      contentvalues.put("Product_Category", product_category);
+            contentvalues.put("product_Sub_Category", product_sub_category);
+            contentvalues.put("article_no", article_no.getText().toString());
+            contentvalues.put("Comment", comments.getText().toString());*/
+                contentvalues.put("sync_status", "NU");
+          /*  contentvalues.put("Insert_Date", dateTime);
+*/
 
 
           /*
@@ -20476,20 +20498,20 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("noise",noise);*/
 
 
-            //    contentValues.put("Insert_Date", dateTime);
+                //    contentValues.put("Insert_Date", dateTime);
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+          /*  contentvalues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+           /*     contentvalues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
+            contentvalues.put("Action", spin_action.getSelectedItemPosition());*/
           /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
@@ -20498,7 +20520,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
             contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 */
-            Calendar calendar = Calendar.getInstance();
+      /*      Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_updatedDate = sdf.format(updatedDate);
@@ -20508,94 +20530,101 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+            if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
-            }
+
+
         }
 
         //....................Showers
         if (product_sub_category.contains("Showers")) {
 
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            contentValues.put("type_of_sanitary", spin_type_of_shower.getSelectedItemPosition());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_shower_wrong_product.isChecked()) {
-                String str_radio_shower_wrong_product = radio_shower_wrong_product.getText().toString();
-                contentValues.put("sanitary_product", str_radio_shower_wrong_product);
-            } else if (radio_shower_wrong_installation.isChecked()) {
-                String str_radio_shower_wrong_installation = radio_shower_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_radio_shower_wrong_installation);
-            } else if (radio_shower_damage.isChecked()) {
-                String str_radio_shower_damage = radio_shower_damage.getText().toString();
-                contentValues.put("sanitary_product", str_radio_shower_damage);
-            }
-            //  contentValues.put("sanitary_product", sanitary_product_id);
-            if (leakage_shower_chk_1.isChecked()) {
-                String str_leakage_shower_chk_1 = leakage_shower_chk_1.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_shower_chk_1);
-                contentValues.put("sanitary_type_of_leakage", spin_shower_leakage.getSelectedItemPosition());
-            } else if (leakage_shower_chk_2.isChecked()) {
-                String str_leakage_shower_chk_2 = leakage_shower_chk_2.getText().toString();
-                contentValues.put("sanitary_leakage", str_leakage_shower_chk_2);
-            }
-            if (does_not_operate_chk_1.isChecked()) {
-                String str_does_not_operate_chk_1 = does_not_operate_chk_1.getText().toString();
-                contentValues.put("does_not_operate", str_does_not_operate_chk_1);
-                contentValues.put("type_does_not_operate", spin_shower_does_not_operate.getSelectedItemPosition());
-            } else if (does_not_operate_chk_2.isChecked()) {
-                String str_does_not_operate_chk_2 = does_not_operate_chk_2.getText().toString();
-                contentValues.put("does_not_operate", str_does_not_operate_chk_2);
-            }
+
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                contentvalues.put("type_of_sanitary", spin_type_of_shower.getSelectedItemPosition());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_shower_wrong_product.isChecked()) {
+                    String str_radio_shower_wrong_product = radio_shower_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_shower_wrong_product);
+                } else if (radio_shower_wrong_installation.isChecked()) {
+                    String str_radio_shower_wrong_installation = radio_shower_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_shower_wrong_installation);
+                } else if (radio_shower_damage.isChecked()) {
+                    String str_radio_shower_damage = radio_shower_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_shower_damage);
+                }
+                //  contentValues.put("sanitary_product", sanitary_product_id);
+                if (leakage_shower_chk_1.isChecked()) {
+                    String str_leakage_shower_chk_1 = leakage_shower_chk_1.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_shower_chk_1);
+                    contentvalues.put("sanitary_type_of_leakage", spin_shower_leakage.getSelectedItemPosition());
+                } else if (leakage_shower_chk_2.isChecked()) {
+                    String str_leakage_shower_chk_2 = leakage_shower_chk_2.getText().toString();
+                    contentvalues.put("sanitary_leakage", str_leakage_shower_chk_2);
+                }
+                if (does_not_operate_chk_1.isChecked()) {
+                    String str_does_not_operate_chk_1 = does_not_operate_chk_1.getText().toString();
+                    contentvalues.put("does_not_operate", str_does_not_operate_chk_1);
+                    contentvalues.put("type_does_not_operate", spin_shower_does_not_operate.getSelectedItemPosition());
+                } else if (does_not_operate_chk_2.isChecked()) {
+                    String str_does_not_operate_chk_2 = does_not_operate_chk_2.getText().toString();
+                    contentvalues.put("does_not_operate", str_does_not_operate_chk_2);
+                }
 
 
-            if (shower_asthetics_chk_1.isChecked()) {
-                String str_shower_asthetics_chk_1 = shower_asthetics_chk_1.getText().toString();
-                contentValues.put("asthetics", str_shower_asthetics_chk_1);
-                contentValues.put("type_of_asthetics", spin_shower_asthetics.getSelectedItemPosition());
-            } else if (shower_asthetics_chk_2.isChecked()) {
-                String str_shower_asthetics_chk_2 = shower_asthetics_chk_2.getText().toString();
-                contentValues.put("asthetics", str_shower_asthetics_chk_2);
-            }
-            contentValues.put("warranty", spin_shower_warranty.getSelectedItemPosition());
+                if (shower_asthetics_chk_1.isChecked()) {
+                    String str_shower_asthetics_chk_1 = shower_asthetics_chk_1.getText().toString();
+                    contentvalues.put("asthetics", str_shower_asthetics_chk_1);
+                    contentvalues.put("type_of_asthetics", spin_shower_asthetics.getSelectedItemPosition());
+                } else if (shower_asthetics_chk_2.isChecked()) {
+                    String str_shower_asthetics_chk_2 = shower_asthetics_chk_2.getText().toString();
+                    contentvalues.put("asthetics", str_shower_asthetics_chk_2);
+                }
+                contentvalues.put("warranty", spin_shower_warranty.getSelectedItemPosition());
 
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
+                contentvalues.put("Complant_No", complaint_number);
+                // contentvalues.put("Product_Category", product_category);
+                //contentvalues.put("product_Sub_Category", product_sub_category);
+                // contentvalues.put("article_no", article_no.getText().toString());
+                //     contentvalues.put("Comment", comments.getText().toString());
+                contentvalues.put("sync_status", "NU");
+    /*        contentvalues.put("Insert_Date", dateTime);*/
 
 
 
@@ -20606,20 +20635,20 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             contentValues.put("noise",noise);*/
 
 
-            //    contentValues.put("Insert_Date", dateTime);
+                //    contentValues.put("Insert_Date", dateTime);
            /* contentValues.put("Width", cabinet_width.getText().toString());
             contentValues.put("Height", cabinet_height.getText().toString());
 */
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+        /*    contentvalues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentvalues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action", spin_action.getSelectedItemPosition());
+            contentvalues.put("Action", spin_action.getSelectedItemPosition());*/
           /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
                 contentValues.put("wrong_product_reason", "");
             } else {
@@ -20628,7 +20657,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
             contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 */
-            Calendar calendar = Calendar.getInstance();
+    /*        Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_updatedDate = sdf.format(updatedDate);
@@ -20638,108 +20667,99 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+            if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
-            }
+
+
         }
+
+
         //....................Accessories
         if (product_sub_category.contains("Accessories")) {
-            if (radio_faucet.isChecked()) {
-                String str_faucet = radio_faucet.getText().toString();
-                contentValues.put("radio_sanitary", str_faucet);
-            } else if (radio_cistern.isChecked()) {
-                String str_cistern = radio_cistern.getText().toString();
-                contentValues.put("radio_sanitary", str_cistern);
-            } else if (radio_kitchensink.isChecked()) {
-                String str_kitchensink = radio_kitchensink.getText().toString();
-                contentValues.put("radio_sanitary", str_kitchensink);
-            } else if (radio_ceramic_basin.isChecked()) {
-                String str_ceramic_basin = radio_ceramic_basin.getText().toString();
-                contentValues.put("radio_sanitary", str_ceramic_basin);
-            } else if (radio_showers.isChecked()) {
-                String str_shower = radio_showers.getText().toString();
-                contentValues.put("radio_sanitary", str_shower);
-            } else if (radio_accessories.isChecked()) {
-                String str_accessories = radio_accessories.getText().toString();
-                contentValues.put("radio_sanitary", str_accessories);
-            }
-            // contentValues.put("radio_sanitary", str_radio_sanitary);
-            //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
-            // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-            if (radio_accessories_wrong_product.isChecked()) {
-                String str_rradio_accessories_wrong_product = radio_accessories_wrong_product.getText().toString();
-                contentValues.put("sanitary_product", str_rradio_accessories_wrong_product);
-            } else if (radio_accessories_wrong_installation.isChecked()) {
-                String str_radio_accessories_wrong_installation = radio_accessories_wrong_installation.getText().toString();
-                contentValues.put("sanitary_product", str_radio_accessories_wrong_installation);
-            } else if (radio_accessories_damage.isChecked()) {
-                String str_radio_accessories_damage = radio_accessories_damage.getText().toString();
-                contentValues.put("sanitary_product", str_radio_accessories_damage);
-            }
 
 
-            if (accessories_asthetics_chk_1.isChecked()) {
-                String str_accessories_asthetics_chk_1 = accessories_asthetics_chk_1.getText().toString();
-                contentValues.put("asthetics", str_accessories_asthetics_chk_1);
-                contentValues.put("type_of_asthetics", spin_accessories_asthesis.getSelectedItemPosition());
-            } else if (accessories_asthetics_chk_2.isChecked()) {
-                String str_accessories_asthetics_chk_2 = accessories_asthetics_chk_2.getText().toString();
-                contentValues.put("asthetics", str_accessories_asthetics_chk_2);
-            }
-            contentValues.put("warranty", spin_accessories_warranty.getSelectedItemPosition());
+            try {
+                if (radio_faucet.isChecked()) {
+                    String str_faucet = radio_faucet.getText().toString();
+                    contentvalues.put("radio_sanitary", str_faucet);
+                } else if (radio_cistern.isChecked()) {
+                    String str_cistern = radio_cistern.getText().toString();
+                    contentvalues.put("radio_sanitary", str_cistern);
+                } else if (radio_kitchensink.isChecked()) {
+                    String str_kitchensink = radio_kitchensink.getText().toString();
+                    contentvalues.put("radio_sanitary", str_kitchensink);
+                } else if (radio_ceramic_basin.isChecked()) {
+                    String str_ceramic_basin = radio_ceramic_basin.getText().toString();
+                    contentvalues.put("radio_sanitary", str_ceramic_basin);
+                } else if (radio_showers.isChecked()) {
+                    String str_shower = radio_showers.getText().toString();
+                    contentvalues.put("radio_sanitary", str_shower);
+                } else if (radio_accessories.isChecked()) {
+                    String str_accessories = radio_accessories.getText().toString();
+                    contentvalues.put("radio_sanitary", str_accessories);
+                }
+                // contentValues.put("radio_sanitary", str_radio_sanitary);
+                //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
+                // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
+                if (radio_accessories_wrong_product.isChecked()) {
+                    String str_rradio_accessories_wrong_product = radio_accessories_wrong_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_rradio_accessories_wrong_product);
+                } else if (radio_accessories_wrong_installation.isChecked()) {
+                    String str_radio_accessories_wrong_installation = radio_accessories_wrong_installation.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_accessories_wrong_installation);
+                } else if (radio_accessories_damage.isChecked()) {
+                    String str_radio_accessories_damage = radio_accessories_damage.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_accessories_damage);
+                }
 
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("article_no", article_no.getText().toString());
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
+
+                if (accessories_asthetics_chk_1.isChecked()) {
+                    String str_accessories_asthetics_chk_1 = accessories_asthetics_chk_1.getText().toString();
+                    contentvalues.put("asthetics", str_accessories_asthetics_chk_1);
+                    contentvalues.put("type_of_asthetics", spin_accessories_asthesis.getSelectedItemPosition());
+                } else if (accessories_asthetics_chk_2.isChecked()) {
+                    String str_accessories_asthetics_chk_2 = accessories_asthetics_chk_2.getText().toString();
+                    contentvalues.put("asthetics", str_accessories_asthetics_chk_2);
+                }
+                contentvalues.put("warranty", spin_accessories_warranty.getSelectedItemPosition());
+
+                contentvalues.put("Complant_No", complaint_number);
+          /*  contentvalues.put("Product_Category", product_category);
+            contentvalues.put("product_Sub_Category", product_sub_category);*/
+           /* contentvalues.put("article_no", article_no.getText().toString());
+            contentvalues.put("Comment", comments.getText().toString());*/
+                contentvalues.put("sync_status", "NU");
+          /*  contentvalues.put("Insert_Date", dateTime);
 
 
-
-          /*
-
-
-
-            contentValues.put("noise",noise);*/
-
-
-            //    contentValues.put("Insert_Date", dateTime);
-           /* contentValues.put("Width", cabinet_width.getText().toString());
-            contentValues.put("Height", cabinet_height.getText().toString());
-*/
-            contentValues.put("Result", unresolve_reason.getSelectedItemPosition());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+            contentvalues.put("Result", unresolve_reason.getSelectedItemPosition());
+            contentvalues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+            contentvalues.put("complete_set", edt_complete_set_articleNo.getText().toString());
             // contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
             if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
+                contentvalues.put("site_Issue_Reason", "");
             } else {
-                contentValues.put("site_Issue_Reason",spin_siteIssueReason_reason.getSelectedItemPosition());
+                contentvalues.put("site_Issue_Reason",spin_siteIssueReason_reason.getSelectedItemPosition());
             }
-            contentValues.put("Action",spin_action.getSelectedItemPosition());
-          /*  if (spin_wrong_product1.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("wrong_product_reason", "");
-            } else {
-                contentValues.put("wrong_product_reason", spin_wrong_product1.getSelectedItem().toString());
-            }
+            contentvalues.put("Action",spin_action.getSelectedItemPosition());*/
 
-            contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
-*/
-            Calendar calendar = Calendar.getInstance();
+       /*     Calendar calendar = Calendar.getInstance();
             Date updatedDate = calendar.getTime();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_updatedDate = sdf.format(updatedDate);
@@ -20749,67 +20769,77 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
+            if (contentvalues.get("Closure_Status").equals("Resolved")) {
+                contentvalues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Closed_Date", str_closedDate);
             } else {
-                contentValues.put("Updated_Date", str_updatedDate);
+                contentvalues.put("Updated_Date", str_updatedDate);
+            }*/
+                contentvalues.put("Closure_Status", status.getSelectedItem().toString());
+                if (dbAdapter.checkID(complaint_number, "sanitary_details",
+                        "Complant_No")) {
+                    response = (long) dbAdapter.update("sanitary_details",
+                            contentvalues, "Complant_No = '" + complaint_number
+                                    + "'", null);
+                } else {
+                    response = dbAdapter.submitQuery1(contentvalues);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            contentValues.put("Closure_Status",status.getSelectedItem().toString());
-            if (dbAdapter.checkID(complaint_number, "sanitary_details",
-                    "Complant_No")) {
-                response = (long) dbAdapter.update("sanitary_details",
-                        contentValues, "Complant_No = '" + complaint_number
-                                + "'", null);
-            } else {
-                response = dbAdapter.submitQuery1(contentValues);
-            }
+
+
         } else {
 
-            // if (!outvidpath.contains("")) {
-            // upload = new UploadVideo();
-            // upload.execute();
-            // }
-            // Long response = (long) 0;
-            // if(uploadReponse > 0){
-            contentValues.put("Complant_No", complaint_number);
-            contentValues.put("Product_Category", product_category);
-            contentValues.put("product_Sub_Category", product_sub_category);
-            contentValues.put("Comment", comments.getText().toString());
-            contentValues.put("sync_status", "NU");
-            contentValues.put("Insert_Date", dateTime);
-            contentValues.put("article_no", article_no.getText().toString());
-            //  contentValues.put("result1", unresolve_reason.getSelectedItem().toString());
-            contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
-            contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
-            contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
-            //contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
+            try {
+                // if (!outvidpath.contains("")) {
+                // upload = new UploadVideo();
+                // upload.execute();
+                // }
+                // Long response = (long) 0;
+                // if(uploadReponse > 0){
+                contentValues.put("Complant_No", complaint_number);
+                contentValues.put("Product_Category", product_category);
+                contentValues.put("product_Sub_Category", product_sub_category);
+                contentValues.put("Comment", comments.getText().toString());
+                contentValues.put("sync_status", "NU");
+                contentValues.put("Insert_Date", dateTime);
+                contentValues.put("article_no", article_no.getText().toString());
+                //  contentValues.put("result1", unresolve_reason.getSelectedItem().toString());
+                contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
+                contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+                contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+                //contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
+                contentValues.put("Product_Category", product_category);
+                contentValues.put("product_Sub_Category", product_sub_category);
+                contentValues.put("article_no", article_no.getText().toString());
+                contentValues.put("Comment", comments.getText().toString());
 
-            if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
-                contentValues.put("site_Issue_Reason", "");
-            } else {
-                contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
-            }
-            contentValues.put("Action", spin_action.getSelectedItem().toString());
-            contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
+                if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
+                    contentValues.put("site_Issue_Reason", "");
+                } else {
+                    contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
+                }
+                contentValues.put("Action", spin_action.getSelectedItem().toString());
+                contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
 
-            Calendar calendar = Calendar.getInstance();
-            Date updatedDate = calendar.getTime();
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-            String str_updatedDate = sdf.format(updatedDate);
+                Calendar calendar = Calendar.getInstance();
+                Date updatedDate = calendar.getTime();
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                String str_updatedDate = sdf.format(updatedDate);
 
-            Calendar calendar1 = Calendar.getInstance();
-            Date closedDate = calendar1.getTime();
-            SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-            String str_closedDate = sdf1.format(closedDate);
+                Calendar calendar1 = Calendar.getInstance();
+                Date closedDate = calendar1.getTime();
+                SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                String str_closedDate = sdf1.format(closedDate);
 
-            if (contentValues.get("Closure_Status").equals("Resolved")) {
-                contentValues.put("Updated_Date", str_updatedDate);
-                contentValues.put("Closed_Date", str_closedDate);
-            } else {
-                contentValues.put("Updated_Date", str_updatedDate);
-            }
-            if (!product_sub_category.equals("Faucet") && !product_sub_category.equals("Cistern") && !product_sub_category.equals("Kitchen Sink") && !product_sub_category.equals("Ceramic Basin") && !product_sub_category.equals("Showers") && !product_sub_category.equals("Accessories")) {
+                if (contentValues.get("Closure_Status").equals("Resolved")) {
+                    contentValues.put("Updated_Date", str_updatedDate);
+                    contentValues.put("Closed_Date", str_closedDate);
+                } else {
+                    contentValues.put("Updated_Date", str_updatedDate);
+                }
+        /*   if (!product_sub_category.equals("Faucet") && !product_sub_category.equals("Cistern") && !product_sub_category.equals("Kitchen Sink") && !product_sub_category.equals("Ceramic Basin") && !product_sub_category.equals("Showers") && !product_sub_category.equals("Accessories")) {*/
                 if (dbAdapter.checkID(complaint_number, "Fault_Finding_Details",
                         "Complant_No")) {
                     response = (long) dbAdapter.update("Fault_Finding_Details",
@@ -20818,140 +20848,145 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 } else {
                     response = dbAdapter.submitQuery(contentValues);
                 }
-            }
+                //  }
 
-            if (product_sub_category.equals("Faucet") || product_sub_category.equals("Cistern") || product_sub_category.equals("Kitchen Sink") || product_sub_category.equals("Ceramic Basin") || product_sub_category.equals("Showers") || product_sub_category.equals("Accessories")) {
+           /* if (product_sub_category.equals("Faucet") || product_sub_category.equals("Cistern") || product_sub_category.equals("Kitchen Sink") || product_sub_category.equals("Ceramic Basin") || product_sub_category.equals("Showers") || product_sub_category.equals("Accessories")) {
                 if (dbAdapter.checkID(complaint_number, "sanitary_details",
                         "Complant_No")) {
                     response = (long) dbAdapter.update("sanitary_details",
-                            contentValues, "Complant_No = '" + complaint_number
+                            contentvalues, "Complant_No = '" + complaint_number
                                     + "'", null);
                 } else {
-                    response = dbAdapter.submitQuery1(contentValues);
+                    response = dbAdapter.submitQuery1(contentvalues);
                 }
                 // }
             }
         }
+*/
+                if (response > 0) {
+                    int visitCount = dbAdapter.getVisitCount(complaint_number);
+                    ContentValues cv = new ContentValues();
+                    cv.put("is_visited", visitCount + 1);
+                    cv.put("case_attended", "Y");
+                    cv.put("status", status.getSelectedItem().toString());
+                    int updateReponse = dbAdapter.update("complaint_service_details",
+                            cv, "complaint_number = '" + complaint_number + "'", null);
+                    if (updateReponse > 0) {
+                        if (contentValues.get("Closure_Status") != null) {
+                            if (contentValues.get("Closure_Status").equals("Resolved")) {
 
-        if (response > 0) {
-            int visitCount = dbAdapter.getVisitCount(complaint_number);
-            ContentValues cv = new ContentValues();
-            cv.put("is_visited", visitCount + 1);
-            cv.put("case_attended", "Y");
-            cv.put("status", status.getSelectedItem().toString());
-            int updateReponse = dbAdapter.update("complaint_service_details",
-                    cv, "complaint_number = '" + complaint_number + "'", null);
-            if (updateReponse > 0) {
-                if (contentValues.get("Closure_Status") != null) {
-                    if (contentValues.get("Closure_Status").equals("Resolved")) {
+                                showFeedbackForm(complaint_number);
+                                contentValues.clear();
+                            } else {
 
-                        showFeedbackForm(complaint_number);
-                        contentValues.clear();
-                    } else {
+                                AlertDialog.Builder builder1 = new AlertDialog.Builder(
+                                        FaultReportForm.this);
+                                builder1.setTitle("Status");
+                                builder1.setMessage("Data Saved");
+                                builder1.setCancelable(false);
+                                builder1.setNeutralButton(android.R.string.ok,
+                                        new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog,
+                                                                int id) {
+                                                //										File out = new File(outvidpath);
+                                                if (outvidpath != null) {
+                                                    File file = new File(outvidpath);
+                                                    File in = new File(inputpath);
+                                                    if (dbAdapter.checkID(
+                                                            complaint_number,
+                                                            "video_details",
+                                                            "complaint_number")) {
 
-                        AlertDialog.Builder builder1 = new AlertDialog.Builder(
-                                FaultReportForm.this);
-                        builder1.setTitle("Status");
-                        builder1.setMessage("Data Saved");
-                        builder1.setCancelable(false);
-                        builder1.setNeutralButton(android.R.string.ok,
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int id) {
-                                        //										File out = new File(outvidpath);
-                                        if (outvidpath != null) {
-                                            File file = new File(outvidpath);
-                                            File in = new File(inputpath);
-                                            if (dbAdapter.checkID(
-                                                    complaint_number,
-                                                    "video_details",
-                                                    "complaint_number")) {
+                                                        ContentValues cv = new ContentValues();
+                                                        cv.put("VideoFileName",
+                                                                file.getName());
+                                                        cv.put("FilePath",
+                                                                file.getAbsolutePath());
+                                                        cv.put("complaint_number",
+                                                                complaint_number);
+                                                        cv.put("OriginalSize",
+                                                                String.valueOf(in.length()));
+                                                        cv.put("CompressedSize", String
+                                                                .valueOf(file.length()));
+                                                        cv.put("upload_status", "NU");
+                                                        cv.put("video_count", 1);
+                                                        cv.put("Device_id",
+                                                                pref.getDeviceId());
+                                                        cv.put("username",
+                                                                pref.getUserName());
+                                                        dbAdapter
+                                                                .update("video_details",
+                                                                        cv,
+                                                                        "complaint_number = '"
+                                                                                + complaint_number
+                                                                                + "'",
+                                                                        null);
+                                                        Log.e("ContentValues--FaultUpdate",
+                                                                cv.toString());
 
-                                                ContentValues cv = new ContentValues();
-                                                cv.put("VideoFileName",
-                                                        file.getName());
-                                                cv.put("FilePath",
-                                                        file.getAbsolutePath());
-                                                cv.put("complaint_number",
-                                                        complaint_number);
-                                                cv.put("OriginalSize",
-                                                        String.valueOf(in.length()));
-                                                cv.put("CompressedSize", String
-                                                        .valueOf(file.length()));
-                                                cv.put("upload_status", "NU");
-                                                cv.put("video_count", 1);
-                                                cv.put("Device_id",
-                                                        pref.getDeviceId());
-                                                cv.put("username",
-                                                        pref.getUserName());
-                                                dbAdapter
-                                                        .update("video_details",
-                                                                cv,
-                                                                "complaint_number = '"
-                                                                        + complaint_number
-                                                                        + "'",
-                                                                null);
-                                                Log.e("ContentValues--FaultUpdate",
-                                                        cv.toString());
+                                                        Log.e("contentvalues", cv.toString());
 
-                                                Log.e("contentvalues", cv.toString());
+                                                    } else {
+                                                        dbAdapter.saveVideoDetails(file
+                                                                        .getName(), file
+                                                                        .getAbsolutePath(),
+                                                                String.valueOf(in.length()),
+                                                                String.valueOf(file
+                                                                        .length()),
+                                                                complaint_number, "NU",
+                                                                pref.getUserName(), 1,
+                                                                pref.getDeviceId());
 
-                                            } else {
-                                                dbAdapter.saveVideoDetails(file
-                                                                .getName(), file
-                                                                .getAbsolutePath(),
-                                                        String.valueOf(in.length()),
-                                                        String.valueOf(file
-                                                                .length()),
-                                                        complaint_number, "NU",
-                                                        pref.getUserName(), 1,
-                                                        pref.getDeviceId());
+                                                    }
+
+
+                                                }
+
+                                                dialog.cancel();
+
+                                                System.gc();
+
+                                                Intent homeIntent = new Intent(
+                                                        FaultReportForm.this,
+                                                        DashBoardActivity.class);
+                                                startActivity(homeIntent);
+                                                //
 
                                             }
+                                        });
+                                AlertDialog alert11 = builder1.create();
+                                alert11.show();
+
+                                // Intent homeIntent = new
+                                // Intent(FaultReportForm.this,DashBoardActivity.class);
+                                // startActivity(homeIntent);
+                                // finish();
+                            }
+                        } else {
 
 
-                                        }
+                            System.gc();
 
-                                        dialog.cancel();
-
-                                        System.gc();
-
-                                        Intent homeIntent = new Intent(
-                                                FaultReportForm.this,
-                                                DashBoardActivity.class);
-                                        startActivity(homeIntent);
-                                        //
-
-                                    }
-                                });
-                        AlertDialog alert11 = builder1.create();
-                        alert11.show();
-
-                        // Intent homeIntent = new
-                        // Intent(FaultReportForm.this,DashBoardActivity.class);
-                        // startActivity(homeIntent);
-                        // finish();
+                            Intent homeIntent = new Intent(FaultReportForm.this,
+                                    DashBoardActivity.class);
+                            startActivity(homeIntent);
+                            // finish();
+                        }
                     }
                 } else {
-
-
-                    System.gc();
-
-                    Intent homeIntent = new Intent(FaultReportForm.this,
-                            DashBoardActivity.class);
-                    startActivity(homeIntent);
-                    // finish();
+                    UtilityClass.showToast(context, "Error");
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } else {
-            UtilityClass.showToast(context, "Error");
+
+
         }
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
+        @Override
+        public void onBackPressed() {
+            super.onBackPressed();
+        }
 
     private String getVolume(String replace1, String replace2, TextView vol) {
         String result = "";

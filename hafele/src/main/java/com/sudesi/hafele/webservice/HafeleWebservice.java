@@ -42,14 +42,15 @@ public class HafeleWebservice {
    //  String url = "http://tab.hinccms.in/Service1.svc"; // Final Production Link India
   //  String url = "http://tabsrilanka.hinccms.in/Service1.svc"; //Shrilanka production apk link
 
-  String url ="http://192.168.0.130/ccms/Service1.svc";  // ...._local uat
+  String url ="http://192.168.0.141/ccms/Service1.svc";  // ...._local uat
     //151
     //121
 
 
     // String url = "http://hafelereportws.smartforcecrm.com/Service1.svc";
     // String url = "http://192.168.0.129/hafele_ccms/service1.svc";
-    // String url="http://tabuat.hinccms.in/Service1.svc"; //UAT india testing apk link
+
+  //   String url="http://tabuat.hinccms.in/Service1.svc"; //UAT india testing apk link
 
     String compressionUrl = "http://licads.in/activation/service.svc"; // new PRo
     //String compressionUrl = "http://licads.in/adsws/Service1.svc"; // new UAT
@@ -416,6 +417,7 @@ public class HafeleWebservice {
             SoapObject request = new SoapObject("http://tempuri.org/", "Insert_Sanitary_Details");
             // request.addProperty("Status", status);
           //  request.addProperty("fault_ref_id", responceId);
+            request.addProperty("Fault_Finding_Id",sanitary_details.Fault_Finding_Id);
             request.addProperty("Complaint_No", sanitary_details.Complant_No);
             request.addProperty("radio_sanitary", sanitary_details.radio_sanitary);
             request.addProperty("type_of_sanitary", sanitary_details.type_of_sanitary);
@@ -434,13 +436,13 @@ public class HafeleWebservice {
             request.addProperty("type_of_flush_not_working", sanitary_details.type_of_flush_not_working);
             request.addProperty("drainage", sanitary_details.drainage);
             request.addProperty("type_of_drainage", sanitary_details.type_of_drainage);
-            request.addProperty("Closure_Status", sanitary_details.Closure_Status);
+         /*   request.addProperty("Closure_Status", sanitary_details.Closure_Status);
             request.addProperty("LMD", sanitary_details.LMD);
-            request.addProperty("Accepted_Date",sanitary_details.date);
+            request.addProperty("Accepted_Date",sanitary_details.gudance_given);
             request.addProperty("Called_Date",sanitary_details.date);
             request.addProperty("Updated_Date",sanitary_details.Updated_Date);
-            request.addProperty("Closed_Date",sanitary_details.Closed_Date);
-            request.addProperty("delayed_days", HomeScreenActivity.delayed_days);
+            request.addProperty("Closed_Date",sanitary_details.Closed_Date);*/
+           // request.addProperty("delayed_days", HomeScreenActivity.delayed_days);
 
 
             Log.e("REQUEST", request.toString());

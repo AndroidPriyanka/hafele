@@ -282,7 +282,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
 
         }
         //.................................sanitary servie......................
-        if (product_sub_category != null && product_sub_category.contains("Sanitary_abc")) {
+        if (product_group != null && product_group.contains("Sanitary")) {
             sanitaty_service.setVisibility(View.VISIBLE);
 
             if (report1 != null) {
@@ -1099,7 +1099,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
             contentValues.put("Complant_No",complaint_number);
         }
         contentValues.put("sync_status", "NU");
-        if (product_sub_category.contains("Sanitary_abc")) {
+        if (product_group.contains("Sanitary")) {
             if (radio_sanitary_service_wrong_product.isChecked()) {
                 String str_sanitary_service_wrong_product = radio_sanitary_service_wrong_product.getText().toString();
                 contentValues.put("sanitary_product", str_sanitary_service_wrong_product);
@@ -1113,7 +1113,46 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 String str_sanitary_service_guidance_given = radio_sanitary_service_guidance_given.getText().toString();
                 contentValues.put("sanitary_product", str_sanitary_service_guidance_given);
             }
-            contentValues.put("warranty",spin_sanitary_service_warranty.getSelectedItemPosition());
+            try {
+                contentValues.put("warranty",spin_sanitary_service_warranty.getSelectedItemPosition());
+
+                contentValues.put("Complant_No", complaint_number);
+                contentValues.put("sync_status", "NU");
+        /*        contentValues.put("Comment", comments.getText().toString());
+                contentValues.put("Insert_Date", dateTime);
+                contentValues.put("article_no", article_number.getText().toString());
+                contentValues.put("Result", unresolve_reason.getSelectedItem().toString());
+                contentValues.put("sparce_defect", edt_spare_defect_articleNo.getText().toString());
+                contentValues.put("complete_set", edt_complete_set_articleNo.getText().toString());
+                if (spin_siteIssueReason_reason.getSelectedItem().toString().equalsIgnoreCase("--Select--")) {
+                    contentValues.put("site_Issue_Reason", "");
+                } else {
+                    contentValues.put("site_Issue_Reason", spin_siteIssueReason_reason.getSelectedItem().toString());
+                }*/
+                contentValues.put("Closure_Status", status.getSelectedItem().toString());
+             /*   contentValues.put("Action", spin_action.getSelectedItem().toString());
+                contentValues.put("Reason_For_Unresolved", unresolve_reason.getSelectedItem().toString());
+                Calendar calendar = Calendar.getInstance();
+                Date updatedDate = calendar.getTime();
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                String str_updatedDate = sdf.format(updatedDate);
+
+                Calendar calendar1 = Calendar.getInstance();
+                Date closedDate = calendar1.getTime();
+                SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                String str_closedDate = sdf1.format(closedDate);
+
+                if (contentValues.get("Closure_Status").equals("Resolved")) {
+                    contentValues.put("Updated_Date", str_updatedDate);
+                    contentValues.put("Closed_Date", str_closedDate);
+                } else {
+                    contentValues.put("Updated_Date", str_updatedDate);
+                }*/
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
             if (dbAdapter.checkID(complaint_number, "sanitary_details",
                     "Complant_No")) {
                 response1 = (long) dbAdapter.update("sanitary_details",
@@ -1540,7 +1579,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         }
 
                         sendSMSAsync = new SendSMSAsync();
-                        //   sendSMSAsync.execute();
+                           sendSMSAsync.execute();
 
                         // }else{
                         // UtilityClass.showToast(context,

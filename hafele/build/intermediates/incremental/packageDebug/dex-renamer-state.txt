@@ -1,4 +1,4 @@
-#Sat Nov 04 11:07:24 IST 2017
+#Tue Nov 07 11:11:30 IST 2017
 base.0=D\:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\Aniket_workspace\\hafele\\hafele\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

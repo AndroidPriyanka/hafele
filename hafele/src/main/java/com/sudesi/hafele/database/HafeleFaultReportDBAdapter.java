@@ -634,8 +634,9 @@ public class HafeleFaultReportDBAdapter {
     public List<Sanitary_Details> getSanitaryReports(String userName) {
         Cursor c=null;
         List<Sanitary_Details> reports1 = new LinkedList<Sanitary_Details>();
-        String sql = "SELECT a.*,b.technician,b.date FROM sanitary_details a , complaint_service_details b where b.complaint_number = a.Complant_No and b.technician = '"
-                + userName + "' and a.sync_status = 'NU'";
+     /*   String sql = "SELECT a.*,b.technician,b.date FROM sanitary_details a , complaint_service_details b where b.complaint_number = a.Complant_No and b.technician = '"
+                + userName + "' and a.sync_status = 'NU'";*/
+        String sql = "SELECT * FROM sanitary_details where sync_status = 'NU'";
          c = mDb.rawQuery(sql, null);
         //	Log.e("getFaultReport", DatabaseUtils.dumpCursorToString(c));
 
@@ -643,6 +644,7 @@ public class HafeleFaultReportDBAdapter {
             if (c.moveToFirst() && c.getCount() > 0) {
                 do {
                     Sanitary_Details report1 = new Sanitary_Details();
+
                     report1.radio_sanitary = c.getString(c.getColumnIndex("radio_sanitary"));
                     report1.type_of_sanitary = c.getString(c.getColumnIndex("type_of_sanitary"));
                     report1.sanitary_product = c.getString(c.getColumnIndex("sanitary_product"));
@@ -660,26 +662,27 @@ public class HafeleFaultReportDBAdapter {
                     report1.type_of_flush_not_working = c.getString(c.getColumnIndex("type_of_flush_not_working"));
                     report1.drainage = c.getString(c.getColumnIndex("drainage"));
                     report1.type_of_drainage = c.getString(c.getColumnIndex("type_of_drainage"));
-                    report1.LMD = c.getString(c.getColumnIndex("LMD"));
+                 /*   report1.LMD = c.getString(c.getColumnIndex("LMD"));*/
                     report1.Complant_No = c.getString(c.getColumnIndex("Complant_No"));
-                    report1.Product_Category = c.getString(c.getColumnIndex("Product_Category"));
+                  /*  report1.Product_Category = c.getString(c.getColumnIndex("Product_Category"));
                     report1.product_Sub_Category = c.getString(c.getColumnIndex("product_Sub_Category"));
                     report1.article_no = c.getString(c.getColumnIndex("article_no"));
-                    report1.Comment = c.getString(c.getColumnIndex("Comment"));
+                    report1.Comment = c.getString(c.getColumnIndex("Comment"));*/
                     report1.sync_status = c.getString(c.getColumnIndex("sync_status"));
-                    report1.Insert_Date = c.getString(c.getColumnIndex("Insert_Date"));
+                 /*   report1.Insert_Date = c.getString(c.getColumnIndex("Insert_Date"));
                     report1.Result = c.getString(c.getColumnIndex("Result"));
                     report1.sparce_defect = c.getString(c.getColumnIndex("sparce_defect"));
                     report1.complete_set = c.getString(c.getColumnIndex("complete_set"));
                     report1.site_Issue_Reason = c.getString(c.getColumnIndex("site_Issue_Reason"));
                     report1.Action = c.getString(c.getColumnIndex("Action"));
                     report1.wrong_product_reason = c.getString(c.getColumnIndex("wrong_product_reason"));
-                    report1.Reason_For_Unresolved = c.getString(c.getColumnIndex("Reason_For_Unresolved"));
+                    report1.Reason_For_Unresolved = c.getString(c.getColumnIndex("Reason_For_Unresolved"));*/
                     report1.Closure_Status = c.getString(c.getColumnIndex("Closure_Status"));
-                    report1.Closed_Date = c.getString(c.getColumnIndex("Closed_Date"));
-                    report1.Updated_Date = c.getString(c.getColumnIndex("Updated_Date"));
-                    report1.technician = c.getString(c.getColumnIndex("technician"));
-                    report1.date = c.getString(c.getColumnIndex("date"));
+                    report1.Fault_Finding_Id=c.getString(c.getColumnIndex("Fault_Finding_Id"));
+                  /*  report1.Closed_Date = c.getString(c.getColumnIndex("Closed_Date"));
+                    report1.Updated_Date = c.getString(c.getColumnIndex("Updated_Date"));*/
+                  //  report1.technician = c.getString(c.getColumnIndex("technician"));
+                  //  report1.date = c.getString(c.getColumnIndex("date"));
                   //  report1.gudance_given=c.getString(c.getColumnIndex("gudance_given"));
                     reports1.add(report1);
                 } while (c.moveToNext());
@@ -1137,7 +1140,6 @@ public class HafeleFaultReportDBAdapter {
         if (c != null) {
             if (c.moveToFirst() && c.getCount() > 0) {
                 do {
-
                     Log.e("Fault", DatabaseUtils.dumpCursorToString(c));
                     report1.radio_sanitary = c.getString(c.getColumnIndex("radio_sanitary"));
                     report1.type_of_sanitary = c.getString(c.getColumnIndex("type_of_sanitary"));
@@ -1158,25 +1160,26 @@ public class HafeleFaultReportDBAdapter {
                     report1.type_of_drainage = c.getString(c.getColumnIndex("type_of_drainage"));
                     report1.LMD = c.getString(c.getColumnIndex("LMD"));
                     report1.Complant_No = c.getString(c.getColumnIndex("Complant_No"));
-                    report1.Product_Category = c.getString(c.getColumnIndex("Product_Category"));
+                    report1.Fault_Finding_Id=c.getString(c.getColumnIndex("Fault_Finding_Id"));
+                  /*  report1.Product_Category = c.getString(c.getColumnIndex("Product_Category"));
                     report1.product_Sub_Category = c.getString(c.getColumnIndex("product_Sub_Category"));
                     report1.article_no = c.getString(c.getColumnIndex("article_no"));
-                    report1.Comment = c.getString(c.getColumnIndex("Comment"));
+                    report1.Comment = c.getString(c.getColumnIndex("Comment"));*/
                     report1.sync_status = c.getString(c.getColumnIndex("sync_status"));
-                    report1.Insert_Date = c.getString(c.getColumnIndex("Insert_Date"));
+          /*          report1.Insert_Date = c.getString(c.getColumnIndex("Insert_Date"));
                     report1.Result = c.getString(c.getColumnIndex("Result"));
                     report1.sparce_defect = c.getString(c.getColumnIndex("sparce_defect"));
                     report1.complete_set = c.getString(c.getColumnIndex("complete_set"));
                     report1.site_Issue_Reason = c.getString(c.getColumnIndex("site_Issue_Reason"));
                     report1.Action = c.getString(c.getColumnIndex("Action"));
                     report1.wrong_product_reason = c.getString(c.getColumnIndex("wrong_product_reason"));
-                    report1.Reason_For_Unresolved = c.getString(c.getColumnIndex("Reason_For_Unresolved"));
+                    report1.Reason_For_Unresolved = c.getString(c.getColumnIndex("Reason_For_Unresolved"));*/
                     report1.Closure_Status = c.getString(c.getColumnIndex("Closure_Status"));
-                    report1.Closed_Date = c.getString(c.getColumnIndex("Closed_Date"));
-                    report1.Updated_Date = c.getString(c.getColumnIndex("Updated_Date"));
+//                    report1.Closed_Date = c.getString(c.getColumnIndex("Closed_Date"));
+//                    report1.Updated_Date = c.getString(c.getColumnIndex("Updated_Date"));
                     report1.technician = c.getString(c.getColumnIndex("technician"));
-                    report1.date = c.getString(c.getColumnIndex("date"));
-                    report1.date = c.getString(c.getColumnIndex("date"));
+                   /* report1.date = c.getString(c.getColumnIndex("date"));
+                    report1.date = c.getString(c.getColumnIndex("date"));*/
 
 
                 } while (c.moveToNext());

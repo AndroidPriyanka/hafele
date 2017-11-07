@@ -74,6 +74,7 @@ public class BackgroundServiceUploadData extends Service {
             int responseID = 0;
             List<FaultReport> list = dbAdapter.getFaultReports(pref.getUserName());
             ContentValues cv = new ContentValues();
+            ContentValues cv2=new ContentValues();
             if (list.size() == 0) {
                 responseID = 2;
             } else {
@@ -195,11 +196,55 @@ public class BackgroundServiceUploadData extends Service {
 
                         if (isInteger(Soapresponse.toString())) {
                             listCount = listCount + 1;
-                            cv.put("sync_status", "U");
+                            cv.put("sync_status", "NU");
                             int responseId = dbAdapter.update(
                                     "sanitary_details", cv,
                                     "Complant_No = '" + list1.get(i).Complant_No
                                             + "'", null);
+
+                            cv2.put("Fault_Finding_Id",String.valueOf(Soapresponse));
+                            int response = dbAdapter.update("sanitary_details",
+                                    cv2, "Complant_No = '"+ list.get(i).Complant_No
+                                            + "'", null);
+
+                            //...................................
+
+                            int delayed_days = 0;
+                            int diffInDays = 0;
+
+                            String registration_date = list.get(i).Registration_Date;
+                            String closed_date = list.get(i).Closed_Date;
+                            String format_closed_date;
+                            Date new_date_registration, new_closed_date;
+
+                            //Closed_Date=2016/11/25 12:28:42  2016/11/25 12:28:42
+
+                            if (closed_date != null) {
+
+                                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+                                Date myDate = null;
+                                try {
+                                    myDate = dateFormat.parse(closed_date);
+
+                                    SimpleDateFormat timeFormat = new SimpleDateFormat("dd/MM/yyyy");
+                                    format_closed_date = timeFormat.format(myDate);
+
+                                    new_closed_date = timeFormat.parse(format_closed_date);
+                                    new_date_registration = timeFormat.parse(registration_date);
+
+
+                                    diffInDays = (int) ((new_closed_date.getTime() - new_date_registration.getTime()) / (1000 * 60 * 60 * 24)) - 2;
+                                    if (diffInDays < 2) {
+                                        delayed_days = 0;
+                                    } else {
+                                        delayed_days = diffInDays;
+                                    }
+
+                                } catch (ParseException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
 
                             if (responseId > 0) {
                                 if (list1.get(i).Closure_Status != null) {
@@ -214,7 +259,7 @@ public class BackgroundServiceUploadData extends Service {
 
                                         dbAdapter.delete("sanitary_details", "Complant_No", "'" + list1.get(i).Complant_No + "'");
 
-                                    } else if ((list1.get(i).Closure_Status.equals("Unresolved")) && (list1.get(i).Action.equalsIgnoreCase("MTR required")))
+                                    } /*else if ((list1.get(i).Closure_Status.equals("Unresolved")) && (list1.get(i).Action.equalsIgnoreCase("MTR required")))
                                     {
                                         dbAdapter.delete(
                                                 "complaint_service_details",
@@ -222,10 +267,10 @@ public class BackgroundServiceUploadData extends Service {
                                                 "'" + list1.get(i).Complant_No
                                                         + "'");
                                         dbAdapter.delete("sanitary_details", "Complant_No", "'" + list1.get(i).Complant_No + "'");
-                                    }
+                                    }*/
                                 }
                             }
-
+/*
                             int delayed_days = 0;
                             int diffInDays = 0;
 
@@ -260,7 +305,7 @@ public class BackgroundServiceUploadData extends Service {
                                 } catch (ParseException e) {
                                     e.printStackTrace();
                                 }
-                            }
+                            }*/
 
 
                       //      SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list1.get(i), Soapresponse.toString());

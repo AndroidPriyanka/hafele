@@ -27,7 +27,7 @@ public class HafeleFaultReportDBHelper extends SQLiteOpenHelper {
     private static final String ALTER_FAULT_FINDING_FOR_DATE3="ALTER TABLE Fault_Finding_Details ADD COLUMN Updated_Date DATETIME";
     private static final String ALTER_FAULT_FINDING_FOR_DATE4="ALTER TABLE Fault_Finding_Details ADD COLUMN Closed_Date DATETIME";
     */
-    public static final String sanitary_details = "create table sanitary_details(radio_sanitary TEXT,type_of_sanitary TEXT,sanitary_product TEXT,sanitary_leakage TEXT,sanitary_type_of_leakage TEXT,does_not_operate TEXT,type_does_not_operate TEXT,weak_flow TEXT,type_of_weak_flow TEXT,asthetics TEXT,type_of_asthetics TEXT,warranty TEXT,noise TEXT,flush_not_working TEXT,type_of_flush_not_working TEXT,drainage TEXT,type_of_drainage TEXT,LMD TEXT,Complant_No TEXT,Product_Category TEXT,product_Sub_Category TEXT,article_no TEXT,Comment TEXT,sync_status TEXT,Insert_Date TEXT,Result TEXT,sparce_defect TEXT,complete_set TEXT,site_Issue_Reason TEXT,Action TEXT,wrong_product_reason TEXT,Reason_For_Unresolved TEXT,Closure_Status TEXT,Closed_Date TEXT,Updated_Date TEXT,guidance_given TEXT)";
+    public static final String sanitary_details = "create table sanitary_details(radio_sanitary TEXT,type_of_sanitary TEXT,sanitary_product TEXT,sanitary_leakage TEXT,sanitary_type_of_leakage TEXT,does_not_operate TEXT,type_does_not_operate TEXT,weak_flow TEXT,type_of_weak_flow TEXT,asthetics TEXT,type_of_asthetics TEXT,warranty TEXT,noise TEXT,flush_not_working TEXT,type_of_flush_not_working TEXT,drainage TEXT,type_of_drainage TEXT,LMD TEXT,Complant_No TEXT,sync_status TEXT,Closure_Status TEXT,Fault_Finding_Id TEXT)";
 
     public HafeleFaultReportDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

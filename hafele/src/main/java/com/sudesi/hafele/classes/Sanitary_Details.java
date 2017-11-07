@@ -45,5 +45,6 @@ public class Sanitary_Details {
     public String technician;
     public String date;
     public String gudance_given;
+    public String Fault_Finding_Id;
 
 }
