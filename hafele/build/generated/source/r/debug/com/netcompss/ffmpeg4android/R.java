@@ -13,24 +13,24 @@ public final class R {
         public static final int notification_icon = 0x7f020020;
     }
     public static final class id {
-        public static final int CommandText = 0x7f0900f2;
-        public static final int CommandTextView = 0x7f0900f1;
-        public static final int ScrollView01 = 0x7f0900f0;
-        public static final int aboutButton = 0x7f090208;
+        public static final int CommandText = 0x7f0900f6;
+        public static final int CommandTextView = 0x7f0900f5;
+        public static final int ScrollView01 = 0x7f0900f4;
+        public static final int aboutButton = 0x7f09020d;
         public static final int about_content = 0x7f090000;
-        public static final int contactButton = 0x7f090207;
-        public static final int contact_us_content = 0x7f090050;
-        public static final int del1 = 0x7f0900f4;
-        public static final int invokeButton = 0x7f0900f3;
-        public static final int license = 0x7f090204;
-        public static final int purchase = 0x7f090206;
-        public static final int showFileDone = 0x7f090225;
-        public static final int showFileSend = 0x7f090226;
-        public static final int showFileTitle1 = 0x7f090223;
-        public static final int showFileTitle2 = 0x7f090224;
-        public static final int showFiletextView1 = 0x7f090227;
-        public static final int showLastRunLogButton = 0x7f0900f5;
-        public static final int startDemoAct = 0x7f090205;
+        public static final int contactButton = 0x7f09020c;
+        public static final int contact_us_content = 0x7f090052;
+        public static final int del1 = 0x7f0900f8;
+        public static final int invokeButton = 0x7f0900f7;
+        public static final int license = 0x7f090209;
+        public static final int purchase = 0x7f09020b;
+        public static final int showFileDone = 0x7f09022a;
+        public static final int showFileSend = 0x7f09022b;
+        public static final int showFileTitle1 = 0x7f090228;
+        public static final int showFileTitle2 = 0x7f090229;
+        public static final int showFiletextView1 = 0x7f09022c;
+        public static final int showLastRunLogButton = 0x7f0900f9;
+        public static final int startDemoAct = 0x7f09020a;
     }
     public static final class layout {
         public static final int about_dialog = 0x7f030000;

@@ -42,7 +42,8 @@ public class HafeleWebservice {
    //  String url = "http://tab.hinccms.in/Service1.svc"; // Final Production Link India
   //  String url = "http://tabsrilanka.hinccms.in/Service1.svc"; //Shrilanka production apk link
 
-  String url ="http://192.168.0.141/ccms/Service1.svc";  // ...._local uat
+
+ // String url ="http://192.168.0.141/ccms/Service1.svc";  // ...._local uat
     //151
     //121
 
@@ -50,7 +51,7 @@ public class HafeleWebservice {
     // String url = "http://hafelereportws.smartforcecrm.com/Service1.svc";
     // String url = "http://192.168.0.129/hafele_ccms/service1.svc";
 
-  //   String url="http://tabuat.hinccms.in/Service1.svc"; //UAT india testing apk link
+     String url="http://tabuat.hinccms.in/Service1.svc"; //UAT india testing apk link
 
     String compressionUrl = "http://licads.in/activation/service.svc"; // new PRo
     //String compressionUrl = "http://licads.in/adsws/Service1.svc"; // new UAT

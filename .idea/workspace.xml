@@ -15,8 +15,30 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c6bb971-9c99-42ce-bc5a-d481fcd6eec2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/outputs/apk/hafele-debug.apk" afterPath="" />
+    <list default="true" id="8c6bb971-9c99-42ce-bc5a-d481fcd6eec2" name="Default" comment="Desi">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -27,11 +49,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$id.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/AttendedListAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/AttendedListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ComplaintListAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ComplaintListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/DelayedListAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/DelayedListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ImageGridAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ImageGridAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/VideoGridAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/VideoGridAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData$1.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBHelper.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/AcceptedComplaintFragment.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/AcceptedComplaintFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ComplaintsList.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ComplaintsList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$1.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$10.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$11.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$11.class" />
@@ -117,16 +147,42 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$9.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$SendSMSAsync.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$SendSMSAsync.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$GetDataFromServer.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$GetDataFromServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$UploadTask.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$UploadTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/MainLauncherActivity.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/MainLauncherActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$array.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$array.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$attr.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$attr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$dimen.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$drawable.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$id.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$layout.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$menu.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$string.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$style.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ReportsView.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ReportsView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$1.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$10.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$11.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$12.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$13.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$13.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$14.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$14.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$15.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$15.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$16.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$17.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$17.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$18.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$18.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$19.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$2.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$20.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$20.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$21.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$3.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$4.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$5.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$6.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$7.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$8.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$9.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$SendSMSAsync.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$SendSMSAsync.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/HafeleWebservice.class" afterPath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/HafeleWebservice.class" />
@@ -140,17 +196,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-debug.aar" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-debug.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-release.aar" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/sudesi/hafele/faultreport/R.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/sudesi/hafele/faultreport/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/hafele/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/creamic_basin_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/creamic_basin_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/kitchen_sink_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/kitchen_sink_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Hafele.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,9 +256,15 @@
       <file leaf-file-name="FaultReportForm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337756">
-              <caret line="19946" column="67" selection-start-line="19946" selection-start-column="67" selection-end-line="19946" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="158797">
+              <caret line="9418" column="17" selection-start-line="9418" selection-start-column="17" selection-end-line="9418" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#669105#669106#0" expanded="false" />
+                <element signature="e#669158#669159#0" expanded="false" />
+                <element signature="e#1086916#1086917#0" expanded="false" />
+                <element signature="e#1086953#1086954#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,31 +272,35 @@
       <file leaf-file-name="HafeleWebservice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state relative-caret-position="136">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeScreenActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
+      <file leaf-file-name="MainLauncherActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="1112" column="67" selection-start-line="1112" selection-start-column="67" selection-end-line="1112" selection-end-column="67" />
+            <state relative-caret-position="114">
+              <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundServiceUploadData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2431">
+              <caret line="176" column="24" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
               <folding>
-                <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1409#1410#0" expanded="false" />
+                <element signature="e#1436#1437#0" expanded="false" />
+                <element signature="e#28753#28754#0" expanded="false" />
+                <element signature="e#28791#28792#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3451">
-              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -229,21 +308,13 @@
       <file leaf-file-name="HafeleFaultReportDBAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20060">
-              <caret line="1205" column="0" selection-start-line="1205" selection-start-column="0" selection-end-line="1205" selection-end-column="0" />
+            <state relative-caret-position="10914">
+              <caret line="667" column="51" selection-start-line="667" selection-start-column="51" selection-end-line="667" selection-end-column="51" />
               <folding>
-                <element signature="e#33676#33694#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2010#2011#0" expanded="false" />
+                <element signature="e#2043#2044#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DashBoardActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -2758,15 +2829,8 @@
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_from.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/new_pratik_tavoletto.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/SanitaryDetails.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/creamic_basin_layout_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/kitchen_sink_layout_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/FaultReport.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/layout_sanitary_service_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/site_visit_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
@@ -2774,11 +2838,20 @@
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/kitchen_sink_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/creamic_basin_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
       </list>
     </option>
@@ -2786,7 +2859,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1376" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -2946,15 +3019,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webservice" />
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2988,7 +3057,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="webservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3086,109 +3155,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="broadcastReceiver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hafele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3234,19 +3201,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane />
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="D:/" />
-    <property name="device.picker.selection" value="3004d0ea999fa100" />
-    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t111-3004d0ea999fa100" />
+    <property name="device.picker.selection" value="Nexus10_API_23" />
+    <property name="DEBUGGABLE_DEVICE" value="iball-3g_7271_hd70-0123456789ABCDEF" />
     <property name="DEBUGGABLE_PROCESS" value="com.sudesi.hafele.faultreport" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
@@ -3663,27 +3630,34 @@
       <option name="project" value="LOCAL" />
       <updated>1509774862925</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Resolved Bugs done by Aniket Adsul">
+      <created>1510034320869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510034320869</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33730835" sideWeight="0.537065" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25683892" sideWeight="0.16524702" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33730835" sideWeight="0.5340393" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31316188" sideWeight="0.20783645" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.38880485" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0834753" sideWeight="0.61119515" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29131174" sideWeight="0.39258698" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22487223" sideWeight="0.607413" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12829526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25683892" sideWeight="0.834753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31316188" sideWeight="0.79216355" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3723,25 +3697,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9132</line>
+          <line>9769</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9747</line>
+          <line>10571</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9871</line>
+          <line>10738</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>190</line>
+          <line>197</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -3753,25 +3727,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>137</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>416</line>
+          <line>417</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>452</line>
+          <line>453</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>638</line>
+          <line>641</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
@@ -3825,43 +3799,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9877</line>
+          <line>10744</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9883</line>
+          <line>10750</line>
           <properties />
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9889</line>
+          <line>10756</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9895</line>
+          <line>10762</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9901</line>
+          <line>10768</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>982</line>
+          <line>994</line>
           <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>979</line>
+          <line>991</line>
           <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
@@ -3873,37 +3847,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>748</line>
+          <line>760</line>
           <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>990</line>
+          <line>1002</line>
           <properties />
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1016</line>
+          <line>1028</line>
           <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1011</line>
+          <line>1023</line>
           <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1205</line>
+          <line>1217</line>
           <properties />
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1161</line>
+          <line>1173</line>
           <properties />
           <option name="timeStamp" value="178" />
         </line-breakpoint>
@@ -3914,38 +3888,32 @@
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>426</line>
+          <line>427</line>
           <properties />
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>461</line>
+          <line>462</line>
           <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1103</line>
+          <line>1115</line>
           <properties />
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1105</line>
+          <line>1117</line>
           <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>138</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="187" />
         </line-breakpoint>
@@ -3957,13 +3925,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>796</line>
+          <line>799</line>
           <properties />
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>791</line>
+          <line>794</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
@@ -3975,43 +3943,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9744</line>
+          <line>10568</line>
           <properties />
           <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9135</line>
+          <line>9772</line>
           <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9134</line>
+          <line>9771</line>
           <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9136</line>
+          <line>9773</line>
           <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9149</line>
+          <line>9785</line>
           <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>9148</line>
+          <line>9784</line>
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>8364</line>
+          <line>8492</line>
           <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
@@ -4047,73 +4015,73 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>774</line>
+          <line>777</line>
           <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
-          <line>1156</line>
+          <line>1168</line>
           <properties />
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>466</line>
+          <line>467</line>
           <properties />
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>653</line>
+          <line>656</line>
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>723</line>
+          <line>724</line>
           <properties />
           <option name="timeStamp" value="244" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>698</line>
+          <line>699</line>
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
-          <line>696</line>
+          <line>697</line>
           <properties />
           <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>706</line>
+          <line>709</line>
           <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>708</line>
+          <line>711</line>
           <properties />
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>710</line>
+          <line>713</line>
           <properties />
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>712</line>
+          <line>715</line>
           <properties />
           <option name="timeStamp" value="257" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
-          <line>714</line>
+          <line>717</line>
           <properties />
           <option name="timeStamp" value="258" />
         </line-breakpoint>
@@ -4135,9 +4103,51 @@
           <properties />
           <option name="timeStamp" value="261" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java</url>
+          <line>767</line>
+          <properties />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>451</line>
+          <properties />
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>207</line>
+          <properties />
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java</url>
+          <line>311</line>
+          <properties />
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>84</line>
+          <line>85</line>
           <properties field="product_sub_category" class="com.sudesi.hafele.faultreport.FaultReportForm" />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -4149,76 +4159,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>86</line>
+          <line>87</line>
           <properties field="c_name" class="com.sudesi.hafele.faultreport.FaultReportForm" />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="262" />
+      <option name="time" value="269" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/door_handle.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/door_closure.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/date_time_dialog.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/dashboard.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/complaint_item_view.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/complains_list.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/complain_detail_form.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4246,26 +4196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="174" column="60" selection-start-line="174" selection-start-column="60" selection-end-line="174" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="234" column="12" selection-start-line="234" selection-start-column="12" selection-end-line="234" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -4344,16 +4274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="337" column="34" selection-start-line="337" selection-start-column="34" selection-end-line="337" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/java/com/netcompss/ffmpeg4android_client/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -4395,25 +4315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="265" column="34" selection-start-line="265" selection-start-column="24" selection-end-line="265" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/UploadDataBrodcastReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4482,17 +4387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3298">
-          <caret line="194" column="55" selection-start-line="194" selection-start-column="55" selection-end-line="194" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/utils/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -4522,79 +4416,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java">
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="1479">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="1158" column="75" selection-start-line="1158" selection-start-column="75" selection-end-line="1158" selection-end-column="75" />
-          <folding>
-            <marker date="1509967859497" expanded="true" signature="71020:71226" ph="//..." />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="219" column="73" selection-start-line="219" selection-start-column="73" selection-end-line="219" selection-end-column="73" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/drawable/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337756">
-          <caret line="19946" column="67" selection-start-line="19946" selection-start-column="67" selection-end-line="19946" selection-end-column="67" />
+        <state relative-caret-position="233">
+          <caret line="124" column="59" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20060">
-          <caret line="1205" column="0" selection-start-line="1205" selection-start-column="0" selection-end-line="1205" selection-end-column="0" />
-          <folding>
-            <element signature="e#33676#33694#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="107">
+          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="1112" column="67" selection-start-line="1112" selection-start-column="67" selection-end-line="1112" selection-end-column="67" />
+        <state relative-caret-position="102">
+          <caret line="785" column="59" selection-start-line="785" selection-start-column="59" selection-end-line="785" selection-end-column="59" />
           <folding>
             <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/cistern_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="411" column="63" selection-start-line="411" selection-start-column="33" selection-end-line="411" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/kitchen_sink_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="339" column="60" selection-start-line="339" selection-start-column="33" selection-end-line="339" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/creamic_basin_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="258" column="61" selection-start-line="258" selection-start-column="33" selection-end-line="258" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="152" column="42" selection-start-line="152" selection-start-column="42" selection-end-line="152" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+          <folding>
+            <marker date="1510121728998" expanded="true" signature="71741:71947" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="188" column="28" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="167" column="60" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158797">
+          <caret line="9418" column="17" selection-start-line="9418" selection-start-column="17" selection-end-line="9418" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#669105#669106#0" expanded="false" />
+            <element signature="e#669158#669159#0" expanded="false" />
+            <element signature="e#1086916#1086917#0" expanded="false" />
+            <element signature="e#1086953#1086954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10914">
+          <caret line="667" column="51" selection-start-line="667" selection-start-column="51" selection-end-line="667" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2010#2011#0" expanded="false" />
+            <element signature="e#2043#2044#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="176" column="24" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1409#1410#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+            <element signature="e#28753#28754#0" expanded="false" />
+            <element signature="e#28791#28792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="136">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
           <folding />
         </state>
       </provider>

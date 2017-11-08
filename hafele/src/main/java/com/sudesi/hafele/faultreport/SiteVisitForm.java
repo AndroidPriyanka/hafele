@@ -63,6 +63,7 @@ import android.widget.Toast;
 
 import com.netcompss.ffmpeg4android_client.BaseWizard;
 import com.sudesi.hafele.adapter.ImageGridAdapter;
+import com.sudesi.hafele.classes.ExceptionHandler;
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.ImageData;
 import com.sudesi.hafele.classes.Sanitary_Details;
@@ -96,6 +97,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
     ArrayList<File> orgFileArray;
     ArrayList<String> imgOriginalSize;
     ArrayList<String> imgCompressedSize;
+    ArrayList<String>list_warranty11;
     ImageGridAdapter imgAdapter;
     int is_visited;
     ImageView video_grid;
@@ -154,7 +156,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.site_visit_form);
-
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));  //..................Exception
         context = this;
         pref = new HafelePreference(context);
         dbAdapter = new HafeleFaultReportDBAdapter(context);
@@ -205,7 +207,11 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
         for (int i = 0; i < array3.length; i++) {
             actionList.add(array3[i]);
         }
-
+        String[] array4 = getResources().getStringArray(R.array.spinner_warranty);
+        list_warranty11 = new ArrayList<String>();
+        for (int i = 0; i < array4.length; i++) {
+            list_warranty11.add(array4[i]);
+        }
         // DecimalFormat formatter = new DecimalFormat("00");
         Calendar calendar = Calendar.getInstance();
         int month = calendar.get(Calendar.MONTH) + 1;
@@ -312,9 +318,15 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                         radio_sanitary_service_guidance_given.setChecked(true);
                     }
                 }
-                if (report1.warranty != null) {
+               /* if (report1.warranty != null) {
                     int pos = Integer.parseInt(report1.warranty);
                     spin_sanitary_service_warranty.setSelection(pos);
+                }*/
+                if (report1.warranty != null) {
+                    int index1 = list_warranty11.indexOf(report1.warranty);
+                    if (index1 > 0) {
+                        spin_sanitary_service_warranty.setSelection(index1);
+                    }
                 }
 
             }
@@ -1114,7 +1126,7 @@ public class SiteVisitForm extends BaseWizard implements OnClickListener,
                 contentValues.put("sanitary_product", str_sanitary_service_guidance_given);
             }
             try {
-                contentValues.put("warranty",spin_sanitary_service_warranty.getSelectedItemPosition());
+                contentValues.put("warranty",spin_sanitary_service_warranty.getSelectedItem().toString());
 
                 contentValues.put("Complant_No", complaint_number);
                 contentValues.put("sync_status", "NU");

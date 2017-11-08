@@ -65,6 +65,7 @@ import android.widget.Toast;
 
 import com.netcompss.ffmpeg4android_client.BaseWizard;
 import com.sudesi.hafele.adapter.ImageGridAdapter;
+import com.sudesi.hafele.classes.ExceptionHandler;
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.ImageData;
 import com.sudesi.hafele.classes.ProductSubCategory;
@@ -142,7 +143,14 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
     TextView door_weight, comments1;
     TextView hafele_rate;
     int is_visited;
-    ArrayList<String> reasonList, reasonList1, resultList, actionList, wrongProdList,statusList;
+    ArrayList<String> reasonList, reasonList1, resultList, actionList, wrongProdList, statusList;
+    ArrayList<String> list_type_of_faucet,list_type_of_leakage_faucet,list_weak_flow_faucet,list_warranty11;
+    ArrayList<String> list_type_of_cistern,list_type_of_cistern_leakage ,list_type_of_cistern_flush_not_working,list_cistern_work_flow,list_cistern_asthetics;
+    ArrayList<String> list_type_of_kitchen_sink,list_kitchen_leakage ,list_kitchen_drainage ,list_kitchen_asthetics;
+    ArrayList<String> list_ceramic_basin_leakage ,list_ceramic_basin_drainage,list_ceramic_basin_asthetics;
+    ArrayList<String> list_type_of_shower,list_shower_leakage,list_shower_does_not_operate,list_shower_asthetics;
+    ArrayList<String>list_accessories_asthesis;
+
     boolean is_checked = false;
     CheckBox floor_chk_1, floor_chk_2, floor_chk_3, floor_chk_4, floor_chk_5,
             floor_chk_6, floor_chk_7, floor_chk_8, val_one, val_two, val_three,
@@ -221,7 +229,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 //.....................faucet page..........
     LinearLayout ll_faucet, ll_cistern, ll_kitchensinc, ll_ceramic_basin, ll_showers, ll_accessories, bottom_linearl2;
     RadioGroup radio_sanitary, radio_product;
-    RadioButton radio_faucet, radio_cistern, radio_kitchensink, radio_ceramic_basin, radio_showers, radio_accessories, radio_product_wrong_product, radio_product_wrong_installation, radio_product_damage;
+    RadioButton radio_faucet, radio_cistern, radio_kitchensink, radio_ceramic_basin, radio_showers, radio_accessories, radio_correct_product, radio_product_wrong_product, radio_product_wrong_installation, radio_product_damage;
     CheckBox leakage_chk_1, operate_chk_1, operate_chk_2, leakage_chk_2, weak_flow_chk_1, weak_flow_chk_2, noise_chk_1, noise_chk_2;
     LinearLayout linear_type_of_faucet_leakage_if_yes, linear_type_of_faucet_work_flow_if_yes;
     Spinner spin_type_of_faucet, spin_type_of_faucet_leakage, spin_type_of__work_flow, spin_faucet_warranty;
@@ -231,33 +239,33 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
     CheckBox leakage_cistern_chk_1, leakage_cistern_chk_2, flush_chk_1, flush_chk_2, cistern_weak_flow_chk_1, cistern_weak_flow_chk_2, asthetics_chk_1, asthetics_chk_2;
     LinearLayout linear_type_of_cistern_leakage_if_yes, linear_type_of_cistern_flush_not_working_if_yes, linear_type_of_cistern_work_flow_if_yes, linear_type_of_cistern_asthetics_if_yes;
     RadioGroup radio_group_cistern;
-    RadioButton radio_cistern_wrong_product, radio_cistern_wrong_installation, radio_cistern_damage;
+    RadioButton radio_cistern_wrong_product, radio_cistern_wrong_installation, radio_cistern_damage, radio_cistern_correct_product;
     Spinner spin_type_of_cistern, spin_type_of_cistern_leakage, spin_type_of_cistern_fulsh_not_working, spin_type_of_cistern_work_flow, spin_type_of_cistern_asthetics, spin_cistern_warranty;
     //.....................Kithchen sink page...........
     CheckBox leakage_kitchen_sink_chk_1, leakage_kitchen_sink_chk_2, drainage_chk_1, drainage_chk_2, kitchen_sink_asthetics_chk_1, kitchen_sink_asthetics_chk_2;
     LinearLayout linear_type_of_kitchen_sink_leakage_if_yes, linear_type_of_drainage_if_yes, linear_kitchen_sink_asthetics;
     RadioGroup radio_group_kitchen_sink;
-    RadioButton radio_kitchen_sink_wrong_product, radio_kitchen_sink_wrong_installation, radio_kitchen_sink_damage;
+    RadioButton radio_kitchen_sink_wrong_product, radio_kitchen_sink_wrong_installation, radio_kitchen_sink_damage, radio_kitchen_sink_correct_product;
     Spinner spin_type_of_kitchen_sink, spin_kitchen_sink_leakage, spin_kitchen_sink_draonage, spin_kitchen_sink_asthetics, spin_kitchen_sink_warranty;
 
     //...................................Ceramic Basin.......................
     CheckBox leakage_ceramic_basin_chk_1, leakage_ceramic_basin_chk_2, ceramic_basin_drainage_chk_1, ceramic_basin_drainage_chk_2, ceramic_basin_asthetics_chk_1, ceramic_basin_asthetics_chk_2;
     LinearLayout linear_ceramic_type_of_leakage, linear_ceramic_type_of_drainage, linear_ceramic_type_of_asthetics;
     RadioGroup radio_group_ceramic_basin;
-    RadioButton radio_ceramic_basin_wrong_product, radio_ceramic_basin_wrong_installation, radio_ceramic_basin_damage;
+    RadioButton radio_ceramic_basin_wrong_product, radio_ceramic_basin_wrong_installation, radio_ceramic_basin_damage, radio_ceramic_basin_correct_product;
     Spinner spin_ceramic_basin_leakage, spin_ceramic_basin_drainage, spin_ceramic_basin_asthetics, spin_ceramic_basin_warranty;
 
     //......................................Showers..........................
     CheckBox leakage_shower_chk_1, leakage_shower_chk_2, does_not_operate_chk_1, does_not_operate_chk_2, shower_asthetics_chk_1, shower_asthetics_chk_2;
     LinearLayout linear_type_of_shower, linear_does_not_operate, linear_shower_asthetics;
     RadioGroup radio_group_shower;
-    RadioButton radio_shower_wrong_product, radio_shower_wrong_installation, radio_shower_damage;
+    RadioButton radio_shower_wrong_product, radio_shower_wrong_installation, radio_shower_damage, radio_correct_product_shower;
     Spinner spin_type_of_shower, spin_shower_leakage, spin_shower_does_not_operate, spin_shower_asthetics, spin_shower_warranty;
     //......................................Accessories................
     CheckBox accessories_asthetics_chk_1, accessories_asthetics_chk_2;
     LinearLayout linear_accessaries_asthesis;
     RadioGroup radio_group_accessories;
-    RadioButton radio_accessories_wrong_product, radio_accessories_wrong_installation, radio_accessories_damage;
+    RadioButton radio_accessories_wrong_product, radio_accessories_wrong_installation, radio_accessories_damage, radio_accessories_correct_product;
     Spinner spin_accessories_asthesis, spin_accessories_warranty;
 
     Button submit, attach_img, attach_vid;
@@ -272,6 +280,8 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
         dbAdapter = new HafeleFaultReportDBAdapter(context);
         dbAdapter.createDatabase();
         dbAdapter.open();
+
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));  //..................Exception
 
         webservice = new HafeleWebservice(FaultReportForm.this);
 
@@ -313,6 +323,130 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
         for (int i = 0; i < array5.length; i++) {
             statusList.add(array5[i]);
         }
+        //.....................sanitary..................
+        String[] array6 = getResources().getStringArray(R.array.spinner_type_of_faucet);
+        list_type_of_faucet = new ArrayList<String>();
+        for (int i = 0; i < array6.length; i++) {
+            list_type_of_faucet.add(array6[i]);
+        }
+        String[] array7 = getResources().getStringArray(R.array.spinner_type_of_leakage_faucet);
+        list_type_of_leakage_faucet = new ArrayList<String>();
+        for (int i = 0; i < array7.length; i++) {
+            list_type_of_leakage_faucet.add(array7[i]);
+        }
+        String[] array8 = getResources().getStringArray(R.array.spinner_weak_flow_faucet);
+        list_weak_flow_faucet = new ArrayList<String>();
+        for (int i = 0; i < array8.length; i++) {
+            list_weak_flow_faucet.add(array8[i]);
+        }
+        String[] array9 = getResources().getStringArray(R.array.spinner_warranty);
+        list_warranty11 = new ArrayList<String>();
+        for (int i = 0; i < array9.length; i++) {
+            list_warranty11.add(array9[i]);
+        }
+
+
+
+        String[] array10 = getResources().getStringArray(R.array.spinner_type_of_cistern);
+        list_type_of_cistern = new ArrayList<String>();
+        for (int i = 0; i < array10.length; i++) {
+            list_type_of_cistern.add(array10[i]);
+        }
+        String[] array11 = getResources().getStringArray(R.array.spinner_type_of_cistern_leakage);
+        list_type_of_cistern_leakage= new ArrayList<String>();
+        for (int i = 0; i < array11.length; i++) {
+            list_type_of_cistern_leakage.add(array11[i]);
+        }
+        String[] array12 = getResources().getStringArray(R.array.spinner_type_of_cistern_flush_not_working);
+        list_type_of_cistern_flush_not_working= new ArrayList<String>();
+        for (int i = 0; i < array12.length; i++) {
+            list_type_of_cistern_flush_not_working.add(array12[i]);
+        }
+        String[] array13 = getResources().getStringArray(R.array.spinner_type_of_cistern_work_flow);
+        list_cistern_work_flow = new ArrayList<String>();
+        for (int i = 0; i < array13.length; i++) {
+            list_cistern_work_flow .add(array13[i]);
+        }
+        String[] array14 = getResources().getStringArray(R.array.spinner_type_of_cistern_asthetics);
+        list_cistern_asthetics = new ArrayList<String>();
+        for (int i = 0; i < array14.length; i++) {
+            list_cistern_asthetics .add(array14[i]);
+        }
+
+
+
+
+        String[] array15 = getResources().getStringArray(R.array.spinner_type_of_kitchen_sink);
+        list_type_of_kitchen_sink = new ArrayList<String>();
+        for (int i = 0; i < array15.length; i++) {
+            list_type_of_kitchen_sink .add(array15[i]);
+        }
+        String[] array16 = getResources().getStringArray(R.array.spinner_kitchen_leakage);
+        list_kitchen_leakage  = new ArrayList<String>();
+        for (int i = 0; i < array16.length; i++) {
+            list_kitchen_leakage.add(array16[i]);
+        }
+        String[] array17 = getResources().getStringArray(R.array.spinner_kitchen_drainage);
+        list_kitchen_drainage= new ArrayList<String>();
+        for (int i = 0; i < array17.length; i++) {
+            list_kitchen_drainage.add(array17[i]);
+        }
+        String[] array18 = getResources().getStringArray(R.array.spinner_kitchen_asthetics);
+        list_kitchen_asthetics= new ArrayList<String>();
+        for (int i = 0; i < array18.length; i++) {
+            list_kitchen_asthetics.add(array18[i]);
+        }
+
+
+
+        String[] array19 = getResources().getStringArray(R.array.spinner_ceramic_basin_leakage);
+        list_ceramic_basin_leakage= new ArrayList<String>();
+        for (int i = 0; i < array19.length; i++) {
+            list_ceramic_basin_leakage.add(array19[i]);
+        }
+        String[] array20 = getResources().getStringArray(R.array.spinner_ceramic_basin_drainage);
+        list_ceramic_basin_drainage= new ArrayList<String>();
+        for (int i = 0; i < array20.length; i++) {
+            list_ceramic_basin_drainage.add(array20[i]);
+        }
+        String[] array21 = getResources().getStringArray(R.array.spinner_ceramic_basin_asthetics);
+        list_ceramic_basin_asthetics= new ArrayList<String>();
+        for (int i = 0; i < array21.length; i++) {
+            list_ceramic_basin_asthetics.add(array21[i]);
+        }
+
+
+        String[] array22 = getResources().getStringArray(R.array.spinner_type_of_shower);
+        list_type_of_shower= new ArrayList<String>();
+        for (int i = 0; i < array22.length; i++) {
+            list_type_of_shower.add(array22[i]);
+        }
+
+        String[] array23 = getResources().getStringArray(R.array.spinner_shower_leakage);
+        list_shower_leakage= new ArrayList<String>();
+        for (int i = 0; i < array23.length; i++) {
+            list_shower_leakage.add(array23[i]);
+        }
+        String[] array24= getResources().getStringArray(R.array.spinner_shower_does_not_operate);
+        list_shower_does_not_operate= new ArrayList<String>();
+        for (int i = 0; i < array24.length; i++) {
+            list_shower_does_not_operate.add(array24[i]);
+        }
+        String[] array25= getResources().getStringArray(R.array.spinner_shower_asthetics);
+        list_shower_asthetics= new ArrayList<String>();
+        for (int i = 0; i < array25.length; i++) {
+            list_shower_asthetics.add(array25[i]);
+        }
+        String[] array26= getResources().getStringArray(R.array.spinner_accessories_asthesis);
+        list_accessories_asthesis= new ArrayList<String>();
+        for (int i = 0; i < array26.length; i++) {
+            list_accessories_asthesis.add(array26[i]);
+        }
+
+
+
+
+
 
         // DecimalFormat formatter = new DecimalFormat("00");
         Calendar calendar = Calendar.getInstance();
@@ -8348,1409 +8482,190 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
         else /*if (product_sub_category.contains("Sanitary") || product_sub_category.equalsIgnoreCase("Sanitary")) {*/
             //Pratik
-        if (product_group.contains("Sanitary") || product_group.equalsIgnoreCase("Sanitary")) {
-            view = inflater.inflate(R.layout.sanitary_fault_finding_form, null);
-            baseFrame.removeAllViews();
-            baseFrame.addView(view);
-            prod_type = "null";
+            if (product_group.contains("Sanitary") || product_group.equalsIgnoreCase("Sanitary")) {
+                view = inflater.inflate(R.layout.sanitary_fault_finding_form, null);
+                baseFrame.removeAllViews();
+                baseFrame.addView(view);
+                prod_type = "null";
 
-            FaultReport report = null;
-            Sanitary_Details report1 = null;
-            List<ImageData> imgData = null;
-            List<VideoData> vidData = null;
+                FaultReport report = null;
+                Sanitary_Details report1 = null;
+                List<ImageData> imgData = null;
+                List<VideoData> vidData = null;
 
-            if (is_visited > 0) {
-                report = dbAdapter.getFaultReportDetails(pref.getUserName(),
-                        complaint_number);
-                report1 = dbAdapter.getSanitaryReportDetails(pref.getUserName(),
-                        complaint_number);
-                imgData = dbAdapter.getImageData(complaint_number, "ALL");
-                vidData = dbAdapter.getVideoData(complaint_number);
-            }
-            ll_faucet = (LinearLayout) view.findViewById(R.id.ll_faucet);
-            ll_cistern = (LinearLayout) view.findViewById(R.id.ll_cistern);
-            ll_kitchensinc = (LinearLayout) view.findViewById(R.id.ll_kitchensinc);
-            ll_ceramic_basin = (LinearLayout) view.findViewById(R.id.ll_ceramic_basin);
-            ll_showers = (LinearLayout) view.findViewById(R.id.ll_showers);
-            ll_accessories = (LinearLayout) view.findViewById(R.id.ll_accessories);
-            bottom_linearl2 = (LinearLayout) view.findViewById(R.id.bottom_linearll);
-            radio_sanitary = (RadioGroup) view.findViewById(R.id.radio_sanitary);
-            radio_faucet = (RadioButton) view.findViewById(R.id.radio_faucet);
-            radio_cistern = (RadioButton) view.findViewById(R.id.radio_cistern);
-            radio_kitchensink = (RadioButton) view.findViewById(R.id.radio_kitchensink);
-            radio_ceramic_basin = (RadioButton) view.findViewById(R.id.radio_ceramic_basin);
-            radio_showers = (RadioButton) view.findViewById(R.id.radio_showers);
-            radio_accessories = (RadioButton) view.findViewById(R.id.radio_accessories);
+                if (is_visited > 0) {
+                    report = dbAdapter.getFaultReportDetails(pref.getUserName(),
+                            complaint_number);
+                    report1 = dbAdapter.getSanitaryReportDetails(pref.getUserName(),
+                            complaint_number);
+                    imgData = dbAdapter.getImageData(complaint_number, "ALL");
+                    vidData = dbAdapter.getVideoData(complaint_number);
+                }
+                ll_faucet = (LinearLayout) view.findViewById(R.id.ll_faucet);
+                ll_cistern = (LinearLayout) view.findViewById(R.id.ll_cistern);
+                ll_kitchensinc = (LinearLayout) view.findViewById(R.id.ll_kitchensinc);
+                ll_ceramic_basin = (LinearLayout) view.findViewById(R.id.ll_ceramic_basin);
+                ll_showers = (LinearLayout) view.findViewById(R.id.ll_showers);
+                ll_accessories = (LinearLayout) view.findViewById(R.id.ll_accessories);
+                bottom_linearl2 = (LinearLayout) view.findViewById(R.id.bottom_linearll);
+                radio_sanitary = (RadioGroup) view.findViewById(R.id.radio_sanitary);
+                radio_faucet = (RadioButton) view.findViewById(R.id.radio_faucet);
+                radio_cistern = (RadioButton) view.findViewById(R.id.radio_cistern);
+                radio_kitchensink = (RadioButton) view.findViewById(R.id.radio_kitchensink);
+                radio_ceramic_basin = (RadioButton) view.findViewById(R.id.radio_ceramic_basin);
+                radio_showers = (RadioButton) view.findViewById(R.id.radio_showers);
+                radio_accessories = (RadioButton) view.findViewById(R.id.radio_accessories);
 //................................Faucet page
-            leakage_chk_1 = (CheckBox) view.findViewById(R.id.leakage_chk_1);
-            leakage_chk_2 = (CheckBox) view.findViewById(R.id.leakage_chk_2);
-            operate_chk_1 = (CheckBox) view.findViewById(R.id.operate_chk_1);
-            operate_chk_2 = (CheckBox) view.findViewById(R.id.operate_chk_2);
-            weak_flow_chk_1 = (CheckBox) view.findViewById(R.id.weak_flow_chk_1);
-            weak_flow_chk_2 = (CheckBox) view.findViewById(R.id.weak_flow_chk_2);
-            noise_chk_1 = (CheckBox) view.findViewById(R.id.noise_chk_1);
-            noise_chk_2 = (CheckBox) view.findViewById(R.id.noise_chk_2);
-            linear_type_of_faucet_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_faucet_leakage_if_yes);
-            linear_type_of_faucet_work_flow_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_faucet_work_flow_if_yes);
+                leakage_chk_1 = (CheckBox) view.findViewById(R.id.leakage_chk_1);
+                leakage_chk_2 = (CheckBox) view.findViewById(R.id.leakage_chk_2);
+                operate_chk_1 = (CheckBox) view.findViewById(R.id.operate_chk_1);
+                operate_chk_2 = (CheckBox) view.findViewById(R.id.operate_chk_2);
+                weak_flow_chk_1 = (CheckBox) view.findViewById(R.id.weak_flow_chk_1);
+                weak_flow_chk_2 = (CheckBox) view.findViewById(R.id.weak_flow_chk_2);
+                noise_chk_1 = (CheckBox) view.findViewById(R.id.noise_chk_1);
+                noise_chk_2 = (CheckBox) view.findViewById(R.id.noise_chk_2);
+                linear_type_of_faucet_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_faucet_leakage_if_yes);
+                linear_type_of_faucet_work_flow_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_faucet_work_flow_if_yes);
 
-            spin_type_of_faucet = (Spinner) view.findViewById(R.id.spin_type_of_faucet);
-            spin_type_of_faucet_leakage = (Spinner) view.findViewById(R.id.spin_type_of_faucet_leakage);
-            spin_type_of__work_flow = (Spinner) view.findViewById(R.id.spin_type_of__work_flow);
-            spin_faucet_warranty = (Spinner) view.findViewById(R.id.spin_faucet_warranty);
+                spin_type_of_faucet = (Spinner) view.findViewById(R.id.spin_type_of_faucet);
+                spin_type_of_faucet_leakage = (Spinner) view.findViewById(R.id.spin_type_of_faucet_leakage);
+                spin_type_of__work_flow = (Spinner) view.findViewById(R.id.spin_type_of__work_flow);
+                spin_faucet_warranty = (Spinner) view.findViewById(R.id.spin_faucet_warranty);
 
-            radio_product = (RadioGroup) view.findViewById(R.id.radio_product);
-            radio_product_wrong_product = (RadioButton) view.findViewById(R.id.radio_product_wrong_product);
-            radio_product_wrong_installation = (RadioButton) view.findViewById(R.id.radio_product_wrong_installation);
-            radio_product_damage = (RadioButton) view.findViewById(R.id.radio_product_damage);
-
-            submit = (Button) view.findViewById(R.id.submit);
-            attach_img = (Button) view.findViewById(R.id.attach_img);
-            attach_vid = (Button) view.findViewById(R.id.attach_vid);
-            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
-            bottom_linearll=(LinearLayout)view.findViewById(R.id.bottom_linearll);
-            article_no = (EditText) view.findViewById(R.id.article_no);
+                radio_product = (RadioGroup) view.findViewById(R.id.radio_product);
+                radio_correct_product = (RadioButton) view.findViewById(R.id.radio_correct_product);
+                radio_product_wrong_product = (RadioButton) view.findViewById(R.id.radio_product_wrong_product);
+                radio_product_wrong_installation = (RadioButton) view.findViewById(R.id.radio_product_wrong_installation);
+                radio_product_damage = (RadioButton) view.findViewById(R.id.radio_product_damage);
 
 
-
-            radio_faucet.setOnCheckedChangeListener(this);
-            radio_cistern.setOnCheckedChangeListener(this);
-            radio_kitchensink.setOnCheckedChangeListener(this);
-            radio_ceramic_basin.setOnCheckedChangeListener(this);
-            radio_showers.setOnCheckedChangeListener(this);
-            radio_accessories.setOnCheckedChangeListener(this);
-
-            radio_faucet.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.VISIBLE);
-                        ll_cistern.setVisibility(View.GONE);
-                        ll_kitchensinc.setVisibility(View.GONE);
-                        ll_ceramic_basin.setVisibility(View.GONE);
-                        ll_showers.setVisibility(View.GONE);
-                        ll_accessories.setVisibility(View.GONE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_cistern.setChecked(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setChecked(false);
-
-                        spin_type_of_faucet_leakage.setEnabled(false);
-                        spin_type_of__work_flow.setEnabled(false);
-
-                    }
-                }
-            });
-            radio_cistern.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.GONE);
-                        ll_cistern.setVisibility(View.VISIBLE);
-                        ll_kitchensinc.setVisibility(View.GONE);
-                        ll_ceramic_basin.setVisibility(View.GONE);
-                        ll_showers.setVisibility(View.GONE);
-                        ll_accessories.setVisibility(View.GONE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setChecked(false);
-
-                        spin_type_of_cistern_leakage.setEnabled(false);
-                        spin_type_of_cistern_fulsh_not_working.setEnabled(false);
-                        spin_type_of_cistern_work_flow.setEnabled(false);
-                        spin_type_of_cistern_asthetics.setEnabled(false);
-                    }
-                }
-            });
-            radio_kitchensink.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.GONE);
-                        ll_cistern.setVisibility(View.GONE);
-                        ll_kitchensinc.setVisibility(View.VISIBLE);
-                        ll_ceramic_basin.setVisibility(View.GONE);
-                        ll_showers.setVisibility(View.GONE);
-                        ll_accessories.setVisibility(View.GONE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_cistern.setChecked(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setChecked(false);
-                        spin_kitchen_sink_leakage.setEnabled(false);
-                        spin_kitchen_sink_draonage.setEnabled(false);
-                        spin_kitchen_sink_warranty.setEnabled(false);
-                    }
-                }
-            });
-            radio_ceramic_basin.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.GONE);
-                        ll_cistern.setVisibility(View.GONE);
-                        ll_kitchensinc.setVisibility(View.GONE);
-                        ll_ceramic_basin.setVisibility(View.VISIBLE);
-                        ll_showers.setVisibility(View.GONE);
-                        ll_accessories.setVisibility(View.GONE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_cistern.setChecked(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_showers.setChecked(false);
-                        radio_accessories.setChecked(false);
-
-                        spin_ceramic_basin_leakage.setEnabled(false);
-                        spin_ceramic_basin_drainage.setEnabled(false);
-                        spin_ceramic_basin_asthetics.setEnabled(false);
-                    }
-                }
-            });
-            radio_showers.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.GONE);
-                        ll_cistern.setVisibility(View.GONE);
-                        ll_kitchensinc.setVisibility(View.GONE);
-                        ll_ceramic_basin.setVisibility(View.GONE);
-                        ll_showers.setVisibility(View.VISIBLE);
-                        ll_accessories.setVisibility(View.GONE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_cistern.setChecked(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_accessories.setChecked(false);
-
-                        spin_shower_leakage.setEnabled(false);
-                        spin_shower_does_not_operate.setEnabled(false);
-                        spin_shower_asthetics.setEnabled(false);
-                    }
-                }
-            });
-            radio_accessories.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        ll_faucet.setVisibility(View.GONE);
-                        ll_cistern.setVisibility(View.GONE);
-                        ll_kitchensinc.setVisibility(View.GONE);
-                        ll_ceramic_basin.setVisibility(View.GONE);
-                        ll_showers.setVisibility(View.GONE);
-                        ll_accessories.setVisibility(View.VISIBLE);
-                        bottom_linearl2.setVisibility(View.VISIBLE);
-                        radio_faucet.setChecked(false);
-                        radio_cistern.setChecked(false);
-                        radio_kitchensink.setChecked(false);
-                        radio_ceramic_basin.setChecked(false);
-                        radio_showers.setChecked(false);
-                        spin_accessories_asthesis.setEnabled(false);
-
-                    }
-                }
-            });
-            leakage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_faucet_leakage_if_yes.setVisibility(View.VISIBLE);
-                        spin_type_of_faucet_leakage.setEnabled(true);
-                        leakage_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        // linear_type_of_faucet_leakage_if_yes.setVisibility(View.GONE);
-                        spin_type_of_faucet_leakage.setEnabled(false);
-
-                    }
-
-                }
-            });
-            leakage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //   linear_type_of_faucet_leakage_if_yes.setVisibility(View.GONE);
-                        leakage_chk_1.setChecked(false);
-                        spin_type_of_faucet_leakage.setEnabled(false);
-                    }
-
-                }
-            });
-
-            weak_flow_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        spin_type_of__work_flow.setEnabled(true);
-                        weak_flow_chk_2.setChecked(false);
-                    } else if (!isChecked) {
-                        // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        spin_type_of__work_flow.setEnabled(false);
-                    }
-
-                }
-            });
-            weak_flow_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        spin_type_of__work_flow.setEnabled(false);
-                        weak_flow_chk_1.setChecked(false);
-                    }
-
-                }
-            });
-            operate_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        //operate_chk_2.setEnabled(false);
-                        operate_chk_2.setChecked(false);
-                    } else if (!isChecked) {
-                        // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        // operate_chk_2.setEnabled(true);
-                    }
-                }
-            });
-            operate_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-
-                        operate_chk_1.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        //   operate_chk_1.setEnabled(true);
-                    }
-                }
-            });
-
-            noise_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        //  noise_chk_2.setEnabled(false);
-                        noise_chk_2.setChecked(false);
-                    } else if (!isChecked) {
-                        // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        // noise_chk_2.setEnabled(true);
-                    }
-                }
-            });
-            noise_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        //   noise_chk_1.setEnabled(false);
-                        noise_chk_1.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
-                        //  noise_chk_1.setEnabled(true);
-                    }
-                }
-            });
+                submit = (Button) view.findViewById(R.id.submit);
+                attach_img = (Button) view.findViewById(R.id.attach_img);
+                attach_vid = (Button) view.findViewById(R.id.attach_vid);
+                btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+                bottom_linearll = (LinearLayout) view.findViewById(R.id.bottom_linearll);
+                article_no = (EditText) view.findViewById(R.id.article_no);
 
 
-            //...........................Cistern layout....................................
-            leakage_cistern_chk_1 = (CheckBox) view.findViewById(R.id.leakage_cistern_chk_1);
-            leakage_cistern_chk_2 = (CheckBox) view.findViewById(R.id.leakage_cistern_chk_2);
-            flush_chk_1 = (CheckBox) view.findViewById(R.id.flush_chk_1);
-            flush_chk_2 = (CheckBox) view.findViewById(R.id.flush_chk_2);
-            linear_type_of_cistern_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_leakage_if_yes);
-            linear_type_of_cistern_flush_not_working_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_flush_not_working_if_yes);
-            cistern_weak_flow_chk_1 = (CheckBox) view.findViewById(R.id.cistern_weak_flow_chk_1);
-            cistern_weak_flow_chk_2 = (CheckBox) view.findViewById(R.id.cistern_weak_flow_chk_2);
-            linear_type_of_cistern_work_flow_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_work_flow_if_yes);
-            asthetics_chk_1 = (CheckBox) view.findViewById(R.id.asthetics_chk_1);
-            asthetics_chk_2 = (CheckBox) view.findViewById(R.id.asthetics_chk_2);
-            linear_type_of_cistern_asthetics_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_asthetics_if_yes);
-            radio_group_cistern = (RadioGroup) view.findViewById(R.id.radio_group_cistern);
-            radio_cistern_wrong_product = (RadioButton) view.findViewById(R.id.radio_cistern_wrong_product);
-            radio_cistern_wrong_installation = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_wrong_installation);
-            radio_cistern_damage = (RadioButton) view.findViewById(R.id.radio_cistern_damage);
-            spin_type_of_cistern = (Spinner) view.findViewById(R.id.spin_type_of_cistern);
-            spin_type_of_cistern_leakage = (Spinner) view.findViewById(R.id.spin_type_of_cistern_leakage);
-            spin_type_of_cistern_fulsh_not_working = (Spinner) view.findViewById(R.id.spin_type_of_cistern_fulsh_not_working);
-            spin_type_of_cistern_work_flow = (Spinner) view.findViewById(R.id.spin_type_of_cistern_work_flow);
-            spin_type_of_cistern_asthetics = (Spinner) view.findViewById(R.id.spin_type_of_cistern_asthetics);
-            spin_cistern_warranty = (Spinner) view.findViewById(R.id.spin_cistern_warranty);
+                //...........................Cistern layout....................................
+                leakage_cistern_chk_1 = (CheckBox) view.findViewById(R.id.leakage_cistern_chk_1);
+                leakage_cistern_chk_2 = (CheckBox) view.findViewById(R.id.leakage_cistern_chk_2);
+                flush_chk_1 = (CheckBox) view.findViewById(R.id.flush_chk_1);
+                flush_chk_2 = (CheckBox) view.findViewById(R.id.flush_chk_2);
+                linear_type_of_cistern_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_leakage_if_yes);
+                linear_type_of_cistern_flush_not_working_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_flush_not_working_if_yes);
+                cistern_weak_flow_chk_1 = (CheckBox) view.findViewById(R.id.cistern_weak_flow_chk_1);
+                cistern_weak_flow_chk_2 = (CheckBox) view.findViewById(R.id.cistern_weak_flow_chk_2);
+                linear_type_of_cistern_work_flow_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_work_flow_if_yes);
+                asthetics_chk_1 = (CheckBox) view.findViewById(R.id.asthetics_chk_1);
+                asthetics_chk_2 = (CheckBox) view.findViewById(R.id.asthetics_chk_2);
+                linear_type_of_cistern_asthetics_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_cistern_asthetics_if_yes);
+                radio_group_cistern = (RadioGroup) view.findViewById(R.id.radio_group_cistern);
+                radio_cistern_wrong_product = (RadioButton) view.findViewById(R.id.radio_cistern_wrong_product);
+                radio_cistern_correct_product = (RadioButton) view.findViewById(R.id.radio_cistern_correct_product);
+                radio_cistern_wrong_installation = (RadioButton) view.findViewById(R.id.radio_cistern_wrong_installation);
+                radio_cistern_damage = (RadioButton) view.findViewById(R.id.radio_cistern_damage);
+                spin_type_of_cistern = (Spinner) view.findViewById(R.id.spin_type_of_cistern);
+                spin_type_of_cistern_leakage = (Spinner) view.findViewById(R.id.spin_type_of_cistern_leakage);
+                spin_type_of_cistern_fulsh_not_working = (Spinner) view.findViewById(R.id.spin_type_of_cistern_fulsh_not_working);
+                spin_type_of_cistern_work_flow = (Spinner) view.findViewById(R.id.spin_type_of_cistern_work_flow);
+                spin_type_of_cistern_asthetics = (Spinner) view.findViewById(R.id.spin_type_of_cistern_asthetics);
+                spin_cistern_warranty = (Spinner) view.findViewById(R.id.spin_cistern_warranty);
 
 //....................................Kitchen sink page...........
-            leakage_kitchen_sink_chk_1 = (CheckBox) view.findViewById(R.id.leakage_kitchen_sink_chk_1);
-            leakage_kitchen_sink_chk_2 = (CheckBox) view.findViewById(R.id.leakage_kitchen_sink_chk_2);
-            linear_type_of_kitchen_sink_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_kitchen_sink_leakage_if_yes);
-            drainage_chk_1 = (CheckBox) view.findViewById(R.id.drainage_chk_1);
-            drainage_chk_2 = (CheckBox) view.findViewById(R.id.drainage_chk_2);
-            linear_type_of_drainage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_drainage_if_yes);
-            kitchen_sink_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.kitchen_sink_asthetics_chk_1);
-            kitchen_sink_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.kitchen_sink_asthetics_chk_2);
-            linear_kitchen_sink_asthetics = (LinearLayout) view.findViewById(R.id.linear_kitchen_sink_asthetics);
-            radio_group_kitchen_sink = (RadioGroup) view.findViewById(R.id.radio_group_kitchen_sink);
-            radio_kitchen_sink_wrong_product = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_wrong_product);
-            radio_kitchen_sink_wrong_installation = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_wrong_installation);
-            radio_kitchen_sink_damage = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_damage);
-            spin_type_of_kitchen_sink = (Spinner) view.findViewById(R.id.spin_type_of_kitchen_sink);
-            spin_kitchen_sink_leakage = (Spinner) view.findViewById(R.id.spin_kitchen_sink_leakage);
-            spin_kitchen_sink_draonage = (Spinner) view.findViewById(R.id.spin_kitchen_sink_draonage);
-            spin_kitchen_sink_asthetics = (Spinner) view.findViewById(R.id.spin_kitchen_sink_asthetics);
-            spin_kitchen_sink_warranty = (Spinner) view.findViewById(R.id.spin_kitchen_sink_warranty);
-
-
-            //......................ceramic basin....................
-            leakage_ceramic_basin_chk_1 = (CheckBox) view.findViewById(R.id.leakage_ceramic_basin_chk_1);
-            leakage_ceramic_basin_chk_2 = (CheckBox) view.findViewById(R.id.leakage_ceramic_basin_chk_2);
-            linear_ceramic_type_of_leakage = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_leakage);
-            ceramic_basin_drainage_chk_1 = (CheckBox) view.findViewById(R.id.ceramic_basin_drainage_chk_1);
-            ceramic_basin_drainage_chk_2 = (CheckBox) view.findViewById(R.id.ceramic_basin_drainage_chk_2);
-            linear_ceramic_type_of_drainage = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_drainage);
-            ceramic_basin_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.ceramic_basin_asthetics_chk_1);
-            ceramic_basin_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.ceramic_basin_asthetics_chk_2);
-            linear_ceramic_type_of_asthetics = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_asthetics);
-            radio_group_ceramic_basin = (RadioGroup) view.findViewById(R.id.radio_group_ceramic_basin);
-            radio_ceramic_basin_wrong_product = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_wrong_product);
-            radio_ceramic_basin_wrong_installation = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_wrong_installation);
-            radio_ceramic_basin_damage = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_damage);
-            spin_ceramic_basin_leakage = (Spinner) view.findViewById(R.id.spin_ceramic_basin_leakage);
-            spin_ceramic_basin_drainage = (Spinner) view.findViewById(R.id.spin_ceramic_basin_drainage);
-            spin_ceramic_basin_asthetics = (Spinner) view.findViewById(R.id.spin_ceramic_basin_asthetics);
-            spin_ceramic_basin_warranty = (Spinner) view.findViewById(R.id.spin_ceramic_basin_warranty);
-
-            //...........................showers.........................
-            leakage_shower_chk_1 = (CheckBox) view.findViewById(R.id.leakage_shower_chk_1);
-            leakage_shower_chk_2 = (CheckBox) view.findViewById(R.id.leakage_shower_chk_2);
-            linear_type_of_shower = (LinearLayout) view.findViewById(R.id.linear_type_of_shower);
-            does_not_operate_chk_1 = (CheckBox) view.findViewById(R.id.does_not_operate_chk_1);
-            does_not_operate_chk_2 = (CheckBox) view.findViewById(R.id.does_not_operate_chk_2);
-            linear_does_not_operate = (LinearLayout) view.findViewById(R.id.linear_does_not_operate);
-            shower_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.shower_asthetics_chk_1);
-            shower_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.shower_asthetics_chk_2);
-            linear_shower_asthetics = (LinearLayout) view.findViewById(R.id.linear_shower_asthetics);
-            radio_group_shower = (RadioGroup) view.findViewById(R.id.radio_group_shower);
-            radio_shower_wrong_product = (RadioButton) view.findViewById(R.id.radio_shower_wrong_product);
-            radio_shower_wrong_installation = (RadioButton) view.findViewById(R.id.radio_shower_wrong_installation);
-            radio_shower_damage = (RadioButton) view.findViewById(R.id.radio_shower_damage);
-            spin_type_of_shower = (Spinner) view.findViewById(R.id.spin_type_of_shower);
-            spin_shower_leakage = (Spinner) view.findViewById(R.id.spin_shower_leakage);
-            spin_shower_does_not_operate = (Spinner) view.findViewById(R.id.spin_shower_does_not_operate);
-            spin_shower_asthetics = (Spinner) view.findViewById(R.id.spin_shower_asthetics);
-            spin_shower_warranty = (Spinner) view.findViewById(R.id.spin_shower_warranty);
-            //......................accessories page...............
-            accessories_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.accessories_asthetics_chk_1);
-            accessories_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.accessories_asthetics_chk_2);
-            linear_accessaries_asthesis = (LinearLayout) view.findViewById(R.id.linear_accessaries_asthesis);
-            radio_group_accessories = (RadioGroup) view.findViewById(R.id.radio_group_accessories);
-            radio_accessories_wrong_product = (RadioButton) view.findViewById(R.id.radio_accessories_wrong_product);
-            radio_accessories_wrong_installation = (RadioButton) view.findViewById(R.id.radio_accessories_wrong_installation);
-            radio_accessories_damage = (RadioButton) view.findViewById(R.id.radio_accessories_damage);
-            spin_accessories_asthesis = (Spinner) view.findViewById(R.id.spin_accessories_asthesis);
-            spin_accessories_warranty = (Spinner) view.findViewById(R.id.spin_accessories_warranty);
-
-            status=(Spinner) view.findViewById(R.id.status);
-            comments=(EditText)view.findViewById(R.id.comments);
-            unresolve_reason=(Spinner) view.findViewById(R.id.unresolve_reason);
-            spin_siteIssueReason_reason=(Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
-            edt_spare_defect_articleNo=(EditText)view.findViewById(R.id.edt_spare_defect_articleNo);
-            edt_complete_set_articleNo=(EditText)view.findViewById(R.id.edt_complete_set_articleNo);
-            spin_action=(Spinner) view.findViewById(R.id.spin_action);
-
-            leakage_cistern_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_cistern_leakage_if_yes.setVisibility(View.VISIBLE);
-                        leakage_cistern_chk_2.setChecked(false);
-                        spin_type_of_cistern_leakage.setEnabled(true);
-                    }
-                    if (!isChecked) {
-                        spin_type_of_cistern_leakage.setEnabled(false);
-                        //  linear_type_of_cistern_leakage_if_yes.setVisibility(View.GONE);
-                    }
-
-                }
-            });
-            leakage_cistern_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        spin_type_of_cistern_leakage.setEnabled(false);
-                        // linear_type_of_cistern_leakage_if_yes.setVisibility(View.GONE);
-                        leakage_cistern_chk_1.setChecked(false);
-                    }
-
-                }
-            });
-            flush_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.VISIBLE);
-                        spin_type_of_cistern_fulsh_not_working.setEnabled(true);
-                        flush_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        spin_type_of_cistern_fulsh_not_working.setEnabled(false);
-                        // linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.GONE);
-                    }
-
-                }
-            });
-            flush_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.GONE);
-                        spin_type_of_cistern_fulsh_not_working.setEnabled(false);
-                        flush_chk_1.setChecked(false);
-                    }
-
-                }
-            });
-
-            cistern_weak_flow_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_cistern_work_flow_if_yes.setVisibility(View.VISIBLE);
-                        cistern_weak_flow_chk_2.setChecked(false);
-                        spin_type_of_cistern_work_flow.setEnabled(true);
-                    }
-                    if (!isChecked) {
-                        spin_type_of_cistern_work_flow.setEnabled(false);
-                        //linear_type_of_cistern_work_flow_if_yes.setVisibility(View.GONE);
-                    }
-
-                }
-            });
-            cistern_weak_flow_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_cistern_work_flow_if_yes.setVisibility(View.GONE);
-                        cistern_weak_flow_chk_1.setChecked(false);
-                        spin_type_of_cistern_work_flow.setEnabled(false);
-                    }
-
-                }
-            });
-
-            asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_cistern_asthetics_if_yes.setVisibility(View.VISIBLE);
-                        asthetics_chk_2.setChecked(false);
-                        spin_type_of_cistern_asthetics.setEnabled(true);
-                    }
-                    if (!isChecked) {
-                        spin_type_of_cistern_asthetics.setEnabled(false);
-                        //  linear_type_of_cistern_asthetics_if_yes.setVisibility(View.GONE);
-                    }
-                }
-            });
-            asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_cistern_asthetics_if_yes.setVisibility(View.GONE);
-                        asthetics_chk_1.setChecked(false);
-                        spin_type_of_cistern_asthetics.setEnabled(false);
-                    }
-                }
-            });
-            //...............kitchen sink page.......................
-            leakage_kitchen_sink_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.VISIBLE);
-                        spin_kitchen_sink_leakage.setEnabled(true);
-                        leakage_kitchen_sink_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        //  linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.GONE);
-                        spin_kitchen_sink_leakage.setEnabled(false);
-                    }
-                }
-            });
-            leakage_kitchen_sink_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.GONE);
-                        spin_kitchen_sink_leakage.setEnabled(false);
-                        leakage_kitchen_sink_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            drainage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_type_of_drainage_if_yes.setVisibility(View.VISIBLE);
-                        drainage_chk_2.setChecked(false);
-                        spin_kitchen_sink_draonage.setEnabled(true);
-                    }
-                    if (!isChecked) {
-                        // linear_type_of_drainage_if_yes.setVisibility(View.GONE);
-                        spin_kitchen_sink_draonage.setEnabled(false);
-                    }
-                }
-            });
-            drainage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_type_of_drainage_if_yes.setVisibility(View.GONE);
-                        spin_kitchen_sink_draonage.setEnabled(false);
-                        drainage_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            kitchen_sink_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_kitchen_sink_asthetics.setVisibility(View.VISIBLE);
-                        spin_kitchen_sink_asthetics.setEnabled(true);
-                        kitchen_sink_asthetics_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        // linear_kitchen_sink_asthetics.setVisibility(View.GONE);
-                        spin_kitchen_sink_asthetics.setEnabled(false);
-                    }
-                }
-            });
-            kitchen_sink_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_kitchen_sink_asthetics.setVisibility(View.GONE);
-                        spin_kitchen_sink_asthetics.setEnabled(false);
-                        kitchen_sink_asthetics_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            //..............................Ceramic bain page.....................
-            leakage_ceramic_basin_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_ceramic_type_of_leakage.setVisibility(View.VISIBLE);
-                        spin_ceramic_basin_leakage.setEnabled(true);
-                        leakage_ceramic_basin_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        // linear_ceramic_type_of_leakage.setVisibility(View.GONE);
-                        spin_ceramic_basin_leakage.setEnabled(false);
-                    }
-                }
-            });
-            leakage_ceramic_basin_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_ceramic_type_of_leakage.setVisibility(View.GONE);
-                        spin_ceramic_basin_leakage.setEnabled(false);
-                        leakage_ceramic_basin_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            ceramic_basin_drainage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //linear_ceramic_type_of_drainage.setVisibility(View.VISIBLE);
-                        spin_ceramic_basin_drainage.setEnabled(true);
-                        ceramic_basin_drainage_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        //linear_ceramic_type_of_drainage.setVisibility(View.GONE);
-                        spin_ceramic_basin_drainage.setEnabled(false);
-
-                    }
-                }
-            });
-            ceramic_basin_drainage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_ceramic_type_of_drainage.setVisibility(View.GONE);
-                        spin_ceramic_basin_drainage.setEnabled(false);
-                        ceramic_basin_drainage_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            ceramic_basin_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_ceramic_type_of_asthetics.setVisibility(View.VISIBLE);
-                        spin_ceramic_basin_asthetics.setEnabled(true);
-                        ceramic_basin_asthetics_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        //  linear_ceramic_type_of_asthetics.setVisibility(View.GONE);
-                        spin_ceramic_basin_asthetics.setEnabled(false);
-
-                    }
-                }
-            });
-            ceramic_basin_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_ceramic_type_of_asthetics.setVisibility(View.GONE);
-                        spin_ceramic_basin_asthetics.setEnabled(false);
-                        ceramic_basin_asthetics_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-
-            //.............................Showers page.................
-            leakage_shower_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        spin_shower_leakage.setEnabled(true);
-                        // linear_type_of_shower.setVisibility(View.VISIBLE);
-                        leakage_shower_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        spin_shower_leakage.setEnabled(false);
-                        //  linear_type_of_shower.setVisibility(View.GONE);
-                    }
-                }
-            });
-            leakage_shower_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //   linear_type_of_shower.setVisibility(View.GONE);
-                        spin_shower_leakage.setEnabled(false);
-                        leakage_shower_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            does_not_operate_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_does_not_operate.setVisibility(View.VISIBLE);
-                        spin_shower_does_not_operate.setEnabled(true);
-                        does_not_operate_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        spin_shower_does_not_operate.setEnabled(false);
-
-                        // linear_does_not_operate.setVisibility(View.GONE);
-                    }
-                }
-            });
-            does_not_operate_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //  linear_does_not_operate.setVisibility(View.GONE);
-                        spin_shower_does_not_operate.setEnabled(false);
-                        does_not_operate_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-            shower_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        //linear_shower_asthetics.setVisibility(View.VISIBLE);
-                        spin_shower_asthetics.setEnabled(true);
-                        shower_asthetics_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        //  linear_shower_asthetics.setVisibility(View.GONE);
-                        spin_shower_asthetics.setEnabled(false);
-
-                    }
-                }
-            });
-            shower_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_shower_asthetics.setVisibility(View.GONE);
-                        spin_shower_asthetics.setEnabled(false);
-                        shower_asthetics_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-//..........................Accessories page................
-            accessories_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_accessaries_asthesis.setVisibility(View.VISIBLE);
-                        spin_accessories_asthesis.setEnabled(true);
-                        accessories_asthetics_chk_2.setChecked(false);
-                    }
-                    if (!isChecked) {
-                        spin_accessories_asthesis.setEnabled(false);
-                        //  linear_accessaries_asthesis.setVisibility(View.GONE);
-                    }
-                }
-            });
-            accessories_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        // linear_accessaries_asthesis.setVisibility(View.GONE);
-                        spin_accessories_asthesis.setEnabled(false);
-                        accessories_asthetics_chk_1.setChecked(false);
-                    }
-                }
-            });
-
-
-            try {
-                if (report1 != null) {
-                    if (report1.radio_sanitary != null) {
-                        if (report1.radio_sanitary.equals("Faucet")) {
-                            ll_faucet.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(true);
-                            radio_cistern.setEnabled(false);
-                            radio_cistern.setChecked(false);
-                            radio_kitchensink.setEnabled(false);
-                            radio_kitchensink.setChecked(false);
-                            radio_ceramic_basin.setEnabled(false);
-                            radio_ceramic_basin.setChecked(false);
-                            radio_showers.setEnabled(false);
-                            radio_showers.setChecked(false);
-                            radio_accessories.setEnabled(false);
-                            radio_accessories.setChecked(false);
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-                            if (report1.type_of_sanitary != null) {
-                                int pos = Integer.parseInt(report1.type_of_sanitary);
-                                spin_type_of_faucet.setSelection(pos);
-                            }
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_product_wrong_product.setChecked(true);
-                                    radio_product_wrong_installation.setChecked(false);
-                                    radio_product_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_product_wrong_product.setChecked(false);
-                                    radio_product_wrong_installation.setChecked(true);
-                                    radio_product_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_product_wrong_product.setChecked(false);
-                                    radio_product_wrong_installation.setChecked(false);
-                                    radio_product_damage.setChecked(true);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("Yes")) {
-                                leakage_chk_1.setChecked(true);
-                                leakage_chk_2.setChecked(false);
-                                spin_type_of_faucet_leakage.setEnabled(true);
-                                if (report1.sanitary_type_of_leakage != null) {
-                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                    spin_type_of_faucet_leakage.setSelection(pos);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("No")) {
-                                leakage_chk_1.setChecked(false);
-                                leakage_chk_2.setChecked(true);
-                                spin_type_of_faucet_leakage.setEnabled(false);
-                            }
-                            if (report1.does_not_operate.equals("Yes")) {
-                                operate_chk_1.setChecked(true);
-                                operate_chk_2.setChecked(false);
-                            }
-                            if (report1.does_not_operate.equals("No")) {
-                                operate_chk_1.setChecked(false);
-                                operate_chk_2.setChecked(true);
-                            }
-                            if (report1.weak_flow.equals("Yes")) {
-                                weak_flow_chk_1.setChecked(true);
-                                weak_flow_chk_2.setChecked(false);
-                                spin_type_of__work_flow.setEnabled(true);
-                                if (report1.type_of_weak_flow != null) {
-                                    int pos = Integer.parseInt(report1.type_of_weak_flow);
-                                    spin_type_of__work_flow.setSelection(pos);
-                                }
-                            }
-                            if (report1.weak_flow.equals("No")) {
-                                weak_flow_chk_1.setChecked(false);
-                                weak_flow_chk_2.setChecked(true);
-                                spin_type_of__work_flow.setEnabled(false);
-                            }
-
-                            if (report1.noise.equals("Yes")) {
-                                noise_chk_1.setChecked(true);
-                                noise_chk_2.setChecked(false);
-                            }
-                            if (report1.noise.equals("No")) {
-                                noise_chk_1.setChecked(false);
-                                noise_chk_2.setChecked(true);
-                            }
-
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_faucet_warranty.setSelection(pos);
-                            }
-
-
-                        } else if (report1.radio_sanitary.equals("Cistern")) {
-                            ll_cistern.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(false);
-                            radio_faucet.setEnabled(false);
-                            radio_cistern.setChecked(true);
-                            radio_kitchensink.setEnabled(false);
-                            radio_kitchensink.setChecked(false);
-                            radio_ceramic_basin.setEnabled(false);
-                            radio_ceramic_basin.setChecked(false);
-                            radio_showers.setEnabled(false);
-                            radio_showers.setChecked(false);
-                            radio_accessories.setEnabled(false);
-                            radio_accessories.setChecked(false);
-
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-                            if (report1.type_of_sanitary != null) {
-                                int pos = Integer.parseInt(report1.type_of_sanitary);
-                                spin_type_of_cistern.setSelection(pos);
-                            }
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_cistern_wrong_product.setChecked(true);
-                                    radio_cistern_wrong_installation.setChecked(false);
-                                    radio_cistern_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_cistern_wrong_product.setChecked(false);
-                                    radio_cistern_wrong_installation.setChecked(true);
-                                    radio_cistern_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_cistern_wrong_product.setChecked(false);
-                                    radio_cistern_wrong_installation.setChecked(false);
-                                    radio_cistern_damage.setChecked(true);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("Yes")) {
-                                leakage_cistern_chk_1.setChecked(true);
-                                leakage_cistern_chk_2.setChecked(false);
-                                spin_type_of_cistern_leakage.setEnabled(true);
-                                if (report1.sanitary_type_of_leakage != null) {
-                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                    spin_type_of_cistern_leakage.setSelection(pos);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("No")) {
-                                leakage_cistern_chk_1.setChecked(false);
-                                leakage_cistern_chk_2.setChecked(true);
-                                spin_type_of_cistern_leakage.setEnabled(false);
-                            }
-                            if (report1.flush_not_working.equals("Yes")) {
-                                flush_chk_1.setChecked(true);
-                                flush_chk_2.setChecked(false);
-                                spin_type_of_cistern_fulsh_not_working.setEnabled(true);
-                                if (report1.type_of_flush_not_working != null) {
-                                    int pos = Integer.parseInt(report1.type_of_flush_not_working);
-                                    spin_type_of_cistern_fulsh_not_working.setSelection(pos);
-                                }
-                            }
-                            if (report1.flush_not_working.equals("No")) {
-                                flush_chk_1.setChecked(false);
-                                flush_chk_2.setChecked(true);
-                            }
-
-                            if (report1.weak_flow.equals("Yes")) {
-                                cistern_weak_flow_chk_1.setChecked(true);
-                                cistern_weak_flow_chk_2.setChecked(false);
-                                spin_type_of_cistern_work_flow.setEnabled(true);
-                                if (report1.type_of_weak_flow != null) {
-                                    int pos = Integer.parseInt(report1.type_of_weak_flow);
-                                    spin_type_of_cistern_work_flow.setSelection(pos);
-                                }
-                            }
-                            if (report1.weak_flow.equals("No")) {
-                                cistern_weak_flow_chk_1.setChecked(false);
-                                cistern_weak_flow_chk_2.setChecked(true);
-                                spin_type_of_cistern_work_flow.setEnabled(false);
-                            }
-
-                            if (report1.asthetics.equals("Yes")) {
-                                asthetics_chk_1.setChecked(true);
-                                asthetics_chk_2.setChecked(false);
-                                spin_type_of_cistern_asthetics.setEnabled(true);
-                                if (report1.type_of_asthetics != null) {
-                                    int pos = Integer.parseInt(report1.type_of_asthetics);
-                                    spin_type_of_cistern_asthetics.setSelection(pos);
-                                }
-                            }
-                            if (report1.asthetics.equals("No")) {
-                                asthetics_chk_1.setChecked(false);
-                                asthetics_chk_2.setChecked(true);
-                                spin_type_of_cistern_asthetics.setEnabled(false);
-                            }
-
-
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_cistern_warranty.setSelection(pos);
-                            }
-
-
-
-
-                        } else if (report1.radio_sanitary.equals("Kitchen Sink")) {
-                            ll_cistern.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(false);
-                            radio_faucet.setEnabled(false);
-                            radio_cistern.setChecked(false);
-                            radio_cistern.setEnabled(false);
-                            radio_kitchensink.setChecked(true);
-                            radio_ceramic_basin.setEnabled(false);
-                            radio_ceramic_basin.setChecked(false);
-                            radio_showers.setEnabled(false);
-                            radio_showers.setChecked(false);
-                            radio_accessories.setEnabled(false);
-                            radio_accessories.setChecked(false);
-
-
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-                            if (report1.type_of_sanitary != null) {
-                                int pos = Integer.parseInt(report1.type_of_sanitary);
-                                spin_type_of_kitchen_sink.setSelection(pos);
-                            }
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_kitchen_sink_wrong_product.setChecked(true);
-                                    radio_kitchen_sink_wrong_installation.setChecked(false);
-                                    radio_kitchen_sink_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_kitchen_sink_wrong_product.setChecked(false);
-                                    radio_kitchen_sink_wrong_installation.setChecked(true);
-                                    radio_kitchen_sink_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_kitchen_sink_wrong_product.setChecked(false);
-                                    radio_kitchen_sink_wrong_installation.setChecked(false);
-                                    radio_kitchen_sink_damage.setChecked(true);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("Yes")) {
-                                leakage_kitchen_sink_chk_1.setChecked(true);
-                                leakage_kitchen_sink_chk_2.setChecked(false);
-                                spin_kitchen_sink_leakage.setEnabled(true);
-                                if (report1.sanitary_type_of_leakage != null) {
-                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                    spin_kitchen_sink_leakage.setSelection(pos);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("No")) {
-                                leakage_kitchen_sink_chk_1.setChecked(false);
-                                leakage_kitchen_sink_chk_2.setChecked(true);
-                                spin_kitchen_sink_leakage.setEnabled(false);
-                            }
-
-                            if (report1.drainage.equals("Yes")) {
-                                drainage_chk_1.setChecked(true);
-                                drainage_chk_2.setChecked(false);
-                                spin_kitchen_sink_draonage.setEnabled(true);
-                                if (report1.type_of_drainage != null) {
-                                    int pos = Integer.parseInt(report1.type_of_drainage);
-                                    spin_kitchen_sink_draonage.setSelection(pos);
-                                }
-                            }
-                            if (report1.drainage.equals("No")) {
-                                drainage_chk_1.setChecked(false);
-                                drainage_chk_2.setChecked(true);
-                                spin_kitchen_sink_draonage.setEnabled(false);
-                            }
-
-
-
-                            if (report1.asthetics.equals("Yes")) {
-                                kitchen_sink_asthetics_chk_1.setChecked(true);
-                                kitchen_sink_asthetics_chk_2.setChecked(false);
-                                spin_kitchen_sink_asthetics.setEnabled(true);
-                                if (report1.type_of_asthetics != null) {
-                                    int pos = Integer.parseInt(report1.type_of_asthetics);
-                                    spin_kitchen_sink_asthetics.setSelection(pos);
-                                }
-                            }
-                            if (report1.asthetics.equals("No")) {
-                                kitchen_sink_asthetics_chk_1.setChecked(false);
-                                kitchen_sink_asthetics_chk_2.setChecked(true);
-                                spin_kitchen_sink_asthetics.setEnabled(false);
-                            }
-
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_kitchen_sink_warranty.setSelection(pos);
-                            }
-
-
-                        }
-                        if (report1.radio_sanitary.equals("Ceramic Basin")) {
-                            ll_ceramic_basin.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(false);
-                            radio_faucet.setEnabled(false);
-                            radio_cistern.setChecked(false);
-                            radio_cistern.setEnabled(false);
-                            radio_kitchensink.setChecked(false);
-                            radio_kitchensink.setEnabled(false);
-                            radio_ceramic_basin.setChecked(true);
-                            radio_showers.setEnabled(false);
-                            radio_showers.setChecked(false);
-                            radio_accessories.setEnabled(false);
-                            radio_accessories.setChecked(false);
-
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_ceramic_basin_wrong_product.setChecked(true);
-                                    radio_ceramic_basin_wrong_installation.setChecked(false);
-                                    radio_ceramic_basin_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_ceramic_basin_wrong_product.setChecked(false);
-                                    radio_ceramic_basin_wrong_installation.setChecked(true);
-                                    radio_ceramic_basin_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_ceramic_basin_wrong_product.setChecked(false);
-                                    radio_ceramic_basin_wrong_installation.setChecked(false);
-                                    radio_ceramic_basin_damage.setChecked(true);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("Yes")) {
-                                leakage_ceramic_basin_chk_1.setChecked(true);
-                                leakage_ceramic_basin_chk_2.setChecked(false);
-                                spin_kitchen_sink_leakage.setEnabled(true);
-                                if (report1.sanitary_type_of_leakage != null) {
-                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                    spin_ceramic_basin_leakage.setSelection(pos);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("No")) {
-                                leakage_ceramic_basin_chk_1.setChecked(false);
-                                leakage_ceramic_basin_chk_2.setChecked(true);
-                                spin_ceramic_basin_leakage.setEnabled(false);
-                            }
-
-                            if (report1.drainage.equals("Yes")) {
-                                ceramic_basin_drainage_chk_1.setChecked(true);
-                                ceramic_basin_drainage_chk_2.setChecked(false);
-                                spin_ceramic_basin_drainage.setEnabled(true);
-                                if (report1.type_of_drainage != null) {
-                                    int pos = Integer.parseInt(report1.type_of_drainage);
-                                    spin_ceramic_basin_drainage.setSelection(pos);
-                                }
-                            }
-                            if (report1.drainage.equals("No")) {
-                                ceramic_basin_drainage_chk_1.setChecked(false);
-                                ceramic_basin_drainage_chk_2.setChecked(true);
-                                spin_ceramic_basin_drainage.setEnabled(false);
-                            }
-
-
-
-                            if (report1.asthetics.equals("Yes")) {
-                                ceramic_basin_asthetics_chk_1.setChecked(true);
-                                ceramic_basin_asthetics_chk_2.setChecked(false);
-                                spin_ceramic_basin_asthetics.setEnabled(true);
-                                if (report1.type_of_asthetics != null) {
-                                    int pos = Integer.parseInt(report1.type_of_asthetics);
-                                    spin_ceramic_basin_asthetics.setSelection(pos);
-                                }
-                            }
-                            if (report1.asthetics.equals("No")) {
-                                ceramic_basin_asthetics_chk_1.setChecked(false);
-                                ceramic_basin_asthetics_chk_2.setChecked(true);
-                                spin_ceramic_basin_asthetics.setEnabled(false);
-                            }
-
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_ceramic_basin_warranty.setSelection(pos);
-                            }
-
-                        }
-
-
-
-                        if (report1.radio_sanitary.equals("Showers")) {
-                            ll_showers.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(false);
-                            radio_faucet.setEnabled(false);
-                            radio_cistern.setChecked(false);
-                            radio_cistern.setEnabled(false);
-                            radio_kitchensink.setChecked(false);
-                            radio_kitchensink.setEnabled(false);
-                            radio_ceramic_basin.setChecked(false);
-                            radio_ceramic_basin.setEnabled(false);
-                            radio_showers.setChecked(true);
-                            radio_accessories.setEnabled(false);
-                            radio_accessories.setChecked(false);
-
-
-
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-                            if (report1.type_of_sanitary != null) {
-                                int pos = Integer.parseInt(report1.type_of_sanitary);
-                                spin_type_of_shower.setSelection(pos);
-                            }
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_shower_wrong_product.setChecked(true);
-                                    radio_shower_wrong_installation.setChecked(false);
-                                    radio_shower_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_shower_wrong_product.setChecked(false);
-                                    radio_shower_wrong_installation.setChecked(true);
-                                    radio_shower_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_shower_wrong_product.setChecked(false);
-                                    radio_shower_wrong_installation.setChecked(false);
-                                    radio_shower_damage.setChecked(true);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("Yes")) {
-                                leakage_shower_chk_1.setChecked(true);
-                                leakage_shower_chk_2.setChecked(false);
-                                spin_shower_leakage.setEnabled(true);
-                                if (report1.sanitary_type_of_leakage != null) {
-                                    int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
-                                    spin_shower_leakage.setSelection(pos);
-                                }
-                            }
-                            if (report1.sanitary_leakage.equals("No")) {
-                                leakage_shower_chk_1.setChecked(false);
-                                leakage_shower_chk_2.setChecked(true);
-                                spin_shower_leakage.setEnabled(false);
-                            }
-
-                            if (report1.does_not_operate.equals("Yes")) {
-                                does_not_operate_chk_1.setChecked(true);
-                                does_not_operate_chk_2.setChecked(false);
-                                spin_shower_does_not_operate.setEnabled(true);
-                                if (report1.type_of_drainage != null) {
-                                    int pos = Integer.parseInt(report1.type_does_not_operate);
-                                    spin_shower_does_not_operate.setSelection(pos);
-                                }
-                            }
-                            if (report1.does_not_operate.equals("No")) {
-                                does_not_operate_chk_1.setChecked(false);
-                                does_not_operate_chk_2.setChecked(true);
-                                spin_shower_does_not_operate.setEnabled(false);
-                            }
-
-
-
-                            if (report1.asthetics.equals("Yes")) {
-                                shower_asthetics_chk_1.setChecked(true);
-                                shower_asthetics_chk_2.setChecked(false);
-                                spin_shower_asthetics.setEnabled(true);
-                                if (report1.type_of_asthetics != null) {
-                                    int pos = Integer.parseInt(report1.type_of_asthetics);
-                                    spin_shower_asthetics.setSelection(pos);
-                                }
-                            }
-                            if (report1.asthetics.equals("No")) {
-                                shower_asthetics_chk_1.setChecked(false);
-                                shower_asthetics_chk_2.setChecked(true);
-                                spin_shower_asthetics.setEnabled(false);
-                            }
-
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_shower_warranty.setSelection(pos);
-                            }
-                        }
-                        if (report1.radio_sanitary.equals("Accessories")) {
-                            ll_accessories.setVisibility(View.VISIBLE);
-                            radio_faucet.setChecked(false);
-                            radio_faucet.setEnabled(false);
-                            radio_cistern.setChecked(false);
-                            radio_cistern.setEnabled(false);
-                            radio_kitchensink.setChecked(false);
-                            radio_kitchensink.setEnabled(false);
-                            radio_ceramic_basin.setChecked(false);
-                            radio_ceramic_basin.setEnabled(false);
-                            radio_showers.setChecked(false);
-                            radio_showers.setEnabled(false);
-                            radio_accessories.setChecked(true);
-
-
-
-                            if (report.article_no != null) {
-                                article_no.setText(report.article_no);
-                            }
-                            if (report1.type_of_sanitary != null) {
-                                int pos = Integer.parseInt(report1.type_of_sanitary);
-                                spin_type_of_shower.setSelection(pos);
-                            }
-                            if (report1.sanitary_product != null) {
-                                if (report1.sanitary_product.equals("Wrong Product")) {
-                                    radio_accessories_wrong_product.setChecked(true);
-                                    radio_accessories_wrong_installation.setChecked(false);
-                                    radio_accessories_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Wrong Installation")) {
-                                    radio_accessories_wrong_product.setChecked(false);
-                                    radio_accessories_wrong_installation.setChecked(true);
-                                    radio_accessories_damage.setChecked(false);
-                                }
-                                if (report1.sanitary_product.equals("Product damage")) {
-                                    radio_accessories_wrong_product.setChecked(false);
-                                    radio_accessories_wrong_installation.setChecked(false);
-                                    radio_accessories_damage.setChecked(true);
-                                }
-                            }
-
-                            if (report1.asthetics.equals("Yes")) {
-                                accessories_asthetics_chk_1.setChecked(true);
-                                accessories_asthetics_chk_2.setChecked(false);
-                                spin_accessories_asthesis.setEnabled(true);
-                                if (report1.type_of_asthetics != null) {
-                                    int pos = Integer.parseInt(report1.type_of_asthetics);
-                                    spin_accessories_asthesis.setSelection(pos);
-                                }
-                            }
-                            if (report1.asthetics.equals("No")) {
-                                accessories_asthetics_chk_1.setChecked(false);
-                                accessories_asthetics_chk_2.setChecked(true);
-                                spin_accessories_asthesis.setEnabled(false);
-                            }
-                            if (report1.warranty != null) {
-                                int pos = Integer.parseInt(report1.warranty);
-                                spin_accessories_warranty.setSelection(pos);
-                            }
-
-
-                        }
-                        GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-                        video_grid = (ImageView) view.findViewById(R.id.video_grid);
-
-                        attach_img.setOnClickListener(this);
-                        attach_vid.setOnClickListener(this);
-                        video_grid.setOnClickListener(this);
-
-                        img_grid.setOnItemClickListener(new OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> parent, View view,
-                                                    int position, long id) {
-                                Bitmap sBM = bmpArray.get(position);
-                                Bitmap cBm = capturedBM.get(position);
-                                int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                                Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                                        true);
-                                showImage(scaledBM, cBm, sBM, position);
-                            }
-                        });
-
-                        //................below part
-                        if (report.Result!=null){
-                            int index1 = resultList.indexOf(report.Result);
-                            if (index1 > 0) {
-                                unresolve_reason.setSelection(index1);
-                            }
-                        }
-
-                        if (report.Action!=null){
-                            int index1 = actionList.indexOf(report.Action);
-                            if (index1 > 0) {
-                                spin_action.setSelection(index1);
-                            }
-                        }
-                    /*  if (report1.Action!=null){
-                          int pos = Integer.parseInt(report1.Action);
-                          spin_action.setSelection(pos);
-                      }*/
-                        if (report.site_Issue_Reason!=null){
-                            int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                            if (index1 > 0) {
-                                spin_siteIssueReason_reason.setSelection(index1);
-                            }
-                        }
-
-
-                        if (report.Closure_Status!=null){
-                            int index1 = statusList.indexOf(report.Closure_Status);
-                            if (index1==0) {
-                                status.setSelection(index1);
-                                submit.setVisibility(View.GONE);
-                                attach_img.setVisibility(View.GONE);
-                                status.setEnabled(false);
-                                attach_vid.setVisibility(View.GONE);
-                                btn_deleteVideo.setVisibility(View.GONE);
-                                bottom_linearll.setVisibility(View.VISIBLE);
-                            }else if (index1==1){
-                                status.setSelection(index1);
-                            }
-                        }
-
-
-                       if (report.sparce_defect!=null){
-                           edt_spare_defect_articleNo.setText(report.sparce_defect);
-                       }
-                        if (report.complete_set!=null){
-                            edt_complete_set_articleNo.setText(report.complete_set);
-                        }
-                        if (report.Comment!=null){
-                            comments.setText(report.Comment);
-                        }
-
-
-
-                    }
-                }
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
-            }
-
-
-            radio_sanitary.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
-                    switch (checkedId) {
-                        case R.id.radio_faucet:
+                leakage_kitchen_sink_chk_1 = (CheckBox) view.findViewById(R.id.leakage_kitchen_sink_chk_1);
+                leakage_kitchen_sink_chk_2 = (CheckBox) view.findViewById(R.id.leakage_kitchen_sink_chk_2);
+                linear_type_of_kitchen_sink_leakage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_kitchen_sink_leakage_if_yes);
+                drainage_chk_1 = (CheckBox) view.findViewById(R.id.drainage_chk_1);
+                drainage_chk_2 = (CheckBox) view.findViewById(R.id.drainage_chk_2);
+                linear_type_of_drainage_if_yes = (LinearLayout) view.findViewById(R.id.linear_type_of_drainage_if_yes);
+                kitchen_sink_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.kitchen_sink_asthetics_chk_1);
+                kitchen_sink_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.kitchen_sink_asthetics_chk_2);
+                linear_kitchen_sink_asthetics = (LinearLayout) view.findViewById(R.id.linear_kitchen_sink_asthetics);
+                radio_group_kitchen_sink = (RadioGroup) view.findViewById(R.id.radio_group_kitchen_sink);
+                radio_kitchen_sink_correct_product = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_correct_product);
+                radio_kitchen_sink_wrong_product = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_wrong_product);
+                radio_kitchen_sink_wrong_installation = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_wrong_installation);
+                radio_kitchen_sink_damage = (RadioButton) view.findViewById(R.id.radio_kitchen_sink_damage);
+                spin_type_of_kitchen_sink = (Spinner) view.findViewById(R.id.spin_type_of_kitchen_sink);
+                spin_kitchen_sink_leakage = (Spinner) view.findViewById(R.id.spin_kitchen_sink_leakage);
+                spin_kitchen_sink_draonage = (Spinner) view.findViewById(R.id.spin_kitchen_sink_draonage);
+                spin_kitchen_sink_asthetics = (Spinner) view.findViewById(R.id.spin_kitchen_sink_asthetics);
+                spin_kitchen_sink_warranty = (Spinner) view.findViewById(R.id.spin_kitchen_sink_warranty);
+
+
+                //......................ceramic basin....................
+                leakage_ceramic_basin_chk_1 = (CheckBox) view.findViewById(R.id.leakage_ceramic_basin_chk_1);
+                leakage_ceramic_basin_chk_2 = (CheckBox) view.findViewById(R.id.leakage_ceramic_basin_chk_2);
+                linear_ceramic_type_of_leakage = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_leakage);
+                ceramic_basin_drainage_chk_1 = (CheckBox) view.findViewById(R.id.ceramic_basin_drainage_chk_1);
+                ceramic_basin_drainage_chk_2 = (CheckBox) view.findViewById(R.id.ceramic_basin_drainage_chk_2);
+                linear_ceramic_type_of_drainage = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_drainage);
+                ceramic_basin_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.ceramic_basin_asthetics_chk_1);
+                ceramic_basin_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.ceramic_basin_asthetics_chk_2);
+                linear_ceramic_type_of_asthetics = (LinearLayout) view.findViewById(R.id.linear_ceramic_type_of_asthetics);
+                radio_group_ceramic_basin = (RadioGroup) view.findViewById(R.id.radio_group_ceramic_basin);
+                radio_ceramic_basin_correct_product = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_correct_product);
+                radio_ceramic_basin_wrong_product = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_wrong_product);
+                radio_ceramic_basin_wrong_installation = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_wrong_installation);
+                radio_ceramic_basin_damage = (RadioButton) view.findViewById(R.id.radio_ceramic_basin_damage);
+                spin_ceramic_basin_leakage = (Spinner) view.findViewById(R.id.spin_ceramic_basin_leakage);
+                spin_ceramic_basin_drainage = (Spinner) view.findViewById(R.id.spin_ceramic_basin_drainage);
+                spin_ceramic_basin_asthetics = (Spinner) view.findViewById(R.id.spin_ceramic_basin_asthetics);
+                spin_ceramic_basin_warranty = (Spinner) view.findViewById(R.id.spin_ceramic_basin_warranty);
+
+                //...........................showers.........................
+                leakage_shower_chk_1 = (CheckBox) view.findViewById(R.id.leakage_shower_chk_1);
+                leakage_shower_chk_2 = (CheckBox) view.findViewById(R.id.leakage_shower_chk_2);
+                linear_type_of_shower = (LinearLayout) view.findViewById(R.id.linear_type_of_shower);
+                does_not_operate_chk_1 = (CheckBox) view.findViewById(R.id.does_not_operate_chk_1);
+                does_not_operate_chk_2 = (CheckBox) view.findViewById(R.id.does_not_operate_chk_2);
+                linear_does_not_operate = (LinearLayout) view.findViewById(R.id.linear_does_not_operate);
+                shower_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.shower_asthetics_chk_1);
+                shower_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.shower_asthetics_chk_2);
+                linear_shower_asthetics = (LinearLayout) view.findViewById(R.id.linear_shower_asthetics);
+                radio_group_shower = (RadioGroup) view.findViewById(R.id.radio_group_shower);
+                radio_correct_product_shower = (RadioButton) view.findViewById(R.id.radio_correct_product_shower);
+                radio_shower_wrong_product = (RadioButton) view.findViewById(R.id.radio_shower_wrong_product);
+                radio_shower_wrong_installation = (RadioButton) view.findViewById(R.id.radio_shower_wrong_installation);
+                radio_shower_damage = (RadioButton) view.findViewById(R.id.radio_shower_damage);
+                spin_type_of_shower = (Spinner) view.findViewById(R.id.spin_type_of_shower);
+                spin_shower_leakage = (Spinner) view.findViewById(R.id.spin_shower_leakage);
+                spin_shower_does_not_operate = (Spinner) view.findViewById(R.id.spin_shower_does_not_operate);
+                spin_shower_asthetics = (Spinner) view.findViewById(R.id.spin_shower_asthetics);
+                spin_shower_warranty = (Spinner) view.findViewById(R.id.spin_shower_warranty);
+                //......................accessories page...............
+                accessories_asthetics_chk_1 = (CheckBox) view.findViewById(R.id.accessories_asthetics_chk_1);
+                accessories_asthetics_chk_2 = (CheckBox) view.findViewById(R.id.accessories_asthetics_chk_2);
+                linear_accessaries_asthesis = (LinearLayout) view.findViewById(R.id.linear_accessaries_asthesis);
+                radio_group_accessories = (RadioGroup) view.findViewById(R.id.radio_group_accessories);
+                radio_accessories_correct_product = (RadioButton) view.findViewById(R.id.radio_accessories_correct_product);
+                radio_accessories_wrong_product = (RadioButton) view.findViewById(R.id.radio_accessories_wrong_product);
+                radio_accessories_wrong_installation = (RadioButton) view.findViewById(R.id.radio_accessories_wrong_installation);
+                radio_accessories_damage = (RadioButton) view.findViewById(R.id.radio_accessories_damage);
+                spin_accessories_asthesis = (Spinner) view.findViewById(R.id.spin_accessories_asthesis);
+                spin_accessories_warranty = (Spinner) view.findViewById(R.id.spin_accessories_warranty);
+
+                status = (Spinner) view.findViewById(R.id.status);
+                comments = (EditText) view.findViewById(R.id.comments);
+                unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
+                spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
+                edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
+                edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
+                spin_action = (Spinner) view.findViewById(R.id.spin_action);
+
+
+                radio_faucet.setOnCheckedChangeListener(this);
+                radio_cistern.setOnCheckedChangeListener(this);
+                radio_kitchensink.setOnCheckedChangeListener(this);
+                radio_ceramic_basin.setOnCheckedChangeListener(this);
+                radio_showers.setOnCheckedChangeListener(this);
+                radio_accessories.setOnCheckedChangeListener(this);
+
+                radio_faucet.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.VISIBLE);
                             ll_cistern.setVisibility(View.GONE);
                             ll_kitchensinc.setVisibility(View.GONE);
@@ -9758,9 +8673,22 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.GONE);
                             ll_accessories.setVisibility(View.GONE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
+                            radio_cistern.setChecked(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setChecked(false);
 
-                            break;
-                        case R.id.radio_cistern:
+                            spin_type_of_faucet_leakage.setEnabled(false);
+                            spin_type_of__work_flow.setEnabled(false);
+
+                        }
+                    }
+                });
+                radio_cistern.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.GONE);
                             ll_cistern.setVisibility(View.VISIBLE);
                             ll_kitchensinc.setVisibility(View.GONE);
@@ -9768,9 +8696,23 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.GONE);
                             ll_accessories.setVisibility(View.GONE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
-                            break;
+                            radio_faucet.setChecked(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setChecked(false);
 
-                        case R.id.radio_kitchensink:
+                            spin_type_of_cistern_leakage.setEnabled(false);
+                            spin_type_of_cistern_fulsh_not_working.setEnabled(false);
+                            spin_type_of_cistern_work_flow.setEnabled(false);
+                            spin_type_of_cistern_asthetics.setEnabled(false);
+                        }
+                    }
+                });
+                radio_kitchensink.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.GONE);
                             ll_cistern.setVisibility(View.GONE);
                             ll_kitchensinc.setVisibility(View.VISIBLE);
@@ -9778,8 +8720,22 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.GONE);
                             ll_accessories.setVisibility(View.GONE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
-                            break;
-                        case R.id.radio_ceramic_basin:
+                            radio_faucet.setChecked(false);
+                            radio_cistern.setChecked(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setChecked(false);
+                            spin_kitchen_sink_leakage.setEnabled(false);
+                            spin_kitchen_sink_draonage.setEnabled(false);
+                            spin_kitchen_sink_asthetics.setEnabled(false);
+                            spin_kitchen_sink_warranty.setEnabled(false);
+                        }
+                    }
+                });
+                radio_ceramic_basin.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.GONE);
                             ll_cistern.setVisibility(View.GONE);
                             ll_kitchensinc.setVisibility(View.GONE);
@@ -9787,8 +8743,22 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.GONE);
                             ll_accessories.setVisibility(View.GONE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
-                            break;
-                        case R.id.radio_showers:
+                            radio_faucet.setChecked(false);
+                            radio_cistern.setChecked(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_showers.setChecked(false);
+                            radio_accessories.setChecked(false);
+
+                            spin_ceramic_basin_leakage.setEnabled(false);
+                            spin_ceramic_basin_drainage.setEnabled(false);
+                            spin_ceramic_basin_asthetics.setEnabled(false);
+                        }
+                    }
+                });
+                radio_showers.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.GONE);
                             ll_cistern.setVisibility(View.GONE);
                             ll_kitchensinc.setVisibility(View.GONE);
@@ -9796,8 +8766,22 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.VISIBLE);
                             ll_accessories.setVisibility(View.GONE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
-                            break;
-                        case R.id.radio_accessories:
+                            radio_faucet.setChecked(false);
+                            radio_cistern.setChecked(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_accessories.setChecked(false);
+
+                            spin_shower_leakage.setEnabled(false);
+                            spin_shower_does_not_operate.setEnabled(false);
+                            spin_shower_asthetics.setEnabled(false);
+                        }
+                    }
+                });
+                radio_accessories.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
                             ll_faucet.setVisibility(View.GONE);
                             ll_cistern.setVisibility(View.GONE);
                             ll_kitchensinc.setVisibility(View.GONE);
@@ -9805,112 +8789,2179 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             ll_showers.setVisibility(View.GONE);
                             ll_accessories.setVisibility(View.VISIBLE);
                             bottom_linearl2.setVisibility(View.VISIBLE);
-                            break;
-                    }
-                }
-            });
+                            radio_faucet.setChecked(false);
+                            radio_cistern.setChecked(false);
+                            radio_kitchensink.setChecked(false);
+                            radio_ceramic_basin.setChecked(false);
+                            radio_showers.setChecked(false);
+                            spin_accessories_asthesis.setEnabled(false);
 
-
-            comp_number = (TextView) view.findViewById(R.id.complaint_number);
-            customer_name = (TextView) view.findViewById(R.id.customer_name);
-            date = (TextView) view.findViewById(R.id.date);
-            mobile_no = (TextView) view.findViewById(R.id.mobile_no);
-            dealer = (TextView) view.findViewById(R.id.dealer);
-            invoice_no = (TextView) view.findViewById(R.id.invoice_no);
-            article_no = (EditText) view.findViewById(R.id.article_no);
-            prod_cat = (TextView) view.findViewById(R.id.prod_cat);
-            prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
-            complaint_deatils = (TextView) view.findViewById(R.id.complaint_deatils);
-            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
-            btn_deleteVideo.setOnClickListener(this);
-            address = (TextView) view.findViewById(R.id.address);
-
-            spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
-            spin_action = (Spinner) view.findViewById(R.id.spin_action);
-            edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
-            edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
-            ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
-            ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
-            ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
-
-
-            pratik_height = (EditText) view.findViewById(R.id.pratik_height);
-            pratik_length_50mm = (EditText) view.findViewById(R.id.pratik_length_50mm);
-            pratik_width_30mm = (EditText) view.findViewById(R.id.pratik_width_30mm);
-            pratik_sfd_dimen = (EditText) view.findViewById(R.id.pratik_sfd_dimen);
-            pratik_sfd_dimen1 = (EditText) view.findViewById(R.id.pratik_sfd_dimen1);
-            spin_wrong_product = (Spinner) view.findViewById(R.id.spin_wrong_product);
-
-
-            unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
-            unresolve_reason.setOnItemSelectedListener(this);
-
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            comp_number.setText(complaint_number);
-            customer_name.setText(c_name);
-            date.setText(complaint_date);
-            mobile_no.setText(end_user_mobile);
-            mobile_no.setOnClickListener(this);
-            dealer.setText(service_franchise);
-          //  article_no.setText(article);
-            complaint_deatils.setText(service_details);
-            prod_cat.setText(product_category);
-            prod_sub_cat.setText(product_sub_category);
-            address.setText(c_address);
-
-            status = (Spinner) view.findViewById(R.id.status);
-            comments = (TextView) view.findViewById(R.id.comments);
-            Button submit = (Button) view.findViewById(R.id.submit);
-
-
-            submit.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    boolean is_article_no = Validation.hasText(article_no);
-                    if (article_no.getText().toString().trim().equals(""))
-                        is_article_no = false;
-
-
-                    if (is_article_no) {
-
-                        if (radio_faucet.isChecked()) {
-                            if (checkValidation("Faucet")) {
-                                if (validation() == true) {
-                                    submitData("Faucet");
-                                }
-                            }
-                        } else if (radio_cistern.isChecked()) {
-                            if (checkValidation("Cistern")) {
-                                if (validation() == true) {
-                                    submitData("Cistern");
-                                }
-                            }
-                        } else if (radio_kitchensink.isChecked()) {
-                            if (checkValidation("Kitchen Sink")) {
-                                if (validation() == true) {
-                                    submitData("Kitchen Sink");
-                                }
-                            }
-                        } else if (radio_ceramic_basin.isChecked()) {
-                            if (checkValidation("Ceramic Basin")) {
-                                if (validation() == true) {
-                                    submitData("Ceramic Basin");
-                                }
-                            }
-                        } else if (radio_showers.isChecked()) {
-                            if (checkValidation("Showers")) {
-                                if (validation() == true) {
-                                    submitData("Showers");
-                                }
-                            }
-                        } else if (radio_accessories.isChecked()) {
-                            if (checkValidation("Accessories")) {
-                                if (validation() == true) {
-                                    submitData("Accessories");
-                                }
-                            }
                         }
+                    }
+                });
+                radio_correct_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_product_wrong_product.setChecked(false);
+                            radio_product_wrong_installation.setChecked(false);
+                            radio_product_damage.setChecked(false);
+                            leakage_chk_1.setEnabled(true);
+                            leakage_chk_2.setEnabled(true);
+                            operate_chk_1.setEnabled(true);
+                            operate_chk_2.setEnabled(true);
+                            weak_flow_chk_1.setEnabled(true);
+                            weak_flow_chk_2.setEnabled(true);
+                            noise_chk_1.setEnabled(true);
+                            noise_chk_2.setEnabled(true);
+                            spin_faucet_warranty.setEnabled(true);
+
+
+                        }
+                    }
+                });
+                radio_product_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product.setChecked(false);
+                            radio_product_wrong_installation.setChecked(false);
+                            radio_product_damage.setChecked(false);
+
+                            leakage_chk_1.setEnabled(false);
+                            leakage_chk_2.setEnabled(false);
+                            operate_chk_1.setEnabled(false);
+                            operate_chk_2.setEnabled(false);
+                            weak_flow_chk_1.setEnabled(false);
+                            weak_flow_chk_2.setEnabled(false);
+                            noise_chk_1.setEnabled(false);
+                            noise_chk_2.setEnabled(false);
+                            spin_faucet_warranty.setEnabled(false);
+
+                            leakage_chk_1.setChecked(false);
+                            leakage_chk_2.setChecked(false);
+                            operate_chk_1.setChecked(false);
+                            operate_chk_2.setChecked(false);
+                            weak_flow_chk_1.setChecked(false);
+                            weak_flow_chk_2.setChecked(false);
+                            noise_chk_1.setChecked(false);
+                            noise_chk_2.setChecked(false);
+                            spin_faucet_warranty.setSelection(0);
+                            spin_type_of_faucet_leakage.setSelection(0);
+                            spin_type_of__work_flow.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_product_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product.setChecked(false);
+                            radio_product_wrong_product.setChecked(false);
+                            radio_product_damage.setChecked(false);
+
+                            leakage_chk_1.setEnabled(false);
+                            leakage_chk_2.setEnabled(false);
+                            operate_chk_1.setEnabled(false);
+                            operate_chk_2.setEnabled(false);
+                            weak_flow_chk_1.setEnabled(false);
+                            weak_flow_chk_2.setEnabled(false);
+                            noise_chk_1.setEnabled(false);
+                            noise_chk_2.setEnabled(false);
+                            spin_faucet_warranty.setEnabled(false);
+
+                            leakage_chk_1.setChecked(false);
+                            leakage_chk_2.setChecked(false);
+                            operate_chk_1.setChecked(false);
+                            operate_chk_2.setChecked(false);
+                            weak_flow_chk_1.setChecked(false);
+                            weak_flow_chk_2.setChecked(false);
+                            noise_chk_1.setChecked(false);
+                            noise_chk_2.setChecked(false);
+                            spin_faucet_warranty.setSelection(0);
+                            spin_type_of_faucet_leakage.setSelection(0);
+                            spin_type_of__work_flow.setSelection(0);
+                        }
+                    }
+                });
+                radio_product_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product.setChecked(false);
+                            radio_product_wrong_product.setChecked(false);
+                            radio_product_wrong_installation.setChecked(false);
+
+                            leakage_chk_1.setEnabled(false);
+                            leakage_chk_2.setEnabled(false);
+                            operate_chk_1.setEnabled(false);
+                            operate_chk_2.setEnabled(false);
+                            weak_flow_chk_1.setEnabled(false);
+                            weak_flow_chk_2.setEnabled(false);
+                            noise_chk_1.setEnabled(false);
+                            noise_chk_2.setEnabled(false);
+                            spin_faucet_warranty.setEnabled(false);
+
+                            leakage_chk_1.setChecked(false);
+                            leakage_chk_2.setChecked(false);
+                            operate_chk_1.setChecked(false);
+                            operate_chk_2.setChecked(false);
+                            weak_flow_chk_1.setChecked(false);
+                            weak_flow_chk_2.setChecked(false);
+                            noise_chk_1.setChecked(false);
+                            noise_chk_2.setChecked(false);
+                            spin_faucet_warranty.setSelection(0);
+                            spin_type_of_faucet_leakage.setSelection(0);
+                            spin_type_of__work_flow.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_cistern_correct_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_cistern_wrong_product.setChecked(false);
+                            radio_cistern_wrong_installation.setChecked(false);
+                            radio_cistern_damage.setChecked(false);
+
+                            leakage_cistern_chk_1.setEnabled(true);
+                            leakage_cistern_chk_2.setEnabled(true);
+                            flush_chk_1.setEnabled(true);
+                            flush_chk_2.setEnabled(true);
+                            cistern_weak_flow_chk_1.setEnabled(true);
+                            cistern_weak_flow_chk_2.setEnabled(true);
+                            asthetics_chk_1.setEnabled(true);
+                            asthetics_chk_2.setEnabled(true);
+                            spin_cistern_warranty.setEnabled(true);
+
+
+
+                        }
+                    }
+                });
+                radio_cistern_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_cistern_correct_product.setChecked(false);
+                            radio_cistern_wrong_installation.setChecked(false);
+                            radio_cistern_damage.setChecked(false);
+
+                            leakage_cistern_chk_1.setEnabled(false);
+                            leakage_cistern_chk_2.setEnabled(false);
+                            flush_chk_1.setEnabled(false);
+                            flush_chk_2.setEnabled(false);
+                            cistern_weak_flow_chk_1.setEnabled(false);
+                            cistern_weak_flow_chk_2.setEnabled(false);
+                            asthetics_chk_1.setEnabled(false);
+                            asthetics_chk_2.setEnabled(false);
+                            spin_cistern_warranty.setEnabled(false);
+
+                            leakage_cistern_chk_1.setChecked(false);
+                            leakage_cistern_chk_2.setChecked(false);
+                            flush_chk_1.setChecked(false);
+                            flush_chk_2.setChecked(false);
+                            cistern_weak_flow_chk_1.setChecked(false);
+                            cistern_weak_flow_chk_2.setChecked(false);
+                            asthetics_chk_1.setChecked(false);
+                            asthetics_chk_2.setChecked(false);
+                            spin_cistern_warranty.setSelection(0);
+                            spin_type_of_cistern_leakage.setSelection(0);
+                            spin_type_of_cistern_fulsh_not_working.setSelection(0);
+                            spin_type_of_cistern_work_flow.setSelection(0);
+                            spin_type_of_cistern_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_cistern_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_cistern_correct_product.setChecked(false);
+                            radio_cistern_wrong_product.setChecked(false);
+                            radio_cistern_damage.setChecked(false);
+
+                            leakage_cistern_chk_1.setEnabled(false);
+                            leakage_cistern_chk_2.setEnabled(false);
+                            flush_chk_1.setEnabled(false);
+                            flush_chk_2.setEnabled(false);
+                            cistern_weak_flow_chk_1.setEnabled(false);
+                            cistern_weak_flow_chk_2.setEnabled(false);
+                            asthetics_chk_1.setEnabled(false);
+                            asthetics_chk_2.setEnabled(false);
+                            spin_cistern_warranty.setEnabled(false);
+
+                            leakage_cistern_chk_1.setChecked(false);
+                            leakage_cistern_chk_2.setChecked(false);
+                            flush_chk_1.setChecked(false);
+                            flush_chk_2.setChecked(false);
+                            cistern_weak_flow_chk_1.setChecked(false);
+                            cistern_weak_flow_chk_2.setChecked(false);
+                            asthetics_chk_1.setChecked(false);
+                            asthetics_chk_2.setChecked(false);
+                            spin_cistern_warranty.setSelection(0);
+                            spin_type_of_cistern_leakage.setSelection(0);
+                            spin_type_of_cistern_fulsh_not_working.setSelection(0);
+                            spin_type_of_cistern_work_flow.setSelection(0);
+                            spin_type_of_cistern_asthetics.setSelection(0);
+                        }
+                    }
+                });
+                radio_cistern_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_cistern_correct_product.setChecked(false);
+                            radio_cistern_wrong_product.setChecked(false);
+                            radio_cistern_wrong_installation.setChecked(false);
+
+                            leakage_cistern_chk_1.setEnabled(false);
+                            leakage_cistern_chk_2.setEnabled(false);
+                            flush_chk_1.setEnabled(false);
+                            flush_chk_2.setEnabled(false);
+                            cistern_weak_flow_chk_1.setEnabled(false);
+                            cistern_weak_flow_chk_2.setEnabled(false);
+                            asthetics_chk_1.setEnabled(false);
+                            asthetics_chk_2.setEnabled(false);
+                            spin_cistern_warranty.setEnabled(false);
+
+                            leakage_cistern_chk_1.setChecked(false);
+                            leakage_cistern_chk_2.setChecked(false);
+                            flush_chk_1.setChecked(false);
+                            flush_chk_2.setChecked(false);
+                            cistern_weak_flow_chk_1.setChecked(false);
+                            cistern_weak_flow_chk_2.setChecked(false);
+                            asthetics_chk_1.setChecked(false);
+                            asthetics_chk_2.setChecked(false);
+                            spin_cistern_warranty.setSelection(0);
+                            spin_type_of_cistern_leakage.setSelection(0);
+                            spin_type_of_cistern_fulsh_not_working.setSelection(0);
+                            spin_type_of_cistern_work_flow.setSelection(0);
+                            spin_type_of_cistern_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_kitchen_sink_correct_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_kitchen_sink_wrong_product.setChecked(false);
+                            radio_kitchen_sink_wrong_installation.setChecked(false);
+                            radio_kitchen_sink_damage.setChecked(false);
+
+                            leakage_kitchen_sink_chk_1.setEnabled(true);
+                            leakage_kitchen_sink_chk_2.setEnabled(true);
+                            drainage_chk_1.setEnabled(true);
+                            drainage_chk_2.setEnabled(true);
+                            kitchen_sink_asthetics_chk_1.setEnabled(true);
+                            kitchen_sink_asthetics_chk_2.setEnabled(true);
+                            spin_kitchen_sink_warranty.setEnabled(true);
+                        }
+                    }
+                });
+
+                radio_kitchen_sink_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_kitchen_sink_correct_product.setChecked(false);
+                            radio_kitchen_sink_wrong_installation.setChecked(false);
+                            radio_kitchen_sink_damage.setChecked(false);
+
+                            leakage_kitchen_sink_chk_1.setEnabled(false);
+                            leakage_kitchen_sink_chk_2.setEnabled(false);
+                            drainage_chk_1.setEnabled(false);
+                            drainage_chk_2.setEnabled(false);
+                            kitchen_sink_asthetics_chk_1.setEnabled(false);
+                            kitchen_sink_asthetics_chk_2.setEnabled(false);
+                            spin_kitchen_sink_warranty.setEnabled(false);
+
+                            leakage_kitchen_sink_chk_1.setChecked(false);
+                            leakage_kitchen_sink_chk_2.setChecked(false);
+                            drainage_chk_1.setChecked(false);
+                            drainage_chk_2.setChecked(false);
+                            kitchen_sink_asthetics_chk_1.setChecked(false);
+                            kitchen_sink_asthetics_chk_2.setChecked(false);
+                            spin_kitchen_sink_warranty.setSelection(0);
+                            spin_kitchen_sink_leakage.setSelection(0);
+                            spin_kitchen_sink_draonage.setSelection(0);
+                            spin_kitchen_sink_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_kitchen_sink_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_kitchen_sink_correct_product.setChecked(false);
+                            radio_kitchen_sink_wrong_product.setChecked(false);
+                            radio_kitchen_sink_damage.setChecked(false);
+
+                            leakage_kitchen_sink_chk_1.setEnabled(false);
+                            leakage_kitchen_sink_chk_2.setEnabled(false);
+                            drainage_chk_1.setEnabled(false);
+                            drainage_chk_2.setEnabled(false);
+                            kitchen_sink_asthetics_chk_1.setEnabled(false);
+                            kitchen_sink_asthetics_chk_2.setEnabled(false);
+                            spin_kitchen_sink_warranty.setEnabled(false);
+
+                            leakage_kitchen_sink_chk_1.setChecked(false);
+                            leakage_kitchen_sink_chk_2.setChecked(false);
+                            drainage_chk_1.setChecked(false);
+                            drainage_chk_2.setChecked(false);
+                            kitchen_sink_asthetics_chk_1.setChecked(false);
+                            kitchen_sink_asthetics_chk_2.setChecked(false);
+                            spin_kitchen_sink_warranty.setSelection(0);
+                            spin_kitchen_sink_leakage.setSelection(0);
+                            spin_kitchen_sink_draonage.setSelection(0);
+                            spin_kitchen_sink_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_kitchen_sink_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_kitchen_sink_correct_product.setChecked(false);
+                            radio_kitchen_sink_wrong_product.setChecked(false);
+                            radio_kitchen_sink_wrong_installation.setChecked(false);
+
+                            leakage_kitchen_sink_chk_1.setEnabled(false);
+                            leakage_kitchen_sink_chk_2.setEnabled(false);
+                            drainage_chk_1.setEnabled(false);
+                            drainage_chk_2.setEnabled(false);
+                            kitchen_sink_asthetics_chk_1.setEnabled(false);
+                            kitchen_sink_asthetics_chk_2.setEnabled(false);
+                            spin_kitchen_sink_warranty.setEnabled(false);
+
+                            leakage_kitchen_sink_chk_1.setChecked(false);
+                            leakage_kitchen_sink_chk_2.setChecked(false);
+                            drainage_chk_1.setChecked(false);
+                            drainage_chk_2.setChecked(false);
+                            kitchen_sink_asthetics_chk_1.setChecked(false);
+                            kitchen_sink_asthetics_chk_2.setChecked(false);
+                            spin_kitchen_sink_warranty.setSelection(0);
+                            spin_kitchen_sink_leakage.setSelection(0);
+                            spin_kitchen_sink_draonage.setSelection(0);
+                            spin_kitchen_sink_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_ceramic_basin_correct_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_ceramic_basin_wrong_product.setChecked(false);
+                            radio_ceramic_basin_wrong_installation.setChecked(false);
+                            radio_ceramic_basin_damage.setChecked(false);
+
+
+                            leakage_ceramic_basin_chk_1.setEnabled(true);
+                            leakage_ceramic_basin_chk_2.setEnabled(true);
+                            ceramic_basin_drainage_chk_1.setEnabled(true);
+                            ceramic_basin_drainage_chk_2.setEnabled(true);
+                            ceramic_basin_asthetics_chk_1.setEnabled(true);
+                            ceramic_basin_asthetics_chk_2.setEnabled(true);
+                            spin_ceramic_basin_warranty.setEnabled(true);
+                        }
+                    }
+                });
+
+                radio_ceramic_basin_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_ceramic_basin_correct_product.setChecked(false);
+                            radio_ceramic_basin_wrong_installation.setChecked(false);
+                            radio_ceramic_basin_damage.setChecked(false);
+
+                            leakage_ceramic_basin_chk_1.setEnabled(false);
+                            leakage_ceramic_basin_chk_2.setEnabled(false);
+                            ceramic_basin_drainage_chk_1.setEnabled(false);
+                            ceramic_basin_drainage_chk_2.setEnabled(false);
+                            ceramic_basin_asthetics_chk_1.setEnabled(false);
+                            ceramic_basin_asthetics_chk_2.setEnabled(false);
+                            spin_ceramic_basin_warranty.setEnabled(false);
+
+                            leakage_ceramic_basin_chk_1.setChecked(false);
+                            leakage_ceramic_basin_chk_2.setChecked(false);
+                            ceramic_basin_drainage_chk_1.setChecked(false);
+                            ceramic_basin_drainage_chk_2.setChecked(false);
+                            ceramic_basin_asthetics_chk_1.setChecked(false);
+                            ceramic_basin_asthetics_chk_2.setChecked(false);
+                            spin_ceramic_basin_warranty.setSelection(0);
+                            spin_ceramic_basin_leakage.setSelection(0);
+                            spin_ceramic_basin_drainage.setSelection(0);
+                            spin_ceramic_basin_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_ceramic_basin_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_ceramic_basin_correct_product.setChecked(false);
+                            radio_ceramic_basin_wrong_product.setChecked(false);
+                            radio_ceramic_basin_damage.setChecked(false);
+
+                            leakage_ceramic_basin_chk_1.setEnabled(false);
+                            leakage_ceramic_basin_chk_2.setEnabled(false);
+                            ceramic_basin_drainage_chk_1.setEnabled(false);
+                            ceramic_basin_drainage_chk_2.setEnabled(false);
+                            ceramic_basin_asthetics_chk_1.setEnabled(false);
+                            ceramic_basin_asthetics_chk_2.setEnabled(false);
+                            spin_ceramic_basin_warranty.setEnabled(false);
+
+                            leakage_ceramic_basin_chk_1.setChecked(false);
+                            leakage_ceramic_basin_chk_2.setChecked(false);
+                            ceramic_basin_drainage_chk_1.setChecked(false);
+                            ceramic_basin_drainage_chk_2.setChecked(false);
+                            ceramic_basin_asthetics_chk_1.setChecked(false);
+                            ceramic_basin_asthetics_chk_2.setChecked(false);
+                            spin_ceramic_basin_warranty.setSelection(0);
+                            spin_ceramic_basin_leakage.setSelection(0);
+                            spin_ceramic_basin_drainage.setSelection(0);
+                            spin_ceramic_basin_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_ceramic_basin_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_ceramic_basin_correct_product.setChecked(false);
+                            radio_ceramic_basin_wrong_product.setChecked(false);
+                            radio_ceramic_basin_wrong_installation.setChecked(false);
+
+                            leakage_ceramic_basin_chk_1.setEnabled(false);
+                            leakage_ceramic_basin_chk_2.setEnabled(false);
+                            ceramic_basin_drainage_chk_1.setEnabled(false);
+                            ceramic_basin_drainage_chk_2.setEnabled(false);
+                            ceramic_basin_asthetics_chk_1.setEnabled(false);
+                            ceramic_basin_asthetics_chk_2.setEnabled(false);
+                            spin_ceramic_basin_warranty.setEnabled(false);
+
+
+                            leakage_ceramic_basin_chk_1.setChecked(false);
+                            leakage_ceramic_basin_chk_2.setChecked(false);
+                            ceramic_basin_drainage_chk_1.setChecked(false);
+                            ceramic_basin_drainage_chk_2.setChecked(false);
+                            ceramic_basin_asthetics_chk_1.setChecked(false);
+                            ceramic_basin_asthetics_chk_2.setChecked(false);
+                            spin_ceramic_basin_warranty.setSelection(0);
+                            spin_ceramic_basin_leakage.setSelection(0);
+                            spin_ceramic_basin_drainage.setSelection(0);
+                            spin_ceramic_basin_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_correct_product_shower.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_shower_wrong_product.setChecked(false);
+                            radio_shower_wrong_installation.setChecked(false);
+                            radio_shower_damage.setChecked(false);
+
+
+                            leakage_shower_chk_1.setEnabled(true);
+                            leakage_shower_chk_2.setEnabled(true);
+                            does_not_operate_chk_1.setEnabled(true);
+                            does_not_operate_chk_2.setEnabled(true);
+                            shower_asthetics_chk_1.setEnabled(true);
+                            shower_asthetics_chk_2.setEnabled(true);
+                            spin_shower_warranty.setEnabled(true);
+                        }
+                    }
+                });
+
+
+                radio_shower_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product_shower.setChecked(false);
+                            radio_shower_wrong_installation.setChecked(false);
+                            radio_shower_damage.setChecked(false);
+
+                            leakage_shower_chk_1.setEnabled(false);
+                            leakage_shower_chk_2.setEnabled(false);
+                            does_not_operate_chk_1.setEnabled(false);
+                            does_not_operate_chk_2.setEnabled(false);
+                            shower_asthetics_chk_1.setEnabled(false);
+                            shower_asthetics_chk_2.setEnabled(false);
+                            spin_shower_warranty.setEnabled(false);
+
+                            leakage_shower_chk_1.setChecked(false);
+                            leakage_shower_chk_2.setChecked(false);
+                            does_not_operate_chk_1.setChecked(false);
+                            does_not_operate_chk_2.setChecked(false);
+                            shower_asthetics_chk_1.setChecked(false);
+                            shower_asthetics_chk_2.setChecked(false);
+                            spin_shower_warranty.setSelection(0);
+                            spin_shower_leakage.setSelection(0);
+                            spin_shower_does_not_operate.setSelection(0);
+                            spin_shower_asthetics.setSelection(0);
+                            spin_shower_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_shower_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product_shower.setChecked(false);
+                            radio_shower_wrong_product.setChecked(false);
+                            radio_shower_damage.setChecked(false);
+
+                            leakage_shower_chk_1.setEnabled(false);
+                            leakage_shower_chk_2.setEnabled(false);
+                            does_not_operate_chk_1.setEnabled(false);
+                            does_not_operate_chk_2.setEnabled(false);
+                            shower_asthetics_chk_1.setEnabled(false);
+                            shower_asthetics_chk_2.setEnabled(false);
+                            spin_shower_warranty.setEnabled(false);
+
+                            leakage_shower_chk_1.setChecked(false);
+                            leakage_shower_chk_2.setChecked(false);
+                            does_not_operate_chk_1.setChecked(false);
+                            does_not_operate_chk_2.setChecked(false);
+                            shower_asthetics_chk_1.setChecked(false);
+                            shower_asthetics_chk_2.setChecked(false);
+                            spin_shower_warranty.setSelection(0);
+                            spin_shower_leakage.setSelection(0);
+                            spin_shower_does_not_operate.setSelection(0);
+                            spin_shower_asthetics.setSelection(0);
+                            spin_shower_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_shower_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_correct_product_shower.setChecked(false);
+                            radio_shower_wrong_product.setChecked(false);
+                            radio_shower_wrong_installation.setChecked(false);
+
+                            leakage_shower_chk_1.setEnabled(false);
+                            leakage_shower_chk_2.setEnabled(false);
+                            does_not_operate_chk_1.setEnabled(false);
+                            does_not_operate_chk_2.setEnabled(false);
+                            shower_asthetics_chk_1.setEnabled(false);
+                            shower_asthetics_chk_2.setEnabled(false);
+                            spin_shower_warranty.setEnabled(false);
+
+                            leakage_shower_chk_1.setChecked(false);
+                            leakage_shower_chk_2.setChecked(false);
+                            does_not_operate_chk_1.setChecked(false);
+                            does_not_operate_chk_2.setChecked(false);
+                            shower_asthetics_chk_1.setChecked(false);
+                            shower_asthetics_chk_2.setChecked(false);
+                            spin_shower_warranty.setSelection(0);
+                            spin_shower_leakage.setSelection(0);
+                            spin_shower_does_not_operate.setSelection(0);
+                            spin_shower_asthetics.setSelection(0);
+                            spin_shower_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_accessories_correct_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_accessories_wrong_product.setChecked(false);
+                            radio_accessories_wrong_installation.setChecked(false);
+                            radio_accessories_damage.setChecked(false);
+
+
+                            accessories_asthetics_chk_1.setEnabled(true);
+                            accessories_asthetics_chk_2.setEnabled(true);
+                            spin_accessories_warranty.setEnabled(true);
+                        }
+                    }
+                });
+
+
+                radio_accessories_wrong_product.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_accessories_correct_product.setChecked(false);
+                            radio_accessories_wrong_installation.setChecked(false);
+                            radio_accessories_damage.setChecked(false);
+
+                            accessories_asthetics_chk_1.setEnabled(false);
+                            accessories_asthetics_chk_2.setEnabled(false);
+                            spin_accessories_warranty.setEnabled(false);
+
+                            accessories_asthetics_chk_1.setChecked(false);
+                            accessories_asthetics_chk_2.setChecked(false);
+                            spin_accessories_asthesis.setSelection(0);
+                            spin_accessories_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+
+                radio_accessories_wrong_installation.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_accessories_correct_product.setChecked(false);
+                            radio_accessories_wrong_product.setChecked(false);
+                            radio_accessories_damage.setChecked(false);
+
+                            accessories_asthetics_chk_1.setEnabled(false);
+                            accessories_asthetics_chk_2.setEnabled(false);
+                            spin_accessories_warranty.setEnabled(false);
+
+                            accessories_asthetics_chk_1.setChecked(false);
+                            accessories_asthetics_chk_2.setChecked(false);
+                            spin_accessories_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+                radio_accessories_damage.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            radio_accessories_correct_product.setChecked(false);
+                            radio_accessories_wrong_product.setChecked(false);
+                            radio_accessories_wrong_installation.setChecked(false);
+
+                            accessories_asthetics_chk_1.setEnabled(false);
+                            accessories_asthetics_chk_2.setEnabled(false);
+                            spin_accessories_warranty.setEnabled(false);
+
+                            accessories_asthetics_chk_1.setChecked(false);
+                            accessories_asthetics_chk_2.setChecked(false);
+                            spin_accessories_warranty.setSelection(0);
+                        }
+                    }
+                });
+
+
+                leakage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_faucet_leakage_if_yes.setVisibility(View.VISIBLE);
+                            spin_type_of_faucet_leakage.setEnabled(true);
+                            leakage_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            // linear_type_of_faucet_leakage_if_yes.setVisibility(View.GONE);
+                            spin_type_of_faucet_leakage.setEnabled(false);
+
+
+                        }
+
+                    }
+                });
+                leakage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //   linear_type_of_faucet_leakage_if_yes.setVisibility(View.GONE);
+                            leakage_chk_1.setChecked(false);
+                            spin_type_of_faucet_leakage.setEnabled(false);
+                            spin_type_of_faucet_leakage.setSelection(0);
+                        }
+
+                    }
+                });
+
+                weak_flow_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
+                            spin_type_of__work_flow.setEnabled(true);
+                            weak_flow_chk_2.setChecked(false);
+                        } else if (!isChecked) {
+                            // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            spin_type_of__work_flow.setEnabled(false);
+
+                        }
+
+                    }
+                });
+                weak_flow_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            spin_type_of__work_flow.setEnabled(false);
+                            spin_type_of__work_flow.setSelection(0);
+                            weak_flow_chk_1.setChecked(false);
+                        }
+
+                    }
+                });
+                operate_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
+                            //operate_chk_2.setEnabled(false);
+                            operate_chk_2.setChecked(false);
+                        } else if (!isChecked) {
+                            // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            // operate_chk_2.setEnabled(true);
+                        }
+                    }
+                });
+                operate_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+
+                            operate_chk_1.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            //   operate_chk_1.setEnabled(true);
+                        }
+                    }
+                });
+
+                noise_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
+                            //  noise_chk_2.setEnabled(false);
+                            noise_chk_2.setChecked(false);
+                        } else if (!isChecked) {
+                            // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            // noise_chk_2.setEnabled(true);
+                        }
+                    }
+                });
+                noise_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_faucet_work_flow_if_yes.setVisibility(View.VISIBLE);
+                            //   noise_chk_1.setEnabled(false);
+                            noise_chk_1.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            // linear_type_of_faucet_work_flow_if_yes.setVisibility(View.GONE);
+                            //  noise_chk_1.setEnabled(true);
+                        }
+                    }
+                });
+
+
+                leakage_cistern_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_cistern_leakage_if_yes.setVisibility(View.VISIBLE);
+                            leakage_cistern_chk_2.setChecked(false);
+                            spin_type_of_cistern_leakage.setEnabled(true);
+                        }
+                        if (!isChecked) {
+                            spin_type_of_cistern_leakage.setEnabled(false);
+                            //  linear_type_of_cistern_leakage_if_yes.setVisibility(View.GONE);
+                        }
+
+                    }
+                });
+                leakage_cistern_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            spin_type_of_cistern_leakage.setEnabled(false);
+                            // linear_type_of_cistern_leakage_if_yes.setVisibility(View.GONE);
+                            leakage_cistern_chk_1.setChecked(false);
+                            spin_type_of_cistern_leakage.setSelection(0);
+                        }
+
+                    }
+                });
+                flush_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.VISIBLE);
+                            spin_type_of_cistern_fulsh_not_working.setEnabled(true);
+                            flush_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            spin_type_of_cistern_fulsh_not_working.setEnabled(false);
+                            // linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.GONE);
+                        }
+
+                    }
+                });
+                flush_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_cistern_flush_not_working_if_yes.setVisibility(View.GONE);
+                            spin_type_of_cistern_fulsh_not_working.setEnabled(false);
+                            spin_type_of_cistern_fulsh_not_working.setSelection(0);
+                            flush_chk_1.setChecked(false);
+                        }
+
+                    }
+                });
+
+                cistern_weak_flow_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_cistern_work_flow_if_yes.setVisibility(View.VISIBLE);
+                            cistern_weak_flow_chk_2.setChecked(false);
+                            spin_type_of_cistern_work_flow.setEnabled(true);
+                        }
+                        if (!isChecked) {
+                            spin_type_of_cistern_work_flow.setEnabled(false);
+                            //linear_type_of_cistern_work_flow_if_yes.setVisibility(View.GONE);
+                        }
+
+                    }
+                });
+                cistern_weak_flow_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_cistern_work_flow_if_yes.setVisibility(View.GONE);
+                            cistern_weak_flow_chk_1.setChecked(false);
+                            spin_type_of_cistern_work_flow.setEnabled(false);
+                            spin_type_of_cistern_work_flow.setSelection(0);
+                        }
+
+                    }
+                });
+
+                asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_cistern_asthetics_if_yes.setVisibility(View.VISIBLE);
+                            asthetics_chk_2.setChecked(false);
+                            spin_type_of_cistern_asthetics.setEnabled(true);
+                        }
+                        if (!isChecked) {
+                            spin_type_of_cistern_asthetics.setEnabled(false);
+                            //  linear_type_of_cistern_asthetics_if_yes.setVisibility(View.GONE);
+                        }
+                    }
+                });
+                asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_cistern_asthetics_if_yes.setVisibility(View.GONE);
+                            asthetics_chk_1.setChecked(false);
+                            spin_type_of_cistern_asthetics.setEnabled(false);
+                            spin_type_of_cistern_asthetics.setSelection(0);
+                        }
+                    }
+                });
+                //...............kitchen sink page.......................
+                leakage_kitchen_sink_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.VISIBLE);
+                            spin_kitchen_sink_leakage.setEnabled(true);
+                            leakage_kitchen_sink_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            //  linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.GONE);
+                            spin_kitchen_sink_leakage.setEnabled(false);
+                        }
+                    }
+                });
+                leakage_kitchen_sink_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_kitchen_sink_leakage_if_yes.setVisibility(View.GONE);
+                            spin_kitchen_sink_leakage.setEnabled(false);
+                            leakage_kitchen_sink_chk_1.setChecked(false);
+                            spin_kitchen_sink_leakage.setSelection(0);
+                        }
+                    }
+                });
+
+                drainage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_type_of_drainage_if_yes.setVisibility(View.VISIBLE);
+                            drainage_chk_2.setChecked(false);
+                            spin_kitchen_sink_draonage.setEnabled(true);
+                        }
+                        if (!isChecked) {
+                            // linear_type_of_drainage_if_yes.setVisibility(View.GONE);
+                            spin_kitchen_sink_draonage.setEnabled(false);
+                        }
+                    }
+                });
+                drainage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_type_of_drainage_if_yes.setVisibility(View.GONE);
+                            spin_kitchen_sink_draonage.setEnabled(false);
+                            spin_kitchen_sink_draonage.setSelection(0);
+                            drainage_chk_1.setChecked(false);
+                        }
+                    }
+                });
+
+                kitchen_sink_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_kitchen_sink_asthetics.setVisibility(View.VISIBLE);
+                            spin_kitchen_sink_asthetics.setEnabled(true);
+                            kitchen_sink_asthetics_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            // linear_kitchen_sink_asthetics.setVisibility(View.GONE);
+                            spin_kitchen_sink_asthetics.setEnabled(false);
+                            spin_kitchen_sink_asthetics.setSelection(0);
+                        }
+                    }
+                });
+                kitchen_sink_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_kitchen_sink_asthetics.setVisibility(View.GONE);
+                            spin_kitchen_sink_asthetics.setEnabled(false);
+                            kitchen_sink_asthetics_chk_1.setChecked(false);
+                            spin_kitchen_sink_asthetics.setSelection(0);
+
+                        }
+                    }
+                });
+
+                //..............................Ceramic bain page.....................
+                leakage_ceramic_basin_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_ceramic_type_of_leakage.setVisibility(View.VISIBLE);
+                            spin_ceramic_basin_leakage.setEnabled(true);
+                            leakage_ceramic_basin_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            // linear_ceramic_type_of_leakage.setVisibility(View.GONE);
+                            spin_ceramic_basin_leakage.setEnabled(false);
+                        }
+                    }
+                });
+                leakage_ceramic_basin_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_ceramic_type_of_leakage.setVisibility(View.GONE);
+                            spin_ceramic_basin_leakage.setEnabled(false);
+                            spin_ceramic_basin_leakage.setSelection(0);
+                            leakage_ceramic_basin_chk_1.setChecked(false);
+                        }
+                    }
+                });
+
+                ceramic_basin_drainage_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //linear_ceramic_type_of_drainage.setVisibility(View.VISIBLE);
+                            spin_ceramic_basin_drainage.setEnabled(true);
+                            ceramic_basin_drainage_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            //linear_ceramic_type_of_drainage.setVisibility(View.GONE);
+                            spin_ceramic_basin_drainage.setEnabled(false);
+
+                        }
+                    }
+                });
+                ceramic_basin_drainage_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_ceramic_type_of_drainage.setVisibility(View.GONE);
+                            spin_ceramic_basin_drainage.setEnabled(false);
+                            ceramic_basin_drainage_chk_1.setChecked(false);
+                            spin_ceramic_basin_drainage.setSelection(0);
+
+                        }
+                    }
+                });
+
+                ceramic_basin_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_ceramic_type_of_asthetics.setVisibility(View.VISIBLE);
+                            spin_ceramic_basin_asthetics.setEnabled(true);
+                            ceramic_basin_asthetics_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            //  linear_ceramic_type_of_asthetics.setVisibility(View.GONE);
+                            spin_ceramic_basin_asthetics.setEnabled(false);
+
+                        }
+                    }
+                });
+                ceramic_basin_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_ceramic_type_of_asthetics.setVisibility(View.GONE);
+                            spin_ceramic_basin_asthetics.setEnabled(false);
+                            ceramic_basin_asthetics_chk_1.setChecked(false);
+                            spin_ceramic_basin_asthetics.setSelection(0);
+                        }
+                    }
+                });
+
+
+                //.............................Showers page.................
+                leakage_shower_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            spin_shower_leakage.setEnabled(true);
+                            // linear_type_of_shower.setVisibility(View.VISIBLE);
+                            leakage_shower_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            spin_shower_leakage.setEnabled(false);
+                            //  linear_type_of_shower.setVisibility(View.GONE);
+                        }
+                    }
+                });
+                leakage_shower_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //   linear_type_of_shower.setVisibility(View.GONE);
+                            spin_shower_leakage.setEnabled(false);
+                            leakage_shower_chk_1.setChecked(false);
+                            spin_shower_leakage.setSelection(0);
+                        }
+                    }
+                });
+
+                does_not_operate_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_does_not_operate.setVisibility(View.VISIBLE);
+                            spin_shower_does_not_operate.setEnabled(true);
+                            does_not_operate_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            spin_shower_does_not_operate.setEnabled(false);
+
+                            // linear_does_not_operate.setVisibility(View.GONE);
+                        }
+                    }
+                });
+                does_not_operate_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //  linear_does_not_operate.setVisibility(View.GONE);
+                            spin_shower_does_not_operate.setEnabled(false);
+                            does_not_operate_chk_1.setChecked(false);
+                            spin_shower_does_not_operate.setSelection(0);
+                        }
+                    }
+                });
+
+                shower_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            //linear_shower_asthetics.setVisibility(View.VISIBLE);
+                            spin_shower_asthetics.setEnabled(true);
+                            shower_asthetics_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            //  linear_shower_asthetics.setVisibility(View.GONE);
+                            spin_shower_asthetics.setEnabled(false);
+
+                        }
+                    }
+                });
+                shower_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_shower_asthetics.setVisibility(View.GONE);
+                            spin_shower_asthetics.setEnabled(false);
+                            shower_asthetics_chk_1.setChecked(false);
+                            spin_shower_asthetics.setSelection(0);
+
+                        }
+                    }
+                });
+
+//..........................Accessories page................
+                accessories_asthetics_chk_1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_accessaries_asthesis.setVisibility(View.VISIBLE);
+                            spin_accessories_asthesis.setEnabled(true);
+                            accessories_asthetics_chk_2.setChecked(false);
+                        }
+                        if (!isChecked) {
+                            spin_accessories_asthesis.setEnabled(false);
+                            //  linear_accessaries_asthesis.setVisibility(View.GONE);
+                        }
+                    }
+                });
+                accessories_asthetics_chk_2.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            // linear_accessaries_asthesis.setVisibility(View.GONE);
+                            spin_accessories_asthesis.setEnabled(false);
+                            accessories_asthetics_chk_1.setChecked(false);
+                            spin_accessories_asthesis.setSelection(0);
+                        }
+                    }
+                });
+
+
+                try {
+                    if (report1 != null) {
+                        if (report1.radio_sanitary != null) {
+                            if (report1.radio_sanitary.equals("Faucet")) {
+                                ll_faucet.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(true);
+                                radio_cistern.setEnabled(false);
+                                radio_cistern.setChecked(false);
+                                radio_kitchensink.setEnabled(false);
+                                radio_kitchensink.setChecked(false);
+                                radio_ceramic_basin.setEnabled(false);
+                                radio_ceramic_basin.setChecked(false);
+                                radio_showers.setEnabled(false);
+                                radio_showers.setChecked(false);
+                                radio_accessories.setEnabled(false);
+                                radio_accessories.setChecked(false);
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+                               /* if (report1.type_of_sanitary != null) {
+                                    int pos = Integer.parseInt(report1.type_of_sanitary);
+                                    spin_type_of_faucet.setSelection(pos);
+                                }*/
+
+                                if (report1.type_of_sanitary != null) {
+                                    int index1 = list_type_of_faucet.indexOf(report1.type_of_sanitary);
+                                    if (index1 > 0) {
+                                        spin_type_of_faucet.setSelection(index1);
+                                    }
+                                }
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                        radio_correct_product.setChecked(true);
+                                        radio_product_wrong_product.setChecked(false);
+                                        radio_product_wrong_installation.setChecked(false);
+                                        radio_product_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_correct_product.setChecked(false);
+                                        radio_product_wrong_product.setChecked(true);
+                                        radio_product_wrong_installation.setChecked(false);
+                                        radio_product_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_correct_product.setChecked(false);
+                                        radio_product_wrong_product.setChecked(false);
+                                        radio_product_wrong_installation.setChecked(true);
+                                        radio_product_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_correct_product.setChecked(false);
+                                        radio_product_wrong_product.setChecked(false);
+                                        radio_product_wrong_installation.setChecked(false);
+                                        radio_product_damage.setChecked(true);
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("Yes")) {
+                                    leakage_chk_1.setChecked(true);
+                                    leakage_chk_2.setChecked(false);
+                                    spin_type_of_faucet_leakage.setEnabled(true);
+
+                                    if (report1.sanitary_type_of_leakage != null) {
+                                        int index1 = list_type_of_leakage_faucet.indexOf(report1.sanitary_type_of_leakage);
+                                        if (index1 > 0) {
+                                            spin_type_of_faucet_leakage.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.sanitary_type_of_leakage != null) {
+                                        int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                        spin_type_of_faucet_leakage.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.sanitary_leakage.equals("No")) {
+                                    leakage_chk_1.setChecked(false);
+                                    leakage_chk_2.setChecked(true);
+                                    spin_type_of_faucet_leakage.setEnabled(false);
+                                }
+                                if (report1.does_not_operate.equals("Yes")) {
+                                    operate_chk_1.setChecked(true);
+                                    operate_chk_2.setChecked(false);
+                                }
+                                if (report1.does_not_operate.equals("No")) {
+                                    operate_chk_1.setChecked(false);
+                                    operate_chk_2.setChecked(true);
+                                }
+                                if (report1.weak_flow.equals("Yes")) {
+                                    weak_flow_chk_1.setChecked(true);
+                                    weak_flow_chk_2.setChecked(false);
+                                    spin_type_of__work_flow.setEnabled(true);
+                                    if (report1.type_of_weak_flow != null) {
+                                        int index1 = list_weak_flow_faucet.indexOf(report1.type_of_weak_flow);
+                                        if (index1 > 0) {
+                                            spin_type_of__work_flow.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_weak_flow != null) {
+                                        int pos = Integer.parseInt(report1.type_of_weak_flow);
+                                        spin_type_of__work_flow.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.weak_flow.equals("No")) {
+                                    weak_flow_chk_1.setChecked(false);
+                                    weak_flow_chk_2.setChecked(true);
+                                    spin_type_of__work_flow.setEnabled(false);
+                                }
+
+                                if (report1.noise.equals("Yes")) {
+                                    noise_chk_1.setChecked(true);
+                                    noise_chk_2.setChecked(false);
+                                }
+                                if (report1.noise.equals("No")) {
+                                    noise_chk_1.setChecked(false);
+                                    noise_chk_2.setChecked(true);
+                                }
+
+                              /*  if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_faucet_warranty.setSelection(pos);
+                                }*/
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_faucet_warranty.setSelection(index1);
+                                    }
+                                }
+
+
+                            } else if (report1.radio_sanitary.equals("Cistern")) {
+                                ll_cistern.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(false);
+                                radio_faucet.setEnabled(false);
+                                radio_cistern.setChecked(true);
+                                radio_kitchensink.setEnabled(false);
+                                radio_kitchensink.setChecked(false);
+                                radio_ceramic_basin.setEnabled(false);
+                                radio_ceramic_basin.setChecked(false);
+                                radio_showers.setEnabled(false);
+                                radio_showers.setChecked(false);
+                                radio_accessories.setEnabled(false);
+                                radio_accessories.setChecked(false);
+
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+                               /* if (report1.type_of_sanitary != null) {
+                                    int pos = Integer.parseInt(report1.type_of_sanitary);
+                                    spin_type_of_cistern.setSelection(pos);
+                                }*/
+
+                                if (report1.type_of_sanitary != null) {
+                                    int index1 = list_type_of_cistern.indexOf(report1.type_of_sanitary);
+                                    if (index1 > 0) {
+                                        spin_type_of_cistern.setSelection(index1);
+                                    }
+                                }
+
+
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                        radio_cistern_correct_product.setChecked(true);
+                                        radio_cistern_wrong_product.setChecked(false);
+                                        radio_cistern_wrong_installation.setChecked(false);
+                                        radio_cistern_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_cistern_correct_product.setChecked(false);
+                                        radio_cistern_wrong_product.setChecked(true);
+                                        radio_cistern_wrong_installation.setChecked(false);
+                                        radio_cistern_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_cistern_correct_product.setChecked(false);
+                                        radio_cistern_wrong_product.setChecked(false);
+                                        radio_cistern_wrong_installation.setChecked(true);
+                                        radio_cistern_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_cistern_correct_product.setChecked(false);
+                                        radio_cistern_wrong_product.setChecked(false);
+                                        radio_cistern_wrong_installation.setChecked(false);
+                                        radio_cistern_damage.setChecked(true);
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("Yes")) {
+                                    leakage_cistern_chk_1.setChecked(true);
+                                    leakage_cistern_chk_2.setChecked(false);
+                                    spin_type_of_cistern_leakage.setEnabled(true);
+
+                                    if (report1.sanitary_type_of_leakage != null) {
+                                        int index1 = list_type_of_cistern_leakage .indexOf(report1.sanitary_type_of_leakage);
+                                        if (index1 > 0) {
+                                            spin_type_of_cistern_leakage.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.sanitary_type_of_leakage != null) {
+                                        int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                        spin_type_of_cistern_leakage.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.sanitary_leakage.equals("No")) {
+                                    leakage_cistern_chk_1.setChecked(false);
+                                    leakage_cistern_chk_2.setChecked(true);
+                                    spin_type_of_cistern_leakage.setEnabled(false);
+                                }
+                                if (report1.flush_not_working.equals("Yes")) {
+                                    flush_chk_1.setChecked(true);
+                                    flush_chk_2.setChecked(false);
+                                    spin_type_of_cistern_fulsh_not_working.setEnabled(true);
+                                    if (report1.type_of_flush_not_working != null) {
+                                        int index1 = list_type_of_cistern_flush_not_working.indexOf(report1.type_of_flush_not_working);
+                                        if (index1 > 0) {
+                                            spin_type_of_cistern_fulsh_not_working.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_flush_not_working != null) {
+                                        int pos = Integer.parseInt(report1.type_of_flush_not_working);
+                                        spin_type_of_cistern_fulsh_not_working.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.flush_not_working.equals("No")) {
+                                    flush_chk_1.setChecked(false);
+                                    flush_chk_2.setChecked(true);
+                                }
+
+                                if (report1.weak_flow.equals("Yes")) {
+                                    cistern_weak_flow_chk_1.setChecked(true);
+                                    cistern_weak_flow_chk_2.setChecked(false);
+                                    spin_type_of_cistern_work_flow.setEnabled(true);
+
+                                    if (report1.type_of_weak_flow != null) {
+                                        int index1 = list_cistern_work_flow .indexOf(report1.type_of_weak_flow);
+                                        if (index1 > 0) {
+                                            spin_type_of_cistern_work_flow.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_weak_flow != null) {
+                                        int pos = Integer.parseInt(report1.type_of_weak_flow);
+                                        spin_type_of_cistern_work_flow.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.weak_flow.equals("No")) {
+                                    cistern_weak_flow_chk_1.setChecked(false);
+                                    cistern_weak_flow_chk_2.setChecked(true);
+                                    spin_type_of_cistern_work_flow.setEnabled(false);
+                                }
+
+                                if (report1.asthetics.equals("Yes")) {
+                                    asthetics_chk_1.setChecked(true);
+                                    asthetics_chk_2.setChecked(false);
+                                    spin_type_of_cistern_asthetics.setEnabled(true);
+                                    if (report1.type_of_asthetics != null) {
+                                        int index1 = list_cistern_asthetics .indexOf(report1.type_of_asthetics);
+                                        if (index1 > 0) {
+                                            spin_type_of_cistern_asthetics.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_asthetics != null) {
+                                        int pos = Integer.parseInt(report1.type_of_asthetics);
+                                        spin_type_of_cistern_asthetics.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.asthetics.equals("No")) {
+                                    asthetics_chk_1.setChecked(false);
+                                    asthetics_chk_2.setChecked(true);
+                                    spin_type_of_cistern_asthetics.setEnabled(false);
+                                }
+
+
+                              /*  if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_cistern_warranty.setSelection(pos);
+                                }*/
+
+
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_cistern_warranty.setSelection(index1);
+                                    }
+                                }
+
+
+                            } else if (report1.radio_sanitary.equals("Kitchen Sink")) {
+                                ll_cistern.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(false);
+                                radio_faucet.setEnabled(false);
+                                radio_cistern.setChecked(false);
+                                radio_cistern.setEnabled(false);
+                                radio_kitchensink.setChecked(true);
+                                radio_ceramic_basin.setEnabled(false);
+                                radio_ceramic_basin.setChecked(false);
+                                radio_showers.setEnabled(false);
+                                radio_showers.setChecked(false);
+                                radio_accessories.setEnabled(false);
+                                radio_accessories.setChecked(false);
+
+
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+                               /* if (report1.type_of_sanitary != null) {
+                                    int pos = Integer.parseInt(report1.type_of_sanitary);
+                                    spin_type_of_kitchen_sink.setSelection(pos);
+                                }*/
+                                if (report1.type_of_sanitary != null) {
+                                    int index1 = list_type_of_kitchen_sink.indexOf(report1.type_of_sanitary);
+                                    if (index1 > 0) {
+                                        spin_type_of_kitchen_sink.setSelection(index1);
+                                    }
+                                }
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                        radio_kitchen_sink_correct_product.setChecked(true);
+                                        radio_kitchen_sink_wrong_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_installation.setChecked(false);
+                                        radio_kitchen_sink_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_kitchen_sink_correct_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_product.setChecked(true);
+                                        radio_kitchen_sink_wrong_installation.setChecked(false);
+                                        radio_kitchen_sink_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_kitchen_sink_correct_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_installation.setChecked(true);
+                                        radio_kitchen_sink_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_kitchen_sink_correct_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_product.setChecked(false);
+                                        radio_kitchen_sink_wrong_installation.setChecked(false);
+                                        radio_kitchen_sink_damage.setChecked(true);
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("Yes")) {
+                                    leakage_kitchen_sink_chk_1.setChecked(true);
+                                    leakage_kitchen_sink_chk_2.setChecked(false);
+                                    spin_kitchen_sink_leakage.setEnabled(true);
+                                    /*if (report1.sanitary_type_of_leakage != null) {
+                                        int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                        spin_kitchen_sink_leakage.setSelection(pos);
+                                    }*/
+                                    if (report1.sanitary_type_of_leakage != null) {
+                                        int index1 = list_kitchen_leakage.indexOf(report1.sanitary_type_of_leakage);
+                                        if (index1 > 0) {
+                                            spin_kitchen_sink_leakage.setSelection(index1);
+                                        }
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("No")) {
+                                    leakage_kitchen_sink_chk_1.setChecked(false);
+                                    leakage_kitchen_sink_chk_2.setChecked(true);
+                                    spin_kitchen_sink_leakage.setEnabled(false);
+                                }
+
+                                if (report1.drainage.equals("Yes")) {
+                                    drainage_chk_1.setChecked(true);
+                                    drainage_chk_2.setChecked(false);
+                                    spin_kitchen_sink_draonage.setEnabled(true);
+                                   /* if (report1.type_of_drainage != null) {
+                                        int pos = Integer.parseInt(report1.type_of_drainage);
+                                        spin_kitchen_sink_draonage.setSelection(pos);
+                                    }*/
+                                    if (report1.type_of_drainage != null) {
+                                        int index1 = list_kitchen_drainage.indexOf(report1.type_of_drainage);
+                                        if (index1 > 0) {
+                                            spin_kitchen_sink_draonage.setSelection(index1);
+                                        }
+                                    }
+                                }
+                                if (report1.drainage.equals("No")) {
+                                    drainage_chk_1.setChecked(false);
+                                    drainage_chk_2.setChecked(true);
+                                    spin_kitchen_sink_draonage.setEnabled(false);
+                                }
+
+
+                                if (report1.asthetics.equals("Yes")) {
+                                    kitchen_sink_asthetics_chk_1.setChecked(true);
+                                    kitchen_sink_asthetics_chk_2.setChecked(false);
+                                    spin_kitchen_sink_asthetics.setEnabled(true);
+                                    if (report1.type_of_asthetics != null) {
+                                        int index1 = list_kitchen_asthetics.indexOf(report1.type_of_asthetics);
+                                        if (index1 > 0) {
+                                            spin_kitchen_sink_asthetics.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_asthetics != null) {
+                                        int pos = Integer.parseInt(report1.type_of_asthetics);
+                                        spin_kitchen_sink_asthetics.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.asthetics.equals("No")) {
+                                    kitchen_sink_asthetics_chk_1.setChecked(false);
+                                    kitchen_sink_asthetics_chk_2.setChecked(true);
+                                    spin_kitchen_sink_asthetics.setEnabled(false);
+                                }
+
+                              /*  if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_kitchen_sink_warranty.setSelection(pos);
+                                }*/
+
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_kitchen_sink_warranty.setSelection(index1);
+                                    }
+                                }
+
+
+
+
+                            }
+                            if (report1.radio_sanitary.equals("Ceramic Basin")) {
+                                ll_ceramic_basin.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(false);
+                                radio_faucet.setEnabled(false);
+                                radio_cistern.setChecked(false);
+                                radio_cistern.setEnabled(false);
+                                radio_kitchensink.setChecked(false);
+                                radio_kitchensink.setEnabled(false);
+                                radio_ceramic_basin.setChecked(true);
+                                radio_showers.setEnabled(false);
+                                radio_showers.setChecked(false);
+                                radio_accessories.setEnabled(false);
+                                radio_accessories.setChecked(false);
+
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                            radio_ceramic_basin_correct_product.setChecked(true);
+                                        radio_ceramic_basin_wrong_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_installation.setChecked(false);
+                                        radio_ceramic_basin_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_ceramic_basin_correct_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_product.setChecked(true);
+                                        radio_ceramic_basin_wrong_installation.setChecked(false);
+                                        radio_ceramic_basin_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_ceramic_basin_correct_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_installation.setChecked(true);
+                                        radio_ceramic_basin_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_ceramic_basin_correct_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_product.setChecked(false);
+                                        radio_ceramic_basin_wrong_installation.setChecked(false);
+                                        radio_ceramic_basin_damage.setChecked(true);
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("Yes")) {
+                                    leakage_ceramic_basin_chk_1.setChecked(true);
+                                    leakage_ceramic_basin_chk_2.setChecked(false);
+                                    spin_kitchen_sink_leakage.setEnabled(true);
+
+                                    if (report1.sanitary_type_of_leakage != null) {
+                                        int index1 = list_ceramic_basin_leakage .indexOf(report1.sanitary_type_of_leakage);
+                                        if (index1 > 0) {
+                                            spin_ceramic_basin_leakage.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.sanitary_type_of_leakage != null) {
+                                        int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                        spin_ceramic_basin_leakage.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.sanitary_leakage.equals("No")) {
+                                    leakage_ceramic_basin_chk_1.setChecked(false);
+                                    leakage_ceramic_basin_chk_2.setChecked(true);
+                                    spin_ceramic_basin_leakage.setEnabled(false);
+                                }
+
+                                if (report1.drainage.equals("Yes")) {
+                                    ceramic_basin_drainage_chk_1.setChecked(true);
+                                    ceramic_basin_drainage_chk_2.setChecked(false);
+                                    spin_ceramic_basin_drainage.setEnabled(true);
+                                  /*  if (report1.type_of_drainage != null) {
+                                        int pos = Integer.parseInt(report1.type_of_drainage);
+                                        spin_ceramic_basin_drainage.setSelection(pos);
+                                    }*/
+                                    if (report1.type_of_drainage != null) {
+                                        int index1 = list_ceramic_basin_drainage.indexOf(report1.type_of_drainage);
+                                        if (index1 > 0) {
+                                            spin_ceramic_basin_drainage.setSelection(index1);
+                                        }
+                                    }
+                                }
+                                if (report1.drainage.equals("No")) {
+                                    ceramic_basin_drainage_chk_1.setChecked(false);
+                                    ceramic_basin_drainage_chk_2.setChecked(true);
+                                    spin_ceramic_basin_drainage.setEnabled(false);
+                                }
+
+
+                                if (report1.asthetics.equals("Yes")) {
+                                    ceramic_basin_asthetics_chk_1.setChecked(true);
+                                    ceramic_basin_asthetics_chk_2.setChecked(false);
+                                    spin_ceramic_basin_asthetics.setEnabled(true);
+                                    if (report1.type_of_asthetics != null) {
+                                        int index1 = list_ceramic_basin_asthetics.indexOf(report1.type_of_asthetics);
+                                        if (index1 > 0) {
+                                            spin_ceramic_basin_asthetics.setSelection(index1);
+                                        }
+                                    }
+                                    /*if (report1.type_of_asthetics != null) {
+                                        int pos = Integer.parseInt(report1.type_of_asthetics);
+                                        spin_ceramic_basin_asthetics.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.asthetics.equals("No")) {
+                                    ceramic_basin_asthetics_chk_1.setChecked(false);
+                                    ceramic_basin_asthetics_chk_2.setChecked(true);
+                                    spin_ceramic_basin_asthetics.setEnabled(false);
+                                }
+
+                              /*  if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_ceramic_basin_warranty.setSelection(pos);
+                                }*/
+
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_ceramic_basin_warranty.setSelection(index1);
+                                    }
+                                }
+
+                            }
+
+
+                            if (report1.radio_sanitary.equals("Showers")) {
+                                ll_showers.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(false);
+                                radio_faucet.setEnabled(false);
+                                radio_cistern.setChecked(false);
+                                radio_cistern.setEnabled(false);
+                                radio_kitchensink.setChecked(false);
+                                radio_kitchensink.setEnabled(false);
+                                radio_ceramic_basin.setChecked(false);
+                                radio_ceramic_basin.setEnabled(false);
+                                radio_showers.setChecked(true);
+                                radio_accessories.setEnabled(false);
+                                radio_accessories.setChecked(false);
+
+
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+
+                                if (report1.type_of_sanitary != null) {
+                                    int index1 = list_type_of_shower.indexOf(report1.type_of_sanitary);
+                                    if (index1 > 0) {
+                                        spin_type_of_shower.setSelection(index1);
+                                    }
+                                }
+                              /*  if (report1.type_of_sanitary != null) {
+                                    int pos = Integer.parseInt(report1.type_of_sanitary);
+                                    spin_type_of_shower.setSelection(pos);
+                                }*/
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                        radio_correct_product_shower.setChecked(true);
+                                        radio_shower_wrong_product.setChecked(false);
+                                        radio_shower_wrong_installation.setChecked(false);
+                                        radio_shower_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_correct_product_shower.setChecked(false);
+                                        radio_shower_wrong_product.setChecked(true);
+                                        radio_shower_wrong_installation.setChecked(false);
+                                        radio_shower_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_correct_product_shower.setChecked(false);
+                                        radio_shower_wrong_product.setChecked(false);
+                                        radio_shower_wrong_installation.setChecked(true);
+                                        radio_shower_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_correct_product_shower.setChecked(false);
+                                        radio_shower_wrong_product.setChecked(false);
+                                        radio_shower_wrong_installation.setChecked(false);
+                                        radio_shower_damage.setChecked(true);
+                                    }
+                                }
+                                if (report1.sanitary_leakage.equals("Yes")) {
+                                    leakage_shower_chk_1.setChecked(true);
+                                    leakage_shower_chk_2.setChecked(false);
+                                    spin_shower_leakage.setEnabled(true);
+
+                                    if (report1.sanitary_type_of_leakage != null) {
+                                        int index1 = list_shower_leakage.indexOf(report1.sanitary_type_of_leakage);
+                                        if (index1 > 0) {
+                                            spin_shower_leakage.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.sanitary_type_of_leakage != null) {
+                                        int pos = Integer.parseInt(report1.sanitary_type_of_leakage);
+                                        spin_shower_leakage.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.sanitary_leakage.equals("No")) {
+                                    leakage_shower_chk_1.setChecked(false);
+                                    leakage_shower_chk_2.setChecked(true);
+                                    spin_shower_leakage.setEnabled(false);
+                                }
+
+                                if (report1.does_not_operate.equals("Yes")) {
+                                    does_not_operate_chk_1.setChecked(true);
+                                    does_not_operate_chk_2.setChecked(false);
+                                    spin_shower_does_not_operate.setEnabled(true);
+                                    if (report1.type_does_not_operate != null) {
+                                        int index1 = list_shower_does_not_operate.indexOf(report1.type_does_not_operate);
+                                        if (index1 > 0) {
+                                            spin_shower_does_not_operate.setSelection(index1);
+                                        }
+                                    }
+                                    /*if (report1.type_of_drainage != null) {
+                                        int pos = Integer.parseInt(report1.type_does_not_operate);
+                                        spin_shower_does_not_operate.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.does_not_operate.equals("No")) {
+                                    does_not_operate_chk_1.setChecked(false);
+                                    does_not_operate_chk_2.setChecked(true);
+                                    spin_shower_does_not_operate.setEnabled(false);
+                                }
+
+
+                                if (report1.asthetics.equals("Yes")) {
+                                    shower_asthetics_chk_1.setChecked(true);
+                                    shower_asthetics_chk_2.setChecked(false);
+                                    spin_shower_asthetics.setEnabled(true);
+
+                                    if (report1.type_of_asthetics != null) {
+                                        int index1 = list_shower_asthetics .indexOf(report1.type_of_asthetics);
+                                        if (index1 > 0) {
+                                            spin_shower_asthetics.setSelection(index1);
+                                        }
+                                    }
+                                   /* if (report1.type_of_asthetics != null) {
+                                        int pos = Integer.parseInt(report1.type_of_asthetics);
+                                        spin_shower_asthetics.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.asthetics.equals("No")) {
+                                    shower_asthetics_chk_1.setChecked(false);
+                                    shower_asthetics_chk_2.setChecked(true);
+                                    spin_shower_asthetics.setEnabled(false);
+                                }
+
+                                /*if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_shower_warranty.setSelection(pos);
+                                }*/
+
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_shower_warranty.setSelection(index1);
+                                    }
+                                }
+
+                            }
+                            if (report1.radio_sanitary.equals("Accessories")) {
+                                ll_accessories.setVisibility(View.VISIBLE);
+                                radio_faucet.setChecked(false);
+                                radio_faucet.setEnabled(false);
+                                radio_cistern.setChecked(false);
+                                radio_cistern.setEnabled(false);
+                                radio_kitchensink.setChecked(false);
+                                radio_kitchensink.setEnabled(false);
+                                radio_ceramic_basin.setChecked(false);
+                                radio_ceramic_basin.setEnabled(false);
+                                radio_showers.setChecked(false);
+                                radio_showers.setEnabled(false);
+                                radio_accessories.setChecked(true);
+
+
+                                if (report.article_no != null) {
+                                    article_no.setText(report.article_no);
+                                }
+                                if (report1.type_of_sanitary != null) {
+                                    int pos = Integer.parseInt(report1.type_of_sanitary);
+                                    spin_type_of_shower.setSelection(pos);
+                                }
+                                if (report1.sanitary_product != null) {
+                                    if (report1.sanitary_product.equals("Correct Product")) {
+                                        radio_accessories_correct_product.setChecked(true);
+                                        radio_accessories_wrong_product.setChecked(false);
+                                        radio_accessories_wrong_installation.setChecked(false);
+                                        radio_accessories_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Product")) {
+                                        radio_accessories_correct_product.setChecked(false);
+                                        radio_accessories_wrong_product.setChecked(true);
+                                        radio_accessories_wrong_installation.setChecked(false);
+                                        radio_accessories_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Wrong Installation")) {
+                                        radio_accessories_correct_product.setChecked(false);
+                                        radio_accessories_wrong_product.setChecked(false);
+                                        radio_accessories_wrong_installation.setChecked(true);
+                                        radio_accessories_damage.setChecked(false);
+                                    }
+                                    if (report1.sanitary_product.equals("Product damage")) {
+                                        radio_accessories_correct_product.setChecked(false);
+                                        radio_accessories_wrong_product.setChecked(false);
+                                        radio_accessories_wrong_installation.setChecked(false);
+                                        radio_accessories_damage.setChecked(true);
+                                    }
+                                }
+
+                                if (report1.asthetics.equals("Yes")) {
+                                    accessories_asthetics_chk_1.setChecked(true);
+                                    accessories_asthetics_chk_2.setChecked(false);
+                                    spin_accessories_asthesis.setEnabled(true);
+
+                                    if (report1.type_of_asthetics != null) {
+                                        int index1 = list_accessories_asthesis .indexOf(report1.type_of_asthetics);
+                                        if (index1 > 0) {
+                                            spin_accessories_asthesis.setSelection(index1);
+                                        }
+                                    }
+                                  /*  if (report1.type_of_asthetics != null) {
+                                        int pos = Integer.parseInt(report1.type_of_asthetics);
+                                        spin_accessories_asthesis.setSelection(pos);
+                                    }*/
+                                }
+                                if (report1.asthetics.equals("No")) {
+                                    accessories_asthetics_chk_1.setChecked(false);
+                                    accessories_asthetics_chk_2.setChecked(true);
+                                    spin_accessories_asthesis.setEnabled(false);
+                                }
+                               /* if (report1.warranty != null) {
+                                    int pos = Integer.parseInt(report1.warranty);
+                                    spin_accessories_warranty.setSelection(pos);
+                                }*/
+
+                                if (report1.warranty != null) {
+                                    int index1 = list_warranty11.indexOf(report1.warranty);
+                                    if (index1 > 0) {
+                                        spin_accessories_warranty.setSelection(index1);
+                                    }
+                                }
+
+
+                            }
+                            GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                            video_grid = (ImageView) view.findViewById(R.id.video_grid);
+
+                            attach_img.setOnClickListener(this);
+                            attach_vid.setOnClickListener(this);
+                            video_grid.setOnClickListener(this);
+
+                            img_grid.setOnItemClickListener(new OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> parent, View view,
+                                                        int position, long id) {
+                                    Bitmap sBM = bmpArray.get(position);
+                                    Bitmap cBm = capturedBM.get(position);
+                                    int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                                    Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                            true);
+                                    showImage(scaledBM, cBm, sBM, position);
+                                }
+                            });
+
+                            //................below part
+                            if (report.Result != null) {
+                                int index1 = resultList.indexOf(report.Result);
+                                if (index1 > 0) {
+                                    unresolve_reason.setSelection(index1);
+                                }
+                            }
+
+                            if (report.Action != null) {
+                                int index1 = actionList.indexOf(report.Action);
+                                if (index1 > 0) {
+                                    spin_action.setSelection(index1);
+                                }
+                            }
+                    /*  if (report1.Action!=null){
+                          int pos = Integer.parseInt(report1.Action);
+                          spin_action.setSelection(pos);
+                      }*/
+                            if (report.site_Issue_Reason != null) {
+                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                if (index1 > 0) {
+                                    spin_siteIssueReason_reason.setSelection(index1);
+                                }
+                            }
+
+
+                            if (report.Closure_Status != null) {
+                                int index1 = statusList.indexOf(report.Closure_Status);
+                                if (index1 == 0) {
+                                    status.setSelection(index1);
+                                    submit.setVisibility(View.GONE);
+                                    attach_img.setVisibility(View.GONE);
+                                    status.setEnabled(false);
+                                    attach_vid.setVisibility(View.GONE);
+                                    btn_deleteVideo.setVisibility(View.GONE);
+                                    bottom_linearll.setVisibility(View.VISIBLE);
+                                } else if (index1 == 1) {
+                                    status.setSelection(index1);
+                                }
+                            }
+
+
+                            if (report.sparce_defect != null) {
+                                edt_spare_defect_articleNo.setText(report.sparce_defect);
+                            }
+                            if (report.complete_set != null) {
+                                edt_complete_set_articleNo.setText(report.complete_set);
+                            }
+                            if (report.Comment != null) {
+                                comments.setText(report.Comment);
+                            }
+
+
+                        }
+                    }
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+
+
+                radio_sanitary.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+                        switch (checkedId) {
+                            case R.id.radio_faucet:
+                                ll_faucet.setVisibility(View.VISIBLE);
+                                ll_cistern.setVisibility(View.GONE);
+                                ll_kitchensinc.setVisibility(View.GONE);
+                                ll_ceramic_basin.setVisibility(View.GONE);
+                                ll_showers.setVisibility(View.GONE);
+                                ll_accessories.setVisibility(View.GONE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+
+                                break;
+                            case R.id.radio_cistern:
+                                ll_faucet.setVisibility(View.GONE);
+                                ll_cistern.setVisibility(View.VISIBLE);
+                                ll_kitchensinc.setVisibility(View.GONE);
+                                ll_ceramic_basin.setVisibility(View.GONE);
+                                ll_showers.setVisibility(View.GONE);
+                                ll_accessories.setVisibility(View.GONE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+                                break;
+
+                            case R.id.radio_kitchensink:
+                                ll_faucet.setVisibility(View.GONE);
+                                ll_cistern.setVisibility(View.GONE);
+                                ll_kitchensinc.setVisibility(View.VISIBLE);
+                                ll_ceramic_basin.setVisibility(View.GONE);
+                                ll_showers.setVisibility(View.GONE);
+                                ll_accessories.setVisibility(View.GONE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+                                break;
+                            case R.id.radio_ceramic_basin:
+                                ll_faucet.setVisibility(View.GONE);
+                                ll_cistern.setVisibility(View.GONE);
+                                ll_kitchensinc.setVisibility(View.GONE);
+                                ll_ceramic_basin.setVisibility(View.VISIBLE);
+                                ll_showers.setVisibility(View.GONE);
+                                ll_accessories.setVisibility(View.GONE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+                                break;
+                            case R.id.radio_showers:
+                                ll_faucet.setVisibility(View.GONE);
+                                ll_cistern.setVisibility(View.GONE);
+                                ll_kitchensinc.setVisibility(View.GONE);
+                                ll_ceramic_basin.setVisibility(View.GONE);
+                                ll_showers.setVisibility(View.VISIBLE);
+                                ll_accessories.setVisibility(View.GONE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+                                break;
+                            case R.id.radio_accessories:
+                                ll_faucet.setVisibility(View.GONE);
+                                ll_cistern.setVisibility(View.GONE);
+                                ll_kitchensinc.setVisibility(View.GONE);
+                                ll_ceramic_basin.setVisibility(View.GONE);
+                                ll_showers.setVisibility(View.GONE);
+                                ll_accessories.setVisibility(View.VISIBLE);
+                                bottom_linearl2.setVisibility(View.VISIBLE);
+                                break;
+                        }
+                    }
+                });
+
+
+                comp_number = (TextView) view.findViewById(R.id.complaint_number);
+                customer_name = (TextView) view.findViewById(R.id.customer_name);
+                date = (TextView) view.findViewById(R.id.date);
+                mobile_no = (TextView) view.findViewById(R.id.mobile_no);
+                dealer = (TextView) view.findViewById(R.id.dealer);
+                invoice_no = (TextView) view.findViewById(R.id.invoice_no);
+                article_no = (EditText) view.findViewById(R.id.article_no);
+                prod_cat = (TextView) view.findViewById(R.id.prod_cat);
+                prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
+                complaint_deatils = (TextView) view.findViewById(R.id.complaint_deatils);
+                btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+                btn_deleteVideo.setOnClickListener(this);
+                address = (TextView) view.findViewById(R.id.address);
+
+                spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
+                spin_action = (Spinner) view.findViewById(R.id.spin_action);
+                edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
+                edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
+                ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
+                ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
+                ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
+
+
+                pratik_height = (EditText) view.findViewById(R.id.pratik_height);
+                pratik_length_50mm = (EditText) view.findViewById(R.id.pratik_length_50mm);
+                pratik_width_30mm = (EditText) view.findViewById(R.id.pratik_width_30mm);
+                pratik_sfd_dimen = (EditText) view.findViewById(R.id.pratik_sfd_dimen);
+                pratik_sfd_dimen1 = (EditText) view.findViewById(R.id.pratik_sfd_dimen1);
+                spin_wrong_product = (Spinner) view.findViewById(R.id.spin_wrong_product);
+
+
+                unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
+                unresolve_reason.setOnItemSelectedListener(this);
+
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                comp_number.setText(complaint_number);
+                customer_name.setText(c_name);
+                date.setText(complaint_date);
+                mobile_no.setText(end_user_mobile);
+                mobile_no.setOnClickListener(this);
+                dealer.setText(service_franchise);
+                //  article_no.setText(article);
+                complaint_deatils.setText(service_details);
+                prod_cat.setText(product_category);
+                prod_sub_cat.setText(product_sub_category);
+                address.setText(c_address);
+
+                status = (Spinner) view.findViewById(R.id.status);
+                comments = (TextView) view.findViewById(R.id.comments);
+                Button submit = (Button) view.findViewById(R.id.submit);
+
+
+                submit.setOnClickListener(new OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        boolean is_article_no = Validation.hasText(article_no);
+                        if (article_no.getText().toString().trim().equals(""))
+                            is_article_no = false;
+
+
+                        if (is_article_no) {
+
+                            if (radio_faucet.isChecked()) {
+                                if (checkValidation("Faucet")) {
+                                    if (validation() == true) {
+                                        submitData("Faucet");
+                                    }
+                                }
+                            } else if (radio_cistern.isChecked()) {
+                                if (checkValidation("Cistern")) {
+                                    if (validation() == true) {
+                                        submitData("Cistern");
+                                    }
+                                }
+                            } else if (radio_kitchensink.isChecked()) {
+                                if (checkValidation("Kitchen Sink")) {
+                                    if (validation() == true) {
+                                        submitData("Kitchen Sink");
+                                    }
+                                }
+                            } else if (radio_ceramic_basin.isChecked()) {
+                                if (checkValidation("Ceramic Basin")) {
+                                    if (validation() == true) {
+                                        submitData("Ceramic Basin");
+                                    }
+                                }
+                            } else if (radio_showers.isChecked()) {
+                                if (checkValidation("Showers")) {
+                                    if (validation() == true) {
+                                        submitData("Showers");
+                                    }
+                                }
+                            } else if (radio_accessories.isChecked()) {
+                                if (checkValidation("Accessories")) {
+                                    if (validation() == true) {
+                                        submitData("Accessories");
+                                    }
+                                }
+                            }
 
 
                       /*  else if (radio_other.isChecked()) {
@@ -9921,178 +10972,178 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
                         }*/
 
-                    } else {
-                        if (!is_article_no)
-                            UtilityClass.showToast(context,
-                                    "Enter article number");
+                        } else {
+                            if (!is_article_no)
+                                UtilityClass.showToast(context,
+                                        "Enter article number");
+                        }
                     }
-                }
-            });
+                });
 
 
-            Button attach_img = (Button) view.findViewById(R.id.attach_img);
-            Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
-            attach_img.setOnClickListener(this);
-            attach_vid.setOnClickListener(this);
+                Button attach_img = (Button) view.findViewById(R.id.attach_img);
+                Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
+                attach_img.setOnClickListener(this);
+                attach_vid.setOnClickListener(this);
 
-            GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-            video_grid = (ImageView) view.findViewById(R.id.video_grid);
+                GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                video_grid = (ImageView) view.findViewById(R.id.video_grid);
 
-            if (report != null) {
-                if (report.prod_type != null && !report.prod_type.equals("")) {
-                    if (report.prod_type.equals("Pratik")) {
-                        article_no.setText(report.article_no);
+                if (report != null) {
+                    if (report.prod_type != null && !report.prod_type.equals("")) {
+                        if (report.prod_type.equals("Pratik")) {
+                            article_no.setText(report.article_no);
 
-                        cabinet_width.setText(report.Width);
-                        cabinet_height.setText(report.Height);
-                        cabinet_depth.setText(report.Thickness);
+                            cabinet_width.setText(report.Width);
+                            cabinet_height.setText(report.Height);
+                            cabinet_depth.setText(report.Thickness);
 
-                        if (report.correct_product_order != null) {
-                            if (report.correct_product_order.equals("Y")) {
-                                pr_chk_1.setChecked(true);
-                                pr_chk_2.setChecked(false);
-                            } else if (report.correct_product_order.equals("N")) {
-                                pr_chk_1.setChecked(false);
-                                pr_chk_2.setChecked(true);
-                            } else {
-                                pr_chk_1.setChecked(false);
-                                pr_chk_2.setChecked(false);
-                            }
-                        }
-                        if (report.height_more_than_260mm != null) {
-                            if (report.height_more_than_260mm.equals("Y")) {
-                                pr_chk_3.setChecked(true);
-                            } else {
-                                pratik_height.setText(report.height_more_than_260mm);
-                            }
-                        }
-                        if (report.length_slatted_or_wooden_50mm != null) {
-                            if (report.length_slatted_or_wooden_50mm.equals("Y")) {
-                                pr_chk_4.setChecked(true);
-                            } else {
-                                pratik_length_50mm.setText(report.length_slatted_or_wooden_50mm);
-                            }
-                        }
-                        if (report.widht_slatted_or_wooden_30mm != null) {
-                            if (report.widht_slatted_or_wooden_30mm.equals("Y")) {
-                                pr_chk_5.setChecked(true);
-                            } else {
-                                pratik_width_30mm.setText(report.widht_slatted_or_wooden_30mm);
-                            }
-                        }
-                        if (report.slatted_dimen_1400mm_2000mm != null) {
-                            if (report.slatted_dimen_1400mm_2000mm.equals("Y")) {
-                                pr_chk_6.setChecked(true);
-                            } else {
-                                pratik_sfd_dimen.setText(report.slatted_dimen_1400mm_2000mm);
-                            }
-                        }
-                        if (report.slatted_dimen_1800mm_2000mm != null) {
-                            if (report.slatted_dimen_1800mm_2000mm.equals("Y")) {
-                                pr_chk_7.setChecked(true);
-                            } else {
-                                pratik_sfd_dimen1.setText(report.slatted_dimen_1800mm_2000mm);
-                            }
-                        }
-                        if (report.bedding_box_fixing != null) {
-                            if (report.bedding_box_fixing.equals("Y")) {
-                                pr_chk_8.setChecked(true);
-                                pr_chk_9.setChecked(false);
-                            } else if (report.bedding_box_fixing.equals("N")) {
-                                pr_chk_8.setChecked(false);
-                                pr_chk_9.setChecked(true);
-                            } else {
-                                pr_chk_8.setChecked(false);
-                                pr_chk_9.setChecked(false);
-                            }
-                        }
-                        if (report.weight_between_23_25kgs != null) {
-                            if (report.weight_between_23_25kgs.equals("Y")) {
-                                pr_chk_10.setChecked(true);
-                                pr_chk_11.setChecked(false);
-                            } else if (report.weight_between_23_25kgs.equals("N")) {
-                                pr_chk_10.setChecked(false);
-                                pr_chk_11.setChecked(true);
-                            } else {
-                                pr_chk_10.setChecked(false);
-                                pr_chk_11.setChecked(false);
-                            }
-                        }
-                        if (report.weight_between_50_60kgs != null) {
-                            if (report.weight_between_50_60kgs.equals("Y")) {
-                                pr_chk_12.setChecked(true);
-                                pr_chk_13.setChecked(false);
-                            } else if (report.weight_between_50_60kgs.equals("N")) {
-                                pr_chk_12.setChecked(false);
-                                pr_chk_13.setChecked(true);
-                            } else {
-                                pr_chk_12.setChecked(false);
-                                pr_chk_13.setChecked(false);
-                            }
-                        }
-                        if (report.check_Stabilizing_rod != null) {
-                            if (report.check_Stabilizing_rod.equals("Y")) {
-                                pr_chk_14.setChecked(true);
-                                pr_chk_15.setChecked(false);
-                            } else if (report.check_Stabilizing_rod.equals("N")) {
-                                pr_chk_14.setChecked(false);
-                                pr_chk_15.setChecked(true);
-                            } else {
-                                pr_chk_14.setChecked(false);
-                                pr_chk_15.setChecked(false);
-                            }
-                        }
-
-                        if (report.Result != null) {
-
-                            int index = resultList.indexOf(report.Result);
-                            if (index > 0) {
-
-                                if (index == 2) {
-                                    unresolve_reason.setSelection(2);
-                                    ll_product_defect.setVisibility(View.VISIBLE);
-                                    ll_site_issue.setVisibility(View.GONE);
-                                    edt_spare_defect_articleNo.setText(report.sparce_defect);
-                                    edt_complete_set_articleNo.setText(report.complete_set);
-                                } else if (index == 3) {
-                                    unresolve_reason.setSelection(3);
-                                    ll_product_defect.setVisibility(View.GONE);
-                                    ll_site_issue.setVisibility(View.VISIBLE);
-
-                                    if (report.site_Issue_Reason != null) {
-                                        int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                        if (index1 > 0) {
-                                            spin_siteIssueReason_reason.setSelection(index1);
-                                        }
-                                    }
-                                } else if (index == 1) {
-                                    unresolve_reason.setSelection(1);
-                                } else if (index == 4) {
-                                    unresolve_reason.setSelection(4);
+                            if (report.correct_product_order != null) {
+                                if (report.correct_product_order.equals("Y")) {
+                                    pr_chk_1.setChecked(true);
+                                    pr_chk_2.setChecked(false);
+                                } else if (report.correct_product_order.equals("N")) {
+                                    pr_chk_1.setChecked(false);
+                                    pr_chk_2.setChecked(true);
+                                } else {
+                                    pr_chk_1.setChecked(false);
+                                    pr_chk_2.setChecked(false);
                                 }
-                            } else {
-                                unresolve_reason.setSelection(0);
                             }
-                        }
-                        if (report.Action != null) {
-                            int index = actionList.indexOf(report.Action);
-                            spin_action.setSelection(index);
-                        }
-                        if (report.wrong_product_reason != null) {
-                            int index = wrongProdList.indexOf(report.wrong_product_reason);
-                            spin_wrong_product.setSelection(index);
-                            if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-                                pr_chk_5.setEnabled(false);
-                                pr_chk_6.setEnabled(false);
-                                pr_chk_7.setEnabled(false);
-                                pr_chk_8.setEnabled(false);
-                                pr_chk_9.setEnabled(false);
-                                pr_chk_10.setEnabled(false);
-                                pr_chk_11.setEnabled(false);
-                                pr_chk_12.setEnabled(false);
-                                pr_chk_13.setEnabled(false);
-                                pr_chk_14.setEnabled(false);
-                                pr_chk_15.setEnabled(false);
+                            if (report.height_more_than_260mm != null) {
+                                if (report.height_more_than_260mm.equals("Y")) {
+                                    pr_chk_3.setChecked(true);
+                                } else {
+                                    pratik_height.setText(report.height_more_than_260mm);
+                                }
+                            }
+                            if (report.length_slatted_or_wooden_50mm != null) {
+                                if (report.length_slatted_or_wooden_50mm.equals("Y")) {
+                                    pr_chk_4.setChecked(true);
+                                } else {
+                                    pratik_length_50mm.setText(report.length_slatted_or_wooden_50mm);
+                                }
+                            }
+                            if (report.widht_slatted_or_wooden_30mm != null) {
+                                if (report.widht_slatted_or_wooden_30mm.equals("Y")) {
+                                    pr_chk_5.setChecked(true);
+                                } else {
+                                    pratik_width_30mm.setText(report.widht_slatted_or_wooden_30mm);
+                                }
+                            }
+                            if (report.slatted_dimen_1400mm_2000mm != null) {
+                                if (report.slatted_dimen_1400mm_2000mm.equals("Y")) {
+                                    pr_chk_6.setChecked(true);
+                                } else {
+                                    pratik_sfd_dimen.setText(report.slatted_dimen_1400mm_2000mm);
+                                }
+                            }
+                            if (report.slatted_dimen_1800mm_2000mm != null) {
+                                if (report.slatted_dimen_1800mm_2000mm.equals("Y")) {
+                                    pr_chk_7.setChecked(true);
+                                } else {
+                                    pratik_sfd_dimen1.setText(report.slatted_dimen_1800mm_2000mm);
+                                }
+                            }
+                            if (report.bedding_box_fixing != null) {
+                                if (report.bedding_box_fixing.equals("Y")) {
+                                    pr_chk_8.setChecked(true);
+                                    pr_chk_9.setChecked(false);
+                                } else if (report.bedding_box_fixing.equals("N")) {
+                                    pr_chk_8.setChecked(false);
+                                    pr_chk_9.setChecked(true);
+                                } else {
+                                    pr_chk_8.setChecked(false);
+                                    pr_chk_9.setChecked(false);
+                                }
+                            }
+                            if (report.weight_between_23_25kgs != null) {
+                                if (report.weight_between_23_25kgs.equals("Y")) {
+                                    pr_chk_10.setChecked(true);
+                                    pr_chk_11.setChecked(false);
+                                } else if (report.weight_between_23_25kgs.equals("N")) {
+                                    pr_chk_10.setChecked(false);
+                                    pr_chk_11.setChecked(true);
+                                } else {
+                                    pr_chk_10.setChecked(false);
+                                    pr_chk_11.setChecked(false);
+                                }
+                            }
+                            if (report.weight_between_50_60kgs != null) {
+                                if (report.weight_between_50_60kgs.equals("Y")) {
+                                    pr_chk_12.setChecked(true);
+                                    pr_chk_13.setChecked(false);
+                                } else if (report.weight_between_50_60kgs.equals("N")) {
+                                    pr_chk_12.setChecked(false);
+                                    pr_chk_13.setChecked(true);
+                                } else {
+                                    pr_chk_12.setChecked(false);
+                                    pr_chk_13.setChecked(false);
+                                }
+                            }
+                            if (report.check_Stabilizing_rod != null) {
+                                if (report.check_Stabilizing_rod.equals("Y")) {
+                                    pr_chk_14.setChecked(true);
+                                    pr_chk_15.setChecked(false);
+                                } else if (report.check_Stabilizing_rod.equals("N")) {
+                                    pr_chk_14.setChecked(false);
+                                    pr_chk_15.setChecked(true);
+                                } else {
+                                    pr_chk_14.setChecked(false);
+                                    pr_chk_15.setChecked(false);
+                                }
+                            }
+
+                            if (report.Result != null) {
+
+                                int index = resultList.indexOf(report.Result);
+                                if (index > 0) {
+
+                                    if (index == 2) {
+                                        unresolve_reason.setSelection(2);
+                                        ll_product_defect.setVisibility(View.VISIBLE);
+                                        ll_site_issue.setVisibility(View.GONE);
+                                        edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                        edt_complete_set_articleNo.setText(report.complete_set);
+                                    } else if (index == 3) {
+                                        unresolve_reason.setSelection(3);
+                                        ll_product_defect.setVisibility(View.GONE);
+                                        ll_site_issue.setVisibility(View.VISIBLE);
+
+                                        if (report.site_Issue_Reason != null) {
+                                            int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                            if (index1 > 0) {
+                                                spin_siteIssueReason_reason.setSelection(index1);
+                                            }
+                                        }
+                                    } else if (index == 1) {
+                                        unresolve_reason.setSelection(1);
+                                    } else if (index == 4) {
+                                        unresolve_reason.setSelection(4);
+                                    }
+                                } else {
+                                    unresolve_reason.setSelection(0);
+                                }
+                            }
+                            if (report.Action != null) {
+                                int index = actionList.indexOf(report.Action);
+                                spin_action.setSelection(index);
+                            }
+                            if (report.wrong_product_reason != null) {
+                                int index = wrongProdList.indexOf(report.wrong_product_reason);
+                                spin_wrong_product.setSelection(index);
+                                if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
+                                    pr_chk_5.setEnabled(false);
+                                    pr_chk_6.setEnabled(false);
+                                    pr_chk_7.setEnabled(false);
+                                    pr_chk_8.setEnabled(false);
+                                    pr_chk_9.setEnabled(false);
+                                    pr_chk_10.setEnabled(false);
+                                    pr_chk_11.setEnabled(false);
+                                    pr_chk_12.setEnabled(false);
+                                    pr_chk_13.setEnabled(false);
+                                    pr_chk_14.setEnabled(false);
+                                    pr_chk_15.setEnabled(false);
 
 
                               /*  pr_chk_16.setEnabled(false);
@@ -10104,202 +11155,19 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                                 pr_chk_22.setEnabled(false);*/
 
 
-                                cabinet_height.setEnabled(false);
-                                cabinet_width.setEnabled(false);
-                                cabinet_depth.setEnabled(false);
-                                spin_wrong_product.setEnabled(true);
-                                if (pr_chk_1.isChecked()) {
-                                    spin_wrong_product.setEnabled(false);
-                                } else {
+                                    cabinet_height.setEnabled(false);
+                                    cabinet_width.setEnabled(false);
+                                    cabinet_depth.setEnabled(false);
                                     spin_wrong_product.setEnabled(true);
-                                }
-                            } else {
-
-                            }
-                        }
-                        if (report.Closure_Status != null) {
-                            if (report.Closure_Status.equals("Resolved")) {
-                                submit.setVisibility(View.GONE);
-                                attach_img.setVisibility(View.GONE);
-                                // img_grid.setVisibility(View.GONE);
-                                // video_grid.setVisibility(View.GONE);
-                                status.setEnabled(false);
-                                attach_vid.setVisibility(View.GONE);
-                                btn_deleteVideo.setVisibility(View.GONE);
-                                bottom_linearll.setVisibility(View.VISIBLE);
-
-                            } else if (report.Closure_Status.equals("Unresolved")) {
-                                status.setSelection(1);
-
-                                submit.setVisibility(View.VISIBLE);
-                                attach_img.setVisibility(View.VISIBLE);
-                                attach_vid.setVisibility(View.VISIBLE);
-                                status.setEnabled(true);
-                                bottom_linearll.setVisibility(View.VISIBLE);
-                                // img_grid.setVisibility(View.VISIBLE);
-                                // video_grid.setVisibility(View.VISIBLE);
-                            }
-
-                            comments.setText(report.Comment);
-
-                        }
-
-                    } else if (report.prod_type.equals("Tavoletto")) {
-
-                        if (report != null) {
-
-                            article_no.setText(report.article_no);
-                            cabinet_width.setText(report.Width);
-                            cabinet_height.setText(report.Height);
-                            // cabinet_depth.setText(report.Thickness);
-
-
-                            if (report.correct_pro_one != null) {
-                                if (report.correct_pro_one.equals("900x2000mm")) {
-                                    tv_chk_1.setChecked(true);
-                                    tv_chk_2.setChecked(false);
-                                    tv_chk_3.setChecked(false);
-                                    tv_chk_4.setChecked(false);
-
-                                    tv_chk_5.setEnabled(true);
-                                    tv_chk_6.setEnabled(true);
-                                    tv_chk_7.setEnabled(true);
-                                    tv_chk_8.setEnabled(true);
-                                }
-                            }
-                            if (report.correct_pro_two != null) {
-                                if (report.correct_pro_two.equals("1400x2000mm")) {
-                                    tv_chk_1.setChecked(false);
-                                    tv_chk_2.setChecked(true);
-                                    tv_chk_3.setChecked(false);
-                                    tv_chk_4.setChecked(false);
-
-                                    tv_chk_5.setEnabled(true);
-                                    tv_chk_6.setEnabled(true);
-                                    tv_chk_7.setEnabled(true);
-                                    tv_chk_8.setEnabled(true);
-                                }
-                            }
-                            if (report.correct_pro_three != null) {
-                                if (report.correct_pro_three.equals("1400x2000mm")) {
-                                    tv_chk_1.setChecked(false);
-                                    tv_chk_2.setChecked(false);
-                                    tv_chk_3.setChecked(true);
-                                    tv_chk_4.setChecked(false);
-
-                                    tv_chk_5.setEnabled(true);
-                                    tv_chk_6.setEnabled(true);
-                                    tv_chk_7.setEnabled(true);
-                                    tv_chk_8.setEnabled(true);
-
-                                }
-                            }
-
-                            if (report.part_list_is_complete != null) {
-                                if (report.part_list_is_complete.equals("Y")) {
-                                    tv_chk_5.setChecked(true);
-                                    tv_chk_6.setChecked(false);
-                                } else if (report.part_list_is_complete.equals("N")) {
-                                    tv_chk_5.setChecked(false);
-                                    tv_chk_6.setChecked(true);
-                                } else {
-                                    tv_chk_5.setChecked(false);
-                                    tv_chk_6.setChecked(false);
-                                }
-                            }
-
-                            if (report.Wooden_Panel_dimensions != null) {
-                                if (report.Wooden_Panel_dimensions.equals("Y")) {
-                                    tv_chk_7.setChecked(true);
-                                    tv_chk_8.setChecked(false);
-                                } else if (report.Wooden_Panel_dimensions.equals("N")) {
-                                    tv_chk_7.setChecked(false);
-                                    tv_chk_8.setChecked(true);
-                                } else {
-                                    tv_chk_7.setChecked(false);
-                                    tv_chk_8.setChecked(false);
-                                }
-                            }
-
-                            if (report.wrong_product != null) {
-                                if (report.wrong_product.equals("Y")) {
-                                    tv_chk_4.setChecked(true);
-                                    tv_chk_1.setChecked(false);
-                                    tv_chk_2.setChecked(false);
-                                    tv_chk_3.setChecked(false);
-
-                                    tv_chk_5.setEnabled(false);
-                                    tv_chk_6.setEnabled(false);
-                                    tv_chk_7.setEnabled(false);
-                                    tv_chk_8.setEnabled(false);
-
-
-                                }
-                            }
-
-                            if (report.Result != null) {
-
-                                int index = resultList.indexOf(report.Result);
-                                if (index > 0) {
-
-                                    if (index == 2) {
-                                        unresolve_reason.setSelection(2);
-                                        ll_product_defect.setVisibility(View.VISIBLE);
-                                        ll_site_issue.setVisibility(View.GONE);
-                                        edt_spare_defect_articleNo.setText(report.sparce_defect);
-                                        edt_complete_set_articleNo.setText(report.complete_set);
-                                    } else if (index == 3) {
-                                        unresolve_reason.setSelection(3);
-                                        ll_product_defect.setVisibility(View.GONE);
-                                        ll_site_issue.setVisibility(View.VISIBLE);
-
-                                        if (report.site_Issue_Reason != null) {
-                                            int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                            if (index1 > 0) {
-                                                spin_siteIssueReason_reason.setSelection(index1);
-                                            }
-                                        }
-                                    } else if (index == 1) {
-                                        unresolve_reason.setSelection(1);
-                                    } else if (index == 4) {
-                                        unresolve_reason.setSelection(4);
-                                    }
-                                } else {
-                                    unresolve_reason.setSelection(0);
-                                }
-
-                            }
-                            if (report.Action != null) {
-                                int index = actionList.indexOf(report.Action);
-                                spin_action.setSelection(index);
-                            }
-                            if (report.wrong_product_reason != null) {
-                                int index = wrongProdList.indexOf(report.wrong_product_reason);
-                                spin_wrong_product1.setSelection(index);
-
-                                if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-
-                                    tv_chk_3.setEnabled(false);
-                                    tv_chk_4.setEnabled(false);
-                                    tv_chk_5.setEnabled(false);
-                                    tv_chk_6.setEnabled(false);
-                                    tv_chk_7.setEnabled(false);
-                                    tv_chk_8.setEnabled(false);
-
-                                    cabinet_height.setEnabled(false);
-                                    cabinet_width.setEnabled(false);
-                                    cabinet_depth.setEnabled(false);
-                                    spin_wrong_product1.setEnabled(true);
-                                    if (tv_chk_1.isChecked()) {
-                                        spin_wrong_product1.setEnabled(false);
+                                    if (pr_chk_1.isChecked()) {
+                                        spin_wrong_product.setEnabled(false);
                                     } else {
-                                        spin_wrong_product1.setEnabled(true);
+                                        spin_wrong_product.setEnabled(true);
                                     }
                                 } else {
 
                                 }
                             }
-
                             if (report.Closure_Status != null) {
                                 if (report.Closure_Status.equals("Resolved")) {
                                     submit.setVisibility(View.GONE);
@@ -10311,510 +11179,693 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                                     btn_deleteVideo.setVisibility(View.GONE);
                                     bottom_linearll.setVisibility(View.VISIBLE);
 
-
                                 } else if (report.Closure_Status.equals("Unresolved")) {
                                     status.setSelection(1);
+
                                     submit.setVisibility(View.VISIBLE);
                                     attach_img.setVisibility(View.VISIBLE);
                                     attach_vid.setVisibility(View.VISIBLE);
                                     status.setEnabled(true);
                                     bottom_linearll.setVisibility(View.VISIBLE);
-
+                                    // img_grid.setVisibility(View.VISIBLE);
+                                    // video_grid.setVisibility(View.VISIBLE);
                                 }
 
                                 comments.setText(report.Comment);
 
                             }
-                        }
-                    } else if (report.prod_type.equals("Other")) {
-                        if (report != null) {
 
-                            article_no.setText(report.article_no);
+                        } else if (report.prod_type.equals("Tavoletto")) {
 
-                            if (report.Result != null) {
+                            if (report != null) {
 
-                                int index = resultList.indexOf(report.Result);
-                                if (index > 0) {
+                                article_no.setText(report.article_no);
+                                cabinet_width.setText(report.Width);
+                                cabinet_height.setText(report.Height);
+                                // cabinet_depth.setText(report.Thickness);
 
-                                    if (index == 2) {
-                                        unresolve_reason.setSelection(2);
-                                        ll_product_defect.setVisibility(View.VISIBLE);
-                                        ll_site_issue.setVisibility(View.GONE);
-                                        edt_spare_defect_articleNo.setText(report.sparce_defect);
-                                        edt_complete_set_articleNo.setText(report.complete_set);
-                                    } else if (index == 3) {
-                                        unresolve_reason.setSelection(3);
-                                        ll_product_defect.setVisibility(View.GONE);
-                                        ll_site_issue.setVisibility(View.VISIBLE);
 
-                                        if (report.site_Issue_Reason != null) {
-                                            int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                            if (index1 > 0) {
-                                                spin_siteIssueReason_reason.setSelection(index1);
-                                            }
-                                        }
-                                    } else if (index == 1) {
-                                        unresolve_reason.setSelection(1);
-                                    } else if (index == 4) {
-                                        unresolve_reason.setSelection(4);
+                                if (report.correct_pro_one != null) {
+                                    if (report.correct_pro_one.equals("900x2000mm")) {
+                                        tv_chk_1.setChecked(true);
+                                        tv_chk_2.setChecked(false);
+                                        tv_chk_3.setChecked(false);
+                                        tv_chk_4.setChecked(false);
+
+                                        tv_chk_5.setEnabled(true);
+                                        tv_chk_6.setEnabled(true);
+                                        tv_chk_7.setEnabled(true);
+                                        tv_chk_8.setEnabled(true);
                                     }
-                                } else {
-                                    unresolve_reason.setSelection(0);
+                                }
+                                if (report.correct_pro_two != null) {
+                                    if (report.correct_pro_two.equals("1400x2000mm")) {
+                                        tv_chk_1.setChecked(false);
+                                        tv_chk_2.setChecked(true);
+                                        tv_chk_3.setChecked(false);
+                                        tv_chk_4.setChecked(false);
+
+                                        tv_chk_5.setEnabled(true);
+                                        tv_chk_6.setEnabled(true);
+                                        tv_chk_7.setEnabled(true);
+                                        tv_chk_8.setEnabled(true);
+                                    }
+                                }
+                                if (report.correct_pro_three != null) {
+                                    if (report.correct_pro_three.equals("1400x2000mm")) {
+                                        tv_chk_1.setChecked(false);
+                                        tv_chk_2.setChecked(false);
+                                        tv_chk_3.setChecked(true);
+                                        tv_chk_4.setChecked(false);
+
+                                        tv_chk_5.setEnabled(true);
+                                        tv_chk_6.setEnabled(true);
+                                        tv_chk_7.setEnabled(true);
+                                        tv_chk_8.setEnabled(true);
+
+                                    }
                                 }
 
-                            }
-                            if (report.Action != null) {
-                                int index = actionList.indexOf(report.Action);
-                                spin_action.setSelection(index);
-                            }
-                            if (report.wrong_product_reason != null) {
-                                int index = wrongProdList.indexOf(report.wrong_product_reason);
-                                spin_wrong_product1.setSelection(index);
-
-                                if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-
-                                    tv_chk_3.setEnabled(false);
-                                    tv_chk_4.setEnabled(false);
-                                    tv_chk_5.setEnabled(false);
-                                    tv_chk_6.setEnabled(false);
-                                    tv_chk_7.setEnabled(false);
-                                    tv_chk_8.setEnabled(false);
-
-                                    cabinet_height.setEnabled(false);
-                                    cabinet_width.setEnabled(false);
-                                    cabinet_depth.setEnabled(false);
-                                    spin_wrong_product1.setEnabled(true);
-                                    if (tv_chk_1.isChecked()) {
-                                        spin_wrong_product1.setEnabled(false);
+                                if (report.part_list_is_complete != null) {
+                                    if (report.part_list_is_complete.equals("Y")) {
+                                        tv_chk_5.setChecked(true);
+                                        tv_chk_6.setChecked(false);
+                                    } else if (report.part_list_is_complete.equals("N")) {
+                                        tv_chk_5.setChecked(false);
+                                        tv_chk_6.setChecked(true);
                                     } else {
-                                        spin_wrong_product1.setEnabled(true);
+                                        tv_chk_5.setChecked(false);
+                                        tv_chk_6.setChecked(false);
                                     }
-                                } else {
+                                }
+
+                                if (report.Wooden_Panel_dimensions != null) {
+                                    if (report.Wooden_Panel_dimensions.equals("Y")) {
+                                        tv_chk_7.setChecked(true);
+                                        tv_chk_8.setChecked(false);
+                                    } else if (report.Wooden_Panel_dimensions.equals("N")) {
+                                        tv_chk_7.setChecked(false);
+                                        tv_chk_8.setChecked(true);
+                                    } else {
+                                        tv_chk_7.setChecked(false);
+                                        tv_chk_8.setChecked(false);
+                                    }
+                                }
+
+                                if (report.wrong_product != null) {
+                                    if (report.wrong_product.equals("Y")) {
+                                        tv_chk_4.setChecked(true);
+                                        tv_chk_1.setChecked(false);
+                                        tv_chk_2.setChecked(false);
+                                        tv_chk_3.setChecked(false);
+
+                                        tv_chk_5.setEnabled(false);
+                                        tv_chk_6.setEnabled(false);
+                                        tv_chk_7.setEnabled(false);
+                                        tv_chk_8.setEnabled(false);
+
+
+                                    }
+                                }
+
+                                if (report.Result != null) {
+
+                                    int index = resultList.indexOf(report.Result);
+                                    if (index > 0) {
+
+                                        if (index == 2) {
+                                            unresolve_reason.setSelection(2);
+                                            ll_product_defect.setVisibility(View.VISIBLE);
+                                            ll_site_issue.setVisibility(View.GONE);
+                                            edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                            edt_complete_set_articleNo.setText(report.complete_set);
+                                        } else if (index == 3) {
+                                            unresolve_reason.setSelection(3);
+                                            ll_product_defect.setVisibility(View.GONE);
+                                            ll_site_issue.setVisibility(View.VISIBLE);
+
+                                            if (report.site_Issue_Reason != null) {
+                                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                                if (index1 > 0) {
+                                                    spin_siteIssueReason_reason.setSelection(index1);
+                                                }
+                                            }
+                                        } else if (index == 1) {
+                                            unresolve_reason.setSelection(1);
+                                        } else if (index == 4) {
+                                            unresolve_reason.setSelection(4);
+                                        }
+                                    } else {
+                                        unresolve_reason.setSelection(0);
+                                    }
+
+                                }
+                                if (report.Action != null) {
+                                    int index = actionList.indexOf(report.Action);
+                                    spin_action.setSelection(index);
+                                }
+                                if (report.wrong_product_reason != null) {
+                                    int index = wrongProdList.indexOf(report.wrong_product_reason);
+                                    spin_wrong_product1.setSelection(index);
+
+                                    if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
+
+                                        tv_chk_3.setEnabled(false);
+                                        tv_chk_4.setEnabled(false);
+                                        tv_chk_5.setEnabled(false);
+                                        tv_chk_6.setEnabled(false);
+                                        tv_chk_7.setEnabled(false);
+                                        tv_chk_8.setEnabled(false);
+
+                                        cabinet_height.setEnabled(false);
+                                        cabinet_width.setEnabled(false);
+                                        cabinet_depth.setEnabled(false);
+                                        spin_wrong_product1.setEnabled(true);
+                                        if (tv_chk_1.isChecked()) {
+                                            spin_wrong_product1.setEnabled(false);
+                                        } else {
+                                            spin_wrong_product1.setEnabled(true);
+                                        }
+                                    } else {
+
+                                    }
+                                }
+
+                                if (report.Closure_Status != null) {
+                                    if (report.Closure_Status.equals("Resolved")) {
+                                        submit.setVisibility(View.GONE);
+                                        attach_img.setVisibility(View.GONE);
+                                        // img_grid.setVisibility(View.GONE);
+                                        // video_grid.setVisibility(View.GONE);
+                                        status.setEnabled(false);
+                                        attach_vid.setVisibility(View.GONE);
+                                        btn_deleteVideo.setVisibility(View.GONE);
+                                        bottom_linearll.setVisibility(View.VISIBLE);
+
+
+                                    } else if (report.Closure_Status.equals("Unresolved")) {
+                                        status.setSelection(1);
+                                        submit.setVisibility(View.VISIBLE);
+                                        attach_img.setVisibility(View.VISIBLE);
+                                        attach_vid.setVisibility(View.VISIBLE);
+                                        status.setEnabled(true);
+                                        bottom_linearll.setVisibility(View.VISIBLE);
+
+                                    }
+
+                                    comments.setText(report.Comment);
+
+                                }
+                            }
+                        } else if (report.prod_type.equals("Other")) {
+                            if (report != null) {
+
+                                article_no.setText(report.article_no);
+
+                                if (report.Result != null) {
+
+                                    int index = resultList.indexOf(report.Result);
+                                    if (index > 0) {
+
+                                        if (index == 2) {
+                                            unresolve_reason.setSelection(2);
+                                            ll_product_defect.setVisibility(View.VISIBLE);
+                                            ll_site_issue.setVisibility(View.GONE);
+                                            edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                            edt_complete_set_articleNo.setText(report.complete_set);
+                                        } else if (index == 3) {
+                                            unresolve_reason.setSelection(3);
+                                            ll_product_defect.setVisibility(View.GONE);
+                                            ll_site_issue.setVisibility(View.VISIBLE);
+
+                                            if (report.site_Issue_Reason != null) {
+                                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                                if (index1 > 0) {
+                                                    spin_siteIssueReason_reason.setSelection(index1);
+                                                }
+                                            }
+                                        } else if (index == 1) {
+                                            unresolve_reason.setSelection(1);
+                                        } else if (index == 4) {
+                                            unresolve_reason.setSelection(4);
+                                        }
+                                    } else {
+                                        unresolve_reason.setSelection(0);
+                                    }
+
+                                }
+                                if (report.Action != null) {
+                                    int index = actionList.indexOf(report.Action);
+                                    spin_action.setSelection(index);
+                                }
+                                if (report.wrong_product_reason != null) {
+                                    int index = wrongProdList.indexOf(report.wrong_product_reason);
+                                    spin_wrong_product1.setSelection(index);
+
+                                    if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
+
+                                        tv_chk_3.setEnabled(false);
+                                        tv_chk_4.setEnabled(false);
+                                        tv_chk_5.setEnabled(false);
+                                        tv_chk_6.setEnabled(false);
+                                        tv_chk_7.setEnabled(false);
+                                        tv_chk_8.setEnabled(false);
+
+                                        cabinet_height.setEnabled(false);
+                                        cabinet_width.setEnabled(false);
+                                        cabinet_depth.setEnabled(false);
+                                        spin_wrong_product1.setEnabled(true);
+                                        if (tv_chk_1.isChecked()) {
+                                            spin_wrong_product1.setEnabled(false);
+                                        } else {
+                                            spin_wrong_product1.setEnabled(true);
+                                        }
+                                    } else {
+
+                                    }
+                                }
+
+                                if (report.Closure_Status != null) {
+                                    if (report.Closure_Status.equals("Resolved")) {
+                                        submit.setVisibility(View.GONE);
+                                        attach_img.setVisibility(View.GONE);
+                                        // img_grid.setVisibility(View.GONE);
+                                        // video_grid.setVisibility(View.GONE);
+                                        status.setEnabled(false);
+                                        attach_vid.setVisibility(View.GONE);
+                                        btn_deleteVideo.setVisibility(View.GONE);
+                                        bottom_linearll.setVisibility(View.VISIBLE);
+
+
+                                    } else if (report.Closure_Status.equals("Unresolved")) {
+                                        status.setSelection(1);
+                                        submit.setVisibility(View.VISIBLE);
+                                        attach_img.setVisibility(View.VISIBLE);
+                                        attach_vid.setVisibility(View.VISIBLE);
+                                        status.setEnabled(true);
+                                        bottom_linearll.setVisibility(View.VISIBLE);
+
+                                    }
+
+                                    comments.setText(report.Comment);
 
                                 }
                             }
 
-                            if (report.Closure_Status != null) {
-                                if (report.Closure_Status.equals("Resolved")) {
-                                    submit.setVisibility(View.GONE);
-                                    attach_img.setVisibility(View.GONE);
-                                    // img_grid.setVisibility(View.GONE);
-                                    // video_grid.setVisibility(View.GONE);
-                                    status.setEnabled(false);
-                                    attach_vid.setVisibility(View.GONE);
-                                    btn_deleteVideo.setVisibility(View.GONE);
-                                    bottom_linearll.setVisibility(View.VISIBLE);
-
-
-                                } else if (report.Closure_Status.equals("Unresolved")) {
-                                    status.setSelection(1);
-                                    submit.setVisibility(View.VISIBLE);
-                                    attach_img.setVisibility(View.VISIBLE);
-                                    attach_vid.setVisibility(View.VISIBLE);
-                                    status.setEnabled(true);
-                                    bottom_linearll.setVisibility(View.VISIBLE);
-
-                                }
-
-                                comments.setText(report.Comment);
-
-                            }
                         }
 
                     }
 
                 }
 
-            }
 
+                if (imgData != null) {
+                    for (int i = 0; i < imgData.size(); i++) {
+                        File file = new File(imgData.get(i).image_path);
+                        orgFileArray.add(file);
+                        fileNameArray.add(file);
 
-            if (imgData != null) {
-                for (int i = 0; i < imgData.size(); i++) {
-                    File file = new File(imgData.get(i).image_path);
-                    orgFileArray.add(file);
-                    fileNameArray.add(file);
+                        imgOriginalSize.add(imgData.get(i).original_size);
+                        imgCompressedSize.add(imgData.get(i).compressed_size);
 
-                    imgOriginalSize.add(imgData.get(i).original_size);
-                    imgCompressedSize.add(imgData.get(i).compressed_size);
-
-                    compressedBitmap = BitmapFactory.decodeFile(file.getPath());
-                    capturedBM.add(compressedBitmap);
-                    int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
-                            .getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(
-                            compressedBitmap, 100, nh, true);
-                    bmpArray.add(scaledBM);
-                }
-            }
-
-            if (vidData != null) {
-                try {
-                    // inputpath = vidData.FilePath;
-                    Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
-                            vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
-                    inputpath = vidData.get(0).FilePath;
-                    video_grid.setImageBitmap(bmThumbnail);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
-            img_grid.setAdapter(imgAdapter);
-            img_grid.setOnTouchListener(new OnTouchListener() {
-                // Setting on Touch Listener for handling the touch inside
-                // ScrollView
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    // Disallow the touch request for parent scroll on touch of
-                    // child view
-                    v.getParent().requestDisallowInterceptTouchEvent(true);
-                    return false;
-                }
-            });
-
-            video_grid.setOnClickListener(this);
-
-            img_grid.setOnItemClickListener(new OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id) {
-                    Bitmap sBM = bmpArray.get(position);
-                    Bitmap cBm = capturedBM.get(position);
-                    int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                            true);
-                    showImage(scaledBM, cBm, sBM, position);
-                }
-            });
-            status.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view,
-                                           int position, long id) {
-                    contentValues.put("Closure_Status", status
-                            .getSelectedItem().toString());
-                    if (position == 1) {
-                        //  unresolved.setVisibility(View.VISIBLE);
-                    } else {
-                        //  unresolved.setVisibility(View.GONE);
-                        contentValues.put("Reason_For_Unresolved", "");
+                        compressedBitmap = BitmapFactory.decodeFile(file.getPath());
+                        capturedBM.add(compressedBitmap);
+                        int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
+                                .getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(
+                                compressedBitmap, 100, nh, true);
+                        bmpArray.add(scaledBM);
                     }
                 }
 
-                @Override
-                public void onNothingSelected(AdapterView<?> arg0) {
-
+                if (vidData != null) {
+                    try {
+                        // inputpath = vidData.FilePath;
+                        Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
+                                vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
+                        inputpath = vidData.get(0).FilePath;
+                        video_grid.setImageBitmap(bmThumbnail);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
-            });
-        }
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
+                img_grid.setAdapter(imgAdapter);
+                img_grid.setOnTouchListener(new OnTouchListener() {
+                    // Setting on Touch Listener for handling the touch inside
+                    // ScrollView
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        // Disallow the touch request for parent scroll on touch of
+                        // child view
+                        v.getParent().requestDisallowInterceptTouchEvent(true);
+                        return false;
+                    }
+                });
 
-        //..............................................................................................................................
+                video_grid.setOnClickListener(this);
 
+                img_grid.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+                        Bitmap sBM = bmpArray.get(position);
+                        Bitmap cBm = capturedBM.get(position);
+                        int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                true);
+                        showImage(scaledBM, cBm, sBM, position);
+                    }
+                });
+                status.setOnItemSelectedListener(new OnItemSelectedListener() {
 
-        else if (product_category.contains("Tall Unit"))
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view,
+                                               int position, long id) {
+                        contentValues.put("Closure_Status", status
+                                .getSelectedItem().toString());
+                        if (position == 1) {
+                            //  unresolved.setVisibility(View.VISIBLE);
+                        } else {
+                            //  unresolved.setVisibility(View.GONE);
+                            contentValues.put("Reason_For_Unresolved", "");
+                        }
+                    }
 
-        {
-            //Tall Unit
-            view = inflater.inflate(R.layout.new_tall_unit, null);
-            baseFrame.removeAllViews();
-            baseFrame.addView(view);
+                    @Override
+                    public void onNothingSelected(AdapterView<?> arg0) {
 
-            FaultReport report = null;
-            List<ImageData> imgData = null;
-            List<VideoData> vidData = null;
-
-            if (is_visited > 0) {
-                report = dbAdapter.getFaultReportDetails(pref.getUserName(),
-                        complaint_number);
-                imgData = dbAdapter.getImageData(complaint_number, "ALL");
-                vidData = dbAdapter.getVideoData(complaint_number);
+                    }
+                });
             }
 
-            comp_number = (TextView) view.findViewById(R.id.complaint_number);
-            customer_name = (TextView) view.findViewById(R.id.customer_name);
-            date = (TextView) view.findViewById(R.id.date);
-            mobile_no = (TextView) view.findViewById(R.id.mobile_no);
-            dealer = (TextView) view.findViewById(R.id.dealer);
-            invoice_no = (TextView) view.findViewById(R.id.invoice_no);
-            article_no = (EditText) view.findViewById(R.id.article_no);
-            prod_cat = (TextView) view.findViewById(R.id.prod_cat);
-            prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
-            complaint_deatils = (TextView) view
-                    .findViewById(R.id.complaint_deatils);
-            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
-            btn_deleteVideo.setOnClickListener(this);
-            address = (TextView) view.findViewById(R.id.address);
-
-            spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
-            spin_action = (Spinner) view.findViewById(R.id.spin_action);
-            edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
-            edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
-            ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
-            ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
-            ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
-
-            cabinet_height = (EditText) view.findViewById(R.id.cabinet_height);
-            cabinet_width = (EditText) view.findViewById(R.id.cabinet_width);
-            cabinet_depth = (EditText) view.findViewById(R.id.cabinet_depth);
-            spin_wrong_product = (Spinner) view.findViewById(R.id.spin_wrong_product);
-
-            tall_chk_1 = (CheckBox) view.findViewById(R.id.tall_chk_1);
-            tall_chk_2 = (CheckBox) view.findViewById(R.id.tall_chk_2);
-            tall_chk_3 = (CheckBox) view.findViewById(R.id.tall_chk_3);
-            tall_chk_4 = (CheckBox) view.findViewById(R.id.tall_chk_4);
-            tall_chk_5 = (CheckBox) view.findViewById(R.id.tall_chk_5);
-            tall_chk_6 = (CheckBox) view.findViewById(R.id.tall_chk_6);
-            tall_chk_7 = (CheckBox) view.findViewById(R.id.tall_chk_7);
-            tall_chk_8 = (CheckBox) view.findViewById(R.id.tall_chk_8);
-            tall_chk_9 = (CheckBox) view.findViewById(R.id.tall_chk_9);
-            tall_chk_10 = (CheckBox) view.findViewById(R.id.tall_chk_10);
-            tall_chk_11 = (CheckBox) view.findViewById(R.id.tall_chk_11);
-            tall_chk_12 = (CheckBox) view.findViewById(R.id.tall_chk_12);
-
-            tall_chk_1.setOnCheckedChangeListener(this);
-            tall_chk_2.setOnCheckedChangeListener(this);
-            tall_chk_3.setOnCheckedChangeListener(this);
-            tall_chk_4.setOnCheckedChangeListener(this);
-            tall_chk_5.setOnCheckedChangeListener(this);
-            tall_chk_6.setOnCheckedChangeListener(this);
-            tall_chk_7.setOnCheckedChangeListener(this);
-            tall_chk_8.setOnCheckedChangeListener(this);
-            tall_chk_9.setOnCheckedChangeListener(this);
-            tall_chk_10.setOnCheckedChangeListener(this);
-            tall_chk_11.setOnCheckedChangeListener(this);
-            tall_chk_12.setOnCheckedChangeListener(this);
-
-            unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
-            unresolve_reason.setOnItemSelectedListener(this);
-
-            // if image data is not null attach images to gridview
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            comp_number.setText(complaint_number);
-            customer_name.setText(c_name);
-            date.setText(complaint_date);
-            mobile_no.setText(end_user_mobile);
-            mobile_no.setOnClickListener(this);
-            dealer.setText(service_franchise);
-            article_no.setText(article);
-            complaint_deatils.setText(service_details);
-            prod_cat.setText(product_category);
-            prod_sub_cat.setText(product_sub_category);
-            address.setText(c_address);
-
-            status = (Spinner) view.findViewById(R.id.status);
-            comments = (TextView) view.findViewById(R.id.comments);
-
-            Button submit = (Button) view.findViewById(R.id.submit);
-
-            //   submit.setOnClickListener(this);
+            //..............................................................................................................................
 
 
-            submit.setOnClickListener(new OnClickListener() {
+            else if (product_category.contains("Tall Unit"))
 
-                @Override
-                public void onClick(View v) {
-                    boolean is_article_no = Validation.hasText(article_no);
-                    if (article_no.getText().toString().trim().equals(""))
-                        is_article_no = false;
+            {
+                //Tall Unit
+                view = inflater.inflate(R.layout.new_tall_unit, null);
+                baseFrame.removeAllViews();
+                baseFrame.addView(view);
 
-                    if (is_article_no) {
-                        if (checkValidation(product_category)) {
-                            if (validation() == true) {
-                                submitData(product_category);
-                            }
+                FaultReport report = null;
+                List<ImageData> imgData = null;
+                List<VideoData> vidData = null;
+
+                if (is_visited > 0) {
+                    report = dbAdapter.getFaultReportDetails(pref.getUserName(),
+                            complaint_number);
+                    imgData = dbAdapter.getImageData(complaint_number, "ALL");
+                    vidData = dbAdapter.getVideoData(complaint_number);
+                }
+
+                comp_number = (TextView) view.findViewById(R.id.complaint_number);
+                customer_name = (TextView) view.findViewById(R.id.customer_name);
+                date = (TextView) view.findViewById(R.id.date);
+                mobile_no = (TextView) view.findViewById(R.id.mobile_no);
+                dealer = (TextView) view.findViewById(R.id.dealer);
+                invoice_no = (TextView) view.findViewById(R.id.invoice_no);
+                article_no = (EditText) view.findViewById(R.id.article_no);
+                prod_cat = (TextView) view.findViewById(R.id.prod_cat);
+                prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
+                complaint_deatils = (TextView) view
+                        .findViewById(R.id.complaint_deatils);
+                btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+                btn_deleteVideo.setOnClickListener(this);
+                address = (TextView) view.findViewById(R.id.address);
+
+                spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
+                spin_action = (Spinner) view.findViewById(R.id.spin_action);
+                edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
+                edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
+                ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
+                ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
+                ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
+
+                cabinet_height = (EditText) view.findViewById(R.id.cabinet_height);
+                cabinet_width = (EditText) view.findViewById(R.id.cabinet_width);
+                cabinet_depth = (EditText) view.findViewById(R.id.cabinet_depth);
+                spin_wrong_product = (Spinner) view.findViewById(R.id.spin_wrong_product);
+
+                tall_chk_1 = (CheckBox) view.findViewById(R.id.tall_chk_1);
+                tall_chk_2 = (CheckBox) view.findViewById(R.id.tall_chk_2);
+                tall_chk_3 = (CheckBox) view.findViewById(R.id.tall_chk_3);
+                tall_chk_4 = (CheckBox) view.findViewById(R.id.tall_chk_4);
+                tall_chk_5 = (CheckBox) view.findViewById(R.id.tall_chk_5);
+                tall_chk_6 = (CheckBox) view.findViewById(R.id.tall_chk_6);
+                tall_chk_7 = (CheckBox) view.findViewById(R.id.tall_chk_7);
+                tall_chk_8 = (CheckBox) view.findViewById(R.id.tall_chk_8);
+                tall_chk_9 = (CheckBox) view.findViewById(R.id.tall_chk_9);
+                tall_chk_10 = (CheckBox) view.findViewById(R.id.tall_chk_10);
+                tall_chk_11 = (CheckBox) view.findViewById(R.id.tall_chk_11);
+                tall_chk_12 = (CheckBox) view.findViewById(R.id.tall_chk_12);
+
+                tall_chk_1.setOnCheckedChangeListener(this);
+                tall_chk_2.setOnCheckedChangeListener(this);
+                tall_chk_3.setOnCheckedChangeListener(this);
+                tall_chk_4.setOnCheckedChangeListener(this);
+                tall_chk_5.setOnCheckedChangeListener(this);
+                tall_chk_6.setOnCheckedChangeListener(this);
+                tall_chk_7.setOnCheckedChangeListener(this);
+                tall_chk_8.setOnCheckedChangeListener(this);
+                tall_chk_9.setOnCheckedChangeListener(this);
+                tall_chk_10.setOnCheckedChangeListener(this);
+                tall_chk_11.setOnCheckedChangeListener(this);
+                tall_chk_12.setOnCheckedChangeListener(this);
+
+                unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
+                unresolve_reason.setOnItemSelectedListener(this);
+
+                // if image data is not null attach images to gridview
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                comp_number.setText(complaint_number);
+                customer_name.setText(c_name);
+                date.setText(complaint_date);
+                mobile_no.setText(end_user_mobile);
+                mobile_no.setOnClickListener(this);
+                dealer.setText(service_franchise);
+                article_no.setText(article);
+                complaint_deatils.setText(service_details);
+                prod_cat.setText(product_category);
+                prod_sub_cat.setText(product_sub_category);
+                address.setText(c_address);
+
+                status = (Spinner) view.findViewById(R.id.status);
+                comments = (TextView) view.findViewById(R.id.comments);
+
+                Button submit = (Button) view.findViewById(R.id.submit);
+
+                //   submit.setOnClickListener(this);
+
+
+                submit.setOnClickListener(new OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        boolean is_article_no = Validation.hasText(article_no);
+                        if (article_no.getText().toString().trim().equals(""))
+                            is_article_no = false;
+
+                        if (is_article_no) {
+                            if (checkValidation(product_category)) {
+                                if (validation() == true) {
+                                    submitData(product_category);
+                                }
                             /*if (spin_wrong_product.isEnabled()) {
                                 if (spin_wrong_product.getSelectedItem().toString().equalsIgnoreCase("--Select--"))
                                     UtilityClass.showToast(context,
                                             "Select Wrong Product Reason");
                             }*/
 
-                        }
-                    } else {
-                        if (!is_article_no)
-                            UtilityClass.showToast(context, "Enter article number");
-                    }
-                }
-            });
-
-
-            Button attach_img = (Button) view.findViewById(R.id.attach_img);
-            Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
-            attach_img.setOnClickListener(this);
-            attach_vid.setOnClickListener(this);
-
-            GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-            video_grid = (ImageView) view.findViewById(R.id.video_grid);
-
-            if (report != null) {
-
-                article_no.setText(report.article_no);
-                cabinet_width.setText(report.Width);
-                cabinet_height.setText(report.Height);
-                cabinet_depth.setText(report.Thickness);
-
-                if (report.drawer_within_range != null) {
-                    if (report.drawer_within_range.equals("Y")) {
-                        tall_chk_1.setChecked(true);
-                        tall_chk_2.setChecked(false);
-                        spin_wrong_product.setEnabled(false);
-                    } else if (report.drawer_within_range.equals("N")) {
-                        tall_chk_1.setChecked(false);
-                        tall_chk_2.setChecked(true);
-
-                    } else {
-                        tall_chk_1.setChecked(false);
-                        tall_chk_2.setChecked(false);
-                    }
-                }
-
-                if (report.installation_template != null) {
-                    if (report.installation_template.equals("Y")) {
-                        tall_chk_3.setChecked(true);
-                        tall_chk_4.setChecked(false);
-                    } else if (report.installation_template.equals("N")) {
-                        tall_chk_3.setChecked(false);
-                        tall_chk_4.setChecked(true);
-
-
-                    } else {
-                        tall_chk_3.setChecked(false);
-                        tall_chk_4.setChecked(false);
-                    }
-                }
-
-                if (report.unit_if_fixed_to_wall != null) {
-                    if (report.unit_if_fixed_to_wall.equals("Y")) {
-                        tall_chk_5.setChecked(true);
-                        tall_chk_6.setChecked(false);
-                    } else if (report.unit_if_fixed_to_wall.equals("N")) {
-                        tall_chk_5.setChecked(false);
-                        tall_chk_6.setChecked(true);
-
-                    } else {
-                        tall_chk_5.setChecked(false);
-                        tall_chk_6.setChecked(false);
-                    }
-                }
-
-                if (report.enough_legs_for_support != null) {
-                    if (report.enough_legs_for_support.equals("Y")) {
-                        tall_chk_7.setChecked(true);
-                        tall_chk_8.setChecked(false);
-                    } else if (report.enough_legs_for_support.equals("N")) {
-                        tall_chk_7.setChecked(false);
-                        tall_chk_8.setChecked(true);
-                    } else {
-                        tall_chk_7.setChecked(false);
-                        tall_chk_8.setChecked(false);
-                    }
-                }
-
-                if (report.correct_alignment != null) {
-                    if (report.correct_alignment.equals("Y")) {
-                        tall_chk_9.setChecked(true);
-                        tall_chk_10.setChecked(false);
-                    } else if (report.correct_alignment.equals("N")) {
-                        tall_chk_9.setChecked(false);
-                        tall_chk_10.setChecked(true);
-                    } else {
-                        tall_chk_9.setChecked(false);
-                        tall_chk_10.setChecked(false);
-                    }
-                }
-
-                if (report.servodrive_sufficient_to_handle_weight != null) {
-                    if (report.servodrive_sufficient_to_handle_weight.equals("Y")) {
-                        tall_chk_11.setChecked(true);
-                        tall_chk_12.setChecked(false);
-                    } else if (report.servodrive_sufficient_to_handle_weight.equals("N")) {
-                        tall_chk_11.setChecked(false);
-                        tall_chk_12.setChecked(true);
-                    } else {
-                        tall_chk_11.setChecked(false);
-                        tall_chk_12.setChecked(false);
-                    }
-                }
-
-                if (report.Result != null) {
-
-                    int index = resultList.indexOf(report.Result);
-                    if (index > 0) {
-
-                        if (index == 2) {
-                            unresolve_reason.setSelection(2);
-                            ll_product_defect.setVisibility(View.VISIBLE);
-                            ll_site_issue.setVisibility(View.GONE);
-                            edt_spare_defect_articleNo.setText(report.sparce_defect);
-                            edt_complete_set_articleNo.setText(report.complete_set);
-                        } else if (index == 3) {
-                            unresolve_reason.setSelection(3);
-                            ll_product_defect.setVisibility(View.GONE);
-                            ll_site_issue.setVisibility(View.VISIBLE);
-
-                            if (report.site_Issue_Reason != null) {
-                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                if (index1 > 0) {
-                                    spin_siteIssueReason_reason.setSelection(index1);
-                                }
                             }
-                        } else if (index == 1) {
-                            unresolve_reason.setSelection(1);
-                        } else if (index == 4) {
-                            unresolve_reason.setSelection(4);
+                        } else {
+                            if (!is_article_no)
+                                UtilityClass.showToast(context, "Enter article number");
                         }
-                    } else {
-                        unresolve_reason.setSelection(0);
+                    }
+                });
+
+
+                Button attach_img = (Button) view.findViewById(R.id.attach_img);
+                Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
+                attach_img.setOnClickListener(this);
+                attach_vid.setOnClickListener(this);
+
+                GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                video_grid = (ImageView) view.findViewById(R.id.video_grid);
+
+                if (report != null) {
+
+                    article_no.setText(report.article_no);
+                    cabinet_width.setText(report.Width);
+                    cabinet_height.setText(report.Height);
+                    cabinet_depth.setText(report.Thickness);
+
+                    if (report.drawer_within_range != null) {
+                        if (report.drawer_within_range.equals("Y")) {
+                            tall_chk_1.setChecked(true);
+                            tall_chk_2.setChecked(false);
+                            spin_wrong_product.setEnabled(false);
+                        } else if (report.drawer_within_range.equals("N")) {
+                            tall_chk_1.setChecked(false);
+                            tall_chk_2.setChecked(true);
+
+                        } else {
+                            tall_chk_1.setChecked(false);
+                            tall_chk_2.setChecked(false);
+                        }
                     }
 
-                }
-                if (report.Action != null) {
-                    int index = actionList.indexOf(report.Action);
-                    spin_action.setSelection(index);
-                }
-                if (report.wrong_product_reason != null) {
-                    int index = wrongProdList.indexOf(report.wrong_product_reason);
-                    spin_wrong_product.setSelection(index);
+                    if (report.installation_template != null) {
+                        if (report.installation_template.equals("Y")) {
+                            tall_chk_3.setChecked(true);
+                            tall_chk_4.setChecked(false);
+                        } else if (report.installation_template.equals("N")) {
+                            tall_chk_3.setChecked(false);
+                            tall_chk_4.setChecked(true);
 
-                    if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-                        tall_chk_3.setEnabled(false);
-                        tall_chk_4.setEnabled(false);
-                        tall_chk_5.setEnabled(false);
-                        tall_chk_6.setEnabled(false);
-                        tall_chk_7.setEnabled(false);
-                        tall_chk_8.setEnabled(false);
-                        tall_chk_9.setEnabled(false);
-                        tall_chk_10.setEnabled(false);
-                        tall_chk_11.setEnabled(false);
-                        tall_chk_12.setEnabled(false);
+
+                        } else {
+                            tall_chk_3.setChecked(false);
+                            tall_chk_4.setChecked(false);
+                        }
+                    }
+
+                    if (report.unit_if_fixed_to_wall != null) {
+                        if (report.unit_if_fixed_to_wall.equals("Y")) {
+                            tall_chk_5.setChecked(true);
+                            tall_chk_6.setChecked(false);
+                        } else if (report.unit_if_fixed_to_wall.equals("N")) {
+                            tall_chk_5.setChecked(false);
+                            tall_chk_6.setChecked(true);
+
+                        } else {
+                            tall_chk_5.setChecked(false);
+                            tall_chk_6.setChecked(false);
+                        }
+                    }
+
+                    if (report.enough_legs_for_support != null) {
+                        if (report.enough_legs_for_support.equals("Y")) {
+                            tall_chk_7.setChecked(true);
+                            tall_chk_8.setChecked(false);
+                        } else if (report.enough_legs_for_support.equals("N")) {
+                            tall_chk_7.setChecked(false);
+                            tall_chk_8.setChecked(true);
+                        } else {
+                            tall_chk_7.setChecked(false);
+                            tall_chk_8.setChecked(false);
+                        }
+                    }
+
+                    if (report.correct_alignment != null) {
+                        if (report.correct_alignment.equals("Y")) {
+                            tall_chk_9.setChecked(true);
+                            tall_chk_10.setChecked(false);
+                        } else if (report.correct_alignment.equals("N")) {
+                            tall_chk_9.setChecked(false);
+                            tall_chk_10.setChecked(true);
+                        } else {
+                            tall_chk_9.setChecked(false);
+                            tall_chk_10.setChecked(false);
+                        }
+                    }
+
+                    if (report.servodrive_sufficient_to_handle_weight != null) {
+                        if (report.servodrive_sufficient_to_handle_weight.equals("Y")) {
+                            tall_chk_11.setChecked(true);
+                            tall_chk_12.setChecked(false);
+                        } else if (report.servodrive_sufficient_to_handle_weight.equals("N")) {
+                            tall_chk_11.setChecked(false);
+                            tall_chk_12.setChecked(true);
+                        } else {
+                            tall_chk_11.setChecked(false);
+                            tall_chk_12.setChecked(false);
+                        }
+                    }
+
+                    if (report.Result != null) {
+
+                        int index = resultList.indexOf(report.Result);
+                        if (index > 0) {
+
+                            if (index == 2) {
+                                unresolve_reason.setSelection(2);
+                                ll_product_defect.setVisibility(View.VISIBLE);
+                                ll_site_issue.setVisibility(View.GONE);
+                                edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                edt_complete_set_articleNo.setText(report.complete_set);
+                            } else if (index == 3) {
+                                unresolve_reason.setSelection(3);
+                                ll_product_defect.setVisibility(View.GONE);
+                                ll_site_issue.setVisibility(View.VISIBLE);
+
+                                if (report.site_Issue_Reason != null) {
+                                    int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                    if (index1 > 0) {
+                                        spin_siteIssueReason_reason.setSelection(index1);
+                                    }
+                                }
+                            } else if (index == 1) {
+                                unresolve_reason.setSelection(1);
+                            } else if (index == 4) {
+                                unresolve_reason.setSelection(4);
+                            }
+                        } else {
+                            unresolve_reason.setSelection(0);
+                        }
+
+                    }
+                    if (report.Action != null) {
+                        int index = actionList.indexOf(report.Action);
+                        spin_action.setSelection(index);
+                    }
+                    if (report.wrong_product_reason != null) {
+                        int index = wrongProdList.indexOf(report.wrong_product_reason);
+                        spin_wrong_product.setSelection(index);
+
+                        if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
+                            tall_chk_3.setEnabled(false);
+                            tall_chk_4.setEnabled(false);
+                            tall_chk_5.setEnabled(false);
+                            tall_chk_6.setEnabled(false);
+                            tall_chk_7.setEnabled(false);
+                            tall_chk_8.setEnabled(false);
+                            tall_chk_9.setEnabled(false);
+                            tall_chk_10.setEnabled(false);
+                            tall_chk_11.setEnabled(false);
+                            tall_chk_12.setEnabled(false);
                    /* cabinet_height.setEnabled(false);
                     cabinet_width.setEnabled(false);
                     cabinet_depth.setEnabled(false);*/
 
-                        if (tall_chk_1.isChecked()) {
-                            spin_wrong_product.setEnabled(false);
+                            if (tall_chk_1.isChecked()) {
+                                spin_wrong_product.setEnabled(false);
+                            } else {
+                                spin_wrong_product.setEnabled(true);
+                            }
                         } else {
-                            spin_wrong_product.setEnabled(true);
+
                         }
-                    } else {
 
                     }
 
-                }
+                    if (report.Closure_Status != null) {
+                        if (report.Closure_Status.equals("Resolved")) {
+                            submit.setVisibility(View.GONE);
+                            attach_img.setVisibility(View.GONE);
+                            // img_grid.setVisibility(View.GONE);
+                            // video_grid.setVisibility(View.GONE);
+                            status.setEnabled(false);
+                            attach_vid.setVisibility(View.GONE);
+                            btn_deleteVideo.setVisibility(View.GONE);
 
-                if (report.Closure_Status != null) {
-                    if (report.Closure_Status.equals("Resolved")) {
-                        submit.setVisibility(View.GONE);
-                        attach_img.setVisibility(View.GONE);
-                        // img_grid.setVisibility(View.GONE);
-                        // video_grid.setVisibility(View.GONE);
-                        status.setEnabled(false);
-                        attach_vid.setVisibility(View.GONE);
-                        btn_deleteVideo.setVisibility(View.GONE);
-
-                    } else if (report.Closure_Status.equals("Unresolved")) {
-                        status.setSelection(1);
-                        // unresolved.setVisibility(View.VISIBLE);
+                        } else if (report.Closure_Status.equals("Unresolved")) {
+                            status.setSelection(1);
+                            // unresolved.setVisibility(View.VISIBLE);
 
                       /*  int index = reasonList
                                 .indexOf(report.Reason_For_Unresolved);
@@ -10826,473 +11877,473 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         } else {
                             unresolve_reason.setSelection(index);
                         }*/
-                        submit.setVisibility(View.VISIBLE);
-                        attach_img.setVisibility(View.VISIBLE);
-                        attach_vid.setVisibility(View.VISIBLE);
-                        status.setEnabled(true);
-                        // img_grid.setVisibility(View.VISIBLE);
-                        // video_grid.setVisibility(View.VISIBLE);
-                    }
-
-                    comments.setText(report.Comment);
-
-                }
-            }
-            if (imgData != null) {
-                for (int i = 0; i < imgData.size(); i++) {
-                    File file = new File(imgData.get(i).image_path);
-                    orgFileArray.add(file);
-                    fileNameArray.add(file);
-
-                    imgOriginalSize.add(imgData.get(i).original_size);
-                    imgCompressedSize.add(imgData.get(i).compressed_size);
-
-                    compressedBitmap = BitmapFactory.decodeFile(file.getPath());
-                    capturedBM.add(compressedBitmap);
-                    int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
-                            .getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(
-                            compressedBitmap, 100, nh, true);
-                    bmpArray.add(scaledBM);
-                }
-            }
-
-            if (vidData != null) {
-                try {
-                    // inputpath = vidData.FilePath;
-                    Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
-                            vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
-                    inputpath = vidData.get(0).FilePath;
-                    video_grid.setImageBitmap(bmThumbnail);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
-            img_grid.setAdapter(imgAdapter);
-            img_grid.setOnTouchListener(new OnTouchListener() {
-                // Setting on Touch Listener for handling the touch inside
-                // ScrollView
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    // Disallow the touch request for parent scroll on touch of
-                    // child view
-                    v.getParent().requestDisallowInterceptTouchEvent(true);
-                    return false;
-                }
-            });
-
-            video_grid.setOnClickListener(this);
-
-            img_grid.setOnItemClickListener(new OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id) {
-                    Bitmap sBM = bmpArray.get(position);
-                    Bitmap cBm = capturedBM.get(position);
-                    int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                            true);
-                    showImage(scaledBM, cBm, sBM, position);
-                }
-            });
-            status.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view,
-                                           int position, long id) {
-                    contentValues.put("Closure_Status", status
-                            .getSelectedItem().toString());
-                    if (position == 1) {
-                        //unresolved.setVisibility(View.VISIBLE);
-                    } else {
-                        //   unresolved.setVisibility(View.GONE);
-                        contentValues.put("Reason_For_Unresolved", "");
-                    }
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> arg0) {
-
-                }
-            });
-        } else if (product_group.contains("Lighting Technology"))
-
-        {
-            //Lighting
-            view = inflater.inflate(R.layout.new_lighting_complaint, null);
-            baseFrame.removeAllViews();
-            baseFrame.addView(view);
-
-
-            FaultReport report = null;
-            List<ImageData> imgData = null;
-            List<VideoData> vidData = null;
-
-            if (is_visited > 0) {
-                report = dbAdapter.getFaultReportDetails(pref.getUserName(),
-                        complaint_number);
-                imgData = dbAdapter.getImageData(complaint_number, "ALL");
-                vidData = dbAdapter.getVideoData(complaint_number);
-            }
-
-            comp_number = (TextView) view.findViewById(R.id.complaint_number);
-            customer_name = (TextView) view.findViewById(R.id.customer_name);
-            date = (TextView) view.findViewById(R.id.date);
-            mobile_no = (TextView) view.findViewById(R.id.mobile_no);
-            dealer = (TextView) view.findViewById(R.id.dealer);
-            invoice_no = (TextView) view.findViewById(R.id.invoice_no);
-            article_no = (EditText) view.findViewById(R.id.article_no);
-            prod_cat = (TextView) view.findViewById(R.id.prod_cat);
-            prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
-            complaint_deatils = (TextView) view.findViewById(R.id.complaint_deatils);
-            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
-            btn_deleteVideo.setOnClickListener(this);
-            address = (TextView) view.findViewById(R.id.address);
-
-            spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
-            spin_action = (Spinner) view.findViewById(R.id.spin_action);
-            edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
-            edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
-            ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
-            ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
-            ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
-
-            lc_chk_1 = (CheckBox) view.findViewById(R.id.lc_chk_1);
-            lc_chk_2 = (CheckBox) view.findViewById(R.id.lc_chk_2);
-            lc_chk_3 = (CheckBox) view.findViewById(R.id.lc_chk_3);
-            lc_chk_4 = (CheckBox) view.findViewById(R.id.lc_chk_4);
-            lc_chk_5 = (CheckBox) view.findViewById(R.id.lc_chk_5);
-            lc_chk_6 = (CheckBox) view.findViewById(R.id.lc_chk_6);
-            lc_chk_7 = (CheckBox) view.findViewById(R.id.lc_chk_7);
-            lc_chk_8 = (CheckBox) view.findViewById(R.id.lc_chk_8);
-
-            lc_chk_1.setOnCheckedChangeListener(this);
-            lc_chk_2.setOnCheckedChangeListener(this);
-            lc_chk_3.setOnCheckedChangeListener(this);
-            lc_chk_4.setOnCheckedChangeListener(this);
-            lc_chk_5.setOnCheckedChangeListener(this);
-            lc_chk_6.setOnCheckedChangeListener(this);
-            lc_chk_7.setOnCheckedChangeListener(this);
-            lc_chk_8.setOnCheckedChangeListener(this);
-
-            unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
-            unresolve_reason.setOnItemSelectedListener(this);
-
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            comp_number.setText(complaint_number);
-            customer_name.setText(c_name);
-            date.setText(complaint_date);
-            mobile_no.setText(end_user_mobile);
-            mobile_no.setOnClickListener(this);
-            dealer.setText(service_franchise);
-            article_no.setText(article);
-            complaint_deatils.setText(service_details);
-            prod_cat.setText(product_category);
-            prod_sub_cat.setText(product_sub_category);
-            address.setText(c_address);
-
-            status = (Spinner) view.findViewById(R.id.status);
-            comments = (TextView) view.findViewById(R.id.comments);
-
-            Button submit = (Button) view.findViewById(R.id.submit);
-
-            submit.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    boolean is_article_no = Validation.hasText(article_no);
-                    if (article_no.getText().toString().trim().equals(""))
-                        is_article_no = false;
-
-                    if (is_article_no) {
-                        if (checkValidation(product_group)) {
-
-                            if (validation() == true) {
-                                submitData(product_group);
-                            }
+                            submit.setVisibility(View.VISIBLE);
+                            attach_img.setVisibility(View.VISIBLE);
+                            attach_vid.setVisibility(View.VISIBLE);
+                            status.setEnabled(true);
+                            // img_grid.setVisibility(View.VISIBLE);
+                            // video_grid.setVisibility(View.VISIBLE);
                         }
-                    } else {
-                        if (!is_article_no)
-                            UtilityClass.showToast(context,
-                                    "Enter article number");
+
+                        comments.setText(report.Comment);
 
                     }
                 }
-            });
+                if (imgData != null) {
+                    for (int i = 0; i < imgData.size(); i++) {
+                        File file = new File(imgData.get(i).image_path);
+                        orgFileArray.add(file);
+                        fileNameArray.add(file);
 
-            //submit.setOnClickListener(this);
+                        imgOriginalSize.add(imgData.get(i).original_size);
+                        imgCompressedSize.add(imgData.get(i).compressed_size);
 
-            Button attach_img = (Button) view.findViewById(R.id.attach_img);
-            Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
-            attach_img.setOnClickListener(this);
-            attach_vid.setOnClickListener(this);
-
-            GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-            video_grid = (ImageView) view.findViewById(R.id.video_grid);
-
-            if (report != null) {
-                article_no.setText(report.article_no);
-
-                if (report.wrong_product != null) {
-                    if (report.wrong_product.equals("Y")) {
-                        lc_chk_1.setChecked(true);
-                        lc_chk_2.setChecked(false);
-                    } else if (report.wrong_product.equals("N")) {
-                        lc_chk_1.setChecked(false);
-                        lc_chk_2.setChecked(true);
-                    } else {
-                        lc_chk_1.setChecked(false);
-                        lc_chk_2.setChecked(false);
+                        compressedBitmap = BitmapFactory.decodeFile(file.getPath());
+                        capturedBM.add(compressedBitmap);
+                        int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
+                                .getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(
+                                compressedBitmap, 100, nh, true);
+                        bmpArray.add(scaledBM);
                     }
                 }
 
-                if (report.power_supply_proper != null) {
-                    if (report.power_supply_proper.equals("Y")) {
-                        lc_chk_3.setChecked(true);
-                        lc_chk_4.setChecked(false);
-                    } else if (report.power_supply_proper.equals("N")) {
-                        lc_chk_3.setChecked(false);
-                        lc_chk_4.setChecked(true);
-                    } else {
-                        lc_chk_3.setChecked(false);
-                        lc_chk_4.setChecked(false);
+                if (vidData != null) {
+                    try {
+                        // inputpath = vidData.FilePath;
+                        Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
+                                vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
+                        inputpath = vidData.get(0).FilePath;
+                        video_grid.setImageBitmap(bmThumbnail);
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 }
-
-                if (report.driver_working != null) {
-                    if (report.driver_working.equals("Y")) {
-                        lc_chk_5.setChecked(true);
-                        lc_chk_6.setChecked(false);
-                    } else if (report.driver_working.equals("N")) {
-                        lc_chk_5.setChecked(false);
-                        lc_chk_6.setChecked(true);
-                    } else {
-                        lc_chk_5.setChecked(false);
-                        lc_chk_6.setChecked(false);
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
+                img_grid.setAdapter(imgAdapter);
+                img_grid.setOnTouchListener(new OnTouchListener() {
+                    // Setting on Touch Listener for handling the touch inside
+                    // ScrollView
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        // Disallow the touch request for parent scroll on touch of
+                        // child view
+                        v.getParent().requestDisallowInterceptTouchEvent(true);
+                        return false;
                     }
+                });
+
+                video_grid.setOnClickListener(this);
+
+                img_grid.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+                        Bitmap sBM = bmpArray.get(position);
+                        Bitmap cBm = capturedBM.get(position);
+                        int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                true);
+                        showImage(scaledBM, cBm, sBM, position);
+                    }
+                });
+                status.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view,
+                                               int position, long id) {
+                        contentValues.put("Closure_Status", status
+                                .getSelectedItem().toString());
+                        if (position == 1) {
+                            //unresolved.setVisibility(View.VISIBLE);
+                        } else {
+                            //   unresolved.setVisibility(View.GONE);
+                            contentValues.put("Reason_For_Unresolved", "");
+                        }
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> arg0) {
+
+                    }
+                });
+            } else if (product_group.contains("Lighting Technology"))
+
+            {
+                //Lighting
+                view = inflater.inflate(R.layout.new_lighting_complaint, null);
+                baseFrame.removeAllViews();
+                baseFrame.addView(view);
+
+
+                FaultReport report = null;
+                List<ImageData> imgData = null;
+                List<VideoData> vidData = null;
+
+                if (is_visited > 0) {
+                    report = dbAdapter.getFaultReportDetails(pref.getUserName(),
+                            complaint_number);
+                    imgData = dbAdapter.getImageData(complaint_number, "ALL");
+                    vidData = dbAdapter.getVideoData(complaint_number);
                 }
 
-                if (report.led_is_working != null) {
-                    if (report.led_is_working.equals("Y")) {
-                        lc_chk_7.setChecked(true);
-                        lc_chk_8.setChecked(false);
-                    } else if (report.led_is_working.equals("N")) {
-                        lc_chk_7.setChecked(false);
-                        lc_chk_8.setChecked(true);
-                    } else {
-                        lc_chk_7.setChecked(false);
-                        lc_chk_8.setChecked(false);
-                    }
-                }
+                comp_number = (TextView) view.findViewById(R.id.complaint_number);
+                customer_name = (TextView) view.findViewById(R.id.customer_name);
+                date = (TextView) view.findViewById(R.id.date);
+                mobile_no = (TextView) view.findViewById(R.id.mobile_no);
+                dealer = (TextView) view.findViewById(R.id.dealer);
+                invoice_no = (TextView) view.findViewById(R.id.invoice_no);
+                article_no = (EditText) view.findViewById(R.id.article_no);
+                prod_cat = (TextView) view.findViewById(R.id.prod_cat);
+                prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
+                complaint_deatils = (TextView) view.findViewById(R.id.complaint_deatils);
+                btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+                btn_deleteVideo.setOnClickListener(this);
+                address = (TextView) view.findViewById(R.id.address);
 
-                if (report.Result != null) {
+                spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
+                spin_action = (Spinner) view.findViewById(R.id.spin_action);
+                edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
+                edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
+                ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
+                ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
+                ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
 
-                    int index = resultList.indexOf(report.Result);
-                    if (index > 0) {
+                lc_chk_1 = (CheckBox) view.findViewById(R.id.lc_chk_1);
+                lc_chk_2 = (CheckBox) view.findViewById(R.id.lc_chk_2);
+                lc_chk_3 = (CheckBox) view.findViewById(R.id.lc_chk_3);
+                lc_chk_4 = (CheckBox) view.findViewById(R.id.lc_chk_4);
+                lc_chk_5 = (CheckBox) view.findViewById(R.id.lc_chk_5);
+                lc_chk_6 = (CheckBox) view.findViewById(R.id.lc_chk_6);
+                lc_chk_7 = (CheckBox) view.findViewById(R.id.lc_chk_7);
+                lc_chk_8 = (CheckBox) view.findViewById(R.id.lc_chk_8);
 
-                        if (index == 2) {
-                            unresolve_reason.setSelection(2);
-                            ll_product_defect.setVisibility(View.VISIBLE);
-                            ll_site_issue.setVisibility(View.GONE);
-                            edt_spare_defect_articleNo.setText(report.sparce_defect);
-                            edt_complete_set_articleNo.setText(report.complete_set);
-                        } else if (index == 3) {
-                            unresolve_reason.setSelection(3);
-                            ll_product_defect.setVisibility(View.GONE);
-                            ll_site_issue.setVisibility(View.VISIBLE);
+                lc_chk_1.setOnCheckedChangeListener(this);
+                lc_chk_2.setOnCheckedChangeListener(this);
+                lc_chk_3.setOnCheckedChangeListener(this);
+                lc_chk_4.setOnCheckedChangeListener(this);
+                lc_chk_5.setOnCheckedChangeListener(this);
+                lc_chk_6.setOnCheckedChangeListener(this);
+                lc_chk_7.setOnCheckedChangeListener(this);
+                lc_chk_8.setOnCheckedChangeListener(this);
 
-                            if (report.site_Issue_Reason != null) {
-                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                if (index1 > 0) {
-                                    spin_siteIssueReason_reason.setSelection(index1);
+                unresolve_reason = (Spinner) view.findViewById(R.id.unresolve_reason);
+                unresolve_reason.setOnItemSelectedListener(this);
+
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                comp_number.setText(complaint_number);
+                customer_name.setText(c_name);
+                date.setText(complaint_date);
+                mobile_no.setText(end_user_mobile);
+                mobile_no.setOnClickListener(this);
+                dealer.setText(service_franchise);
+                article_no.setText(article);
+                complaint_deatils.setText(service_details);
+                prod_cat.setText(product_category);
+                prod_sub_cat.setText(product_sub_category);
+                address.setText(c_address);
+
+                status = (Spinner) view.findViewById(R.id.status);
+                comments = (TextView) view.findViewById(R.id.comments);
+
+                Button submit = (Button) view.findViewById(R.id.submit);
+
+                submit.setOnClickListener(new OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        boolean is_article_no = Validation.hasText(article_no);
+                        if (article_no.getText().toString().trim().equals(""))
+                            is_article_no = false;
+
+                        if (is_article_no) {
+                            if (checkValidation(product_group)) {
+
+                                if (validation() == true) {
+                                    submitData(product_group);
                                 }
                             }
-                        } else if (index == 1) {
-                            unresolve_reason.setSelection(1);
-                        } else if (index == 4) {
-                            unresolve_reason.setSelection(4);
-                        }
-                    } else {
-                        unresolve_reason.setSelection(0);
-                    }
-
-                }
-                if (report.Action != null) {
-                    int index = actionList.indexOf(report.Action);
-                    spin_action.setSelection(index);
-                }
-                if (report.wrong_product_reason != null) {
-                    int index = wrongProdList.indexOf(report.wrong_product_reason);
-                    spin_wrong_product.setSelection(index);
-
-                    if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
-                        lc_chk_3.setEnabled(false);
-                        lc_chk_4.setEnabled(false);
-                        lc_chk_5.setEnabled(false);
-                        lc_chk_6.setEnabled(false);
-                        lc_chk_7.setEnabled(false);
-                        lc_chk_8.setEnabled(false);
-
-                        spin_wrong_product.setEnabled(true);
-                        if (lc_chk_1.isChecked()) {
-                            spin_wrong_product.setEnabled(false);
                         } else {
-                            spin_wrong_product.setEnabled(true);
+                            if (!is_article_no)
+                                UtilityClass.showToast(context,
+                                        "Enter article number");
+
                         }
-                    } else {
+                    }
+                });
+
+                //submit.setOnClickListener(this);
+
+                Button attach_img = (Button) view.findViewById(R.id.attach_img);
+                Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
+                attach_img.setOnClickListener(this);
+                attach_vid.setOnClickListener(this);
+
+                GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                video_grid = (ImageView) view.findViewById(R.id.video_grid);
+
+                if (report != null) {
+                    article_no.setText(report.article_no);
+
+                    if (report.wrong_product != null) {
+                        if (report.wrong_product.equals("Y")) {
+                            lc_chk_1.setChecked(true);
+                            lc_chk_2.setChecked(false);
+                        } else if (report.wrong_product.equals("N")) {
+                            lc_chk_1.setChecked(false);
+                            lc_chk_2.setChecked(true);
+                        } else {
+                            lc_chk_1.setChecked(false);
+                            lc_chk_2.setChecked(false);
+                        }
+                    }
+
+                    if (report.power_supply_proper != null) {
+                        if (report.power_supply_proper.equals("Y")) {
+                            lc_chk_3.setChecked(true);
+                            lc_chk_4.setChecked(false);
+                        } else if (report.power_supply_proper.equals("N")) {
+                            lc_chk_3.setChecked(false);
+                            lc_chk_4.setChecked(true);
+                        } else {
+                            lc_chk_3.setChecked(false);
+                            lc_chk_4.setChecked(false);
+                        }
+                    }
+
+                    if (report.driver_working != null) {
+                        if (report.driver_working.equals("Y")) {
+                            lc_chk_5.setChecked(true);
+                            lc_chk_6.setChecked(false);
+                        } else if (report.driver_working.equals("N")) {
+                            lc_chk_5.setChecked(false);
+                            lc_chk_6.setChecked(true);
+                        } else {
+                            lc_chk_5.setChecked(false);
+                            lc_chk_6.setChecked(false);
+                        }
+                    }
+
+                    if (report.led_is_working != null) {
+                        if (report.led_is_working.equals("Y")) {
+                            lc_chk_7.setChecked(true);
+                            lc_chk_8.setChecked(false);
+                        } else if (report.led_is_working.equals("N")) {
+                            lc_chk_7.setChecked(false);
+                            lc_chk_8.setChecked(true);
+                        } else {
+                            lc_chk_7.setChecked(false);
+                            lc_chk_8.setChecked(false);
+                        }
+                    }
+
+                    if (report.Result != null) {
+
+                        int index = resultList.indexOf(report.Result);
+                        if (index > 0) {
+
+                            if (index == 2) {
+                                unresolve_reason.setSelection(2);
+                                ll_product_defect.setVisibility(View.VISIBLE);
+                                ll_site_issue.setVisibility(View.GONE);
+                                edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                edt_complete_set_articleNo.setText(report.complete_set);
+                            } else if (index == 3) {
+                                unresolve_reason.setSelection(3);
+                                ll_product_defect.setVisibility(View.GONE);
+                                ll_site_issue.setVisibility(View.VISIBLE);
+
+                                if (report.site_Issue_Reason != null) {
+                                    int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                    if (index1 > 0) {
+                                        spin_siteIssueReason_reason.setSelection(index1);
+                                    }
+                                }
+                            } else if (index == 1) {
+                                unresolve_reason.setSelection(1);
+                            } else if (index == 4) {
+                                unresolve_reason.setSelection(4);
+                            }
+                        } else {
+                            unresolve_reason.setSelection(0);
+                        }
+
+                    }
+                    if (report.Action != null) {
+                        int index = actionList.indexOf(report.Action);
+                        spin_action.setSelection(index);
+                    }
+                    if (report.wrong_product_reason != null) {
+                        int index = wrongProdList.indexOf(report.wrong_product_reason);
+                        spin_wrong_product.setSelection(index);
+
+                        if (report.Reason_For_Unresolved.equalsIgnoreCase("Resolved")) {
+                            lc_chk_3.setEnabled(false);
+                            lc_chk_4.setEnabled(false);
+                            lc_chk_5.setEnabled(false);
+                            lc_chk_6.setEnabled(false);
+                            lc_chk_7.setEnabled(false);
+                            lc_chk_8.setEnabled(false);
+
+                            spin_wrong_product.setEnabled(true);
+                            if (lc_chk_1.isChecked()) {
+                                spin_wrong_product.setEnabled(false);
+                            } else {
+                                spin_wrong_product.setEnabled(true);
+                            }
+                        } else {
+
+                        }
+                    }
+
+                    if (report.Closure_Status != null) {
+                        if (report.Closure_Status.equals("Resolved")) {
+                            submit.setVisibility(View.GONE);
+                            attach_img.setVisibility(View.GONE);
+                            // img_grid.setVisibility(View.GONE);
+                            // video_grid.setVisibility(View.GONE);
+                            status.setEnabled(false);
+                            attach_vid.setVisibility(View.GONE);
+                            btn_deleteVideo.setVisibility(View.GONE);
+
+                        } else if (report.Closure_Status.equals("Unresolved")) {
+                            status.setSelection(1);
+
+                            submit.setVisibility(View.VISIBLE);
+                            attach_img.setVisibility(View.VISIBLE);
+                            attach_vid.setVisibility(View.VISIBLE);
+                            status.setEnabled(true);
+
+                        }
+
+                        comments.setText(report.Comment);
 
                     }
                 }
 
-                if (report.Closure_Status != null) {
-                    if (report.Closure_Status.equals("Resolved")) {
-                        submit.setVisibility(View.GONE);
-                        attach_img.setVisibility(View.GONE);
-                        // img_grid.setVisibility(View.GONE);
-                        // video_grid.setVisibility(View.GONE);
-                        status.setEnabled(false);
-                        attach_vid.setVisibility(View.GONE);
-                        btn_deleteVideo.setVisibility(View.GONE);
+                if (imgData != null) {
+                    for (int i = 0; i < imgData.size(); i++) {
+                        File file = new File(imgData.get(i).image_path);
+                        orgFileArray.add(file);
+                        fileNameArray.add(file);
 
-                    } else if (report.Closure_Status.equals("Unresolved")) {
-                        status.setSelection(1);
+                        imgOriginalSize.add(imgData.get(i).original_size);
+                        imgCompressedSize.add(imgData.get(i).compressed_size);
 
-                        submit.setVisibility(View.VISIBLE);
-                        attach_img.setVisibility(View.VISIBLE);
-                        attach_vid.setVisibility(View.VISIBLE);
-                        status.setEnabled(true);
-
-                    }
-
-                    comments.setText(report.Comment);
-
-                }
-            }
-
-            if (imgData != null) {
-                for (int i = 0; i < imgData.size(); i++) {
-                    File file = new File(imgData.get(i).image_path);
-                    orgFileArray.add(file);
-                    fileNameArray.add(file);
-
-                    imgOriginalSize.add(imgData.get(i).original_size);
-                    imgCompressedSize.add(imgData.get(i).compressed_size);
-
-                    compressedBitmap = BitmapFactory.decodeFile(file.getPath());
-                    capturedBM.add(compressedBitmap);
-                    int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
-                            .getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(
-                            compressedBitmap, 100, nh, true);
-                    bmpArray.add(scaledBM);
-                }
-            }
-
-            if (vidData != null) {
-                try {
-                    // inputpath = vidData.FilePath;
-                    Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
-                            vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
-                    inputpath = vidData.get(0).FilePath;
-                    video_grid.setImageBitmap(bmThumbnail);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
-            img_grid.setAdapter(imgAdapter);
-            img_grid.setOnTouchListener(new OnTouchListener() {
-                // Setting on Touch Listener for handling the touch inside
-                // ScrollView
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    // Disallow the touch request for parent scroll on touch of
-                    // child view
-                    v.getParent().requestDisallowInterceptTouchEvent(true);
-                    return false;
-                }
-            });
-
-            video_grid.setOnClickListener(this);
-
-            img_grid.setOnItemClickListener(new OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id) {
-                    Bitmap sBM = bmpArray.get(position);
-                    Bitmap cBm = capturedBM.get(position);
-                    int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                            true);
-                    showImage(scaledBM, cBm, sBM, position);
-                }
-            });
-            status.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view,
-                                           int position, long id) {
-                    contentValues.put("Closure_Status", status
-                            .getSelectedItem().toString());
-                    if (position == 1) {
-                        //  unresolved.setVisibility(View.VISIBLE);
-                    } else {
-                        //  unresolved.setVisibility(View.GONE);
-                        contentValues.put("Reason_For_Unresolved", "");
+                        compressedBitmap = BitmapFactory.decodeFile(file.getPath());
+                        capturedBM.add(compressedBitmap);
+                        int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
+                                .getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(
+                                compressedBitmap, 100, nh, true);
+                        bmpArray.add(scaledBM);
                     }
                 }
 
-                @Override
-                public void onNothingSelected(AdapterView<?> arg0) {
+                if (vidData != null) {
+                    try {
+                        // inputpath = vidData.FilePath;
+                        Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
+                                vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
+                        inputpath = vidData.get(0).FilePath;
+                        video_grid.setImageBitmap(bmThumbnail);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
+                img_grid.setAdapter(imgAdapter);
+                img_grid.setOnTouchListener(new OnTouchListener() {
+                    // Setting on Touch Listener for handling the touch inside
+                    // ScrollView
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        // Disallow the touch request for parent scroll on touch of
+                        // child view
+                        v.getParent().requestDisallowInterceptTouchEvent(true);
+                        return false;
+                    }
+                });
+
+                video_grid.setOnClickListener(this);
+
+                img_grid.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+                        Bitmap sBM = bmpArray.get(position);
+                        Bitmap cBm = capturedBM.get(position);
+                        int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                true);
+                        showImage(scaledBM, cBm, sBM, position);
+                    }
+                });
+                status.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view,
+                                               int position, long id) {
+                        contentValues.put("Closure_Status", status
+                                .getSelectedItem().toString());
+                        if (position == 1) {
+                            //  unresolved.setVisibility(View.VISIBLE);
+                        } else {
+                            //  unresolved.setVisibility(View.GONE);
+                            contentValues.put("Reason_For_Unresolved", "");
+                        }
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> arg0) {
+
+                    }
+                });
+            }
+
+
+            //***********
+
+
+            else
+
+            {
+                view = inflater.inflate(R.layout.general_form, null);
+                baseFrame.removeAllViews();
+                baseFrame.addView(view);
+                FaultReport report = null;
+                List<ImageData> imgData = null;
+                List<VideoData> vidData = null;
+
+                if (is_visited > 0) {
+                    report = dbAdapter.getFaultReportDetails(pref.getUserName(),
+                            complaint_number);
+
+                    // Log.e("FaultReport", report.Closure_Status);
+
+                    imgData = dbAdapter.getImageData(complaint_number, "ALL");
+                    vidData = dbAdapter.getVideoData(complaint_number);
+
+                    Log.e("complaint_number", complaint_number);
 
                 }
-            });
-        }
+                comp_number = (TextView) view.findViewById(R.id.complaint_number);
+                customer_name = (TextView) view.findViewById(R.id.customer_name);
+                date = (TextView) view.findViewById(R.id.date);
+                mobile_no = (TextView) view.findViewById(R.id.mobile_no);
+                dealer = (TextView) view.findViewById(R.id.dealer);
+                invoice_no = (TextView) view.findViewById(R.id.invoice_no);
+                article_no = (EditText) view.findViewById(R.id.article_no);
+                prod_cat = (TextView) view.findViewById(R.id.prod_cat);
+                prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
+                complaint_deatils = (TextView) view
+                        .findViewById(R.id.complaint_deatils);
+                btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
+                address = (TextView) view.findViewById(R.id.address);
 
-
-        //***********
-
-
-        else
-
-        {
-            view = inflater.inflate(R.layout.general_form, null);
-            baseFrame.removeAllViews();
-            baseFrame.addView(view);
-            FaultReport report = null;
-            List<ImageData> imgData = null;
-            List<VideoData> vidData = null;
-
-            if (is_visited > 0) {
-                report = dbAdapter.getFaultReportDetails(pref.getUserName(),
-                        complaint_number);
-
-                // Log.e("FaultReport", report.Closure_Status);
-
-                imgData = dbAdapter.getImageData(complaint_number, "ALL");
-                vidData = dbAdapter.getVideoData(complaint_number);
-
-                Log.e("complaint_number", complaint_number);
-
-            }
-            comp_number = (TextView) view.findViewById(R.id.complaint_number);
-            customer_name = (TextView) view.findViewById(R.id.customer_name);
-            date = (TextView) view.findViewById(R.id.date);
-            mobile_no = (TextView) view.findViewById(R.id.mobile_no);
-            dealer = (TextView) view.findViewById(R.id.dealer);
-            invoice_no = (TextView) view.findViewById(R.id.invoice_no);
-            article_no = (EditText) view.findViewById(R.id.article_no);
-            prod_cat = (TextView) view.findViewById(R.id.prod_cat);
-            prod_sub_cat = (TextView) view.findViewById(R.id.prod_sub_cat);
-            complaint_deatils = (TextView) view
-                    .findViewById(R.id.complaint_deatils);
-            btn_deleteVideo = (Button) view.findViewById(R.id.btn_deleteVideo);
-            address = (TextView) view.findViewById(R.id.address);
-
-            btn_deleteVideo.setOnClickListener(this);
+                btn_deleteVideo.setOnClickListener(this);
             /*  TextView text = (TextView) view.findViewById(R.id.text);
             TextView t_xt = (TextView) view.findViewById(R.id.t_xt);
 
@@ -11305,9 +12356,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             other.setVisibility(View.GONE);
             other_reason = (EditText) view.findViewById(R.id.other_reason);*/
 
-            unresolve_reason = (Spinner) view
-                    .findViewById(R.id.unresolve_reason);
-            unresolve_reason.setOnItemSelectedListener(this);
+                unresolve_reason = (Spinner) view
+                        .findViewById(R.id.unresolve_reason);
+                unresolve_reason.setOnItemSelectedListener(this);
 
 
        /*     unresolve_reason
@@ -11335,109 +12386,109 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
                         }
                     });*/
-            // if image data is not null attach images to gridview
+                // if image data is not null attach images to gridview
 
-            spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
-            spin_action = (Spinner) view.findViewById(R.id.spin_action);
-            edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
-            edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
-            ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
-            ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
-            ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
+                spin_siteIssueReason_reason = (Spinner) view.findViewById(R.id.spin_siteIssueReason_reason);
+                spin_action = (Spinner) view.findViewById(R.id.spin_action);
+                edt_spare_defect_articleNo = (EditText) view.findViewById(R.id.edt_spare_defect_articleNo);
+                edt_complete_set_articleNo = (EditText) view.findViewById(R.id.edt_complete_set_articleNo);
+                ll_product_defect = (LinearLayout) view.findViewById(R.id.ll_product_defect);
+                ll_action = (LinearLayout) view.findViewById(R.id.ll_action);
+                ll_site_issue = (LinearLayout) view.findViewById(R.id.ll_site_issue);
 
 
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            comp_number.setText(complaint_number);
-            customer_name.setText(c_name);
-            date.setText(complaint_date);
-            mobile_no.setText(end_user_mobile);
-            mobile_no.setOnClickListener(this);
-            dealer.setText(service_franchise);
-            article_no.setText(article);
-            complaint_deatils.setText(service_details);
-            prod_cat.setText(product_category);
-            prod_sub_cat.setText(product_sub_category);
-            address.setText(c_address);
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                comp_number.setText(complaint_number);
+                customer_name.setText(c_name);
+                date.setText(complaint_date);
+                mobile_no.setText(end_user_mobile);
+                mobile_no.setOnClickListener(this);
+                dealer.setText(service_franchise);
+                article_no.setText(article);
+                complaint_deatils.setText(service_details);
+                prod_cat.setText(product_category);
+                prod_sub_cat.setText(product_sub_category);
+                address.setText(c_address);
 
-            status = (Spinner) view.findViewById(R.id.status);
-            comments = (TextView) view.findViewById(R.id.comments);
+                status = (Spinner) view.findViewById(R.id.status);
+                comments = (TextView) view.findViewById(R.id.comments);
 
-            Button submit = (Button) view.findViewById(R.id.submit);
+                Button submit = (Button) view.findViewById(R.id.submit);
 
-            submit.setOnClickListener(this);
+                submit.setOnClickListener(this);
 
-            Button attach_img = (Button) view.findViewById(R.id.attach_img);
-            Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
-            attach_img.setOnClickListener(this);
-            attach_vid.setOnClickListener(this);
+                Button attach_img = (Button) view.findViewById(R.id.attach_img);
+                Button attach_vid = (Button) view.findViewById(R.id.attach_vid);
+                attach_img.setOnClickListener(this);
+                attach_vid.setOnClickListener(this);
 
-            GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
-            video_grid = (ImageView) view.findViewById(R.id.video_grid);
+                GridView img_grid = (GridView) view.findViewById(R.id.img_grid);
+                video_grid = (ImageView) view.findViewById(R.id.video_grid);
 
-            if (report != null) {
+                if (report != null) {
 
-                article_no.setText(report.article_no);
+                    article_no.setText(report.article_no);
 
-                if (report.Result != null) {
-                    int index = resultList.indexOf(report.Result);
-                    if (index > 0) {
-                        if (index == 2) {
-                            unresolve_reason.setSelection(2);
-                            ll_product_defect.setVisibility(View.VISIBLE);
-                            ll_site_issue.setVisibility(View.GONE);
-                            edt_spare_defect_articleNo.setText(report.sparce_defect);
-                            edt_complete_set_articleNo.setText(report.complete_set);
-                        } else if (index == 3) {
-                            unresolve_reason.setSelection(3);
-                            ll_product_defect.setVisibility(View.GONE);
-                            ll_site_issue.setVisibility(View.VISIBLE);
-                            if (report.site_Issue_Reason != null) {
-                                int index1 = reasonList1.indexOf(report.site_Issue_Reason);
-                                if (index1 > 0) {
-                                    spin_siteIssueReason_reason.setSelection(index1);
+                    if (report.Result != null) {
+                        int index = resultList.indexOf(report.Result);
+                        if (index > 0) {
+                            if (index == 2) {
+                                unresolve_reason.setSelection(2);
+                                ll_product_defect.setVisibility(View.VISIBLE);
+                                ll_site_issue.setVisibility(View.GONE);
+                                edt_spare_defect_articleNo.setText(report.sparce_defect);
+                                edt_complete_set_articleNo.setText(report.complete_set);
+                            } else if (index == 3) {
+                                unresolve_reason.setSelection(3);
+                                ll_product_defect.setVisibility(View.GONE);
+                                ll_site_issue.setVisibility(View.VISIBLE);
+                                if (report.site_Issue_Reason != null) {
+                                    int index1 = reasonList1.indexOf(report.site_Issue_Reason);
+                                    if (index1 > 0) {
+                                        spin_siteIssueReason_reason.setSelection(index1);
+                                    }
                                 }
+                            } else if (index == 1) {
+                                unresolve_reason.setSelection(1);
+                            } else if (index == 4) {
+                                unresolve_reason.setSelection(4);
                             }
-                        } else if (index == 1) {
-                            unresolve_reason.setSelection(1);
-                        } else if (index == 4) {
-                            unresolve_reason.setSelection(4);
+                        } else {
+                            unresolve_reason.setSelection(0);
                         }
-                    } else {
-                        unresolve_reason.setSelection(0);
                     }
-                }
-                if (report.Action != null) {
-                    int index = actionList.indexOf(report.Action);
-                    spin_action.setSelection(index);
-                }
-
-
-                if (report.Closure_Status != null) {
-                    if (report.Closure_Status.equals("Resolved")) {
-                        submit.setVisibility(View.GONE);
-                        attach_img.setVisibility(View.GONE);
-                        // img_grid.setVisibility(View.GONE);
-                        // video_grid.setVisibility(View.GONE);
-                        status.setEnabled(false);
-                        attach_vid.setVisibility(View.GONE);
-                        btn_deleteVideo.setVisibility(View.GONE);
-
-                    } else if (report.Closure_Status.equals("Unresolved")) {
-                        status.setSelection(1);
-
-                        submit.setVisibility(View.VISIBLE);
-                        attach_img.setVisibility(View.VISIBLE);
-                        attach_vid.setVisibility(View.VISIBLE);
-                        status.setEnabled(true);
-                        // img_grid.setVisibility(View.VISIBLE);
-                        // video_grid.setVisibility(View.VISIBLE);
+                    if (report.Action != null) {
+                        int index = actionList.indexOf(report.Action);
+                        spin_action.setSelection(index);
                     }
 
-                    if (report.Comment != null) {
-                        comments.setText(report.Comment);
-                    }
 
-                }
+                    if (report.Closure_Status != null) {
+                        if (report.Closure_Status.equals("Resolved")) {
+                            submit.setVisibility(View.GONE);
+                            attach_img.setVisibility(View.GONE);
+                            // img_grid.setVisibility(View.GONE);
+                            // video_grid.setVisibility(View.GONE);
+                            status.setEnabled(false);
+                            attach_vid.setVisibility(View.GONE);
+                            btn_deleteVideo.setVisibility(View.GONE);
+
+                        } else if (report.Closure_Status.equals("Unresolved")) {
+                            status.setSelection(1);
+
+                            submit.setVisibility(View.VISIBLE);
+                            attach_img.setVisibility(View.VISIBLE);
+                            attach_vid.setVisibility(View.VISIBLE);
+                            status.setEnabled(true);
+                            // img_grid.setVisibility(View.VISIBLE);
+                            // video_grid.setVisibility(View.VISIBLE);
+                        }
+
+                        if (report.Comment != null) {
+                            comments.setText(report.Comment);
+                        }
+
+                    }
 
 
                 /*if (report.Closure_Status != null) {
@@ -11501,111 +12552,111 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
                 }*/
 
-            }
-            if (imgData != null) {
-                for (int i = 0; i < imgData.size(); i++) {
-                    File file = new File(imgData.get(i).image_path);
-                    orgFileArray.add(file);
-                    fileNameArray.add(file);
-
-                    imgOriginalSize.add(imgData.get(i).original_size);
-                    imgCompressedSize.add(imgData.get(i).compressed_size);
-
-                    compressedBitmap = BitmapFactory.decodeFile(file.getPath());
-                    capturedBM.add(compressedBitmap);
-                    int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
-                            .getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(
-                            compressedBitmap, 100, nh, true);
-                    bmpArray.add(scaledBM);
                 }
-            }
+                if (imgData != null) {
+                    for (int i = 0; i < imgData.size(); i++) {
+                        File file = new File(imgData.get(i).image_path);
+                        orgFileArray.add(file);
+                        fileNameArray.add(file);
 
-            if (vidData != null) {
-                try {
-                    // inputpath = vidData.FilePath;
-                    Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
-                            vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
-                    inputpath = vidData.get(0).FilePath;
-                    video_grid.setImageBitmap(bmThumbnail);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            imgAdapter = new ImageGridAdapter(context, fileNameArray);
-            // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
-            img_grid.setAdapter(imgAdapter);
-            img_grid.setOnTouchListener(new OnTouchListener() {
-                // Setting on Touch Listener for handling the touch inside
-                // ScrollView
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    // Disallow the touch request for parent scroll on touch of
-                    // child view
-                    v.getParent().requestDisallowInterceptTouchEvent(true);
-                    return false;
-                }
-            });
+                        imgOriginalSize.add(imgData.get(i).original_size);
+                        imgCompressedSize.add(imgData.get(i).compressed_size);
 
-            // video_grid.setOnTouchListener(new OnTouchListener() {
-            // // Setting on Touch Listener for handling the touch inside
-            // // ScrollView
-            // @Override
-            // public boolean onTouch(View v, MotionEvent event) {
-            // // Disallow the touch request for parent scroll on touch of
-            // // child view
-            // v.getParent().requestDisallowInterceptTouchEvent(true);
-            // return false;
-            // }
-            // });
-
-            video_grid.setOnClickListener(this);
-
-            img_grid.setOnItemClickListener(new OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id) {
-                    Bitmap sBM = bmpArray.get(position);
-                    Bitmap cBm = capturedBM.get(position);
-                    int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-                    Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
-                            true);
-                    showImage(scaledBM, cBm, sBM, position);
-                }
-            });
-
-            // video_grid.setOnItemClickListener(new OnItemClickListener() {
-            // @Override
-            // public void onItemClick(AdapterView<?> parent, View view,int
-            // position, long id) {
-            // Bitmap sBM = bmpArray.get(position);
-            // Bitmap cBm = capturedBM.get(position);
-            // int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
-            // Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,true);
-            // showImage(scaledBM, cBm, sBM,position);
-            // }
-            // });
-
-            status.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view,
-                                           int position, long id) {
-                    contentValues.put("Closure_Status", status
-                            .getSelectedItem().toString());
-                    if (position == 1) {
-                        //unresolved.setVisibility(View.VISIBLE);
-                    } else {
-                        //unresolved.setVisibility(View.GONE);
-                        contentValues.put("Reason_For_Unresolved", "");
+                        compressedBitmap = BitmapFactory.decodeFile(file.getPath());
+                        capturedBM.add(compressedBitmap);
+                        int nh = (int) (compressedBitmap.getHeight() * (100.0 / compressedBitmap
+                                .getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(
+                                compressedBitmap, 100, nh, true);
+                        bmpArray.add(scaledBM);
                     }
                 }
 
-                @Override
-                public void onNothingSelected(AdapterView<?> arg0) {
+                if (vidData != null) {
+                    try {
+                        // inputpath = vidData.FilePath;
+                        Bitmap bmThumbnail = ThumbnailUtils.createVideoThumbnail(
+                                vidData.get(0).FilePath, Thumbnails.MICRO_KIND);
+                        inputpath = vidData.get(0).FilePath;
+                        video_grid.setImageBitmap(bmThumbnail);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
-            });
-        }
+                imgAdapter = new ImageGridAdapter(context, fileNameArray);
+                // //vidAdapter = new VideoGridAdapter(context,fileNameArray);
+                img_grid.setAdapter(imgAdapter);
+                img_grid.setOnTouchListener(new OnTouchListener() {
+                    // Setting on Touch Listener for handling the touch inside
+                    // ScrollView
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        // Disallow the touch request for parent scroll on touch of
+                        // child view
+                        v.getParent().requestDisallowInterceptTouchEvent(true);
+                        return false;
+                    }
+                });
+
+                // video_grid.setOnTouchListener(new OnTouchListener() {
+                // // Setting on Touch Listener for handling the touch inside
+                // // ScrollView
+                // @Override
+                // public boolean onTouch(View v, MotionEvent event) {
+                // // Disallow the touch request for parent scroll on touch of
+                // // child view
+                // v.getParent().requestDisallowInterceptTouchEvent(true);
+                // return false;
+                // }
+                // });
+
+                video_grid.setOnClickListener(this);
+
+                img_grid.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id) {
+                        Bitmap sBM = bmpArray.get(position);
+                        Bitmap cBm = capturedBM.get(position);
+                        int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                        Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,
+                                true);
+                        showImage(scaledBM, cBm, sBM, position);
+                    }
+                });
+
+                // video_grid.setOnItemClickListener(new OnItemClickListener() {
+                // @Override
+                // public void onItemClick(AdapterView<?> parent, View view,int
+                // position, long id) {
+                // Bitmap sBM = bmpArray.get(position);
+                // Bitmap cBm = capturedBM.get(position);
+                // int nh = (int) (cBm.getHeight() * (500.0 / cBm.getWidth()));
+                // Bitmap scaledBM = Bitmap.createScaledBitmap(cBm, 500, nh,true);
+                // showImage(scaledBM, cBm, sBM,position);
+                // }
+                // });
+
+                status.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view,
+                                               int position, long id) {
+                        contentValues.put("Closure_Status", status
+                                .getSelectedItem().toString());
+                        if (position == 1) {
+                            //unresolved.setVisibility(View.VISIBLE);
+                        } else {
+                            //unresolved.setVisibility(View.GONE);
+                            contentValues.put("Reason_For_Unresolved", "");
+                        }
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> arg0) {
+                    }
+                });
+            }
     }
 
     private boolean validation() {
@@ -12391,7 +13442,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                         }
 
                         sendSMSAsync = new SendSMSAsync();
-                       // sendSMSAsync.execute();
+                        // sendSMSAsync.execute();
                         dialog.cancel();
                         System.gc();
 
@@ -20019,9 +21070,13 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     contentvalues.put("radio_sanitary", str_accessories);
                 }
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
-                contentvalues.put("type_of_sanitary", spin_type_of_faucet.getSelectedItemPosition());
+                contentvalues.put("type_of_sanitary", spin_type_of_faucet.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_product_wrong_product.isChecked()) {
+
+                if (radio_correct_product.isChecked()) {
+                    String str_radio_correct_product = radio_correct_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_correct_product);
+                } else if (radio_product_wrong_product.isChecked()) {
                     String str_product_wrong_product = radio_product_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_product_wrong_product);
                 } else if (radio_product_wrong_installation.isChecked()) {
@@ -20037,7 +21092,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (leakage_chk_1.isChecked()) {
                     String str_leakage_chk_1 = leakage_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_chk_1);
-                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_faucet_leakage.getSelectedItemPosition());
+                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_faucet_leakage.getSelectedItem().toString());
                 } else if (leakage_chk_2.isChecked()) {
                     String str_leakage_chk_2 = leakage_chk_2.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_chk_2);
@@ -20054,7 +21109,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (weak_flow_chk_1.isChecked()) {
                     String str_weak_flow_chk_1 = weak_flow_chk_1.getText().toString();
                     contentvalues.put("weak_flow", str_weak_flow_chk_1);
-                    contentvalues.put("type_of_weak_flow", spin_type_of__work_flow.getSelectedItemPosition());
+                    contentvalues.put("type_of_weak_flow", spin_type_of__work_flow.getSelectedItem().toString());
                 } else if (weak_flow_chk_2.isChecked()) {
                     String str_weak_flow_chk_2 = weak_flow_chk_2.getText().toString();
                     contentvalues.put("weak_flow", str_weak_flow_chk_2);
@@ -20067,7 +21122,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_noise_chk_2 = noise_chk_2.getText().toString();
                     contentvalues.put("noise", str_noise_chk_2);
                 }
-                contentvalues.put("warranty", spin_faucet_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_faucet_warranty.getSelectedItem().toString());
                 contentvalues.put("Complant_No", complaint_number);
     /*        contentvalues.put("Product_Category", product_category);
             contentvalues.put("product_Sub_Category", product_sub_category);
@@ -20162,9 +21217,13 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     contentvalues.put("radio_sanitary", str_accessories);
                 }
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
-                contentvalues.put("type_of_sanitary", spin_type_of_cistern.getSelectedItemPosition());
+                contentvalues.put("type_of_sanitary", spin_type_of_cistern.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_cistern_wrong_product.isChecked()) {
+
+                if (radio_cistern_correct_product.isChecked()) {
+                    String str_product_radio_cistern_correct_product = radio_cistern_correct_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_product_radio_cistern_correct_product);
+                } else if (radio_cistern_wrong_product.isChecked()) {
                     String str_product_wrong_product = radio_cistern_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_product_wrong_product);
                 } else if (radio_cistern_wrong_installation.isChecked()) {
@@ -20178,7 +21237,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (leakage_cistern_chk_1.isChecked()) {
                     String str_leakage_cistern_chk_1 = leakage_cistern_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_cistern_chk_1);
-                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_cistern_leakage.getSelectedItemPosition());
+                    contentvalues.put("sanitary_type_of_leakage", spin_type_of_cistern_leakage.getSelectedItem().toString());
                 } else if (leakage_cistern_chk_2.isChecked()) {
                     String str_leakage_cistern_chk_2 = leakage_cistern_chk_2.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_cistern_chk_2);
@@ -20188,7 +21247,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (flush_chk_1.isChecked()) {
                     String str_flush_chk_1 = flush_chk_1.getText().toString();
                     contentvalues.put("flush_not_working", str_flush_chk_1);
-                    contentvalues.put("type_of_flush_not_working", spin_type_of_cistern_fulsh_not_working.getSelectedItemPosition());
+                    contentvalues.put("type_of_flush_not_working", spin_type_of_cistern_fulsh_not_working.getSelectedItem().toString());
                 } else if (flush_chk_2.isChecked()) {
                     String str_flush_chk_2 = flush_chk_2.getText().toString();
                     contentvalues.put("flush_not_working", str_flush_chk_2);
@@ -20197,7 +21256,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (cistern_weak_flow_chk_1.isChecked()) {
                     String str_cistern_weak_flow_chk_1 = cistern_weak_flow_chk_1.getText().toString();
                     contentvalues.put("weak_flow", str_cistern_weak_flow_chk_1);
-                    contentvalues.put("type_of_weak_flow", spin_type_of_cistern_work_flow.getSelectedItemPosition());
+                    contentvalues.put("type_of_weak_flow", spin_type_of_cistern_work_flow.getSelectedItem().toString());
                 } else if (cistern_weak_flow_chk_2.isChecked()) {
                     String str_cistern_weak_flow_chk_2 = cistern_weak_flow_chk_2.getText().toString();
                     contentvalues.put("weak_flow", str_cistern_weak_flow_chk_2);
@@ -20206,12 +21265,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (asthetics_chk_1.isChecked()) {
                     String str_asthetics_chk_1 = asthetics_chk_1.getText().toString();
                     contentvalues.put("asthetics", str_asthetics_chk_1);
-                    contentvalues.put("type_of_asthetics", spin_type_of_cistern_asthetics.getSelectedItemPosition());
+                    contentvalues.put("type_of_asthetics", spin_type_of_cistern_asthetics.getSelectedItem().toString());
                 } else if (asthetics_chk_2.isChecked()) {
                     String str_asthetics_chk_2 = asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_cistern_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_cistern_warranty.getSelectedItem().toString());
 
                 contentvalues.put("Complant_No", complaint_number);
      /*       contentvalues.put("Product_Category", product_category);
@@ -20306,9 +21365,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     contentvalues.put("radio_sanitary", str_accessories);
                 }
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
-                contentvalues.put("type_of_sanitary", spin_type_of_kitchen_sink.getSelectedItemPosition());
+                contentvalues.put("type_of_sanitary", spin_type_of_kitchen_sink.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_kitchen_sink_wrong_product.isChecked()) {
+                if (radio_kitchen_sink_correct_product.isChecked()) {
+                    String str_radio_kitchen_sink_correct_product = radio_kitchen_sink_correct_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_kitchen_sink_correct_product);
+                } else if (radio_kitchen_sink_wrong_product.isChecked()) {
                     String str_radio_kitchen_sink_wrong_product = radio_kitchen_sink_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_radio_kitchen_sink_wrong_product);
                 } else if (radio_kitchen_sink_wrong_installation.isChecked()) {
@@ -20318,11 +21380,13 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_radio_kitchen_sink_damage = radio_kitchen_sink_damage.getText().toString();
                     contentvalues.put("sanitary_product", str_radio_kitchen_sink_damage);
                 }
+
+
                 //  contentValues.put("sanitary_product", sanitary_product_id);
                 if (leakage_kitchen_sink_chk_1.isChecked()) {
                     String str_leakage_kitchen_sink_chk_1 = leakage_kitchen_sink_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_1);
-                    contentvalues.put("sanitary_type_of_leakage", spin_kitchen_sink_leakage.getSelectedItemPosition());
+                    contentvalues.put("sanitary_type_of_leakage", spin_kitchen_sink_leakage.getSelectedItem().toString());
                 } else if (leakage_kitchen_sink_chk_2.isChecked()) {
                     String str_leakage_kitchen_sink_chk_2 = leakage_kitchen_sink_chk_2.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_kitchen_sink_chk_2);
@@ -20330,7 +21394,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (drainage_chk_1.isChecked()) {
                     String str_drainage_chk_1 = drainage_chk_1.getText().toString();
                     contentvalues.put("drainage", str_drainage_chk_1);
-                    contentvalues.put("type_of_drainage", spin_kitchen_sink_draonage.getSelectedItemPosition());
+                    contentvalues.put("type_of_drainage", spin_kitchen_sink_draonage.getSelectedItem().toString());
                 } else if (drainage_chk_2.isChecked()) {
                     String str_drainage_chk_2 = drainage_chk_2.getText().toString();
                     contentvalues.put("drainage", str_drainage_chk_2);
@@ -20340,12 +21404,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (kitchen_sink_asthetics_chk_1.isChecked()) {
                     String str_kitchen_sink_asthetics_chk_1 = kitchen_sink_asthetics_chk_1.getText().toString();
                     contentvalues.put("asthetics", str_kitchen_sink_asthetics_chk_1);
-                    contentvalues.put("type_of_asthetics", spin_kitchen_sink_asthetics.getSelectedItemPosition());
+                    contentvalues.put("type_of_asthetics", spin_kitchen_sink_asthetics.getSelectedItem().toString());
                 } else if (kitchen_sink_asthetics_chk_2.isChecked()) {
                     String str_kitchen_sink_asthetics_chk_2 = kitchen_sink_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_kitchen_sink_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_kitchen_sink_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_kitchen_sink_warranty.getSelectedItem().toString());
 
                 contentvalues.put("Complant_No", complaint_number);
        /*     contentvalues.put("Product_Category", product_category);
@@ -20442,7 +21506,10 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
                 //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_ceramic_basin_wrong_product.isChecked()) {
+                if (radio_ceramic_basin_correct_product.isChecked()) {
+                    String str_radio_ceramic_basin_correct_product = radio_ceramic_basin_correct_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_ceramic_basin_correct_product);
+                } else if (radio_ceramic_basin_wrong_product.isChecked()) {
                     String str_radio_ceramic_basin_wrong_product = radio_ceramic_basin_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_radio_ceramic_basin_wrong_product);
                 } else if (radio_ceramic_basin_wrong_installation.isChecked()) {
@@ -20456,7 +21523,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (leakage_ceramic_basin_chk_1.isChecked()) {
                     String str_leakage_ceramic_basin_chk_1 = leakage_ceramic_basin_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_1);
-                    contentvalues.put("sanitary_type_of_leakage", spin_ceramic_basin_leakage.getSelectedItemPosition());
+                    contentvalues.put("sanitary_type_of_leakage", spin_ceramic_basin_leakage.getSelectedItem().toString());
                 } else if (leakage_ceramic_basin_chk_2.isChecked()) {
                     String str_leakage_ceramic_basin_chk_2 = leakage_ceramic_basin_chk_2.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_ceramic_basin_chk_2);
@@ -20464,7 +21531,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (ceramic_basin_drainage_chk_1.isChecked()) {
                     String str_ceramic_basin_drainage_chk_1 = ceramic_basin_drainage_chk_1.getText().toString();
                     contentvalues.put("drainage", str_ceramic_basin_drainage_chk_1);
-                    contentvalues.put("type_of_drainage", spin_ceramic_basin_drainage.getSelectedItemPosition());
+                    contentvalues.put("type_of_drainage", spin_ceramic_basin_drainage.getSelectedItem().toString());
                 } else if (ceramic_basin_drainage_chk_2.isChecked()) {
                     String str_ceramic_basin_drainage_chk_2 = ceramic_basin_drainage_chk_2.getText().toString();
                     contentvalues.put("drainage", str_ceramic_basin_drainage_chk_2);
@@ -20474,12 +21541,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (ceramic_basin_asthetics_chk_1.isChecked()) {
                     String str_ceramic_basin_asthetics_chk_1 = ceramic_basin_asthetics_chk_1.getText().toString();
                     contentvalues.put("asthetics", str_ceramic_basin_asthetics_chk_1);
-                    contentvalues.put("type_of_asthetics", spin_ceramic_basin_asthetics.getSelectedItemPosition());
+                    contentvalues.put("type_of_asthetics", spin_ceramic_basin_asthetics.getSelectedItem().toString());
                 } else if (ceramic_basin_asthetics_chk_2.isChecked()) {
                     String str_ceramic_basin_asthetics_chk_2 = ceramic_basin_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_ceramic_basin_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_ceramic_basin_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_ceramic_basin_warranty.getSelectedItem().toString());
 
                 contentvalues.put("Complant_No", complaint_number);
       /*      contentvalues.put("Product_Category", product_category);
@@ -20577,9 +21644,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     contentvalues.put("radio_sanitary", str_accessories);
                 }
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
-                contentvalues.put("type_of_sanitary", spin_type_of_shower.getSelectedItemPosition());
+                contentvalues.put("type_of_sanitary", spin_type_of_shower.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_shower_wrong_product.isChecked()) {
+                if (radio_correct_product_shower.isChecked()) {
+                    String str_radio_correct_product_shower = radio_correct_product_shower.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_correct_product_shower);
+                } else if (radio_shower_wrong_product.isChecked()) {
                     String str_radio_shower_wrong_product = radio_shower_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_radio_shower_wrong_product);
                 } else if (radio_shower_wrong_installation.isChecked()) {
@@ -20593,7 +21663,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (leakage_shower_chk_1.isChecked()) {
                     String str_leakage_shower_chk_1 = leakage_shower_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_shower_chk_1);
-                    contentvalues.put("sanitary_type_of_leakage", spin_shower_leakage.getSelectedItemPosition());
+                    contentvalues.put("sanitary_type_of_leakage", spin_shower_leakage.getSelectedItem().toString());
                 } else if (leakage_shower_chk_2.isChecked()) {
                     String str_leakage_shower_chk_2 = leakage_shower_chk_2.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_shower_chk_2);
@@ -20601,7 +21671,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (does_not_operate_chk_1.isChecked()) {
                     String str_does_not_operate_chk_1 = does_not_operate_chk_1.getText().toString();
                     contentvalues.put("does_not_operate", str_does_not_operate_chk_1);
-                    contentvalues.put("type_does_not_operate", spin_shower_does_not_operate.getSelectedItemPosition());
+                    contentvalues.put("type_does_not_operate", spin_shower_does_not_operate.getSelectedItem().toString());
                 } else if (does_not_operate_chk_2.isChecked()) {
                     String str_does_not_operate_chk_2 = does_not_operate_chk_2.getText().toString();
                     contentvalues.put("does_not_operate", str_does_not_operate_chk_2);
@@ -20611,12 +21681,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (shower_asthetics_chk_1.isChecked()) {
                     String str_shower_asthetics_chk_1 = shower_asthetics_chk_1.getText().toString();
                     contentvalues.put("asthetics", str_shower_asthetics_chk_1);
-                    contentvalues.put("type_of_asthetics", spin_shower_asthetics.getSelectedItemPosition());
+                    contentvalues.put("type_of_asthetics", spin_shower_asthetics.getSelectedItem().toString());
                 } else if (shower_asthetics_chk_2.isChecked()) {
                     String str_shower_asthetics_chk_2 = shower_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_shower_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_shower_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_shower_warranty.getSelectedItem().toString());
 
                 contentvalues.put("Complant_No", complaint_number);
                 // contentvalues.put("Product_Category", product_category);
@@ -20717,7 +21787,10 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 // contentValues.put("radio_sanitary", str_radio_sanitary);
                 //   contentValues.put("type_of_sanitary",spin_type_of_kitchen_sink.getSelectedItem().toString());
                 // int sanitary_product_id = radio_product.getCheckedRadioButtonId();
-                if (radio_accessories_wrong_product.isChecked()) {
+                if (radio_accessories_correct_product.isChecked()) {
+                    String str_radio_accessories_correct_product = radio_accessories_correct_product.getText().toString();
+                    contentvalues.put("sanitary_product", str_radio_accessories_correct_product);
+                } else if (radio_accessories_wrong_product.isChecked()) {
                     String str_rradio_accessories_wrong_product = radio_accessories_wrong_product.getText().toString();
                     contentvalues.put("sanitary_product", str_rradio_accessories_wrong_product);
                 } else if (radio_accessories_wrong_installation.isChecked()) {
@@ -20732,12 +21805,12 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (accessories_asthetics_chk_1.isChecked()) {
                     String str_accessories_asthetics_chk_1 = accessories_asthetics_chk_1.getText().toString();
                     contentvalues.put("asthetics", str_accessories_asthetics_chk_1);
-                    contentvalues.put("type_of_asthetics", spin_accessories_asthesis.getSelectedItemPosition());
+                    contentvalues.put("type_of_asthetics", spin_accessories_asthesis.getSelectedItem().toString());
                 } else if (accessories_asthetics_chk_2.isChecked()) {
                     String str_accessories_asthetics_chk_2 = accessories_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_accessories_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_accessories_warranty.getSelectedItemPosition());
+                contentvalues.put("warranty", spin_accessories_warranty.getSelectedItem().toString());
 
                 contentvalues.put("Complant_No", complaint_number);
           /*  contentvalues.put("Product_Category", product_category);
@@ -20983,10 +22056,11 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
         }
     }
-        @Override
-        public void onBackPressed() {
-            super.onBackPressed();
-        }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 
     private String getVolume(String replace1, String replace2, TextView vol) {
         String result = "";
@@ -22138,43 +23212,52 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             }
             //.................sanitary details..........
             if (category.contains("Faucet") || category.equalsIgnoreCase("Faucet")) {
-                if (radio_product.getCheckedRadioButtonId() == -1) {
+                if (spin_type_of_faucet.getSelectedItemPosition() == 0) {
+                    result = false;
+                    UtilityClass.showToast(FaultReportForm.this,
+                            "Please Select type of Faucet");
+                } else if (!radio_correct_product.isChecked() && !radio_product_wrong_product.isChecked() && !radio_product_wrong_installation.isChecked() && !radio_product_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
 
-                }else  if (!leakage_chk_1.isChecked() && !leakage_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
-                } else
-                if (!operate_chk_1.isChecked() && !operate_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 3");
-                }else
-                if (!weak_flow_chk_1.isChecked() && !weak_flow_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 4");
-                } else
-                if (!noise_chk_1.isChecked() && !noise_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 5");
                 }
-                if (leakage_chk_1.isChecked()) {
-                    if (spin_type_of_faucet_leakage.getSelectedItemPosition() == 0) {
+                if (radio_correct_product.isChecked()) {
+                    if (!leakage_chk_1.isChecked() && !leakage_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Leakage");
+                                "Please complete Step 2");
+                    } else if (!operate_chk_1.isChecked() && !operate_chk_2.isChecked()) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please complete Step 3");
+                    } else if (!weak_flow_chk_1.isChecked() && !weak_flow_chk_2.isChecked()) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please complete Step 4");
+                    } else if (!noise_chk_1.isChecked() && !noise_chk_2.isChecked()) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please complete Step 5");
+                    } else if (spin_faucet_warranty.getSelectedItemPosition() == 0) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please Select Warranty");
                     }
-                }
-                if (weak_flow_chk_1.isChecked()) {
-                    if (spin_type_of__work_flow.getSelectedItemPosition() == 0) {
-                        result = false;
-                        UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Weak flow");
+
+                    if (leakage_chk_1.isChecked()) {
+                        if (spin_type_of_faucet_leakage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Leakage");
+                        }
+                    }
+                    if (weak_flow_chk_1.isChecked()) {
+                        if (spin_type_of__work_flow.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Weak flow");
+                        }
                     }
                 }
 
@@ -22186,54 +23269,63 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             "Please Select type of Cistern");
                 }
 
-                if (radio_group_cistern.getCheckedRadioButtonId() == -1) {
+                if (!radio_cistern_correct_product.isChecked() && !radio_cistern_wrong_product.isChecked() && !radio_cistern_wrong_installation.isChecked() && !radio_cistern_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
-                } else if (!leakage_cistern_chk_1.isChecked() && !leakage_cistern_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
-                }else if (!flush_chk_1.isChecked() && !flush_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 3");
-                }else if (!cistern_weak_flow_chk_1.isChecked() && !cistern_weak_flow_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 4");
-                }else if (!asthetics_chk_1.isChecked() && !asthetics_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 5");
                 }
-                if (leakage_cistern_chk_1.isChecked()) {
-                    if (spin_type_of_cistern_leakage.getSelectedItemPosition() == 0) {
+                if (radio_cistern_correct_product.isChecked()) {
+                    if (!leakage_cistern_chk_1.isChecked() && !leakage_cistern_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Leakage");
-                    }
-                }
-                if (flush_chk_1.isChecked()) {
-                    if (spin_type_of_cistern_fulsh_not_working.getSelectedItemPosition() == 0) {
+                                "Please complete Step 2");
+                    } else if (!flush_chk_1.isChecked() && !flush_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of flush not working");
-                    }
-                }
-                if (cistern_weak_flow_chk_1.isChecked()) {
-                    if (spin_type_of_cistern_work_flow.getSelectedItemPosition() == 0) {
+                                "Please complete Step 3");
+                    } else if (!cistern_weak_flow_chk_1.isChecked() && !cistern_weak_flow_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Weak flow");
-                    }
-                }
-                if (asthetics_chk_1.isChecked()) {
-                    if (spin_type_of_cistern_asthetics.getSelectedItemPosition() == 0) {
+                                "Please complete Step 4");
+                    } else if (!asthetics_chk_1.isChecked() && !asthetics_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Type of Asthetics");
+                                "Please complete Step 5");
                     }
+                    if (leakage_cistern_chk_1.isChecked()) {
+                        if (spin_type_of_cistern_leakage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Leakage");
+                        }
+                    }
+                    if (flush_chk_1.isChecked()) {
+                        if (spin_type_of_cistern_fulsh_not_working.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of flush not working");
+                        }
+                    }
+                    if (cistern_weak_flow_chk_1.isChecked()) {
+                        if (spin_type_of_cistern_work_flow.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Weak flow");
+                        }
+                    }
+                    if (asthetics_chk_1.isChecked()) {
+                        if (spin_type_of_cistern_asthetics.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Type of Asthetics");
+                        }
+                    }
+                    if (spin_cistern_warranty.getSelectedItemPosition() == 0) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please Select Warranty");
+                    }
+
                 }
             }
             if (category.contains("Kitchen Sink") || category.equalsIgnoreCase("Kitchen Sink")) {
@@ -22243,43 +23335,52 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                             "Please Select type of Kitchen Sink");
                 }
 
-                if (radio_group_kitchen_sink.getCheckedRadioButtonId() == -1) {
+                if (!radio_kitchen_sink_correct_product.isChecked() && !radio_kitchen_sink_wrong_product.isChecked() && !radio_kitchen_sink_wrong_installation.isChecked() && !radio_kitchen_sink_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
-                } else if (!leakage_kitchen_sink_chk_1.isChecked() && !leakage_kitchen_sink_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
-                }else if (!drainage_chk_1.isChecked() && !drainage_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 3");
-                }else if (!kitchen_sink_asthetics_chk_1.isChecked() && !kitchen_sink_asthetics_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 4");
                 }
-                if (leakage_kitchen_sink_chk_1.isChecked()) {
-                    if (spin_kitchen_sink_leakage.getSelectedItemPosition() == 0) {
+                if (radio_kitchen_sink_correct_product.isChecked()) {
+                    if (!leakage_kitchen_sink_chk_1.isChecked() && !leakage_kitchen_sink_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Leakage");
-                    }
-                }
-                if (drainage_chk_1.isChecked()) {
-                    if (spin_kitchen_sink_draonage.getSelectedItemPosition() == 0) {
+                                "Please complete Step 2");
+                    } else if (!drainage_chk_1.isChecked() && !drainage_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Drainage");
-                    }
-                }
-                if (kitchen_sink_asthetics_chk_1.isChecked()) {
-                    if (spin_kitchen_sink_asthetics.getSelectedItemPosition() == 0) {
+                                "Please complete Step 3");
+                    } else if (!kitchen_sink_asthetics_chk_1.isChecked() && !kitchen_sink_asthetics_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Asthetics");
+                                "Please complete Step 4");
                     }
+                    if (leakage_kitchen_sink_chk_1.isChecked()) {
+                        if (spin_kitchen_sink_leakage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Leakage");
+                        }
+                    }
+                    if (drainage_chk_1.isChecked()) {
+                        if (spin_kitchen_sink_draonage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Drainage");
+                        }
+                    }
+                    if (kitchen_sink_asthetics_chk_1.isChecked()) {
+                        if (spin_kitchen_sink_asthetics.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Asthetics");
+                        }
+                    }
+                    if (spin_kitchen_sink_warranty.getSelectedItemPosition() == 0) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please Select Warranty");
+                    }
+
                 }
 
             }
@@ -22287,42 +23388,50 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             if (category.contains("Ceramic Basin") || category.equalsIgnoreCase("Ceramic Basin")) {
 
 
-                if (radio_group_ceramic_basin.getCheckedRadioButtonId() == -1) {
+                if (!radio_ceramic_basin_correct_product.isChecked() && !radio_ceramic_basin_wrong_product.isChecked() && !radio_ceramic_basin_wrong_installation.isChecked() && !radio_ceramic_basin_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
-                } else if (!leakage_ceramic_basin_chk_1.isChecked() && !leakage_ceramic_basin_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
-                }else if (!ceramic_basin_drainage_chk_1.isChecked() && !ceramic_basin_drainage_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 3");
-                }else if (!ceramic_basin_asthetics_chk_1.isChecked() && !ceramic_basin_asthetics_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 4");
                 }
-                if (leakage_ceramic_basin_chk_1.isChecked()) {
-                    if (spin_ceramic_basin_leakage.getSelectedItemPosition() == 0) {
+                if (radio_ceramic_basin_correct_product.isChecked()) {
+                    if (!leakage_ceramic_basin_chk_1.isChecked() && !leakage_ceramic_basin_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Leakage");
+                                "Please complete Step 2");
+                    } else if (!ceramic_basin_drainage_chk_1.isChecked() && !ceramic_basin_drainage_chk_2.isChecked()) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please complete Step 3");
+                    } else if (!ceramic_basin_asthetics_chk_1.isChecked() && !ceramic_basin_asthetics_chk_2.isChecked()) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please complete Step 4");
                     }
-                }
-                if (ceramic_basin_drainage_chk_1.isChecked()) {
-                    if (spin_ceramic_basin_drainage.getSelectedItemPosition() == 0) {
-                        result = false;
-                        UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Drainage");
+                    if (leakage_ceramic_basin_chk_1.isChecked()) {
+                        if (spin_ceramic_basin_leakage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Leakage");
+                        }
                     }
-                }
-                if (ceramic_basin_asthetics_chk_1.isChecked()) {
-                    if (spin_ceramic_basin_asthetics.getSelectedItemPosition() == 0) {
+                    if (ceramic_basin_drainage_chk_1.isChecked()) {
+                        if (spin_ceramic_basin_drainage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Drainage");
+                        }
+                    }
+                    if (ceramic_basin_asthetics_chk_1.isChecked()) {
+                        if (spin_ceramic_basin_asthetics.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Asthetics");
+                        }
+                    }
+                    if (spin_ceramic_basin_warranty.getSelectedItemPosition() == 0) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Asthetics");
+                                "Please Select Warranty");
                     }
                 }
 
@@ -22331,46 +23440,57 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                 if (spin_type_of_shower.getSelectedItemPosition() == 0) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
-                            "Please Select Showers");
+                            "Please Select type of Showers");
                 }
 
-                if (radio_group_shower.getCheckedRadioButtonId() == -1) {
+
+                if (!radio_correct_product_shower.isChecked() && !radio_shower_wrong_product.isChecked() && !radio_shower_wrong_installation.isChecked() && !radio_shower_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
-                } else if (!leakage_shower_chk_1.isChecked() && !leakage_shower_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
-                }else if (!does_not_operate_chk_1.isChecked() && !does_not_operate_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 3");
-                }else if (!shower_asthetics_chk_1.isChecked() && !shower_asthetics_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 4");
                 }
-                if (leakage_shower_chk_1.isChecked()) {
-                    if (spin_shower_leakage.getSelectedItemPosition() == 0) {
+                if (radio_correct_product_shower.isChecked()) {
+                    if (!leakage_shower_chk_1.isChecked() && !leakage_shower_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Leakage");
-                    }
-                }
-                if (does_not_operate_chk_1.isChecked()) {
-                    if (spin_shower_does_not_operate.getSelectedItemPosition() == 0) {
+                                "Please complete Step 2");
+                    } else if (!does_not_operate_chk_1.isChecked() && !does_not_operate_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select Does not Operate");
-                    }
-                }
-                if (shower_asthetics_chk_1.isChecked()) {
-                    if (spin_shower_asthetics.getSelectedItemPosition() == 0) {
+                                "Please complete Step 3");
+                    } else if (!shower_asthetics_chk_1.isChecked() && !shower_asthetics_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Asthetics");
+                                "Please complete Step 4");
                     }
+                    if (leakage_shower_chk_1.isChecked()) {
+                        if (spin_shower_leakage.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Leakage");
+                        }
+                    }
+                    if (does_not_operate_chk_1.isChecked()) {
+                        if (spin_shower_does_not_operate.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select Does not Operate");
+                        }
+                    }
+                    if (shower_asthetics_chk_1.isChecked()) {
+                        if (spin_shower_asthetics.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Asthetics");
+                        }
+                    }
+
+                    if (spin_shower_warranty.getSelectedItemPosition() == 0) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please Select Warranty");
+                    }
+
                 }
 
             }
@@ -22379,26 +23499,34 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
             if (category.contains("Accessories") || category.equalsIgnoreCase("Accessories")) {
 
 
-                if (radio_group_accessories.getCheckedRadioButtonId() == -1) {
+                if (!radio_accessories_correct_product.isChecked() && !radio_accessories_wrong_product.isChecked() && !radio_accessories_wrong_installation.isChecked() && !radio_accessories_damage.isChecked()) {
                     result = false;
                     UtilityClass.showToast(FaultReportForm.this,
                             "Please complete Step 1");
-                }else if (!accessories_asthetics_chk_1.isChecked() && !accessories_asthetics_chk_2.isChecked()) {
-                    result = false;
-                    UtilityClass.showToast(FaultReportForm.this,
-                            "Please complete Step 2");
                 }
-
-                if (accessories_asthetics_chk_1.isChecked()) {
-                    if (spin_accessories_asthesis.getSelectedItemPosition() == 0) {
+                if (radio_accessories_correct_product.isChecked()) {
+                    if (!accessories_asthetics_chk_1.isChecked() && !accessories_asthetics_chk_2.isChecked()) {
                         result = false;
                         UtilityClass.showToast(FaultReportForm.this,
-                                "Please Select type of Asthetics");
+                                "Please complete Step 2");
                     }
+                    if (accessories_asthetics_chk_1.isChecked()) {
+                        if (spin_accessories_asthesis.getSelectedItemPosition() == 0) {
+                            result = false;
+                            UtilityClass.showToast(FaultReportForm.this,
+                                    "Please Select type of Asthetics");
+                        }
+                    }
+                    if (spin_accessories_warranty.getSelectedItemPosition() == 0) {
+                        result = false;
+                        UtilityClass.showToast(FaultReportForm.this,
+                                "Please Select Warranty");
+                    }
+
+
                 }
 
             }
-
 
 
         } catch (Exception e) {

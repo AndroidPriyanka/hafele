@@ -36,6 +36,11 @@ Force stop this transcoding by clicking on Cancel. \n
         <item>Shower Mixture</item>
         <item>Basin Mixture</item>
         <item>Cold Only</item>
+    </string-array><string-array name="spinner_weak_flow_faucet">
+        <item>--Select--</item>
+        <item>Low water pressure</item>
+        <item>Dust inside areater/hose</item>
+        <item>Hand water</item>
     </string-array><string-array name="spinner_kitchen_drainage">
         <item>--Select--</item>
         <item>Clog</item>
@@ -101,6 +106,7 @@ Force stop this transcoding by clicking on Cancel. \n
         <item>Scratches</item>
     </string-array><string-array name="spinner_warranty">
         <item>--Select--</item>
+        <item>In Warranty</item>
         <item>Out Warranty</item>
     </string-array><string-array name="action_array">
         <item>--Select--</item>
@@ -117,7 +123,7 @@ Force stop this transcoding by clicking on Cancel. \n
         <item>Damage</item>
         <item>Spot</item>
         <item>Scratches</item>
-        <item>Chp/Peel</item>
+        <item>Chip/Peel</item>
         <item>Rusting</item>
     </string-array><string name="txt_3">Yes</string><string name="txt_4">No</string><string name="txt_1">Check <b>weight of door</b></string><string name="txt_2">Correct Installation</string><string name="str_10">For weight 60kg, 3 hinges weight &lt;60, 2 \nhinges weight >60, 4 hinges</string><string-array name="call_initiating">
          <item>customer not available at home</item>
@@ -196,7 +202,7 @@ Force stop this transcoding by clicking on Cancel. \n
     </string-array><string name="str_3">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string><string name="str_1">For weight 60-80kg, 3 hinges weight &lt;60, 2 \nhinges weight >80, 4 hinges</string><string-array name="spinner_type_of_cistern_asthetics">
         <item>--Select--</item>
         <item>Chip/Peel</item>
-        <item>Finesh</item>
+        <item>Finish</item>
         <item>Crack</item>
         <item>Scaling</item>
         <item>Rusting</item>

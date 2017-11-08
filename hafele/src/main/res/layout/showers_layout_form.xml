@@ -64,17 +64,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
+         >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
             <RadioButton
-                android:id="@+id/radio_shower_wrong_product"
+                android:id="@+id/radio_correct_product_shower"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_weight="1"
                 android:button="@drawable/chekcbox_selector"
+                android:text="Correct Product" />
+            <RadioButton
+                android:id="@+id/radio_shower_wrong_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/chekcbox_selector"
                 android:text="Wrong Product" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
             <RadioButton
                 android:id="@+id/radio_shower_wrong_installation"
@@ -94,6 +109,7 @@
                 android:layout_weight="1"
                 android:button="@drawable/chekcbox_selector"
                 android:text="Product damage" />
+            </LinearLayout>
         </RadioGroup>
 
 

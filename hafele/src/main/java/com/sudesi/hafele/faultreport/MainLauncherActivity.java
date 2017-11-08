@@ -98,7 +98,7 @@ public class MainLauncherActivity extends Activity implements OnClickListener {
         Button login = (Button) findViewById(R.id.btn_login);
         login.setOnClickListener(this);
 
-  	exportDB();
+  	//exportDB();
     }
 
 	private void exportDB() {

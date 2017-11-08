@@ -14,12 +14,12 @@
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 258,
+                        "startLine": 269,
                         "startColumn": 4,
-                        "startOffset": 8975,
-                        "endLine": 263,
+                        "startOffset": 9245,
+                        "endLine": 274,
                         "endColumn": 19,
-                        "endOffset": 9169
+                        "endOffset": 9439
                     }
                 }
             },
@@ -119,12 +119,12 @@
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 250,
+                        "startLine": 261,
                         "startColumn": 4,
-                        "startOffset": 8736,
-                        "endLine": 256,
+                        "startOffset": 9006,
+                        "endLine": 267,
                         "endColumn": 19,
-                        "endOffset": 8967
+                        "endOffset": 9237
                     }
                 }
             },
@@ -161,12 +161,12 @@
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 265,
+                        "startLine": 276,
                         "startColumn": 4,
-                        "startOffset": 9177,
-                        "endLine": 273,
+                        "startOffset": 9447,
+                        "endLine": 284,
                         "endColumn": 19,
-                        "endOffset": 9534
+                        "endOffset": 9804
                     }
                 }
             },
@@ -177,17 +177,17 @@
                     "startOffset": 2563,
                     "endLine": 84,
                     "endColumn": 19,
-                    "endOffset": 2840
+                    "endOffset": 2841
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 170,
+                        "startLine": 181,
                         "startColumn": 4,
-                        "startOffset": 6369,
-                        "endLine": 178,
+                        "startOffset": 6638,
+                        "endLine": 189,
                         "endColumn": 19,
-                        "endOffset": 6654
+                        "endOffset": 6924
                     }
                 }
             },
@@ -195,20 +195,20 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 2845,
+                    "startOffset": 2846,
                     "endLine": 91,
                     "endColumn": 19,
-                    "endOffset": 3082
+                    "endOffset": 3083
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 227,
+                        "startLine": 238,
                         "startColumn": 4,
-                        "startOffset": 8044,
-                        "endLine": 233,
+                        "startOffset": 8314,
+                        "endLine": 244,
                         "endColumn": 19,
-                        "endOffset": 8287
+                        "endOffset": 8557
                     }
                 }
             },
@@ -216,20 +216,20 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 3087,
+                    "startOffset": 3088,
                     "endLine": 96,
                     "endColumn": 19,
-                    "endOffset": 3253
+                    "endOffset": 3254
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 221,
+                        "startLine": 232,
                         "startColumn": 4,
-                        "startOffset": 7866,
-                        "endLine": 225,
+                        "startOffset": 8136,
+                        "endLine": 236,
                         "endColumn": 19,
-                        "endOffset": 8036
+                        "endOffset": 8306
                     }
                 }
             },
@@ -237,20 +237,20 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 3258,
+                    "startOffset": 3259,
                     "endLine": 102,
                     "endColumn": 19,
-                    "endOffset": 3456
+                    "endOffset": 3457
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 214,
+                        "startLine": 225,
                         "startColumn": 4,
-                        "startOffset": 7655,
-                        "endLine": 219,
+                        "startOffset": 7925,
+                        "endLine": 230,
                         "endColumn": 19,
-                        "endOffset": 7858
+                        "endOffset": 8128
                     }
                 }
             },
@@ -258,20 +258,20 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 3461,
+                    "startOffset": 3462,
                     "endLine": 110,
                     "endColumn": 19,
-                    "endOffset": 3715
+                    "endOffset": 3716
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 241,
+                        "startLine": 252,
                         "startColumn": 4,
-                        "startOffset": 8467,
-                        "endLine": 248,
+                        "startOffset": 8737,
+                        "endLine": 259,
                         "endColumn": 19,
-                        "endOffset": 8728
+                        "endOffset": 8998
                     }
                 }
             },
@@ -279,20 +279,20 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 3720,
+                    "startOffset": 3721,
                     "endLine": 115,
                     "endColumn": 19,
-                    "endOffset": 3880
+                    "endOffset": 3881
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 235,
+                        "startLine": 246,
                         "startColumn": 4,
-                        "startOffset": 8295,
-                        "endLine": 239,
+                        "startOffset": 8565,
+                        "endLine": 250,
                         "endColumn": 19,
-                        "endOffset": 8459
+                        "endOffset": 8729
                     }
                 }
             },
@@ -300,20 +300,20 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 3885,
+                    "startOffset": 3886,
                     "endLine": 121,
                     "endColumn": 19,
-                    "endOffset": 4077
+                    "endOffset": 4078
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 206,
+                        "startLine": 217,
                         "startColumn": 4,
-                        "startOffset": 7448,
-                        "endLine": 211,
+                        "startOffset": 7718,
+                        "endLine": 222,
                         "endColumn": 19,
-                        "endOffset": 7645
+                        "endOffset": 7915
                     }
                 }
             },
@@ -321,20 +321,20 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 4082,
+                    "startOffset": 4083,
                     "endLine": 129,
                     "endColumn": 19,
-                    "endOffset": 4325
+                    "endOffset": 4326
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 191,
+                        "startLine": 202,
                         "startColumn": 4,
-                        "startOffset": 7021,
-                        "endLine": 198,
+                        "startOffset": 7291,
+                        "endLine": 209,
                         "endColumn": 19,
-                        "endOffset": 7271
+                        "endOffset": 7541
                     }
                 }
             },
@@ -342,20 +342,20 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 4330,
+                    "startOffset": 4331,
                     "endLine": 139,
                     "endColumn": 19,
-                    "endOffset": 4672
+                    "endOffset": 4673
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 180,
+                        "startLine": 191,
                         "startColumn": 4,
-                        "startOffset": 6662,
-                        "endLine": 189,
+                        "startOffset": 6932,
+                        "endLine": 200,
                         "endColumn": 19,
-                        "endOffset": 7013
+                        "endOffset": 7283
                     }
                 }
             },
@@ -363,20 +363,20 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 4677,
+                    "startOffset": 4678,
                     "endLine": 144,
                     "endColumn": 19,
-                    "endOffset": 4834
+                    "endOffset": 4835
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 200,
+                        "startLine": 211,
                         "startColumn": 4,
-                        "startOffset": 7279,
-                        "endLine": 204,
+                        "startOffset": 7549,
+                        "endLine": 215,
                         "endColumn": 19,
-                        "endOffset": 7440
+                        "endOffset": 7710
                     }
                 }
             },
@@ -384,20 +384,20 @@
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 4839,
+                    "startOffset": 4840,
                     "endLine": 149,
                     "endColumn": 19,
-                    "endOffset": 4996
+                    "endOffset": 4997
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 117,
+                        "startLine": 127,
                         "startColumn": 4,
-                        "startOffset": 4717,
-                        "endLine": 121,
+                        "startOffset": 4952,
+                        "endLine": 131,
                         "endColumn": 19,
-                        "endOffset": 4878
+                        "endOffset": 5113
                     }
                 }
             },
@@ -405,20 +405,20 @@
                 "to": {
                     "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 5001,
+                    "startOffset": 5002,
                     "endLine": 158,
                     "endColumn": 19,
-                    "endOffset": 5253
+                    "endOffset": 5254
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 145,
+                        "startLine": 155,
                         "startColumn": 4,
-                        "startOffset": 5615,
-                        "endLine": 153,
+                        "startOffset": 5850,
+                        "endLine": 163,
                         "endColumn": 19,
-                        "endOffset": 5875
+                        "endOffset": 6110
                     }
                 }
             },
@@ -426,20 +426,20 @@
                 "to": {
                     "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 5258,
+                    "startOffset": 5259,
                     "endLine": 164,
                     "endColumn": 19,
-                    "endOffset": 5482
+                    "endOffset": 5483
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 132,
+                        "startLine": 142,
                         "startColumn": 4,
-                        "startOffset": 5178,
-                        "endLine": 137,
+                        "startOffset": 5413,
+                        "endLine": 147,
                         "endColumn": 19,
-                        "endOffset": 5407
+                        "endOffset": 5642
                     }
                 }
             },
@@ -447,20 +447,20 @@
                 "to": {
                     "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 5487,
+                    "startOffset": 5488,
                     "endLine": 172,
                     "endColumn": 19,
-                    "endOffset": 5764
+                    "endOffset": 5765
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 123,
+                        "startLine": 133,
                         "startColumn": 4,
-                        "startOffset": 4886,
-                        "endLine": 130,
+                        "startOffset": 5121,
+                        "endLine": 140,
                         "endColumn": 19,
-                        "endOffset": 5170
+                        "endOffset": 5405
                     }
                 }
             },
@@ -468,20 +468,20 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 5769,
+                    "startOffset": 5770,
                     "endLine": 177,
                     "endColumn": 19,
-                    "endOffset": 5957
+                    "endOffset": 5958
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 139,
+                        "startLine": 149,
                         "startColumn": 4,
-                        "startOffset": 5415,
-                        "endLine": 143,
+                        "startOffset": 5650,
+                        "endLine": 153,
                         "endColumn": 19,
-                        "endOffset": 5607
+                        "endOffset": 5842
                     }
                 }
             },
@@ -489,10 +489,10 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 5962,
+                    "startOffset": 5963,
                     "endLine": 184,
                     "endColumn": 19,
-                    "endOffset": 6197
+                    "endOffset": 6198
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -510,20 +510,20 @@
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 6202,
+                    "startOffset": 6203,
                     "endLine": 189,
                     "endColumn": 19,
-                    "endOffset": 6369
+                    "endOffset": 6370
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 154,
+                        "startLine": 164,
                         "startColumn": 4,
-                        "startOffset": 5881,
-                        "endLine": 158,
+                        "startOffset": 6116,
+                        "endLine": 168,
                         "endColumn": 19,
-                        "endOffset": 6052
+                        "endOffset": 6287
                     }
                 }
             },
@@ -531,10 +531,10 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 6374,
+                    "startOffset": 6375,
                     "endLine": 197,
                     "endColumn": 19,
-                    "endOffset": 6629
+                    "endOffset": 6630
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -552,20 +552,20 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 6634,
+                    "startOffset": 6635,
                     "endLine": 202,
                     "endColumn": 19,
-                    "endOffset": 6798
+                    "endOffset": 6799
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 159,
+                        "startLine": 169,
                         "startColumn": 4,
-                        "startOffset": 6058,
-                        "endLine": 163,
+                        "startOffset": 6293,
+                        "endLine": 173,
                         "endColumn": 19,
-                        "endOffset": 6226
+                        "endOffset": 6461
                     }
                 }
             },
@@ -573,31 +573,52 @@
                 "to": {
                     "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 6803,
-                    "endLine": 206,
+                    "startOffset": 6804,
+                    "endLine": 207,
                     "endColumn": 19,
-                    "endOffset": 6927
+                    "endOffset": 6961
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 165,
+                        "startLine": 175,
                         "startColumn": 4,
-                        "startOffset": 6234,
-                        "endLine": 168,
+                        "startOffset": 6469,
+                        "endLine": 179,
                         "endColumn": 19,
-                        "endOffset": 6361
+                        "endOffset": 6630
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 6932,
-                    "endLine": 215,
+                    "startOffset": 6966,
+                    "endLine": 213,
                     "endColumn": 19,
-                    "endOffset": 7231
+                    "endOffset": 7182
+                },
+                "from": {
+                    "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 4,
+                        "startOffset": 4719,
+                        "endLine": 123,
+                        "endColumn": 19,
+                        "endOffset": 4940
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 7187,
+                    "endLine": 222,
+                    "endColumn": 19,
+                    "endOffset": 7486
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -613,12 +634,12 @@
             },
             {
                 "to": {
-                    "startLine": 216,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 7236,
-                    "endLine": 219,
+                    "startOffset": 7491,
+                    "endLine": 226,
                     "endColumn": 20,
-                    "endOffset": 7349
+                    "endOffset": 7604
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -634,11 +655,11 @@
             },
             {
                 "to": {
-                    "startLine": 220,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 7354,
+                    "startOffset": 7609,
                     "endColumn": 57,
-                    "endOffset": 7407
+                    "endOffset": 7662
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
@@ -653,11 +674,11 @@
             },
             {
                 "to": {
-                    "startLine": 221,
+                    "startLine": 228,
                     "startColumn": 4,
-                    "startOffset": 7412,
+                    "startOffset": 7667,
                     "endColumn": 55,
-                    "endOffset": 7463
+                    "endOffset": 7718
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
@@ -672,11 +693,11 @@
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 7468,
+                    "startOffset": 7723,
                     "endColumn": 50,
-                    "endOffset": 7514
+                    "endOffset": 7769
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
@@ -691,11 +712,11 @@
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 7519,
+                    "startOffset": 7774,
                     "endColumn": 48,
-                    "endOffset": 7563
+                    "endOffset": 7818
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
@@ -710,11 +731,11 @@
             },
             {
                 "to": {
-                    "startLine": 224,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 7568,
+                    "startOffset": 7823,
                     "endColumn": 47,
-                    "endOffset": 7611
+                    "endOffset": 7866
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\dimens.xml",
@@ -729,11 +750,11 @@
             },
             {
                 "to": {
-                    "startLine": 225,
+                    "startLine": 232,
                     "startColumn": 4,
-                    "startOffset": 7616,
+                    "startOffset": 7871,
                     "endColumn": 55,
-                    "endOffset": 7667
+                    "endOffset": 7922
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -748,11 +769,11 @@
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 7672,
+                    "startOffset": 7927,
                     "endColumn": 52,
-                    "endOffset": 7720
+                    "endOffset": 7975
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -767,11 +788,11 @@
             },
             {
                 "to": {
-                    "startLine": 227,
+                    "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 7725,
+                    "startOffset": 7980,
                     "endColumn": 42,
-                    "endOffset": 7763
+                    "endOffset": 8018
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -786,11 +807,11 @@
             },
             {
                 "to": {
-                    "startLine": 228,
+                    "startLine": 235,
                     "startColumn": 4,
-                    "startOffset": 7768,
+                    "startOffset": 8023,
                     "endColumn": 48,
-                    "endOffset": 7812
+                    "endOffset": 8067
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -805,11 +826,11 @@
             },
             {
                 "to": {
-                    "startLine": 229,
+                    "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 7817,
+                    "startOffset": 8072,
                     "endColumn": 202,
-                    "endOffset": 8015
+                    "endOffset": 8270
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -824,11 +845,11 @@
             },
             {
                 "to": {
-                    "startLine": 230,
+                    "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 8020,
+                    "startOffset": 8275,
                     "endColumn": 133,
-                    "endOffset": 8149
+                    "endOffset": 8404
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -843,11 +864,11 @@
             },
             {
                 "to": {
-                    "startLine": 231,
+                    "startLine": 238,
                     "startColumn": 4,
-                    "startOffset": 8154,
+                    "startOffset": 8409,
                     "endColumn": 52,
-                    "endOffset": 8202
+                    "endOffset": 8457
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -862,11 +883,11 @@
             },
             {
                 "to": {
-                    "startLine": 232,
+                    "startLine": 239,
                     "startColumn": 4,
-                    "startOffset": 8207,
+                    "startOffset": 8462,
                     "endColumn": 52,
-                    "endOffset": 8255
+                    "endOffset": 8510
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -881,11 +902,11 @@
             },
             {
                 "to": {
-                    "startLine": 233,
+                    "startLine": 240,
                     "startColumn": 4,
-                    "startOffset": 8260,
+                    "startOffset": 8515,
                     "endColumn": 52,
-                    "endOffset": 8308
+                    "endOffset": 8563
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -900,11 +921,11 @@
             },
             {
                 "to": {
-                    "startLine": 234,
+                    "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 8313,
+                    "startOffset": 8568,
                     "endColumn": 47,
-                    "endOffset": 8356
+                    "endOffset": 8611
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -919,11 +940,11 @@
             },
             {
                 "to": {
-                    "startLine": 235,
+                    "startLine": 242,
                     "startColumn": 4,
-                    "startOffset": 8361,
+                    "startOffset": 8616,
                     "endColumn": 50,
-                    "endOffset": 8407
+                    "endOffset": 8662
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -938,11 +959,11 @@
             },
             {
                 "to": {
-                    "startLine": 236,
+                    "startLine": 243,
                     "startColumn": 4,
-                    "startOffset": 8412,
+                    "startOffset": 8667,
                     "endColumn": 61,
-                    "endOffset": 8469
+                    "endOffset": 8724
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -957,11 +978,11 @@
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 8474,
+                    "startOffset": 8729,
                     "endColumn": 61,
-                    "endOffset": 8531
+                    "endOffset": 8786
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -976,11 +997,11 @@
             },
             {
                 "to": {
-                    "startLine": 238,
+                    "startLine": 245,
                     "startColumn": 4,
-                    "startOffset": 8536,
+                    "startOffset": 8791,
                     "endColumn": 65,
-                    "endOffset": 8597
+                    "endOffset": 8852
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -995,11 +1016,11 @@
             },
             {
                 "to": {
-                    "startLine": 239,
+                    "startLine": 246,
                     "startColumn": 4,
-                    "startOffset": 8602,
+                    "startOffset": 8857,
                     "endColumn": 67,
-                    "endOffset": 8665
+                    "endOffset": 8920
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1014,11 +1035,11 @@
             },
             {
                 "to": {
-                    "startLine": 240,
+                    "startLine": 247,
                     "startColumn": 4,
-                    "startOffset": 8670,
+                    "startOffset": 8925,
                     "endColumn": 73,
-                    "endOffset": 8739
+                    "endOffset": 8994
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1033,11 +1054,11 @@
             },
             {
                 "to": {
-                    "startLine": 241,
+                    "startLine": 248,
                     "startColumn": 4,
-                    "startOffset": 8744,
+                    "startOffset": 8999,
                     "endColumn": 67,
-                    "endOffset": 8807
+                    "endOffset": 9062
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1052,12 +1073,12 @@
             },
             {
                 "to": {
-                    "startLine": 242,
+                    "startLine": 249,
                     "startColumn": 4,
-                    "startOffset": 8812,
-                    "endLine": 245,
+                    "startOffset": 9067,
+                    "endLine": 252,
                     "endColumn": 9,
-                    "endOffset": 9022
+                    "endOffset": 9277
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1073,11 +1094,11 @@
             },
             {
                 "to": {
-                    "startLine": 246,
+                    "startLine": 253,
                     "startColumn": 4,
-                    "startOffset": 9027,
+                    "startOffset": 9282,
                     "endColumn": 64,
-                    "endOffset": 9087
+                    "endOffset": 9342
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1092,11 +1113,11 @@
             },
             {
                 "to": {
-                    "startLine": 247,
+                    "startLine": 254,
                     "startColumn": 4,
-                    "startOffset": 9092,
+                    "startOffset": 9347,
                     "endColumn": 67,
-                    "endOffset": 9155
+                    "endOffset": 9410
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1111,11 +1132,11 @@
             },
             {
                 "to": {
-                    "startLine": 248,
+                    "startLine": 255,
                     "startColumn": 4,
-                    "startOffset": 9160,
+                    "startOffset": 9415,
                     "endColumn": 95,
-                    "endOffset": 9251
+                    "endOffset": 9506
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1130,11 +1151,11 @@
             },
             {
                 "to": {
-                    "startLine": 249,
+                    "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 9256,
+                    "startOffset": 9511,
                     "endColumn": 57,
-                    "endOffset": 9309
+                    "endOffset": 9564
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1149,11 +1170,11 @@
             },
             {
                 "to": {
-                    "startLine": 250,
+                    "startLine": 257,
                     "startColumn": 4,
-                    "startOffset": 9314,
+                    "startOffset": 9569,
                     "endColumn": 105,
-                    "endOffset": 9415
+                    "endOffset": 9670
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1168,11 +1189,11 @@
             },
             {
                 "to": {
-                    "startLine": 251,
+                    "startLine": 258,
                     "startColumn": 4,
-                    "startOffset": 9420,
+                    "startOffset": 9675,
                     "endColumn": 63,
-                    "endOffset": 9479
+                    "endOffset": 9734
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1187,11 +1208,11 @@
             },
             {
                 "to": {
-                    "startLine": 252,
+                    "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 9484,
+                    "startOffset": 9739,
                     "endColumn": 109,
-                    "endOffset": 9589
+                    "endOffset": 9844
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1206,11 +1227,11 @@
             },
             {
                 "to": {
-                    "startLine": 253,
+                    "startLine": 260,
                     "startColumn": 4,
-                    "startOffset": 9594,
+                    "startOffset": 9849,
                     "endColumn": 107,
-                    "endOffset": 9697
+                    "endOffset": 9952
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1225,11 +1246,11 @@
             },
             {
                 "to": {
-                    "startLine": 254,
+                    "startLine": 261,
                     "startColumn": 4,
-                    "startOffset": 9702,
+                    "startOffset": 9957,
                     "endColumn": 105,
-                    "endOffset": 9803
+                    "endOffset": 10058
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1244,11 +1265,11 @@
             },
             {
                 "to": {
-                    "startLine": 255,
+                    "startLine": 262,
                     "startColumn": 4,
-                    "startOffset": 9808,
+                    "startOffset": 10063,
                     "endColumn": 106,
-                    "endOffset": 9910
+                    "endOffset": 10165
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1263,11 +1284,11 @@
             },
             {
                 "to": {
-                    "startLine": 256,
+                    "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 9915,
+                    "startOffset": 10170,
                     "endColumn": 106,
-                    "endOffset": 10017
+                    "endOffset": 10272
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1282,11 +1303,11 @@
             },
             {
                 "to": {
-                    "startLine": 257,
+                    "startLine": 264,
                     "startColumn": 4,
-                    "startOffset": 10022,
+                    "startOffset": 10277,
                     "endColumn": 106,
-                    "endOffset": 10124
+                    "endOffset": 10379
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1301,11 +1322,11 @@
             },
             {
                 "to": {
-                    "startLine": 258,
+                    "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 10129,
+                    "startOffset": 10384,
                     "endColumn": 106,
-                    "endOffset": 10231
+                    "endOffset": 10486
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1320,11 +1341,11 @@
             },
             {
                 "to": {
-                    "startLine": 259,
+                    "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 10236,
+                    "startOffset": 10491,
                     "endColumn": 109,
-                    "endOffset": 10341
+                    "endOffset": 10596
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1339,11 +1360,11 @@
             },
             {
                 "to": {
-                    "startLine": 260,
+                    "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 10346,
+                    "startOffset": 10601,
                     "endColumn": 109,
-                    "endOffset": 10451
+                    "endOffset": 10706
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1358,11 +1379,11 @@
             },
             {
                 "to": {
-                    "startLine": 261,
+                    "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 10456,
+                    "startOffset": 10711,
                     "endColumn": 106,
-                    "endOffset": 10558
+                    "endOffset": 10813
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1377,11 +1398,11 @@
             },
             {
                 "to": {
-                    "startLine": 262,
+                    "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 10563,
+                    "startOffset": 10818,
                     "endColumn": 103,
-                    "endOffset": 10662
+                    "endOffset": 10917
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1396,11 +1417,11 @@
             },
             {
                 "to": {
-                    "startLine": 263,
+                    "startLine": 270,
                     "startColumn": 4,
-                    "startOffset": 10667,
+                    "startOffset": 10922,
                     "endColumn": 61,
-                    "endOffset": 10724
+                    "endOffset": 10979
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1415,11 +1436,11 @@
             },
             {
                 "to": {
-                    "startLine": 264,
+                    "startLine": 271,
                     "startColumn": 4,
-                    "startOffset": 10729,
+                    "startOffset": 10984,
                     "endColumn": 71,
-                    "endOffset": 10796
+                    "endOffset": 11051
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1434,11 +1455,11 @@
             },
             {
                 "to": {
-                    "startLine": 265,
+                    "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 10801,
+                    "startOffset": 11056,
                     "endColumn": 54,
-                    "endOffset": 10851
+                    "endOffset": 11106
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1453,11 +1474,11 @@
             },
             {
                 "to": {
-                    "startLine": 266,
+                    "startLine": 273,
                     "startColumn": 4,
-                    "startOffset": 10856,
+                    "startOffset": 11111,
                     "endColumn": 37,
-                    "endOffset": 10889
+                    "endOffset": 11144
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1472,11 +1493,11 @@
             },
             {
                 "to": {
-                    "startLine": 267,
+                    "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 10894,
+                    "startOffset": 11149,
                     "endColumn": 36,
-                    "endOffset": 10926
+                    "endOffset": 11181
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1491,11 +1512,11 @@
             },
             {
                 "to": {
-                    "startLine": 268,
+                    "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 10931,
+                    "startOffset": 11186,
                     "endColumn": 83,
-                    "endOffset": 11010
+                    "endOffset": 11265
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1510,11 +1531,11 @@
             },
             {
                 "to": {
-                    "startLine": 269,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 11015,
+                    "startOffset": 11270,
                     "endColumn": 51,
-                    "endOffset": 11062
+                    "endOffset": 11317
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1529,11 +1550,11 @@
             },
             {
                 "to": {
-                    "startLine": 270,
+                    "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 11067,
+                    "startOffset": 11322,
                     "endColumn": 55,
-                    "endOffset": 11118
+                    "endOffset": 11373
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1548,11 +1569,11 @@
             },
             {
                 "to": {
-                    "startLine": 271,
+                    "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 11123,
+                    "startOffset": 11378,
                     "endColumn": 54,
-                    "endOffset": 11173
+                    "endOffset": 11428
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1567,11 +1588,11 @@
             },
             {
                 "to": {
-                    "startLine": 272,
+                    "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 11178,
+                    "startOffset": 11433,
                     "endColumn": 57,
-                    "endOffset": 11231
+                    "endOffset": 11486
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\strings.xml",
@@ -1586,11 +1607,11 @@
             },
             {
                 "to": {
-                    "startLine": 273,
+                    "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 11236,
+                    "startOffset": 11491,
                     "endColumn": 36,
-                    "endOffset": 11268
+                    "endOffset": 11523
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1605,11 +1626,11 @@
             },
             {
                 "to": {
-                    "startLine": 274,
+                    "startLine": 281,
                     "startColumn": 4,
-                    "startOffset": 11273,
+                    "startOffset": 11528,
                     "endColumn": 119,
-                    "endOffset": 11388
+                    "endOffset": 11643
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1624,12 +1645,12 @@
             },
             {
                 "to": {
-                    "startLine": 275,
+                    "startLine": 282,
                     "startColumn": 4,
-                    "startOffset": 11393,
-                    "endLine": 281,
+                    "startOffset": 11648,
+                    "endLine": 288,
                     "endColumn": 12,
-                    "endOffset": 11679
+                    "endOffset": 11934
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\styles.xml",
@@ -1645,12 +1666,12 @@
             },
             {
                 "to": {
-                    "startLine": 282,
+                    "startLine": 289,
                     "startColumn": 4,
-                    "startOffset": 11684,
-                    "endLine": 284,
+                    "startOffset": 11939,
+                    "endLine": 291,
                     "endColumn": 12,
-                    "endOffset": 11839
+                    "endOffset": 12094
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\hafele\\src\\main\\res\\values\\styles.xml",
@@ -1666,12 +1687,12 @@
             },
             {
                 "to": {
-                    "startLine": 285,
+                    "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 11844,
-                    "endLine": 289,
+                    "startOffset": 12099,
+                    "endLine": 296,
                     "endColumn": 8,
-                    "endOffset": 12039
+                    "endOffset": 12294
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1687,12 +1708,12 @@
             },
             {
                 "to": {
-                    "startLine": 290,
+                    "startLine": 297,
                     "startColumn": 4,
-                    "startOffset": 12044,
-                    "endLine": 294,
+                    "startOffset": 12299,
+                    "endLine": 301,
                     "endColumn": 8,
-                    "endOffset": 12239
+                    "endOffset": 12494
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
@@ -1708,12 +1729,12 @@
             },
             {
                 "to": {
-                    "startLine": 295,
+                    "startLine": 302,
                     "startColumn": 4,
-                    "startOffset": 12244,
-                    "endLine": 298,
+                    "startOffset": 12499,
+                    "endLine": 305,
                     "endColumn": 8,
-                    "endOffset": 12387
+                    "endOffset": 12642
                 },
                 "from": {
                     "file": "D:\\Aniket_workspace\\hafele\\ffmpeg4android_os\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",

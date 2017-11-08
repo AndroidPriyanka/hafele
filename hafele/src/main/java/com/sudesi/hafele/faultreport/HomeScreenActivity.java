@@ -38,6 +38,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.sudesi.hafele.classes.ExceptionHandler;
 import com.sudesi.hafele.classes.FaultReport;
 import com.sudesi.hafele.classes.Feedback;
 import com.sudesi.hafele.classes.ImageData;
@@ -62,6 +63,8 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.home_screen_activity);
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this));  //..................Exception
+
         context = HomeScreenActivity.this;
         ws = new HafeleWebservice(context);
         progress = new ProgressDialog(HomeScreenActivity.this);

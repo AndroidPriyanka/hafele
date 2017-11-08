@@ -43,17 +43,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
             <RadioButton
-                android:id="@+id/radio_accessories_wrong_product"
+                android:id="@+id/radio_accessories_correct_product"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_weight="1"
                 android:button="@drawable/chekcbox_selector"
+                android:text="Correct Product" />
+            <RadioButton
+                android:id="@+id/radio_accessories_wrong_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/chekcbox_selector"
                 android:text="Wrong Product" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
             <RadioButton
                 android:id="@+id/radio_accessories_wrong_installation"
@@ -73,6 +88,7 @@
                 android:layout_weight="1"
                 android:button="@drawable/chekcbox_selector"
                 android:text="Product damage" />
+            </LinearLayout>
         </RadioGroup>
 
 
@@ -141,7 +157,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Type of Asthesis"
+                android:text="Type of Asthetics"
                 android:textSize="@dimen/content_text_size" />
 
             <Spinner

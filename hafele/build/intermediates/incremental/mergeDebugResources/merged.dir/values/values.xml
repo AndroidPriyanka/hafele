@@ -80,7 +80,7 @@
         <item>Damage</item>
         <item>Spot</item>
         <item>Scratches</item>
-        <item>Chp/Peel</item>
+        <item>Chip/Peel</item>
         <item>Rusting</item>
     </string-array>
     <string-array name="spinner_ceramic_basin_asthetics">
@@ -151,7 +151,7 @@
     <string-array name="spinner_type_of_cistern_asthetics">
         <item>--Select--</item>
         <item>Chip/Peel</item>
-        <item>Finesh</item>
+        <item>Finish</item>
         <item>Crack</item>
         <item>Scaling</item>
         <item>Rusting</item>
@@ -203,7 +203,14 @@
     </string-array>
     <string-array name="spinner_warranty">
         <item>--Select--</item>
+        <item>In Warranty</item>
         <item>Out Warranty</item>
+    </string-array>
+    <string-array name="spinner_weak_flow_faucet">
+        <item>--Select--</item>
+        <item>Low water pressure</item>
+        <item>Dust inside areater/hose</item>
+        <item>Hand water</item>
     </string-array>
     <string-array name="spinner_wrong_product">
         <item>--Select--</item>

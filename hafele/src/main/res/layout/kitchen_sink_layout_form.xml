@@ -61,18 +61,34 @@
             android:id="@+id/radio_group_kitchen_sink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3"
             android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
+          >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/radio_kitchen_sink_correct_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:button="@drawable/chekcbox_selector"
+                android:text="Correct Product" />
 
             <RadioButton
                 android:id="@+id/radio_kitchen_sink_wrong_product"
-                android:layout_marginLeft="50dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:button="@drawable/chekcbox_selector"
                 android:text="Wrong Product" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
             <RadioButton
                 android:id="@+id/radio_kitchen_sink_wrong_installation"
@@ -92,6 +108,7 @@
                 android:layout_marginRight="50dp"
                 android:button="@drawable/chekcbox_selector"
                 android:text="Product damage" />
+            </LinearLayout>
         </RadioGroup>
 
 
