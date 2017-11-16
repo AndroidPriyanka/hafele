@@ -61,7 +61,7 @@ public class HafeleWebservice {
 
 //	String compressionUrl = "http://23.229.229.20/activation/service.svc";//old Pro
 
-    String smsUrl = "http://180.179.146.71/api/v3/sendsms/plain?user=Hafele1&password=HaFeLe12&sender=Hafele";
+    String smsUrl = "http://180.179.146.71/api/v3/sendsms/plain?user=Hafele1&password=HaFeLe12&sender=Hafele";  //........for india
 
   // "http://203.153.222.25:5000/sms/send_sms.php?username=hafele&password=Test123&src=Hafele&dst=" + mobile + "&msg=" + message + "&dr=1";
 

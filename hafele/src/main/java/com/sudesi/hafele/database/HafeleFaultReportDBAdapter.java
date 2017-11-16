@@ -23,6 +23,7 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.text.TextUtils;
 import android.util.Log;
 
 public class HafeleFaultReportDBAdapter {
@@ -252,6 +253,35 @@ public class HafeleFaultReportDBAdapter {
 
         String sql = "select * from " + table + " where " + colName + " = '"
                 + ID + "'";
+        if (!mDb.isOpen()) {
+
+            try {
+                mDbHelper.openDataBase();
+                mDb = mDbHelper.getReadableDatabase();
+
+            } catch (SQLException mSQLException) {
+                Log.e(TAG, "open >>" + mSQLException.toString());
+                throw mSQLException;
+            }
+        }
+        Cursor c = mDb.rawQuery(sql, null);
+        if (c != null && c.getCount() > 0) {
+            result = true;
+        } else {
+            result = false;
+        }
+        return result;
+    }
+
+    public boolean checkValuePrersent(String table, String colName, String whereCluase) {
+        Boolean result;
+        String sql;
+        if (colName != null && !TextUtils.isEmpty(colName)){
+            sql = "select " + colName+ " from " + table + whereCluase;
+        }else{
+            sql = "select * from " + table + whereCluase;
+        }
+
         if (!mDb.isOpen()) {
 
             try {

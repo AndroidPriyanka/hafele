@@ -704,7 +704,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                             }
 
 
-                            //    SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list.get(i), Soapresponse.toString());
+                                SoapPrimitive Soapresponse1 = ws.Insert_Complaint_Service_Details1(list.get(i), Soapresponse.toString());
 
 
                             SoapPrimitive soap_updateFault = ws.Update_FaulFinding(
@@ -721,8 +721,7 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
                             if (responseId > 0) {
                                 if (list.get(i).Closure_Status != null) {
                                     if (list.get(i).Closure_Status
-                                            .equals("Resolved"))
-                                    {
+                                            .equals("Resolved")) {
                                         dbAdapter.delete(
                                                 "complaint_service_details",
                                                 "complaint_number",
@@ -731,16 +730,26 @@ public class HomeScreenActivity extends Activity implements OnClickListener {
 
                                         dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
 
-                                    } else if ((list.get(i).Closure_Status.equals("Unresolved")) && (list.get(i).Action.equalsIgnoreCase("MTR required")))
-                                    {
+                                    } else {
 
-                                        dbAdapter.delete(
-                                                "complaint_service_details",
-                                                "complaint_number",
-                                                "'" + list.get(i).Complant_No
-                                                        + "'");
+                                        // todo chnges
+                                        String whereCliase = " where complaint_number = '" + list.get(i).Complant_No + "' and product_group != 'Sanitary'";
 
-                                        dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
+                                        boolean result = dbAdapter.checkValuePrersent("complaint_service_details", "", whereCliase);
+
+                                        if (result) {
+
+                                            if ((list.get(i).Closure_Status.equals("Unresolved")) && (list.get(i).Action.equalsIgnoreCase("MTR required"))) {
+
+                                                dbAdapter.delete(
+                                                        "complaint_service_details",
+                                                        "complaint_number",
+                                                        "'" + list.get(i).Complant_No
+                                                                + "'");
+
+                                                dbAdapter.delete("Fault_Finding_Details", "Complant_No", "'" + list.get(i).Complant_No + "'");
+                                            }
+                                        }
                                     }
                                 }
                             }

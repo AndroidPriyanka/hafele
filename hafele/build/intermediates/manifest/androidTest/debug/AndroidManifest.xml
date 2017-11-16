@@ -13,7 +13,7 @@
         android:label="Tests for com.sudesi.hafele.faultreport"
         android:targetPackage="com.sudesi.hafele.faultreport" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
