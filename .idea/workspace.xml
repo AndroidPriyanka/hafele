@@ -12,535 +12,32 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6bb971-9c99-42ce-bc5a-d481fcd6eec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_multidex_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_annotations_20_0_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_20_0_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_ffmpeg4android_os_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_hafele_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ksoap2_android_assembly_3_3_0_jar_with_dependencies.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/multidex_instrumentation_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/blame/res/androidTest/debug/single/drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/blame/res/androidTest/debug/single/layout.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/contact_us.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/in.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/in.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/assets/vid.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/contact_us.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/in.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/in.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/assets/vid.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/drawable/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/drawable/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/drawable/notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/layout/about_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/layout/contact_us_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/layout/ffmpeg_demo_client2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/layout/remoteserviceclient.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/layout/show_file.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/default/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental-safeguard/release/tag.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/drawable/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/drawable/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/drawable/notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/layout/about_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/layout/contact_us_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/layout/ffmpeg_demo_client2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/layout/remoteserviceclient.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/layout/show_file.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-debug.aar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/outputs/aar/ffmpeg4android_os-release.aar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/HafeleFaultReports.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/contact_us.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/in.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/in.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/assets/debug/vid.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values-w820dp-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/multi/values.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-hdpi.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-mdpi.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-xhdpi.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-xxhdpi.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable-xxxhdpi.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/layout-land.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/layout.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/blame/res/debug/single/menu.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/android/support/multidex/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/android/support/v4/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/netcompss/ffmpeg4android/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/AttendedListAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/AttendedListAdapter$ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/AttendedListAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ComplaintListAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ComplaintListAdapter$ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ComplaintListAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/DelayedListAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/DelayedListAdapter$ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/DelayedListAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ImageGridAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ImageGridAdapter$ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/ImageGridAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/VideoGridAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/VideoGridAdapter$ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/adapter/VideoGridAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/broadcastReceiver/UploadDataBrodcastReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/Complaint$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/Complaint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/FaultReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/Feedback.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/ImageData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/ProductCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/ProductSubCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/SignatureView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/UserClass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/classes/VideoData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/database/HafeleFaultReportDBHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/AcceptedComplaintFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/AcceptedComplaintFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ComplaintsList$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ComplaintsList$GetDataTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ComplaintsList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$20.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$21.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$22.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$23.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$24.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$GetDataTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity$ResheduleMeetingTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DashBoardActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/DeleteFileBroadcastReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$20.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$21.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$22.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$23.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$24.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$25.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$26.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$27.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$28.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$29.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$30.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$31.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$32.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$33.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$34.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$35.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$36.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$37.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$38.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$39.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$40.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$41.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$42.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$43.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$44.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$45.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$46.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$47.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$48.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$49.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$50.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$51.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$52.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$53.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$54.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$55.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$56.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$57.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$58.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$59.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$60.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$61.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$62.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$63.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$64.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$65.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$66.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$67.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$68.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$69.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$70.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$71.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$72.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$73.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$74.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$75.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$76.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$77.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$78.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$79.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$80.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$81.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$82.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$83.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm$SendSMSAsync.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/FaultReportForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$GetDataFromServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity$UploadTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/HomeScreenActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/MainLauncherActivity$LoginTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/MainLauncherActivity$SyncApkCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/MainLauncherActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/NewComplaintFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/ReportsView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$19.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$20.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$21.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm$SendSMSAsync.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/faultreport/SiteVisitForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/fileupload/FtpUpload.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/fileupload/SimpleFTP.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/preferences/HafelePreference.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/utils/SMSResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/utils/UtilityClass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/utils/Validation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/ExSSLSocketFactory$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/ExSSLSocketFactory$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/ExSSLSocketFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/classes/debug/com/sudesi/hafele/webservice/HafeleWebservice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental-safeguard/debug/tag.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/jniLibs/debug/armeabi-v7a/liblicense-jni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/jniLibs/debug/armeabi-v7a/libloader-jni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/jniLibs/debug/armeabi-v7a/libvideokit.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/androidTest/debug/manifest_keep.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/components.flags" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/maindexlist.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/check_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/check_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/lo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/radio_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/radio_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/radio_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-hdpi/unchecked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi-v4/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/check_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/check_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/dashboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/dbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/download_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/home_one.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/lo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/login.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/logout.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/logout_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/master_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/radio_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/radio_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/radio_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/reports.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/setting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/settings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/txt1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/uncheck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/upload_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-mdpi/user_manual.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi-v4/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/check_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/check_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/dashboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/dbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/download_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/home_one.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/logout.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/logout_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/master_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/radio_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/radio_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/radio_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/reports.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/setting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/uncheck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xhdpi/upload_sync.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/check_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/check_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/radio_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/radio_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/radio_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxhdpi/uncheck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/check_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/check_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/radio_checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/radio_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/radio_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable-xxxhdpi/uncheck.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/bg_five.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/button_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/button_focused.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/button_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/button_unfocused.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/chekcbox_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/dropdown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/edittext_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/empty_img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/hafele_mortise.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/img_one.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/img_three.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/img_two.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/local_mortise.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/notification_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/password.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/radio_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/drawable/username.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout-land/dashboard.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/about_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/activity_main_launcher.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/call_initiate_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/complain_detail_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/complains_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/complaint_item_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/contact_us_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/customer_information_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/dashboard.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/date_time_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/door_closure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/door_control_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/door_handle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/fault_report_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/feedback_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/ffmpeg_demo_client2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/general_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/header_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/hinges.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/home_screen_activity.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/image_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/image_grid_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/lift_up_system.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/locking_system.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/locking_system1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_blum_corner_unit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_corner_unit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_ironing_board.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_lighting_complaint.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_lighting_service.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_pratik.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_pratik_tavoletto.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_result.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_tall_unit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_tavoletto.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/new_volume_calculation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/option_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/pull_handle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/remoteserviceclient.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/reports_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/reshedule.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/runners.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/show_file.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/site_visit_form.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/sliding_fitting.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/sliding_fitting1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/volume_calculation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/layout/weight_calculation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/menu/main_launcher.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/merged/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/res/resources-debug.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/mergeJavaRes/debug/folders/2/1f/main/META-INF/services/org.xmlpull.v1.XmlPullParserFactory" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/liblicense-jni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libloader-jni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libvideokit.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/hafele-release.apk" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$drawable.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$id.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$layout.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$string.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$style.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R.class" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/classes/release/com/netcompss/ffmpeg4android/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build.gradle" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/androidTest/debug/com/netcompss/ffmpeg4android/R.java" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/androidTest/debug/com/netcompss/ffmpeg4android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/androidTest/debug/com/netcompss/ffmpeg4android/test/R.java" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/androidTest/debug/com/netcompss/ffmpeg4android/test/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/release/com/netcompss/ffmpeg4android/R.java" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/generated/source/r/release/com/netcompss/ffmpeg4android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/R.txt" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/bundles/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/symbols/androidTest/debug/R.txt" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/symbols/androidTest/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build.gradle" afterPath="$PROJECT_DIR$/hafele/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/netcompss/ffmpeg4android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/sudesi/hafele/faultreport/R.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/r/debug/com/sudesi/hafele/faultreport/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/buildConfig/debug/com/sudesi/hafele/faultreport/BuildConfig.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/buildConfig/debug/com/sudesi/hafele/faultreport/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/manifest_keep.txt" afterPath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/manifest_keep.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/hafele/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/hafele/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/hafele-hafele.iml" afterPath="$PROJECT_DIR$/hafele/hafele-hafele.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Hafele.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -565,7 +62,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state />
+        </projects_view>
       </state>
     </system>
   </component>
@@ -574,24 +73,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HafeleWebservice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+      <file leaf-file-name="FaultReportForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="21069" column="61" lean-forward="false" selection-start-line="21069" selection-start-column="61" selection-end-line="21069" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#672018#672019#0" expanded="false" />
+                <element signature="e#672071#672072#0" expanded="false" />
+                <element signature="e#1088434#1088435#0" expanded="false" />
+                <element signature="e#1088471#1088472#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainLauncherActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainLauncherActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="582">
+              <caret line="577" column="58" lean-forward="false" selection-start-line="577" selection-start-column="58" selection-end-line="577" selection-end-column="58" />
               <folding>
-                <marker date="1510735632342" expanded="true" signature="2495:2802" ph="//..." />
+                <marker date="1511175108174" expanded="true" signature="2495:2802" ph="//..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HafeleWebservice.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -614,8 +129,20 @@
       <find>product_category</find>
       <find>Product_Category</find>
       <find>product</find>
-      <find>Faucet</find>
       <find>Accessories</find>
+      <find>radio_accessories_damage</find>
+      <find>sanitary</find>
+      <find>Aventos</find>
+      <find>Faucet</find>
+      <find>ch</find>
+      <find>checking</find>
+      <find>checking</find>
+      <find>checking a</find>
+      <find>checking ap</find>
+      <find>checking apk</find>
+      <find>Update</find>
+      <find>INSTALL_PACKAGES</find>
+      <find>SyncApkCheck</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -3204,7 +2731,6 @@
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/layout_sanitary_service_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/site_visit_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/new_result.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
@@ -3217,18 +2743,20 @@
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/showers_layout_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java" />
         <option value="$PROJECT_DIR$/ffmpeg4android_os/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/hafele/build.gradle" />
-        <option value="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
+        <option value="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -3254,10 +2782,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3329,6 +2854,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3806,21 +3361,24 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hafale Final Production Release 1.8/KEY/hafele_key1.jks" />
-    <property name="device.picker.selection" value="EU6PU8VG99999999" />
-    <property name="DEBUGGABLE_DEVICE" value="lenovo-lenovo_tb3_710i-EU6PU8VG99999999" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hafele Final Producation Release 2.2 for India" />
+    <property name="device.picker.selection" value="ab90ceaa" />
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t116ir-ab90ceaa" />
     <property name="DEBUGGABLE_PROCESS" value="com.sudesi.hafele.faultreport" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="android.profiler.active" value="true" />
     <property name="android.project.structure.last.selected" value="hafele" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ExportApk.ApkPath" value="D:\Aniket_workspace\hafele\hafele" />
+    <property name="ExportApk.ApkPath" value="D:\Aniket_workspace\Hafele Final Producation Release 2.2 for India" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
@@ -3914,7 +3472,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510836244745" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856557" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3962,7 +3520,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510836244745" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856557" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -4124,7 +3682,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510836244747" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856558" />
       </method>
     </configuration>
     <configuration default="false" name="hafele-hafele" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -4173,7 +3731,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510836244747" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856558" />
       </method>
     </configuration>
     <list size="2">
@@ -4259,36 +3817,44 @@
       <option name="project" value="LOCAL" />
       <updated>1510137030535</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sanitary resolved state done by Aniket Adsul">
+      <created>1510836304870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510836304870</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022146508" sideWeight="0.51664144" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.16183986" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.42738277" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.119250424" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.034039333" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11754685" sideWeight="0.57261723" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.37330756" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.42738277" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26172465" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12829526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119250424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4855196" sideWeight="0.48335856" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.6266925" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.034039333" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.83816016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31316188" sideWeight="0.25316456" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4296,9 +3862,8 @@
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22487223" sideWeight="0.607413" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -4344,7 +3909,8 @@
     <MESSAGE value="Resolved bugs by Aniket Adsul" />
     <MESSAGE value="Resolved Bugs done by Aniket Adsul" />
     <MESSAGE value="Client changes done by Aniket Adsul" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client changes done by Aniket Adsul" />
+    <MESSAGE value="sanitary resolved state done by Aniket Adsul" />
+    <option name="LAST_COMMIT_MESSAGE" value="sanitary resolved state done by Aniket Adsul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4819,31 +4385,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21843</line>
+          <line>21860</line>
           <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21769</line>
+          <line>21784</line>
           <properties />
           <option name="timeStamp" value="299" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21770</line>
+          <line>21785</line>
           <properties />
           <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21772</line>
+          <line>21787</line>
           <properties />
           <option name="timeStamp" value="301" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21844</line>
+          <line>21861</line>
           <properties />
           <option name="timeStamp" value="302" />
         </line-breakpoint>
@@ -4873,33 +4439,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21849</line>
+          <line>21866</line>
           <properties />
           <option name="timeStamp" value="310" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21854</line>
+          <line>21871</line>
           <properties />
           <option name="timeStamp" value="311" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21934</line>
+          <line>21951</line>
           <properties />
           <option name="timeStamp" value="312" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>22047</line>
+          <line>22064</line>
           <properties />
           <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
-          <line>21869</line>
+          <line>21886</line>
           <properties />
           <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java</url>
+          <line>582</line>
+          <properties />
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java</url>
+          <line>488</line>
+          <properties />
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java</url>
+          <line>190</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java</url>
+          <line>574</line>
+          <properties />
+          <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
@@ -4920,46 +4516,15 @@
           <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="316" />
+      <option name="time" value="321" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/database/Cursor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="238" column="11" lean-forward="false" selection-start-line="238" selection-start-column="11" selection-end-line="238" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2520" column="0" lean-forward="false" selection-start-line="2520" selection-start-column="0" selection-end-line="2520" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/java/com/netcompss/ffmpeg4android_client/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/site_visit_form.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="261" column="44" lean-forward="false" selection-start-line="261" selection-start-column="44" selection-end-line="261" selection-end-column="44" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -5063,16 +4628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="49" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -5130,42 +4685,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="153" column="13" lean-forward="false" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
-          <folding>
-            <marker date="1510121728998" expanded="true" signature="71741:71947" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="188" column="28" lean-forward="false" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="167" column="60" lean-forward="false" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/build.gradle">
@@ -5231,19 +4759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="78" lean-forward="true" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-          <folding>
-            <element signature="e#1547#1565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -5258,18 +4773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="294" column="21" lean-forward="false" selection-start-line="294" selection-start-column="21" selection-end-line="294" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7769">
           <caret line="515" column="66" lean-forward="false" selection-start-line="515" selection-start-column="66" selection-end-line="515" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5277,7 +4784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5295,279 +4801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="10406" column="0" lean-forward="false" selection-start-line="10406" selection-start-column="0" selection-end-line="10406" selection-end-column="0" />
-          <folding>
-            <element signature="e#31540#38419#0" expanded="true" />
-            <element signature="e#38418#38419#0" expanded="true" />
-            <element signature="e#38840#39179#0" expanded="true" />
-            <element signature="e#39178#39179#0" expanded="true" />
-            <element signature="e#42554#43032#0" expanded="true" />
-            <element signature="e#43031#43032#0" expanded="true" />
-            <element signature="e#43540#44136#0" expanded="true" />
-            <element signature="e#44135#44136#0" expanded="true" />
-            <element signature="e#62026#69623#0" expanded="true" />
-            <element signature="e#69622#69623#0" expanded="true" />
-            <element signature="e#72728#73206#0" expanded="true" />
-            <element signature="e#73205#73206#0" expanded="true" />
-            <element signature="e#73707#74302#0" expanded="true" />
-            <element signature="e#74301#74302#0" expanded="true" />
-            <element signature="e#96955#97433#0" expanded="true" />
-            <element signature="e#97432#97433#0" expanded="true" />
-            <element signature="e#97933#98528#0" expanded="true" />
-            <element signature="e#98527#98528#0" expanded="true" />
-            <element signature="e#103908#113790#0" expanded="true" />
-            <element signature="e#113789#113790#0" expanded="true" />
-            <element signature="e#126242#126720#0" expanded="true" />
-            <element signature="e#126719#126720#0" expanded="true" />
-            <element signature="e#126767#127362#0" expanded="true" />
-            <element signature="e#127361#127362#0" expanded="true" />
-            <element signature="e#131485#136408#0" expanded="true" />
-            <element signature="e#136407#136408#0" expanded="true" />
-            <element signature="e#158256#158734#0" expanded="true" />
-            <element signature="e#158733#158734#0" expanded="true" />
-            <element signature="e#159229#159824#0" expanded="true" />
-            <element signature="e#159823#159824#0" expanded="true" />
-            <element signature="e#161532#162357#0" expanded="true" />
-            <element signature="e#162356#162357#0" expanded="true" />
-            <element signature="e#184849#188082#0" expanded="true" />
-            <element signature="e#188081#188082#0" expanded="true" />
-            <element signature="e#191185#191663#0" expanded="true" />
-            <element signature="e#191662#191663#0" expanded="true" />
-            <element signature="e#192164#192759#0" expanded="true" />
-            <element signature="e#192758#192759#0" expanded="true" />
-            <element signature="e#207026#211643#0" expanded="true" />
-            <element signature="e#211642#211643#0" expanded="true" />
-            <element signature="e#214669#215147#0" expanded="true" />
-            <element signature="e#215146#215147#0" expanded="true" />
-            <element signature="e#215647#216242#0" expanded="true" />
-            <element signature="e#216241#216242#0" expanded="true" />
-            <element signature="e#237905#242448#0" expanded="true" />
-            <element signature="e#242447#242448#0" expanded="true" />
-            <element signature="e#245154#245632#0" expanded="true" />
-            <element signature="e#245631#245632#0" expanded="true" />
-            <element signature="e#246234#246829#0" expanded="true" />
-            <element signature="e#246828#246829#0" expanded="true" />
-            <element signature="e#253974#255186#0" expanded="true" />
-            <element signature="e#255185#255186#0" expanded="true" />
-            <element signature="e#257261#257739#0" expanded="true" />
-            <element signature="e#257738#257739#0" expanded="true" />
-            <element signature="e#258341#258936#0" expanded="true" />
-            <element signature="e#258935#258936#0" expanded="true" />
-            <element signature="e#276157#277553#0" expanded="true" />
-            <element signature="e#277552#277553#0" expanded="true" />
-            <element signature="e#295129#295607#0" expanded="true" />
-            <element signature="e#295606#295607#0" expanded="true" />
-            <element signature="e#295705#296300#0" expanded="true" />
-            <element signature="e#296299#296300#0" expanded="true" />
-            <element signature="e#327111#328272#0" expanded="true" />
-            <element signature="e#328271#328272#0" expanded="true" />
-            <element signature="e#339615#340093#0" expanded="true" />
-            <element signature="e#340092#340093#0" expanded="true" />
-            <element signature="e#340191#340786#0" expanded="true" />
-            <element signature="e#340785#340786#0" expanded="true" />
-            <element signature="e#346911#347768#0" expanded="true" />
-            <element signature="e#347767#347768#0" expanded="true" />
-            <element signature="e#357729#358207#0" expanded="true" />
-            <element signature="e#358206#358207#0" expanded="true" />
-            <element signature="e#358305#358900#0" expanded="true" />
-            <element signature="e#358899#358900#0" expanded="true" />
-            <element signature="e#368403#369840#0" expanded="true" />
-            <element signature="e#369839#369840#0" expanded="true" />
-            <element signature="e#398529#399007#0" expanded="true" />
-            <element signature="e#399006#399007#0" expanded="true" />
-            <element signature="e#399105#399700#0" expanded="true" />
-            <element signature="e#399699#399700#0" expanded="true" />
-            <element signature="e#400573#406291#0" expanded="true" />
-            <element signature="e#406290#406291#0" expanded="true" />
-            <element signature="e#422261#423472#0" expanded="true" />
-            <element signature="e#423471#423472#0" expanded="true" />
-            <element signature="e#423532#424913#0" expanded="true" />
-            <element signature="e#424912#424913#0" expanded="true" />
-            <element signature="e#424977#426331#0" expanded="true" />
-            <element signature="e#426330#426331#0" expanded="true" />
-            <element signature="e#426397#427679#0" expanded="true" />
-            <element signature="e#427678#427679#0" expanded="true" />
-            <element signature="e#427739#429014#0" expanded="true" />
-            <element signature="e#429013#429014#0" expanded="true" />
-            <element signature="e#429078#430210#0" expanded="true" />
-            <element signature="e#430209#430210#0" expanded="true" />
-            <element signature="e#430278#431315#0" expanded="true" />
-            <element signature="e#431314#431315#0" expanded="true" />
-            <element signature="e#431389#433125#0" expanded="true" />
-            <element signature="e#433124#433125#0" expanded="true" />
-            <element signature="e#433205#434936#0" expanded="true" />
-            <element signature="e#434935#434936#0" expanded="true" />
-            <element signature="e#435003#436746#0" expanded="true" />
-            <element signature="e#436745#436746#0" expanded="true" />
-            <element signature="e#436824#437899#0" expanded="true" />
-            <element signature="e#437898#437899#0" expanded="true" />
-            <element signature="e#437973#439959#0" expanded="true" />
-            <element signature="e#439958#439959#0" expanded="true" />
-            <element signature="e#440039#442020#0" expanded="true" />
-            <element signature="e#442019#442020#0" expanded="true" />
-            <element signature="e#442087#444080#0" expanded="true" />
-            <element signature="e#444079#444080#0" expanded="true" />
-            <element signature="e#444163#445158#0" expanded="true" />
-            <element signature="e#445157#445158#0" expanded="true" />
-            <element signature="e#445238#446955#0" expanded="true" />
-            <element signature="e#446954#446955#0" expanded="true" />
-            <element signature="e#447041#448753#0" expanded="true" />
-            <element signature="e#448752#448753#0" expanded="true" />
-            <element signature="e#448826#450550#0" expanded="true" />
-            <element signature="e#450549#450550#0" expanded="true" />
-            <element signature="e#450634#451666#0" expanded="true" />
-            <element signature="e#451665#451666#0" expanded="true" />
-            <element signature="e#451747#453536#0" expanded="true" />
-            <element signature="e#453535#453536#0" expanded="true" />
-            <element signature="e#453622#455406#0" expanded="true" />
-            <element signature="e#455405#455406#0" expanded="true" />
-            <element signature="e#455481#457278#0" expanded="true" />
-            <element signature="e#457277#457278#0" expanded="true" />
-            <element signature="e#457355#458319#0" expanded="true" />
-            <element signature="e#458318#458319#0" expanded="true" />
-            <element signature="e#458394#460121#0" expanded="true" />
-            <element signature="e#460120#460121#0" expanded="true" />
-            <element signature="e#460201#461923#0" expanded="true" />
-            <element signature="e#461922#461923#0" expanded="true" />
-            <element signature="e#461990#463724#0" expanded="true" />
-            <element signature="e#463723#463724#0" expanded="true" />
-            <element signature="e#463806#464528#0" expanded="true" />
-            <element signature="e#464527#464528#0" expanded="true" />
-            <element signature="e#464608#465627#0" expanded="true" />
-            <element signature="e#465626#465627#0" expanded="true" />
-            <element signature="e#465712#466655#0" expanded="true" />
-            <element signature="e#466654#466655#0" expanded="true" />
-            <element signature="e#466727#467682#0" expanded="true" />
-            <element signature="e#467681#467682#0" expanded="true" />
-            <element signature="e#467744#468481#0" expanded="true" />
-            <element signature="e#468480#468481#0" expanded="true" />
-            <element signature="e#468541#469112#0" expanded="true" />
-            <element signature="e#469111#469112#0" expanded="true" />
-            <element signature="e#469175#469891#0" expanded="true" />
-            <element signature="e#469890#469891#0" expanded="true" />
-            <element signature="e#469953#470519#0" expanded="true" />
-            <element signature="e#470518#470519#0" expanded="true" />
-            <element signature="e#470579#471276#0" expanded="true" />
-            <element signature="e#471275#471276#0" expanded="true" />
-            <element signature="e#471336#471892#0" expanded="true" />
-            <element signature="e#471891#471892#0" expanded="true" />
-            <element signature="e#471951#472644#0" expanded="true" />
-            <element signature="e#472643#472644#0" expanded="true" />
-            <element signature="e#472702#473416#0" expanded="true" />
-            <element signature="e#473415#473416#0" expanded="true" />
-            <element signature="e#473486#474234#0" expanded="true" />
-            <element signature="e#474233#474234#0" expanded="true" />
-            <element signature="e#474302#474882#0" expanded="true" />
-            <element signature="e#474881#474882#0" expanded="true" />
-            <element signature="e#474940#475718#0" expanded="true" />
-            <element signature="e#475717#475718#0" expanded="true" />
-            <element signature="e#475776#476376#0" expanded="true" />
-            <element signature="e#476375#476376#0" expanded="true" />
-            <element signature="e#476447#477203#0" expanded="true" />
-            <element signature="e#477202#477203#0" expanded="true" />
-            <element signature="e#477273#477862#0" expanded="true" />
-            <element signature="e#477861#477862#0" expanded="true" />
-            <element signature="e#477925#478674#0" expanded="true" />
-            <element signature="e#478673#478674#0" expanded="true" />
-            <element signature="e#478736#479315#0" expanded="true" />
-            <element signature="e#479314#479315#0" expanded="true" />
-            <element signature="e#479462#480218#0" expanded="true" />
-            <element signature="e#480217#480218#0" expanded="true" />
-            <element signature="e#480291#480874#0" expanded="true" />
-            <element signature="e#480873#480874#0" expanded="true" />
-            <element signature="e#480936#481657#0" expanded="true" />
-            <element signature="e#481656#481657#0" expanded="true" />
-            <element signature="e#481718#482280#0" expanded="true" />
-            <element signature="e#482279#482280#0" expanded="true" />
-            <element signature="e#482356#483164#0" expanded="true" />
-            <element signature="e#483163#483164#0" expanded="true" />
-            <element signature="e#483239#483816#0" expanded="true" />
-            <element signature="e#483815#483816#0" expanded="true" />
-            <element signature="e#483978#484712#0" expanded="true" />
-            <element signature="e#484711#484712#0" expanded="true" />
-            <element signature="e#484786#485360#0" expanded="true" />
-            <element signature="e#485359#485360#0" expanded="true" />
-            <element signature="e#485436#486174#0" expanded="true" />
-            <element signature="e#486173#486174#0" expanded="true" />
-            <element signature="e#486249#486829#0" expanded="true" />
-            <element signature="e#486828#486829#0" expanded="true" />
-            <element signature="e#486906#487652#0" expanded="true" />
-            <element signature="e#487651#487652#0" expanded="true" />
-            <element signature="e#487728#488311#0" expanded="true" />
-            <element signature="e#488310#488311#0" expanded="true" />
-            <element signature="e#488457#489153#0" expanded="true" />
-            <element signature="e#489152#489153#0" expanded="true" />
-            <element signature="e#489220#489766#0" expanded="true" />
-            <element signature="e#489765#489766#0" expanded="true" />
-            <element signature="e#489836#490556#0" expanded="true" />
-            <element signature="e#490555#490556#0" expanded="true" />
-            <element signature="e#490625#491192#0" expanded="true" />
-            <element signature="e#491191#491192#0" expanded="true" />
-            <element signature="e#491262#491968#0" expanded="true" />
-            <element signature="e#491967#491968#0" expanded="true" />
-            <element signature="e#492037#492590#0" expanded="true" />
-            <element signature="e#492589#492590#0" expanded="true" />
-            <element signature="e#492726#493453#0" expanded="true" />
-            <element signature="e#493452#493453#0" expanded="true" />
-            <element signature="e#493527#494096#0" expanded="true" />
-            <element signature="e#494095#494096#0" expanded="true" />
-            <element signature="e#546811#547582#0" expanded="true" />
-            <element signature="e#547581#547582#0" expanded="true" />
-            <element signature="e#550492#554375#0" expanded="true" />
-            <element signature="e#554374#554375#0" expanded="true" />
-            <element signature="e#557609#560550#0" expanded="true" />
-            <element signature="e#560549#560550#0" expanded="true" />
-            <element signature="e#590612#591130#0" expanded="true" />
-            <element signature="e#591129#591130#0" expanded="true" />
-            <element signature="e#591236#591875#0" expanded="true" />
-            <element signature="e#591874#591875#0" expanded="true" />
-            <element signature="e#598494#599710#0" expanded="true" />
-            <element signature="e#599709#599710#0" expanded="true" />
-            <element signature="e#611264#611782#0" expanded="true" />
-            <element signature="e#611781#611782#0" expanded="true" />
-            <element signature="e#611888#612527#0" expanded="true" />
-            <element signature="e#612526#612527#0" expanded="true" />
-            <element signature="e#617908#618799#0" expanded="true" />
-            <element signature="e#618798#618799#0" expanded="true" />
-            <element signature="e#627575#628093#0" expanded="true" />
-            <element signature="e#628092#628093#0" expanded="true" />
-            <element signature="e#628199#628838#0" expanded="true" />
-            <element signature="e#628837#628838#0" expanded="true" />
-            <element signature="e#643422#643940#0" expanded="true" />
-            <element signature="e#643939#643940#0" expanded="true" />
-            <element signature="e#644595#645234#0" expanded="true" />
-            <element signature="e#645233#645234#0" expanded="true" />
-            <element signature="e#648599#650730#0" expanded="true" />
-            <element signature="e#650729#650730#0" expanded="true" />
-            <element signature="e#651877#654647#0" expanded="true" />
-            <element signature="e#654646#654647#0" expanded="true" />
-            <element signature="e#664231#666432#0" expanded="true" />
-            <element signature="e#666431#666432#0" expanded="true" />
-            <element signature="e#666516#666758#0" expanded="true" />
-            <element signature="e#666757#666758#0" expanded="true" />
-            <element signature="e#671931#672082#0" expanded="true" />
-            <element signature="e#672081#672082#0" expanded="true" />
-            <element signature="e#674488#678824#0" expanded="true" />
-            <element signature="e#678823#678824#0" expanded="true" />
-            <element signature="e#678885#681560#0" expanded="true" />
-            <element signature="e#681559#681560#0" expanded="true" />
-            <element signature="e#696186#696475#0" expanded="true" />
-            <element signature="e#696474#696475#0" expanded="true" />
-            <element signature="e#708895#710182#0" expanded="true" />
-            <element signature="e#710181#710182#0" expanded="true" />
-            <element signature="e#710629#711613#0" expanded="true" />
-            <element signature="e#711612#711613#0" expanded="true" />
-            <element signature="e#970285#970527#0" expanded="true" />
-            <element signature="e#970526#970527#0" expanded="true" />
-            <element signature="e#1082310#1086759#0" expanded="true" />
-            <element signature="e#1086758#1086759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -5579,25 +4812,17 @@
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="733" column="0" lean-forward="false" selection-start-line="733" selection-start-column="0" selection-end-line="733" selection-end-column="0" />
+          <caret line="733" column="0" lean-forward="true" selection-start-line="733" selection-start-column="0" selection-end-line="733" selection-end-column="0" />
           <folding>
             <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/accessories_layout_form.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="17">
+          <caret line="87" column="39" lean-forward="false" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -5605,13 +4830,138 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="265" column="37" lean-forward="true" selection-start-line="265" selection-start-column="37" selection-end-line="265" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="152" column="37" lean-forward="true" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/sanitary_fault_finding_form.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="859" column="66" lean-forward="false" selection-start-line="859" selection-start-column="66" selection-end-line="859" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#64981#64982#0" expanded="false" />
+            <element signature="e#65034#65035#0" expanded="false" />
+            <marker date="1510121728998" expanded="true" signature="71741:71947" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="392" column="18" lean-forward="true" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/menu/main_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21069" column="61" lean-forward="false" selection-start-line="21069" selection-start-column="61" selection-end-line="21069" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#672018#672019#0" expanded="false" />
+            <element signature="e#672071#672072#0" expanded="false" />
+            <element signature="e#1088434#1088435#0" expanded="false" />
+            <element signature="e#1088471#1088472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="582">
+          <caret line="577" column="58" lean-forward="false" selection-start-line="577" selection-start-column="58" selection-end-line="577" selection-end-column="58" />
           <folding>
-            <marker date="1510735632342" expanded="true" signature="2495:2802" ph="//..." />
+            <marker date="1511175108174" expanded="true" signature="2495:2802" ph="//..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

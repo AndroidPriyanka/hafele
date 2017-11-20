@@ -433,8 +433,8 @@ public class MainLauncherActivity extends Activity implements OnClickListener {
             super.onPreExecute();
 
             mprogress = new ProgressDialog(context);
-            mprogress.setTitle("Checking APK");
-            mprogress.setMessage("Checking.....Please Wait....!!");
+            mprogress.setTitle("Checking Update.");
+            mprogress.setMessage("Please Wait..");
             mprogress.setCancelable(false);
             mprogress.show();
 
@@ -445,7 +445,7 @@ public class MainLauncherActivity extends Activity implements OnClickListener {
         @Override
         protected void onPostExecute(String result) {
             // TODO Auto-generated method stub
-            super.onPostExecute(result);
+          /*  super.onPostExecute(result);
             mprogress.dismiss();
             if (result != null) {
                 if (result.equalsIgnoreCase("DOWNLD")) {
@@ -457,8 +457,24 @@ public class MainLauncherActivity extends Activity implements OnClickListener {
             } else {
                 Toast.makeText(MainLauncherActivity.this, "No New Version !", Toast.LENGTH_LONG).show();
                 LoginUser();
-            }
+            }*/
 
+            //////////////////////
+
+            super.onPostExecute(result);
+            if (mprogress.isShowing())
+                mprogress.dismiss();
+            if (result != null) {
+                if (result.equalsIgnoreCase("DOWNLD")) {
+                    Toast.makeText(MainLauncherActivity.this, "Update Installed !", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(MainLauncherActivity.this, "Update unavailable !", Toast.LENGTH_LONG).show();
+                    LoginUser();
+                }
+            } else {
+                Toast.makeText(MainLauncherActivity.this, "Update unavailable !", Toast.LENGTH_LONG).show();
+                LoginUser();
+            }
         }
 
 
@@ -563,6 +579,7 @@ public class MainLauncherActivity extends Activity implements OnClickListener {
                             + "/download/"
                             + "app1.apk")),
                     "application/vnd.android.package-archive");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
 
             // mProgress.dismiss();

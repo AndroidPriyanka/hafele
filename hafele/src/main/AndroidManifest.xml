@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sudesi.hafele.faultreport"
     android:installLocation="auto"
-    android:versionCode="19"
-    android:versionName="@string/app_version_name" >
+    android:versionCode="21"
+    android:versionName="@string/app_version_name">
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="19" /> 
+        android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -26,18 +26,19 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:name="android.support.multidex.MultiDexApplication"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.sudesi.hafele.faultreport.MainLauncherActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,37 +49,31 @@
             android:name="com.sudesi.hafele.faultreport.SiteVisitForm"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
             android:name="com.sudesi.hafele.faultreport.FaultReportForm"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
             android:name="com.sudesi.hafele.faultreport.ComplaintsList"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
             android:name="com.sudesi.hafele.faultreport.DashBoardActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
             android:name="com.sudesi.hafele.faultreport.HomeScreenActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.sudesi.hafele.faultreport.ReportsView"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
 
         <!--
         <service
@@ -92,8 +87,7 @@
         </service>
         -->
         <!-- Broadcast receiver -->
-        <receiver android:name="com.sudesi.hafele.faultreport.DeleteFileBroadcastReceiver" >
-        </receiver>
+        <receiver android:name="com.sudesi.hafele.faultreport.DeleteFileBroadcastReceiver"></receiver>
 
         <!--
    <service
@@ -118,17 +112,17 @@
         <service
             android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"
             android:exported="true"
-            android:process=":remote" >
+            android:process=":remote">
             <intent-filter>
-                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge" >
-                </action>
+                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"></action>
             </intent-filter>
         </service>
-        
-        
+
+
         <service android:name="com.sudesi.hafele.broadcastReceiver.BackgroundServiceUploadData"></service>
+
         <receiver android:name="com.sudesi.hafele.broadcastReceiver.UploadDataBrodcastReceiver"></receiver>
-        
+
     </application>
 
 </manifest>

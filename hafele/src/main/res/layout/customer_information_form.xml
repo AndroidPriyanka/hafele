@@ -264,6 +264,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edittext_background"
                 android:padding="5dp"
+                android:maxLength="50"
                 android:textSize="@dimen/content_text_size" />
         </LinearLayout>
 

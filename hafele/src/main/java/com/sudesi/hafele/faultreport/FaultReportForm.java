@@ -21109,6 +21109,7 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
 
                 //  contentValues.put("sanitary_product", sanitary_product_id);
 
+
                 if (leakage_chk_1.isChecked()) {
                     String str_leakage_chk_1 = leakage_chk_1.getText().toString();
                     contentvalues.put("sanitary_leakage", str_leakage_chk_1);
@@ -21142,7 +21143,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_noise_chk_2 = noise_chk_2.getText().toString();
                     contentvalues.put("noise", str_noise_chk_2);
                 }
-                contentvalues.put("warranty", spin_faucet_warranty.getSelectedItem().toString());
+                if (!spin_faucet_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_faucet_warranty.getSelectedItem().toString());
+                }
                 contentvalues.put("Complant_No", complaint_number);
     /*        contentvalues.put("Product_Category", product_category);
             contentvalues.put("product_Sub_Category", product_sub_category);
@@ -21291,7 +21294,10 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_asthetics_chk_2 = asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_cistern_warranty.getSelectedItem().toString());
+
+                if (!spin_cistern_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_cistern_warranty.getSelectedItem().toString());
+                }
 
                 contentvalues.put("Complant_No", complaint_number);
      /*       contentvalues.put("Product_Category", product_category);
@@ -21431,8 +21437,11 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_kitchen_sink_asthetics_chk_2 = kitchen_sink_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_kitchen_sink_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_kitchen_sink_warranty.getSelectedItem().toString());
 
+
+                if (!spin_kitchen_sink_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_kitchen_sink_warranty.getSelectedItem().toString());
+                }
                 contentvalues.put("Complant_No", complaint_number);
        /*     contentvalues.put("Product_Category", product_category);
             contentvalues.put("product_Sub_Category", product_sub_category);
@@ -21569,7 +21578,11 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_ceramic_basin_asthetics_chk_2 = ceramic_basin_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_ceramic_basin_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_ceramic_basin_warranty.getSelectedItem().toString());
+
+
+                if (!spin_ceramic_basin_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_ceramic_basin_warranty.getSelectedItem().toString());
+                }
 
                 contentvalues.put("Complant_No", complaint_number);
       /*      contentvalues.put("Product_Category", product_category);
@@ -21710,7 +21723,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_shower_asthetics_chk_2 = shower_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_shower_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_shower_warranty.getSelectedItem().toString());
+                if (!spin_shower_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_shower_warranty.getSelectedItem().toString());
+                }
 
                 contentvalues.put("Complant_No", complaint_number);
                 // contentvalues.put("Product_Category", product_category);
@@ -21835,7 +21850,9 @@ public class FaultReportForm extends BaseWizard implements OnClickListener,
                     String str_accessories_asthetics_chk_2 = accessories_asthetics_chk_2.getText().toString();
                     contentvalues.put("asthetics", str_accessories_asthetics_chk_2);
                 }
-                contentvalues.put("warranty", spin_accessories_warranty.getSelectedItem().toString());
+                if (!spin_accessories_warranty.getSelectedItem().toString().equals("--Select--")) {
+                    contentvalues.put("warranty", spin_accessories_warranty.getSelectedItem().toString());
+                }
 
                 contentvalues.put("Complant_No", complaint_number);
 

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sudesi.hafele.faultreport"
     android:installLocation="auto"
-    android:versionCode="19"
+    android:versionCode="21"
     android:versionName="@string/app_version_name" >
 
     <uses-sdk
@@ -26,6 +26,7 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -34,6 +35,7 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:largeHeap="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.sudesi.hafele.faultreport.MainLauncherActivity"
@@ -49,37 +51,31 @@
             android:name="com.sudesi.hafele.faultreport.SiteVisitForm"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.sudesi.hafele.faultreport.FaultReportForm"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.sudesi.hafele.faultreport.ComplaintsList"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.sudesi.hafele.faultreport.DashBoardActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.sudesi.hafele.faultreport.HomeScreenActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.sudesi.hafele.faultreport.ReportsView"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
 
         <!--
         <service
@@ -93,8 +89,7 @@
         </service>
         -->
         <!-- Broadcast receiver -->
-        <receiver android:name="com.sudesi.hafele.faultreport.DeleteFileBroadcastReceiver" >
-        </receiver>
+        <receiver android:name="com.sudesi.hafele.faultreport.DeleteFileBroadcastReceiver" />
 
         <!--
    <service
@@ -121,8 +116,7 @@
             android:exported="true"
             android:process=":remote" >
             <intent-filter>
-                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge" >
-                </action>
+                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge" />
             </intent-filter>
         </service>
         <service android:name="com.sudesi.hafele.broadcastReceiver.BackgroundServiceUploadData" />
