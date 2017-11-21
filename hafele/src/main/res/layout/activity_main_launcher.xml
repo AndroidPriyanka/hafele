@@ -74,7 +74,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:gravity="center"
-        android:text="Powered by Smart Force © Sudesi Infotech\n(v2.2)"
+        android:text="Powered by Smart Force © Sudesi Infotech\n(v2.4)"
         android:textSize="15sp" />
 
 </RelativeLayout>

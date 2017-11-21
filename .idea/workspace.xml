@@ -16,27 +16,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6bb971-9c99-42ce-bc5a-d481fcd6eec2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/ffmpeg4android_os/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" afterPath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/generated/source/buildConfig/debug/com/sudesi/hafele/faultreport/BuildConfig.java" afterPath="$PROJECT_DIR$/hafele/build/generated/source/buildConfig/debug/com/sudesi/hafele/faultreport/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/hafele/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/manifest_keep.txt" afterPath="$PROJECT_DIR$/hafele/build/intermediates/multi-dex/debug/manifest_keep.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/hafele/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/hafele-hafele.iml" afterPath="$PROJECT_DIR$/hafele/hafele-hafele.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" afterPath="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Hafele.iws" />
@@ -76,12 +72,274 @@
       <file leaf-file-name="FaultReportForm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21069" column="61" lean-forward="false" selection-start-line="21069" selection-start-column="61" selection-end-line="21069" selection-end-column="61" />
+            <state relative-caret-position="140029">
+              <caret line="8490" column="57" lean-forward="false" selection-start-line="8490" selection-start-column="57" selection-end-line="8490" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#672018#672019#0" expanded="false" />
-                <element signature="e#672071#672072#0" expanded="false" />
+                <element signature="e#31540#38419#0" expanded="false" />
+                <element signature="e#38418#38419#0" expanded="false" />
+                <element signature="e#38840#39179#0" expanded="false" />
+                <element signature="e#39178#39179#0" expanded="false" />
+                <element signature="e#42554#43032#0" expanded="false" />
+                <element signature="e#43031#43032#0" expanded="false" />
+                <element signature="e#43540#44136#0" expanded="false" />
+                <element signature="e#44135#44136#0" expanded="false" />
+                <element signature="e#62026#69623#0" expanded="false" />
+                <element signature="e#69622#69623#0" expanded="false" />
+                <element signature="e#72728#73206#0" expanded="false" />
+                <element signature="e#73205#73206#0" expanded="false" />
+                <element signature="e#73707#74302#0" expanded="false" />
+                <element signature="e#74301#74302#0" expanded="false" />
+                <element signature="e#96955#97433#0" expanded="false" />
+                <element signature="e#97432#97433#0" expanded="false" />
+                <element signature="e#97933#98528#0" expanded="false" />
+                <element signature="e#98527#98528#0" expanded="false" />
+                <element signature="e#103908#113790#0" expanded="false" />
+                <element signature="e#113789#113790#0" expanded="false" />
+                <element signature="e#126242#126720#0" expanded="false" />
+                <element signature="e#126719#126720#0" expanded="false" />
+                <element signature="e#126767#127362#0" expanded="false" />
+                <element signature="e#127361#127362#0" expanded="false" />
+                <element signature="e#131485#136408#0" expanded="false" />
+                <element signature="e#136407#136408#0" expanded="false" />
+                <element signature="e#158256#158734#0" expanded="false" />
+                <element signature="e#158733#158734#0" expanded="false" />
+                <element signature="e#159229#159824#0" expanded="false" />
+                <element signature="e#159823#159824#0" expanded="false" />
+                <element signature="e#161532#162357#0" expanded="false" />
+                <element signature="e#162356#162357#0" expanded="false" />
+                <element signature="e#184849#188082#0" expanded="false" />
+                <element signature="e#188081#188082#0" expanded="false" />
+                <element signature="e#191185#191663#0" expanded="false" />
+                <element signature="e#191662#191663#0" expanded="false" />
+                <element signature="e#192164#192759#0" expanded="false" />
+                <element signature="e#192758#192759#0" expanded="false" />
+                <element signature="e#207026#211643#0" expanded="false" />
+                <element signature="e#211642#211643#0" expanded="false" />
+                <element signature="e#214669#215147#0" expanded="false" />
+                <element signature="e#215146#215147#0" expanded="false" />
+                <element signature="e#215647#216242#0" expanded="false" />
+                <element signature="e#216241#216242#0" expanded="false" />
+                <element signature="e#237905#242448#0" expanded="false" />
+                <element signature="e#242447#242448#0" expanded="false" />
+                <element signature="e#245154#245632#0" expanded="false" />
+                <element signature="e#245631#245632#0" expanded="false" />
+                <element signature="e#246234#246829#0" expanded="false" />
+                <element signature="e#246828#246829#0" expanded="false" />
+                <element signature="e#253974#255186#0" expanded="false" />
+                <element signature="e#255185#255186#0" expanded="false" />
+                <element signature="e#257261#257739#0" expanded="false" />
+                <element signature="e#257738#257739#0" expanded="false" />
+                <element signature="e#258341#258936#0" expanded="false" />
+                <element signature="e#258935#258936#0" expanded="false" />
+                <element signature="e#276157#277553#0" expanded="false" />
+                <element signature="e#277552#277553#0" expanded="false" />
+                <element signature="e#295129#295607#0" expanded="false" />
+                <element signature="e#295606#295607#0" expanded="false" />
+                <element signature="e#295705#296300#0" expanded="false" />
+                <element signature="e#296299#296300#0" expanded="false" />
+                <element signature="e#327111#328272#0" expanded="false" />
+                <element signature="e#328271#328272#0" expanded="false" />
+                <element signature="e#339615#340093#0" expanded="false" />
+                <element signature="e#340092#340093#0" expanded="false" />
+                <element signature="e#340191#340786#0" expanded="false" />
+                <element signature="e#340785#340786#0" expanded="false" />
+                <element signature="e#346911#347768#0" expanded="false" />
+                <element signature="e#347767#347768#0" expanded="false" />
+                <element signature="e#357729#358207#0" expanded="false" />
+                <element signature="e#358206#358207#0" expanded="false" />
+                <element signature="e#358305#358900#0" expanded="false" />
+                <element signature="e#358899#358900#0" expanded="false" />
+                <element signature="e#368403#369840#0" expanded="false" />
+                <element signature="e#369839#369840#0" expanded="false" />
+                <element signature="e#398529#399007#0" expanded="false" />
+                <element signature="e#399006#399007#0" expanded="false" />
+                <element signature="e#399105#399700#0" expanded="false" />
+                <element signature="e#399699#399700#0" expanded="false" />
+                <element signature="e#400573#406291#0" expanded="false" />
+                <element signature="e#406290#406291#0" expanded="false" />
+                <element signature="e#422261#423472#0" expanded="false" />
+                <element signature="e#423471#423472#0" expanded="false" />
+                <element signature="e#423532#424913#0" expanded="false" />
+                <element signature="e#424912#424913#0" expanded="false" />
+                <element signature="e#424977#426331#0" expanded="false" />
+                <element signature="e#426330#426331#0" expanded="false" />
+                <element signature="e#426397#427679#0" expanded="false" />
+                <element signature="e#427678#427679#0" expanded="false" />
+                <element signature="e#427739#429014#0" expanded="false" />
+                <element signature="e#429013#429014#0" expanded="false" />
+                <element signature="e#429078#430210#0" expanded="false" />
+                <element signature="e#430209#430210#0" expanded="false" />
+                <element signature="e#430278#431315#0" expanded="false" />
+                <element signature="e#431314#431315#0" expanded="false" />
+                <element signature="e#431389#433125#0" expanded="false" />
+                <element signature="e#433124#433125#0" expanded="false" />
+                <element signature="e#433205#434936#0" expanded="false" />
+                <element signature="e#434935#434936#0" expanded="false" />
+                <element signature="e#435003#436746#0" expanded="false" />
+                <element signature="e#436745#436746#0" expanded="false" />
+                <element signature="e#436824#437899#0" expanded="false" />
+                <element signature="e#437898#437899#0" expanded="false" />
+                <element signature="e#437973#439959#0" expanded="false" />
+                <element signature="e#439958#439959#0" expanded="false" />
+                <element signature="e#440039#442020#0" expanded="false" />
+                <element signature="e#442019#442020#0" expanded="false" />
+                <element signature="e#442087#444080#0" expanded="false" />
+                <element signature="e#444079#444080#0" expanded="false" />
+                <element signature="e#444163#445158#0" expanded="false" />
+                <element signature="e#445157#445158#0" expanded="false" />
+                <element signature="e#445238#446955#0" expanded="false" />
+                <element signature="e#446954#446955#0" expanded="false" />
+                <element signature="e#447041#448753#0" expanded="false" />
+                <element signature="e#448752#448753#0" expanded="false" />
+                <element signature="e#448826#450550#0" expanded="false" />
+                <element signature="e#450549#450550#0" expanded="false" />
+                <element signature="e#450634#451666#0" expanded="false" />
+                <element signature="e#451665#451666#0" expanded="false" />
+                <element signature="e#451747#453536#0" expanded="false" />
+                <element signature="e#453535#453536#0" expanded="false" />
+                <element signature="e#453622#455406#0" expanded="false" />
+                <element signature="e#455405#455406#0" expanded="false" />
+                <element signature="e#455481#457278#0" expanded="false" />
+                <element signature="e#457277#457278#0" expanded="false" />
+                <element signature="e#457355#458319#0" expanded="false" />
+                <element signature="e#458318#458319#0" expanded="false" />
+                <element signature="e#458394#460121#0" expanded="false" />
+                <element signature="e#460120#460121#0" expanded="false" />
+                <element signature="e#460201#461923#0" expanded="false" />
+                <element signature="e#461922#461923#0" expanded="false" />
+                <element signature="e#461990#463724#0" expanded="false" />
+                <element signature="e#463723#463724#0" expanded="false" />
+                <element signature="e#463806#464528#0" expanded="false" />
+                <element signature="e#464527#464528#0" expanded="false" />
+                <element signature="e#464608#465627#0" expanded="false" />
+                <element signature="e#465626#465627#0" expanded="false" />
+                <element signature="e#465712#466655#0" expanded="false" />
+                <element signature="e#466654#466655#0" expanded="false" />
+                <element signature="e#466727#467682#0" expanded="false" />
+                <element signature="e#467681#467682#0" expanded="false" />
+                <element signature="e#467744#468481#0" expanded="false" />
+                <element signature="e#468480#468481#0" expanded="false" />
+                <element signature="e#468541#469112#0" expanded="false" />
+                <element signature="e#469111#469112#0" expanded="false" />
+                <element signature="e#469175#469891#0" expanded="false" />
+                <element signature="e#469890#469891#0" expanded="false" />
+                <element signature="e#469953#470519#0" expanded="false" />
+                <element signature="e#470518#470519#0" expanded="false" />
+                <element signature="e#470579#471276#0" expanded="false" />
+                <element signature="e#471275#471276#0" expanded="false" />
+                <element signature="e#471336#471892#0" expanded="false" />
+                <element signature="e#471891#471892#0" expanded="false" />
+                <element signature="e#471951#472644#0" expanded="false" />
+                <element signature="e#472643#472644#0" expanded="false" />
+                <element signature="e#472702#473416#0" expanded="false" />
+                <element signature="e#473415#473416#0" expanded="false" />
+                <element signature="e#473486#474234#0" expanded="false" />
+                <element signature="e#474233#474234#0" expanded="false" />
+                <element signature="e#474302#474882#0" expanded="false" />
+                <element signature="e#474881#474882#0" expanded="false" />
+                <element signature="e#474940#475718#0" expanded="false" />
+                <element signature="e#475717#475718#0" expanded="false" />
+                <element signature="e#475776#476376#0" expanded="false" />
+                <element signature="e#476375#476376#0" expanded="false" />
+                <element signature="e#476447#477203#0" expanded="false" />
+                <element signature="e#477202#477203#0" expanded="false" />
+                <element signature="e#477273#477862#0" expanded="false" />
+                <element signature="e#477861#477862#0" expanded="false" />
+                <element signature="e#477925#478674#0" expanded="false" />
+                <element signature="e#478673#478674#0" expanded="false" />
+                <element signature="e#478736#479315#0" expanded="false" />
+                <element signature="e#479314#479315#0" expanded="false" />
+                <element signature="e#479462#480218#0" expanded="false" />
+                <element signature="e#480217#480218#0" expanded="false" />
+                <element signature="e#480291#480874#0" expanded="false" />
+                <element signature="e#480873#480874#0" expanded="false" />
+                <element signature="e#480936#481657#0" expanded="false" />
+                <element signature="e#481656#481657#0" expanded="false" />
+                <element signature="e#481718#482280#0" expanded="false" />
+                <element signature="e#482279#482280#0" expanded="false" />
+                <element signature="e#482356#483164#0" expanded="false" />
+                <element signature="e#483163#483164#0" expanded="false" />
+                <element signature="e#483239#483816#0" expanded="false" />
+                <element signature="e#483815#483816#0" expanded="false" />
+                <element signature="e#483978#484712#0" expanded="false" />
+                <element signature="e#484711#484712#0" expanded="false" />
+                <element signature="e#484786#485360#0" expanded="false" />
+                <element signature="e#485359#485360#0" expanded="false" />
+                <element signature="e#485436#486174#0" expanded="false" />
+                <element signature="e#486173#486174#0" expanded="false" />
+                <element signature="e#486249#486829#0" expanded="false" />
+                <element signature="e#486828#486829#0" expanded="false" />
+                <element signature="e#486906#487652#0" expanded="false" />
+                <element signature="e#487651#487652#0" expanded="false" />
+                <element signature="e#487728#488311#0" expanded="false" />
+                <element signature="e#488310#488311#0" expanded="false" />
+                <element signature="e#488457#489153#0" expanded="false" />
+                <element signature="e#489152#489153#0" expanded="false" />
+                <element signature="e#489220#489766#0" expanded="false" />
+                <element signature="e#489765#489766#0" expanded="false" />
+                <element signature="e#489836#490556#0" expanded="false" />
+                <element signature="e#490555#490556#0" expanded="false" />
+                <element signature="e#490625#491192#0" expanded="false" />
+                <element signature="e#491191#491192#0" expanded="false" />
+                <element signature="e#491262#491968#0" expanded="false" />
+                <element signature="e#491967#491968#0" expanded="false" />
+                <element signature="e#492037#492590#0" expanded="false" />
+                <element signature="e#492589#492590#0" expanded="false" />
+                <element signature="e#492726#493453#0" expanded="false" />
+                <element signature="e#493452#493453#0" expanded="false" />
+                <element signature="e#493527#494096#0" expanded="false" />
+                <element signature="e#494095#494096#0" expanded="false" />
+                <element signature="e#546811#547582#0" expanded="false" />
+                <element signature="e#547581#547582#0" expanded="false" />
+                <element signature="e#550492#554375#0" expanded="false" />
+                <element signature="e#554374#554375#0" expanded="false" />
+                <element signature="e#557609#560550#0" expanded="false" />
+                <element signature="e#560549#560550#0" expanded="false" />
+                <element signature="e#590612#591130#0" expanded="false" />
+                <element signature="e#591129#591130#0" expanded="false" />
+                <element signature="e#591236#591875#0" expanded="false" />
+                <element signature="e#591874#591875#0" expanded="false" />
+                <element signature="e#598494#599710#0" expanded="false" />
+                <element signature="e#599709#599710#0" expanded="false" />
+                <element signature="e#611264#611782#0" expanded="false" />
+                <element signature="e#611781#611782#0" expanded="false" />
+                <element signature="e#611888#612527#0" expanded="false" />
+                <element signature="e#612526#612527#0" expanded="false" />
+                <element signature="e#617908#618799#0" expanded="false" />
+                <element signature="e#618798#618799#0" expanded="false" />
+                <element signature="e#627575#628093#0" expanded="false" />
+                <element signature="e#628092#628093#0" expanded="false" />
+                <element signature="e#628199#628838#0" expanded="false" />
+                <element signature="e#628837#628838#0" expanded="false" />
+                <element signature="e#643422#643940#0" expanded="false" />
+                <element signature="e#643939#643940#0" expanded="false" />
+                <element signature="e#644595#645234#0" expanded="false" />
+                <element signature="e#645233#645234#0" expanded="false" />
+                <element signature="e#648599#650730#0" expanded="false" />
+                <element signature="e#650729#650730#0" expanded="false" />
+                <element signature="e#651877#654647#0" expanded="false" />
+                <element signature="e#654646#654647#0" expanded="false" />
+                <element signature="e#664231#666432#0" expanded="false" />
+                <element signature="e#666431#666432#0" expanded="false" />
+                <element signature="e#666516#666758#0" expanded="false" />
+                <element signature="e#666757#666758#0" expanded="false" />
+                <element signature="e#671931#672082#0" expanded="false" />
+                <element signature="e#672081#672082#0" expanded="false" />
+                <element signature="e#674488#678824#0" expanded="false" />
+                <element signature="e#678823#678824#0" expanded="false" />
+                <element signature="e#678885#681560#0" expanded="false" />
+                <element signature="e#681559#681560#0" expanded="false" />
+                <element signature="e#696186#696475#0" expanded="false" />
+                <element signature="e#696474#696475#0" expanded="false" />
+                <element signature="e#708895#710182#0" expanded="false" />
+                <element signature="e#710181#710182#0" expanded="false" />
+                <element signature="e#710629#711613#0" expanded="false" />
+                <element signature="e#711612#711613#0" expanded="false" />
+                <element signature="e#970285#970527#0" expanded="false" />
+                <element signature="e#970526#970527#0" expanded="false" />
+                <element signature="e#1083036#1087485#0" expanded="false" />
+                <element signature="e#1087484#1087485#0" expanded="false" />
                 <element signature="e#1088434#1088435#0" expanded="false" />
                 <element signature="e#1088471#1088472#0" expanded="false" />
               </folding>
@@ -92,21 +350,75 @@
       <file leaf-file-name="MainLauncherActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="577" column="58" lean-forward="false" selection-start-line="577" selection-start-column="58" selection-end-line="577" selection-end-column="58" />
+            <state relative-caret-position="7565">
+              <caret line="495" column="20" lean-forward="false" selection-start-line="495" selection-start-column="20" selection-end-line="495" selection-end-column="20" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#9100#9101#0" expanded="false" />
+                <element signature="e#9154#9155#0" expanded="false" />
                 <marker date="1511175108174" expanded="true" signature="2495:2802" ph="//..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HafeleWebservice.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+      <file leaf-file-name="HafeleFaultReportDBHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="258">
+              <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main_launcher.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeScreenActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12189">
+              <caret line="776" column="64" lean-forward="false" selection-start-line="776" selection-start-column="64" selection-end-line="776" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteVisitForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3570">
+              <caret line="283" column="47" lean-forward="false" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#64981#64982#0" expanded="false" />
+                <element signature="e#65034#65035#0" expanded="false" />
+                <marker date="1510121728998" expanded="true" signature="71741:71947" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,9 +445,7 @@
       <find>radio_accessories_damage</find>
       <find>sanitary</find>
       <find>Aventos</find>
-      <find>Faucet</find>
       <find>ch</find>
-      <find>checking</find>
       <find>checking</find>
       <find>checking a</find>
       <find>checking ap</find>
@@ -143,11 +453,17 @@
       <find>Update</find>
       <find>INSTALL_PACKAGES</find>
       <find>SyncApkCheck</find>
+      <find>sanitary_details</find>
+      <find>createDatabase</find>
+      <find>oldVersion</find>
+      <find>report1</find>
+      <find>Faucet</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="D:\Aniket_workspace\Hafale Final Production Release 1.8\KEY\hafele_key1.jks" />
     <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2342,13 +2658,20 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/3.0.0/gradle-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/3.0.0/gradle-core-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/3.0.0/builder-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/26.0.0/lint-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/org-jetbrains/uast/26.0.0/uast-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/3.0.0/gradle-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/3.0.0/compilerCommon-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/1bac954602279a2e2cb642355ef13a4690d12fae/gradle-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/2356ee8e98b68c53dafc28898e7034080e5c91aa/gradle-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/285bece5959e7d0db768cc5dc572489568c671b4/gradle-core-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/b4b02fa623c5a618e68478d9a4a67e1e87c023c6/gradle-core-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/f17c41a54b4db8a9ecdb7022577b018e3a8421d9/builder-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/36884960f350cb29f1c2c93107f4fa27f4e7444e/builder-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/cb2e44ce94e1c5ddf7b6880c9538195fd56a65a4/lint-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/6c58c8b0066addaaffd174b78d701948b819cf23/lint-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/7dafcc5cca38d4dff50648dde95b90f21a992e27/uast-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/86234f897e27e97c4aebe5686fa0e21139a1fc4e/uast-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/11da875d065493176bbb7d1011771602d37dd04/gradle-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/e98ade5c308a99980d2a61f4ce1d9286df0105e3/gradle-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/d54150099aa6e5a650febb9c80948b685899d05e/compilerCommon-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/243ebf26597dca96c60681106157e27f0762edf9/compilerCommon-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-stdlib/1.1.3-2/kotlin-stdlib-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.1/asm-5.1.jar" />
@@ -2360,47 +2683,66 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/3.0.0/builder-model-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/3.0.0/builder-test-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/26.0.0/sdklib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/26.0.0/sdk-common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/26.0.0/common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/26.0.0/manifest-merger-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/26.0.0/ddmlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/26.0.0/protos-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/26.0.0/shared-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/26.0.0/tracker-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/apksig/3.0.0/apksig-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/6ec7cb59607895498c22a842000e995a01c5f995/builder-model-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/a86b254415fded5297e1d849fa1884dfdf62ff42/builder-model-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/f53282cf64858e6ce696e01a303aeffc84f492a8/builder-test-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/9bb354af21d8754ecc9c1c07f80bd85e3a76695f/builder-test-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/17cb1a6f5606e5551f56ed81be66bd78d4297cee/sdklib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/5bc6118beed3c516fba2057e5feea3af932c1e22/sdklib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/248e0d7af998f74278f01a2a033547894e16ac62/sdk-common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/3cf21b0652068a57852663610e8c7f0a044dc700/sdk-common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/cebb7cef40dd36dd1760275ad57ce8ef998ad56d/common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/a75e1cbf30e55dd23f73801c32cd565b6eb5fb3f/common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/6e27b56646e95987b6f072e634584d4bd4ecf23b/manifest-merger-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/f625bcad5f5dc0cb373e6b62595d64a552a8d073/manifest-merger-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/b495ebcd012e0e9af0282498fb92545489349759/ddmlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/79daeff3eab3fc4ff963f5717392f1f2476ed788/ddmlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/318c4c68c6f1c29be4db0ea0b8d2dc6cfe03c073/protos-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/9700759196d267fc7cf3c85806c157050ea37dc9/protos-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/5e7cc0e57fc168a3cbfe24fb4d1d49e95d82147a/shared-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/bf1943bf2ff33b50f8f18e25353cd82d70ab24ba/shared-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/1210317607ead35f8814cfa7ee6f5c9fb31ecd3a/tracker-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/f75df0e15d6db4ed1ba42e9d22bde29868db3f0f/tracker-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/5ac349c335bb4e231d64e0934cb3453dbf9fdc46/apksig-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/21465a36db10551cfcfd8ad39bb496511f78354c/apksig-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/26.0.0/lint-checks-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/3924687fc60a7cf7785097bb6f5ceb2259c7b2c3/lint-checks-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/fe04d508baa247a0d32cafbfd158ca439f875dbd/lint-checks-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/22.0/guava-22.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/3.0.0/baseLibrary-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/ce0dd8f2121cb0c2fd322e265c3176fec6bc0d1e/baseLibrary-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/223fbb31236b0714328c415c1475fc8f55a4416e/baseLibrary-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/26.0.0/annotations-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/daf283e6333e732b9707be489dd0cde2ae8c4d6d/annotations-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/fc587b91f1d2390a90d0b02a3e41a0bed140e9c1/annotations-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/26.0.0/layoutlib-api-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/26.0.0/dvlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/26.0.0/repository-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/4ef2345653412d393ce6c095aea0fc2e52091a14/layoutlib-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/2e64aac3c6a6f201df4b7e1c0bd452d8839fb47b/layoutlib-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/ee798351e8227560a6300d100f601da2b4fb8b7b/dvlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/50d8b18ccc5233c4e7ca4c98f9708d44f80ace82/dvlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/5009095769d92471a6e7329476c63745dd28ba33/repository-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/7ad3d113c50642163badf3b8d890c6b41b1c6238/repository-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.3/gson-2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.12/commons-compress-1.12.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/26.0.0/lint-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/b36d5749a335c8b61311d91162854f7190c641a/lint-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/ba8981e318f342456c77a2420b9d9f0967eaf138/lint-api-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/com-intellij/intellij-core/26.0.0/intellij-core-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/4afbe52402a675270f8966283dca9cae89d7b5d3/intellij-core-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/47396aa1fead8512c246fdf4698552c1f33b1710/intellij-core-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-reflect/1.1.3-2/kotlin-reflect-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" />
@@ -2420,13 +2762,20 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/3.0.0/gradle-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/3.0.0/gradle-core-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/3.0.0/builder-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/26.0.0/lint-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/org-jetbrains/uast/26.0.0/uast-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/3.0.0/gradle-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/3.0.0/compilerCommon-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/1bac954602279a2e2cb642355ef13a4690d12fae/gradle-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/2356ee8e98b68c53dafc28898e7034080e5c91aa/gradle-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/285bece5959e7d0db768cc5dc572489568c671b4/gradle-core-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/b4b02fa623c5a618e68478d9a4a67e1e87c023c6/gradle-core-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/f17c41a54b4db8a9ecdb7022577b018e3a8421d9/builder-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/36884960f350cb29f1c2c93107f4fa27f4e7444e/builder-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/cb2e44ce94e1c5ddf7b6880c9538195fd56a65a4/lint-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/6c58c8b0066addaaffd174b78d701948b819cf23/lint-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/7dafcc5cca38d4dff50648dde95b90f21a992e27/uast-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/86234f897e27e97c4aebe5686fa0e21139a1fc4e/uast-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/11da875d065493176bbb7d1011771602d37dd04/gradle-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/e98ade5c308a99980d2a61f4ce1d9286df0105e3/gradle-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/d54150099aa6e5a650febb9c80948b685899d05e/compilerCommon-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/243ebf26597dca96c60681106157e27f0762edf9/compilerCommon-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-stdlib/1.1.3-2/kotlin-stdlib-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.1/asm-5.1.jar" />
@@ -2438,47 +2787,66 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/3.0.0/builder-model-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/3.0.0/builder-test-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/26.0.0/sdklib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/26.0.0/sdk-common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/26.0.0/common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/26.0.0/manifest-merger-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/26.0.0/ddmlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/26.0.0/protos-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/26.0.0/shared-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/26.0.0/tracker-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/apksig/3.0.0/apksig-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/6ec7cb59607895498c22a842000e995a01c5f995/builder-model-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/a86b254415fded5297e1d849fa1884dfdf62ff42/builder-model-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/f53282cf64858e6ce696e01a303aeffc84f492a8/builder-test-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/9bb354af21d8754ecc9c1c07f80bd85e3a76695f/builder-test-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/17cb1a6f5606e5551f56ed81be66bd78d4297cee/sdklib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/5bc6118beed3c516fba2057e5feea3af932c1e22/sdklib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/248e0d7af998f74278f01a2a033547894e16ac62/sdk-common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/3cf21b0652068a57852663610e8c7f0a044dc700/sdk-common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/cebb7cef40dd36dd1760275ad57ce8ef998ad56d/common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/a75e1cbf30e55dd23f73801c32cd565b6eb5fb3f/common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/6e27b56646e95987b6f072e634584d4bd4ecf23b/manifest-merger-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/f625bcad5f5dc0cb373e6b62595d64a552a8d073/manifest-merger-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/b495ebcd012e0e9af0282498fb92545489349759/ddmlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/79daeff3eab3fc4ff963f5717392f1f2476ed788/ddmlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/318c4c68c6f1c29be4db0ea0b8d2dc6cfe03c073/protos-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/9700759196d267fc7cf3c85806c157050ea37dc9/protos-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/5e7cc0e57fc168a3cbfe24fb4d1d49e95d82147a/shared-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/bf1943bf2ff33b50f8f18e25353cd82d70ab24ba/shared-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/1210317607ead35f8814cfa7ee6f5c9fb31ecd3a/tracker-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/f75df0e15d6db4ed1ba42e9d22bde29868db3f0f/tracker-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/5ac349c335bb4e231d64e0934cb3453dbf9fdc46/apksig-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/21465a36db10551cfcfd8ad39bb496511f78354c/apksig-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/26.0.0/lint-checks-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/3924687fc60a7cf7785097bb6f5ceb2259c7b2c3/lint-checks-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/fe04d508baa247a0d32cafbfd158ca439f875dbd/lint-checks-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/22.0/guava-22.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/3.0.0/baseLibrary-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/ce0dd8f2121cb0c2fd322e265c3176fec6bc0d1e/baseLibrary-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/223fbb31236b0714328c415c1475fc8f55a4416e/baseLibrary-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/26.0.0/annotations-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/daf283e6333e732b9707be489dd0cde2ae8c4d6d/annotations-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/fc587b91f1d2390a90d0b02a3e41a0bed140e9c1/annotations-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/26.0.0/layoutlib-api-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/26.0.0/dvlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/26.0.0/repository-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/4ef2345653412d393ce6c095aea0fc2e52091a14/layoutlib-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/2e64aac3c6a6f201df4b7e1c0bd452d8839fb47b/layoutlib-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/ee798351e8227560a6300d100f601da2b4fb8b7b/dvlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/50d8b18ccc5233c4e7ca4c98f9708d44f80ace82/dvlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/5009095769d92471a6e7329476c63745dd28ba33/repository-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/7ad3d113c50642163badf3b8d890c6b41b1c6238/repository-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.3/gson-2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.12/commons-compress-1.12.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/26.0.0/lint-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/b36d5749a335c8b61311d91162854f7190c641a/lint-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/ba8981e318f342456c77a2420b9d9f0967eaf138/lint-api-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/com-intellij/intellij-core/26.0.0/intellij-core-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/4afbe52402a675270f8966283dca9cae89d7b5d3/intellij-core-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/47396aa1fead8512c246fdf4698552c1f33b1710/intellij-core-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-reflect/1.1.3-2/kotlin-reflect-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" />
@@ -2498,13 +2866,20 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/3.0.0/gradle-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/3.0.0/gradle-core-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/3.0.0/builder-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/26.0.0/lint-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/org-jetbrains/uast/26.0.0/uast-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/3.0.0/gradle-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/3.0.0/compilerCommon-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/1bac954602279a2e2cb642355ef13a4690d12fae/gradle-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/2356ee8e98b68c53dafc28898e7034080e5c91aa/gradle-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/285bece5959e7d0db768cc5dc572489568c671b4/gradle-core-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/b4b02fa623c5a618e68478d9a4a67e1e87c023c6/gradle-core-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/f17c41a54b4db8a9ecdb7022577b018e3a8421d9/builder-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/36884960f350cb29f1c2c93107f4fa27f4e7444e/builder-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/cb2e44ce94e1c5ddf7b6880c9538195fd56a65a4/lint-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/6c58c8b0066addaaffd174b78d701948b819cf23/lint-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/7dafcc5cca38d4dff50648dde95b90f21a992e27/uast-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/86234f897e27e97c4aebe5686fa0e21139a1fc4e/uast-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/11da875d065493176bbb7d1011771602d37dd04/gradle-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/e98ade5c308a99980d2a61f4ce1d9286df0105e3/gradle-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/d54150099aa6e5a650febb9c80948b685899d05e/compilerCommon-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/243ebf26597dca96c60681106157e27f0762edf9/compilerCommon-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-stdlib/1.1.3-2/kotlin-stdlib-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.1/asm-5.1.jar" />
@@ -2516,47 +2891,66 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/3.0.0/builder-model-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/3.0.0/builder-test-api-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/26.0.0/sdklib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/26.0.0/sdk-common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/26.0.0/common-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/26.0.0/manifest-merger-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/26.0.0/ddmlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/26.0.0/protos-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/26.0.0/shared-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/26.0.0/tracker-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/apksig/3.0.0/apksig-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/6ec7cb59607895498c22a842000e995a01c5f995/builder-model-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/a86b254415fded5297e1d849fa1884dfdf62ff42/builder-model-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/f53282cf64858e6ce696e01a303aeffc84f492a8/builder-test-api-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/9bb354af21d8754ecc9c1c07f80bd85e3a76695f/builder-test-api-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/17cb1a6f5606e5551f56ed81be66bd78d4297cee/sdklib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/5bc6118beed3c516fba2057e5feea3af932c1e22/sdklib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/248e0d7af998f74278f01a2a033547894e16ac62/sdk-common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/3cf21b0652068a57852663610e8c7f0a044dc700/sdk-common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/cebb7cef40dd36dd1760275ad57ce8ef998ad56d/common-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/a75e1cbf30e55dd23f73801c32cd565b6eb5fb3f/common-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/6e27b56646e95987b6f072e634584d4bd4ecf23b/manifest-merger-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/f625bcad5f5dc0cb373e6b62595d64a552a8d073/manifest-merger-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/b495ebcd012e0e9af0282498fb92545489349759/ddmlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/79daeff3eab3fc4ff963f5717392f1f2476ed788/ddmlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/318c4c68c6f1c29be4db0ea0b8d2dc6cfe03c073/protos-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/9700759196d267fc7cf3c85806c157050ea37dc9/protos-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/5e7cc0e57fc168a3cbfe24fb4d1d49e95d82147a/shared-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/bf1943bf2ff33b50f8f18e25353cd82d70ab24ba/shared-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/1210317607ead35f8814cfa7ee6f5c9fb31ecd3a/tracker-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/f75df0e15d6db4ed1ba42e9d22bde29868db3f0f/tracker-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/5ac349c335bb4e231d64e0934cb3453dbf9fdc46/apksig-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/21465a36db10551cfcfd8ad39bb496511f78354c/apksig-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.56/bcpkix-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.56/bcprov-jdk15on-1.56.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/it/unimi/dsi/fastutil/7.2.0/fastutil-7.2.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/26.0.0/lint-checks-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/3924687fc60a7cf7785097bb6f5ceb2259c7b2c3/lint-checks-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/fe04d508baa247a0d32cafbfd158ca439f875dbd/lint-checks-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/22.0/guava-22.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/3.0.0/baseLibrary-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/ce0dd8f2121cb0c2fd322e265c3176fec6bc0d1e/baseLibrary-3.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/223fbb31236b0714328c415c1475fc8f55a4416e/baseLibrary-3.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/26.0.0/annotations-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/daf283e6333e732b9707be489dd0cde2ae8c4d6d/annotations-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/fc587b91f1d2390a90d0b02a3e41a0bed140e9c1/annotations-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/26.0.0/layoutlib-api-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/26.0.0/dvlib-26.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/26.0.0/repository-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/4ef2345653412d393ce6c095aea0fc2e52091a14/layoutlib-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/2e64aac3c6a6f201df4b7e1c0bd452d8839fb47b/layoutlib-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/ee798351e8227560a6300d100f601da2b4fb8b7b/dvlib-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/50d8b18ccc5233c4e7ca4c98f9708d44f80ace82/dvlib-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/5009095769d92471a6e7329476c63745dd28ba33/repository-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/7ad3d113c50642163badf3b8d890c6b41b1c6238/repository-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.3/gson-2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.12/commons-compress-1.12.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/26.0.0/lint-api-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/b36d5749a335c8b61311d91162854f7190c641a/lint-api-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/ba8981e318f342456c77a2420b9d9f0967eaf138/lint-api-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/com-intellij/intellij-core/26.0.0/intellij-core-26.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/4afbe52402a675270f8966283dca9cae89d7b5d3/intellij-core-26.0.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/47396aa1fead8512c246fdf4698552c1f33b1710/intellij-core-26.0.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/kotlin/kotlin-reflect/1.1.3-2/kotlin-reflect-1.1.3-2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" />
@@ -2733,7 +3127,6 @@
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/site_visit_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/new_result.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/DashBoardActivity.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/faucet_layout_form.xml" />
@@ -2747,16 +3140,17 @@
         <option value="$PROJECT_DIR$/ffmpeg4android_os/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/hafele/build.gradle" />
-        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/customer_information_form.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/layout/lift_up_system.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java" />
-        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" />
         <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java" />
         <option value="$PROJECT_DIR$/hafele/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml" />
+        <option value="$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java" />
       </list>
     </option>
   </component>
@@ -2782,7 +3176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3086,6 +3479,10 @@
               <option name="myItemId" value="hafele" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3152,6 +3549,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="broadcastReceiver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3361,15 +3788,93 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele-hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele-hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele-hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hafele-hafele" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hafele Final Producation Release 2.2 for India" />
-    <property name="device.picker.selection" value="ab90ceaa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="device.picker.selection" value="Nexus_5X_API_25" />
     <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t116ir-ab90ceaa" />
     <property name="DEBUGGABLE_PROCESS" value="com.sudesi.hafele.faultreport" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
@@ -3378,11 +3883,12 @@
     <property name="android.profiler.active" value="true" />
     <property name="android.project.structure.last.selected" value="hafele" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ExportApk.ApkPath" value="D:\Aniket_workspace\Hafele Final Producation Release 2.2 for India" />
+    <property name="ExportApk.ApkPath" value="D:\Aniket_workspace" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1511265938951" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -3471,8 +3977,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856557" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511266611156" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3519,8 +4024,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856557" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511266611157" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3681,8 +4185,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856558" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511266611157" />
       </method>
     </configuration>
     <configuration default="false" name="hafele-hafele" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -3730,8 +4233,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511175856558" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511266611157" />
       </method>
     </configuration>
     <list size="2">
@@ -3824,46 +4326,53 @@
       <option name="project" value="LOCAL" />
       <updated>1510836304870</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="production changes done by Aniket Adsul">
+      <created>1511175899549</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511175899549</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022146508" sideWeight="0.51664144" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.16183986" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.42738277" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.119250424" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.034039333" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.022146508" sideWeight="0.51664144" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11754685" sideWeight="0.57261723" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42078364" sideWeight="0.5688351" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2647504" sideWeight="0.18228279" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60477" sideWeight="0.46822995" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26172465" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12829526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0681431" sideWeight="0.53177005" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.83816016" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.8177172" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45655876" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.034039333" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31316188" sideWeight="0.25316456" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22487223" sideWeight="0.607413" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -3910,7 +4419,8 @@
     <MESSAGE value="Resolved Bugs done by Aniket Adsul" />
     <MESSAGE value="Client changes done by Aniket Adsul" />
     <MESSAGE value="sanitary resolved state done by Aniket Adsul" />
-    <option name="LAST_COMMIT_MESSAGE" value="sanitary resolved state done by Aniket Adsul" />
+    <MESSAGE value="production changes done by Aniket Adsul" />
+    <option name="LAST_COMMIT_MESSAGE" value="production changes done by Aniket Adsul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4497,6 +5007,12 @@
           <properties />
           <option name="timeStamp" value="320" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java</url>
+          <line>283</line>
+          <properties />
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java</url>
           <line>85</line>
@@ -4516,21 +5032,11 @@
           <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="321" />
+      <option name="time" value="324" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/site_visit_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/Looper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -4608,24 +5114,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/res/drawable/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="124" column="59" lean-forward="false" selection-start-line="124" selection-start-column="59" selection-end-line="124" selection-end-column="59" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/Sanitary_Details.java">
@@ -4686,14 +5177,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/build.gradle">
@@ -4719,13 +5210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffmpeg4android_os/src/main/res/layout/ffmpeg_demo_client2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -4748,14 +5232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4798,24 +5274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="4853" column="5" lean-forward="true" selection-start-line="4853" selection-start-column="5" selection-end-line="4853" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="733" column="0" lean-forward="true" selection-start-line="733" selection-start-column="0" selection-end-line="733" selection-end-column="0" />
-          <folding>
-            <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4863,10 +5321,366 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="392" column="18" lean-forward="true" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/menu/main_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/broadcastReceiver/BackgroundServiceUploadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="182" column="63" lean-forward="true" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1409#1410#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+            <element signature="e#28753#28754#0" expanded="false" />
+            <element signature="e#28791#28792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/database/sqlite/SQLiteDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="231" column="28" lean-forward="false" selection-start-line="231" selection-start-column="28" selection-end-line="231" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140029">
+          <caret line="8490" column="57" lean-forward="false" selection-start-line="8490" selection-start-column="57" selection-end-line="8490" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#31540#38419#0" expanded="false" />
+            <element signature="e#38418#38419#0" expanded="false" />
+            <element signature="e#38840#39179#0" expanded="false" />
+            <element signature="e#39178#39179#0" expanded="false" />
+            <element signature="e#42554#43032#0" expanded="false" />
+            <element signature="e#43031#43032#0" expanded="false" />
+            <element signature="e#43540#44136#0" expanded="false" />
+            <element signature="e#44135#44136#0" expanded="false" />
+            <element signature="e#62026#69623#0" expanded="false" />
+            <element signature="e#69622#69623#0" expanded="false" />
+            <element signature="e#72728#73206#0" expanded="false" />
+            <element signature="e#73205#73206#0" expanded="false" />
+            <element signature="e#73707#74302#0" expanded="false" />
+            <element signature="e#74301#74302#0" expanded="false" />
+            <element signature="e#96955#97433#0" expanded="false" />
+            <element signature="e#97432#97433#0" expanded="false" />
+            <element signature="e#97933#98528#0" expanded="false" />
+            <element signature="e#98527#98528#0" expanded="false" />
+            <element signature="e#103908#113790#0" expanded="false" />
+            <element signature="e#113789#113790#0" expanded="false" />
+            <element signature="e#126242#126720#0" expanded="false" />
+            <element signature="e#126719#126720#0" expanded="false" />
+            <element signature="e#126767#127362#0" expanded="false" />
+            <element signature="e#127361#127362#0" expanded="false" />
+            <element signature="e#131485#136408#0" expanded="false" />
+            <element signature="e#136407#136408#0" expanded="false" />
+            <element signature="e#158256#158734#0" expanded="false" />
+            <element signature="e#158733#158734#0" expanded="false" />
+            <element signature="e#159229#159824#0" expanded="false" />
+            <element signature="e#159823#159824#0" expanded="false" />
+            <element signature="e#161532#162357#0" expanded="false" />
+            <element signature="e#162356#162357#0" expanded="false" />
+            <element signature="e#184849#188082#0" expanded="false" />
+            <element signature="e#188081#188082#0" expanded="false" />
+            <element signature="e#191185#191663#0" expanded="false" />
+            <element signature="e#191662#191663#0" expanded="false" />
+            <element signature="e#192164#192759#0" expanded="false" />
+            <element signature="e#192758#192759#0" expanded="false" />
+            <element signature="e#207026#211643#0" expanded="false" />
+            <element signature="e#211642#211643#0" expanded="false" />
+            <element signature="e#214669#215147#0" expanded="false" />
+            <element signature="e#215146#215147#0" expanded="false" />
+            <element signature="e#215647#216242#0" expanded="false" />
+            <element signature="e#216241#216242#0" expanded="false" />
+            <element signature="e#237905#242448#0" expanded="false" />
+            <element signature="e#242447#242448#0" expanded="false" />
+            <element signature="e#245154#245632#0" expanded="false" />
+            <element signature="e#245631#245632#0" expanded="false" />
+            <element signature="e#246234#246829#0" expanded="false" />
+            <element signature="e#246828#246829#0" expanded="false" />
+            <element signature="e#253974#255186#0" expanded="false" />
+            <element signature="e#255185#255186#0" expanded="false" />
+            <element signature="e#257261#257739#0" expanded="false" />
+            <element signature="e#257738#257739#0" expanded="false" />
+            <element signature="e#258341#258936#0" expanded="false" />
+            <element signature="e#258935#258936#0" expanded="false" />
+            <element signature="e#276157#277553#0" expanded="false" />
+            <element signature="e#277552#277553#0" expanded="false" />
+            <element signature="e#295129#295607#0" expanded="false" />
+            <element signature="e#295606#295607#0" expanded="false" />
+            <element signature="e#295705#296300#0" expanded="false" />
+            <element signature="e#296299#296300#0" expanded="false" />
+            <element signature="e#327111#328272#0" expanded="false" />
+            <element signature="e#328271#328272#0" expanded="false" />
+            <element signature="e#339615#340093#0" expanded="false" />
+            <element signature="e#340092#340093#0" expanded="false" />
+            <element signature="e#340191#340786#0" expanded="false" />
+            <element signature="e#340785#340786#0" expanded="false" />
+            <element signature="e#346911#347768#0" expanded="false" />
+            <element signature="e#347767#347768#0" expanded="false" />
+            <element signature="e#357729#358207#0" expanded="false" />
+            <element signature="e#358206#358207#0" expanded="false" />
+            <element signature="e#358305#358900#0" expanded="false" />
+            <element signature="e#358899#358900#0" expanded="false" />
+            <element signature="e#368403#369840#0" expanded="false" />
+            <element signature="e#369839#369840#0" expanded="false" />
+            <element signature="e#398529#399007#0" expanded="false" />
+            <element signature="e#399006#399007#0" expanded="false" />
+            <element signature="e#399105#399700#0" expanded="false" />
+            <element signature="e#399699#399700#0" expanded="false" />
+            <element signature="e#400573#406291#0" expanded="false" />
+            <element signature="e#406290#406291#0" expanded="false" />
+            <element signature="e#422261#423472#0" expanded="false" />
+            <element signature="e#423471#423472#0" expanded="false" />
+            <element signature="e#423532#424913#0" expanded="false" />
+            <element signature="e#424912#424913#0" expanded="false" />
+            <element signature="e#424977#426331#0" expanded="false" />
+            <element signature="e#426330#426331#0" expanded="false" />
+            <element signature="e#426397#427679#0" expanded="false" />
+            <element signature="e#427678#427679#0" expanded="false" />
+            <element signature="e#427739#429014#0" expanded="false" />
+            <element signature="e#429013#429014#0" expanded="false" />
+            <element signature="e#429078#430210#0" expanded="false" />
+            <element signature="e#430209#430210#0" expanded="false" />
+            <element signature="e#430278#431315#0" expanded="false" />
+            <element signature="e#431314#431315#0" expanded="false" />
+            <element signature="e#431389#433125#0" expanded="false" />
+            <element signature="e#433124#433125#0" expanded="false" />
+            <element signature="e#433205#434936#0" expanded="false" />
+            <element signature="e#434935#434936#0" expanded="false" />
+            <element signature="e#435003#436746#0" expanded="false" />
+            <element signature="e#436745#436746#0" expanded="false" />
+            <element signature="e#436824#437899#0" expanded="false" />
+            <element signature="e#437898#437899#0" expanded="false" />
+            <element signature="e#437973#439959#0" expanded="false" />
+            <element signature="e#439958#439959#0" expanded="false" />
+            <element signature="e#440039#442020#0" expanded="false" />
+            <element signature="e#442019#442020#0" expanded="false" />
+            <element signature="e#442087#444080#0" expanded="false" />
+            <element signature="e#444079#444080#0" expanded="false" />
+            <element signature="e#444163#445158#0" expanded="false" />
+            <element signature="e#445157#445158#0" expanded="false" />
+            <element signature="e#445238#446955#0" expanded="false" />
+            <element signature="e#446954#446955#0" expanded="false" />
+            <element signature="e#447041#448753#0" expanded="false" />
+            <element signature="e#448752#448753#0" expanded="false" />
+            <element signature="e#448826#450550#0" expanded="false" />
+            <element signature="e#450549#450550#0" expanded="false" />
+            <element signature="e#450634#451666#0" expanded="false" />
+            <element signature="e#451665#451666#0" expanded="false" />
+            <element signature="e#451747#453536#0" expanded="false" />
+            <element signature="e#453535#453536#0" expanded="false" />
+            <element signature="e#453622#455406#0" expanded="false" />
+            <element signature="e#455405#455406#0" expanded="false" />
+            <element signature="e#455481#457278#0" expanded="false" />
+            <element signature="e#457277#457278#0" expanded="false" />
+            <element signature="e#457355#458319#0" expanded="false" />
+            <element signature="e#458318#458319#0" expanded="false" />
+            <element signature="e#458394#460121#0" expanded="false" />
+            <element signature="e#460120#460121#0" expanded="false" />
+            <element signature="e#460201#461923#0" expanded="false" />
+            <element signature="e#461922#461923#0" expanded="false" />
+            <element signature="e#461990#463724#0" expanded="false" />
+            <element signature="e#463723#463724#0" expanded="false" />
+            <element signature="e#463806#464528#0" expanded="false" />
+            <element signature="e#464527#464528#0" expanded="false" />
+            <element signature="e#464608#465627#0" expanded="false" />
+            <element signature="e#465626#465627#0" expanded="false" />
+            <element signature="e#465712#466655#0" expanded="false" />
+            <element signature="e#466654#466655#0" expanded="false" />
+            <element signature="e#466727#467682#0" expanded="false" />
+            <element signature="e#467681#467682#0" expanded="false" />
+            <element signature="e#467744#468481#0" expanded="false" />
+            <element signature="e#468480#468481#0" expanded="false" />
+            <element signature="e#468541#469112#0" expanded="false" />
+            <element signature="e#469111#469112#0" expanded="false" />
+            <element signature="e#469175#469891#0" expanded="false" />
+            <element signature="e#469890#469891#0" expanded="false" />
+            <element signature="e#469953#470519#0" expanded="false" />
+            <element signature="e#470518#470519#0" expanded="false" />
+            <element signature="e#470579#471276#0" expanded="false" />
+            <element signature="e#471275#471276#0" expanded="false" />
+            <element signature="e#471336#471892#0" expanded="false" />
+            <element signature="e#471891#471892#0" expanded="false" />
+            <element signature="e#471951#472644#0" expanded="false" />
+            <element signature="e#472643#472644#0" expanded="false" />
+            <element signature="e#472702#473416#0" expanded="false" />
+            <element signature="e#473415#473416#0" expanded="false" />
+            <element signature="e#473486#474234#0" expanded="false" />
+            <element signature="e#474233#474234#0" expanded="false" />
+            <element signature="e#474302#474882#0" expanded="false" />
+            <element signature="e#474881#474882#0" expanded="false" />
+            <element signature="e#474940#475718#0" expanded="false" />
+            <element signature="e#475717#475718#0" expanded="false" />
+            <element signature="e#475776#476376#0" expanded="false" />
+            <element signature="e#476375#476376#0" expanded="false" />
+            <element signature="e#476447#477203#0" expanded="false" />
+            <element signature="e#477202#477203#0" expanded="false" />
+            <element signature="e#477273#477862#0" expanded="false" />
+            <element signature="e#477861#477862#0" expanded="false" />
+            <element signature="e#477925#478674#0" expanded="false" />
+            <element signature="e#478673#478674#0" expanded="false" />
+            <element signature="e#478736#479315#0" expanded="false" />
+            <element signature="e#479314#479315#0" expanded="false" />
+            <element signature="e#479462#480218#0" expanded="false" />
+            <element signature="e#480217#480218#0" expanded="false" />
+            <element signature="e#480291#480874#0" expanded="false" />
+            <element signature="e#480873#480874#0" expanded="false" />
+            <element signature="e#480936#481657#0" expanded="false" />
+            <element signature="e#481656#481657#0" expanded="false" />
+            <element signature="e#481718#482280#0" expanded="false" />
+            <element signature="e#482279#482280#0" expanded="false" />
+            <element signature="e#482356#483164#0" expanded="false" />
+            <element signature="e#483163#483164#0" expanded="false" />
+            <element signature="e#483239#483816#0" expanded="false" />
+            <element signature="e#483815#483816#0" expanded="false" />
+            <element signature="e#483978#484712#0" expanded="false" />
+            <element signature="e#484711#484712#0" expanded="false" />
+            <element signature="e#484786#485360#0" expanded="false" />
+            <element signature="e#485359#485360#0" expanded="false" />
+            <element signature="e#485436#486174#0" expanded="false" />
+            <element signature="e#486173#486174#0" expanded="false" />
+            <element signature="e#486249#486829#0" expanded="false" />
+            <element signature="e#486828#486829#0" expanded="false" />
+            <element signature="e#486906#487652#0" expanded="false" />
+            <element signature="e#487651#487652#0" expanded="false" />
+            <element signature="e#487728#488311#0" expanded="false" />
+            <element signature="e#488310#488311#0" expanded="false" />
+            <element signature="e#488457#489153#0" expanded="false" />
+            <element signature="e#489152#489153#0" expanded="false" />
+            <element signature="e#489220#489766#0" expanded="false" />
+            <element signature="e#489765#489766#0" expanded="false" />
+            <element signature="e#489836#490556#0" expanded="false" />
+            <element signature="e#490555#490556#0" expanded="false" />
+            <element signature="e#490625#491192#0" expanded="false" />
+            <element signature="e#491191#491192#0" expanded="false" />
+            <element signature="e#491262#491968#0" expanded="false" />
+            <element signature="e#491967#491968#0" expanded="false" />
+            <element signature="e#492037#492590#0" expanded="false" />
+            <element signature="e#492589#492590#0" expanded="false" />
+            <element signature="e#492726#493453#0" expanded="false" />
+            <element signature="e#493452#493453#0" expanded="false" />
+            <element signature="e#493527#494096#0" expanded="false" />
+            <element signature="e#494095#494096#0" expanded="false" />
+            <element signature="e#546811#547582#0" expanded="false" />
+            <element signature="e#547581#547582#0" expanded="false" />
+            <element signature="e#550492#554375#0" expanded="false" />
+            <element signature="e#554374#554375#0" expanded="false" />
+            <element signature="e#557609#560550#0" expanded="false" />
+            <element signature="e#560549#560550#0" expanded="false" />
+            <element signature="e#590612#591130#0" expanded="false" />
+            <element signature="e#591129#591130#0" expanded="false" />
+            <element signature="e#591236#591875#0" expanded="false" />
+            <element signature="e#591874#591875#0" expanded="false" />
+            <element signature="e#598494#599710#0" expanded="false" />
+            <element signature="e#599709#599710#0" expanded="false" />
+            <element signature="e#611264#611782#0" expanded="false" />
+            <element signature="e#611781#611782#0" expanded="false" />
+            <element signature="e#611888#612527#0" expanded="false" />
+            <element signature="e#612526#612527#0" expanded="false" />
+            <element signature="e#617908#618799#0" expanded="false" />
+            <element signature="e#618798#618799#0" expanded="false" />
+            <element signature="e#627575#628093#0" expanded="false" />
+            <element signature="e#628092#628093#0" expanded="false" />
+            <element signature="e#628199#628838#0" expanded="false" />
+            <element signature="e#628837#628838#0" expanded="false" />
+            <element signature="e#643422#643940#0" expanded="false" />
+            <element signature="e#643939#643940#0" expanded="false" />
+            <element signature="e#644595#645234#0" expanded="false" />
+            <element signature="e#645233#645234#0" expanded="false" />
+            <element signature="e#648599#650730#0" expanded="false" />
+            <element signature="e#650729#650730#0" expanded="false" />
+            <element signature="e#651877#654647#0" expanded="false" />
+            <element signature="e#654646#654647#0" expanded="false" />
+            <element signature="e#664231#666432#0" expanded="false" />
+            <element signature="e#666431#666432#0" expanded="false" />
+            <element signature="e#666516#666758#0" expanded="false" />
+            <element signature="e#666757#666758#0" expanded="false" />
+            <element signature="e#671931#672082#0" expanded="false" />
+            <element signature="e#672081#672082#0" expanded="false" />
+            <element signature="e#674488#678824#0" expanded="false" />
+            <element signature="e#678823#678824#0" expanded="false" />
+            <element signature="e#678885#681560#0" expanded="false" />
+            <element signature="e#681559#681560#0" expanded="false" />
+            <element signature="e#696186#696475#0" expanded="false" />
+            <element signature="e#696474#696475#0" expanded="false" />
+            <element signature="e#708895#710182#0" expanded="false" />
+            <element signature="e#710181#710182#0" expanded="false" />
+            <element signature="e#710629#711613#0" expanded="false" />
+            <element signature="e#711612#711613#0" expanded="false" />
+            <element signature="e#970285#970527#0" expanded="false" />
+            <element signature="e#970526#970527#0" expanded="false" />
+            <element signature="e#1083036#1087485#0" expanded="false" />
+            <element signature="e#1087484#1087485#0" expanded="false" />
+            <element signature="e#1088434#1088435#0" expanded="false" />
+            <element signature="e#1088471#1088472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/HomeScreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12189">
+          <caret line="776" column="64" lean-forward="false" selection-start-line="776" selection-start-column="64" selection-end-line="776" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#checkBoolean#0;class#HomeScreenActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="1171" column="20" lean-forward="true" selection-start-line="1171" selection-start-column="20" selection-end-line="1171" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/SiteVisitForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="859" column="66" lean-forward="false" selection-start-line="859" selection-start-column="66" selection-end-line="859" selection-end-column="66" />
+        <state relative-caret-position="3570">
+          <caret line="283" column="47" lean-forward="false" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#64981#64982#0" expanded="false" />
@@ -4876,91 +5690,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="392" column="18" lean-forward="true" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-20/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/menu/main_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/FaultReportForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21069" column="61" lean-forward="false" selection-start-line="21069" selection-start-column="61" selection-end-line="21069" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#672018#672019#0" expanded="false" />
-            <element signature="e#672071#672072#0" expanded="false" />
-            <element signature="e#1088434#1088435#0" expanded="false" />
-            <element signature="e#1088471#1088472#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/faultreport/MainLauncherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="577" column="58" lean-forward="false" selection-start-line="577" selection-start-column="58" selection-end-line="577" selection-end-column="58" />
+        <state relative-caret-position="7565">
+          <caret line="495" column="20" lean-forward="false" selection-start-line="495" selection-start-column="20" selection-end-line="495" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9100#9101#0" expanded="false" />
+            <element signature="e#9154#9155#0" expanded="false" />
             <marker date="1511175108174" expanded="true" signature="2495:2802" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/webservice/HafeleWebservice.java">
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="309">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/database/HafeleFaultReportDBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/res/layout/activity_main_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hafele/src/main/java/com/sudesi/hafele/classes/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
           <folding />
         </state>
       </provider>

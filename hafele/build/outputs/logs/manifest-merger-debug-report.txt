@@ -5,8 +5,8 @@ INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1-128:12
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1-128:12
 MERGED from [:ffmpeg4android_os] D:\Aniket_workspace\hafele\ffmpeg4android_os\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-53:12
-MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\9dcf191a9898b998aa84c37962fa6c13\AndroidManifest.xml:15:1-18:12
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\7dcec435e29055de19cf3c65592b5215\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\975973bda76f22b3dc674ddbac4550ea\AndroidManifest.xml:15:1-18:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\aacd04acdba740c6b012e409eeb15554\AndroidManifest.xml:17:1-22:12
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1-128:12
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1-128:12
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:2:1-128:12
@@ -32,10 +32,10 @@ INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:8:5
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:8:5-10:41
 MERGED from [:ffmpeg4android_os] D:\Aniket_workspace\hafele\ffmpeg4android_os\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:ffmpeg4android_os] D:\Aniket_workspace\hafele\ffmpeg4android_os\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\9dcf191a9898b998aa84c37962fa6c13\AndroidManifest.xml:16:5-42
-MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\9dcf191a9898b998aa84c37962fa6c13\AndroidManifest.xml:16:5-42
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\7dcec435e29055de19cf3c65592b5215\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\7dcec435e29055de19cf3c65592b5215\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\975973bda76f22b3dc674ddbac4550ea\AndroidManifest.xml:16:5-42
+MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\975973bda76f22b3dc674ddbac4550ea\AndroidManifest.xml:16:5-42
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\aacd04acdba740c6b012e409eeb15554\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\aacd04acdba740c6b012e409eeb15554\AndroidManifest.xml:20:5-43
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:8:5-10:41
 INJECTED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:8:5-10:41
 	android:targetSdkVersion
@@ -106,8 +106,8 @@ application
 ADDED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:31:5-126:19
 MERGED from [:ffmpeg4android_os] D:\Aniket_workspace\hafele\ffmpeg4android_os\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-51:19
 MERGED from [:ffmpeg4android_os] D:\Aniket_workspace\hafele\ffmpeg4android_os\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-51:19
-MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\9dcf191a9898b998aa84c37962fa6c13\AndroidManifest.xml:17:5-19
-MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\9dcf191a9898b998aa84c37962fa6c13\AndroidManifest.xml:17:5-19
+MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\975973bda76f22b3dc674ddbac4550ea\AndroidManifest.xml:17:5-19
+MERGED from [com.android.support:support-v4:20.0.0] C:\Users\komal\.gradle\caches\transforms-1\files-1.1\support-v4-20.0.0.aar\975973bda76f22b3dc674ddbac4550ea\AndroidManifest.xml:17:5-19
 	android:label
 		ADDED from D:\Aniket_workspace\hafele\hafele\src\main\AndroidManifest.xml:35:9-41
 	android:largeHeap

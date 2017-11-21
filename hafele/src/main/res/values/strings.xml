@@ -24,7 +24,7 @@
     <string name="str_8">For weight 60-80kg, 3 hinges weight &lt;60, 2 \nhinges weight >80, 4 hinges</string>
     <string name="str_9">For weight 40kg, 3 hinges weight &lt;40, 2 \nhinges weight >40, 4 hinges</string>
     <string name="str_10">For weight 60kg, 3 hinges weight &lt;60, 2 \nhinges weight >60, 4 hinges</string>
-    <string name="app_version_name">2.2</string>
+    <string name="app_version_name">2.4</string>
     
     
     <string-array name="rating">

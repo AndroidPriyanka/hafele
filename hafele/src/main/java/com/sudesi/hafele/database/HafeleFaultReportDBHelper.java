@@ -20,14 +20,14 @@ public class HafeleFaultReportDBHelper extends SQLiteOpenHelper {
     //	private static String DB_NAME = "HafeleFaultReports111";
     private SQLiteDatabase mDb;
     private static String DB_PATH = "";
-    private static final int DB_VERSION = 3;
+    private static final int DB_VERSION = 4;
     private static String TAG = "DataBaseHelper";
     /*private static final String ALTER_FAULT_FINDING_FOR_DATE1="ALTER TABLE Fault_Finding_Details ADD COLUMN Accepted_Date DATETIME";
     private static final String ALTER_FAULT_FINDING_FOR_DATE2="ALTER TABLE Fault_Finding_Details ADD COLUMN Called_Date DATETIME";
     private static final String ALTER_FAULT_FINDING_FOR_DATE3="ALTER TABLE Fault_Finding_Details ADD COLUMN Updated_Date DATETIME";
     private static final String ALTER_FAULT_FINDING_FOR_DATE4="ALTER TABLE Fault_Finding_Details ADD COLUMN Closed_Date DATETIME";
     */
-    public static final String sanitary_details = "create table sanitary_details(radio_sanitary TEXT,type_of_sanitary TEXT,sanitary_product TEXT,sanitary_leakage TEXT,sanitary_type_of_leakage TEXT,does_not_operate TEXT,type_does_not_operate TEXT,weak_flow TEXT,type_of_weak_flow TEXT,asthetics TEXT,type_of_asthetics TEXT,warranty TEXT,noise TEXT,flush_not_working TEXT,type_of_flush_not_working TEXT,drainage TEXT,type_of_drainage TEXT,LMD TEXT,Complant_No TEXT,sync_status TEXT,Closure_Status TEXT,Fault_Finding_Id TEXT)";
+    public static final String sanitary_details = "create table if not exists sanitary_details(radio_sanitary TEXT,type_of_sanitary TEXT,sanitary_product TEXT,sanitary_leakage TEXT,sanitary_type_of_leakage TEXT,does_not_operate TEXT,type_does_not_operate TEXT,weak_flow TEXT,type_of_weak_flow TEXT,asthetics TEXT,type_of_asthetics TEXT,warranty TEXT,noise TEXT,flush_not_working TEXT,type_of_flush_not_working TEXT,drainage TEXT,type_of_drainage TEXT,LMD TEXT,Complant_No TEXT,sync_status TEXT,Closure_Status TEXT,Fault_Finding_Id TEXT)";
 
     public HafeleFaultReportDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -96,7 +96,7 @@ public class HafeleFaultReportDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-
+      //  db.execSQL(sanitary_details);
     }
 
     @Override
@@ -106,8 +106,14 @@ public class HafeleFaultReportDBHelper extends SQLiteOpenHelper {
         //db.execSQL(ALTER_FAULT_FINDING_FOR_DATE3);
         //db.execSQL(ALTER_FAULT_FINDING_FOR_DATE4);
         //db.execSQL(ALTER_FEEDBACK_ADD_IMAGEPATH);
-      //  db.execSQL(sanitary_details);
-        db.execSQL(sanitary_details);
+
+
+        /*else if (oldVersion==5){
+
+        }*/
+        if (newVersion == 4) {
+            db.execSQL(sanitary_details);
+        }
 
 
     }

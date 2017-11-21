@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sudesi.hafele.faultreport"
     android:installLocation="auto"
-    android:versionCode="21"
+    android:versionCode="22"
     android:versionName="@string/app_version_name">
 
     <uses-sdk
